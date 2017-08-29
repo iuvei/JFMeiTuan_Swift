@@ -45,7 +45,7 @@ class JFBaseTabBarController: UITabBarController {
         
 //        let tabbarVC  = JFBaseTabBarController()
         self.viewControllers = [JFBaseHomeNav,JFBaseNearNav,JFBaseWalkNav,JFBaseOrderNav,JFBaseMeNav]
-    
+        self.tabBar.isTranslucent = false
     }
 
 
