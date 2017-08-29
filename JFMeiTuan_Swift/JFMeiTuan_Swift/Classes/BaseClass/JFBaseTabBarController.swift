@@ -27,7 +27,7 @@ class JFBaseTabBarController: UITabBarController {
         let JFBaseMeNav = JFBaseNacigationController.init(rootViewController: JFMeViewController())
         
         self.viewControllers = [JFBaseHomeNav,JFBaseNearNav,JFBaseWalkNav,JFBaseOrderNav,JFBaseMeNav]
-        self.selectedViewController = JFBaseMeNav
+//        self.selectedViewController = JFBaseMeNav
         self.tabBar.isTranslucent = false//tabbar不透明
         
         let tabbarItem0 = self.tabBar.items?[0]

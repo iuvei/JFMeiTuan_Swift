@@ -7,17 +7,70 @@
 //
 
 import UIKit
+import SnapKit
+let ID  = "cell"
 
-class JFHomeViewController: JFBaseViewController {
+
+class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //获取屏幕的尺寸
+        let fullScreenSize = UIScreen.main.bounds.size
         // Do any additional setup after loading the view.
         self.title = "首页"
         self.view.backgroundColor = UIColor.gray
+        
+        let homeTableView = UITableView(frame :.zero, style:.plain)
+        self.view.addSubview(homeTableView)
+        
+        
+        homeTableView.snp.makeConstraints { (make) in
+            make.height.equalTo(fullScreenSize.height-64-50)
+            make.width.equalTo(fullScreenSize.width)
+            make.center.equalTo(self.view)
+        }
+
+        
+        homeTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: ID)
+        
+        homeTableView.dataSource = self
+        homeTableView.delegate = self
+        
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return datas.count
+        
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        //获取cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ID, for: indexPath)
+        
+        //配置cell
+        cell.textLabel?.text = "假数据 -\(datas[indexPath.row]) ";
+        
+        //返回cell
+        return cell
+        
+    }
+
+
+
+    // 懒加载
+    lazy var datas: [Int] = {
+        // 创建一个存放int的数组
+        var nums = [Int]()
+        // 添加数据
+        for i in 0...50 {
+            nums.append(i)
+        }
+        // 返回
+        return nums
+    }()
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,3 +88,5 @@ class JFHomeViewController: JFBaseViewController {
     */
 
 }
+
+
