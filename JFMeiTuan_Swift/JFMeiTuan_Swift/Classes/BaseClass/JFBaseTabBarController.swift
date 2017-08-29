@@ -17,35 +17,54 @@ class JFBaseTabBarController: UITabBarController {
          initControllers()
     }
     
-    func initControllers(){
-        let homeVC   = JFHomeViewController();
-        let OrderVC  = JFOrderViewController();
-        let MeVC     = JFMeViewController();
-        let NearVC   = JFNearViewController();
-        let walkVC   = JFwalkViewController();
+     func initControllers(){
+
+    
+        let JFBaseHomeNav = JFBaseNacigationController.init(rootViewController: JFHomeViewController())
+        let JFBaseNearNav = JFBaseNacigationController.init(rootViewController: JFNearViewController())
+        let JFBaseWalkNav = JFBaseNacigationController.init(rootViewController: JFwalkViewController())
+        let JFBaseOrderNav = JFBaseNacigationController.init(rootViewController: JFOrderViewController())
+        let JFBaseMeNav = JFBaseNacigationController.init(rootViewController: JFMeViewController())
         
-        homeVC.tabBarItem.image = UIImage.init(named: "");
-        OrderVC.tabBarItem.image = UIImage.init(named: "");
-        MeVC.tabBarItem.image = UIImage.init(named: "");
-        NearVC.tabBarItem.image = UIImage.init(named: "");
-        walkVC.tabBarItem.image = UIImage.init(named: "");
-        
-        
-        homeVC.tabBarItem.title = "首页";
-        OrderVC.tabBarItem.title = "订单";
-        MeVC.tabBarItem.title = "我的";
-        NearVC.tabBarItem.title = "附近";
-        walkVC.tabBarItem.title = "逛一逛";
-        
-        let JFBaseHomeNav = JFBaseNacigationController.init(rootViewController: homeVC)
-        let JFBaseNearNav = JFBaseNacigationController.init(rootViewController: NearVC)
-        let JFBaseWalkNav = JFBaseNacigationController.init(rootViewController: walkVC)
-        let JFBaseOrderNav = JFBaseNacigationController.init(rootViewController: OrderVC)
-        let JFBaseMeNav = JFBaseNacigationController.init(rootViewController: MeVC)
-        
-//        let tabbarVC  = JFBaseTabBarController()
         self.viewControllers = [JFBaseHomeNav,JFBaseNearNav,JFBaseWalkNav,JFBaseOrderNav,JFBaseMeNav]
-        self.tabBar.isTranslucent = false
+        self.selectedViewController = JFBaseMeNav
+        self.tabBar.isTranslucent = false//tabbar不透明
+        
+        let tabbarItem0 = self.tabBar.items?[0]
+        tabbarItem0?.image = UIImage.init(named: "")
+        tabbarItem0?.selectedImage = UIImage.init(named: "")
+        tabbarItem0?.title = "首页";
+        tabbarItem0?.titlePositionAdjustment = UIOffsetMake(0,-4)
+        
+        let tabbarItem1 = self.tabBar.items?[1]
+        tabbarItem1?.image = UIImage.init(named: "")
+        tabbarItem1?.selectedImage = UIImage.init(named: "")
+        tabbarItem1?.title = "附近";
+        tabbarItem1?.titlePositionAdjustment = UIOffsetMake(0,-4)
+        
+        let tabbarItem2 = self.tabBar.items?[2]
+        tabbarItem2?.image = UIImage.init(named: "")
+        tabbarItem2?.selectedImage = UIImage.init(named: "")
+        tabbarItem2?.title = "逛一逛";
+        tabbarItem2?.titlePositionAdjustment = UIOffsetMake(0,-4)
+        
+        let tabbarItem3 = self.tabBar.items?[3]
+        tabbarItem3?.image = UIImage.init(named: "")
+        tabbarItem3?.selectedImage = UIImage.init(named: "")
+        tabbarItem3?.title = "订单";
+        tabbarItem3?.titlePositionAdjustment = UIOffsetMake(0,-4)
+        
+        let tabbarItem4 = self.tabBar.items?[4]
+        tabbarItem4?.image = UIImage.init(named: "")
+        tabbarItem4?.selectedImage = UIImage.init(named: "")
+        tabbarItem4?.title = "我的";
+        tabbarItem4?.titlePositionAdjustment = UIOffsetMake(0,-4)
+        
+        
+        //选中个非选中的字体颜色
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.gray], for:.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.blue], for: .selected)
+        
     }
 
 

@@ -84,6 +84,7 @@
 		E874E1C61F4E9791003A29B1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E874E2141F554A3B003A29B1 /* Common */,
 				E874E1FE1F552C72003A29B1 /* BaseClass */,
 				E874E1FF1F552C72003A29B1 /* Home */,
 				E874E2001F552C72003A29B1 /* Order */,
@@ -142,6 +143,13 @@
 				E874E2121F552D34003A29B1 /* JFwalkViewController.swift */,
 			);
 			path = Walk;
+			sourceTree = "<group>";
+		};
+		E874E2141F554A3B003A29B1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
