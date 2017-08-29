@@ -4,7 +4,7 @@
 //
 //  Created by linjianfang on 2017/8/29.
 //  Copyright © 2017年 linjianfang. All rights reserved.
-//
+//  测试略文件是否生效
 
 import UIKit
 
