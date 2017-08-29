@@ -1,0 +1,21 @@
+[
+  {
+    "buildInfomation": [
+      {
+        "version": "8.4.1.1634"
+      },
+      {
+        "buildUrl": "http://ios.ci.sankuai.com/job/imeituan/job/app-store-build/4043/"
+      },
+      {
+        "buildTime": "2017-08-21 17:14:43 +0800"
+      },
+      {
+        "lastCommitId": "814c883a231737aa9dad06e8e5f9b0ba21ff058b"
+      },
+      {
+        "dependenciesConut": "239"
+      }
+    ]
+  }
+]

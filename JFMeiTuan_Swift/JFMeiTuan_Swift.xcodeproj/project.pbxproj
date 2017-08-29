@@ -12,6 +12,14 @@
 		E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E874E1B81F4E91BA003A29B1 /* Main.storyboard */; };
 		E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E874E1BB1F4E91BA003A29B1 /* Assets.xcassets */; };
 		E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E874E1BD1F4E91BA003A29B1 /* LaunchScreen.storyboard */; };
+		E874E1EF1F551263003A29B1 /* JFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1EE1F551263003A29B1 /* JFBaseViewController.swift */; };
+		E874E1F11F5512B9003A29B1 /* JFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1F01F5512B9003A29B1 /* JFHomeViewController.swift */; };
+		E874E1F31F5512EB003A29B1 /* JFOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1F21F5512EB003A29B1 /* JFOrderViewController.swift */; };
+		E874E1F51F5512FA003A29B1 /* JFMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1F41F5512FA003A29B1 /* JFMeViewController.swift */; };
+		E874E1F71F55134D003A29B1 /* JFNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1F61F55134D003A29B1 /* JFNearViewController.swift */; };
+		E874E1F91F55139C003A29B1 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1F81F55139C003A29B1 /* JFwalkViewController.swift */; };
+		E874E1FB1F551446003A29B1 /* JFBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1FA1F551446003A29B1 /* JFBaseTabBarController.swift */; };
+		E874E1FD1F55146C003A29B1 /* JFBaseNacigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1FC1F55146C003A29B1 /* JFBaseNacigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		E874E1BB1F4E91BA003A29B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E874E1BE1F4E91BA003A29B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E874E1C01F4E91BA003A29B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E874E1EE1F551263003A29B1 /* JFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseViewController.swift; sourceTree = "<group>"; };
+		E874E1F01F5512B9003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; };
+		E874E1F21F5512EB003A29B1 /* JFOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOrderViewController.swift; sourceTree = "<group>"; };
+		E874E1F41F5512FA003A29B1 /* JFMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeViewController.swift; sourceTree = "<group>"; };
+		E874E1F61F55134D003A29B1 /* JFNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNearViewController.swift; sourceTree = "<group>"; };
+		E874E1F81F55139C003A29B1 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
+		E874E1FA1F551446003A29B1 /* JFBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseTabBarController.swift; sourceTree = "<group>"; };
+		E874E1FC1F55146C003A29B1 /* JFBaseNacigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseNacigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,30 @@
 		E874E1B31F4E91BA003A29B1 /* JFMeiTuan_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E874E1C61F4E9791003A29B1 /* Classes */,
 				E874E1B41F4E91BA003A29B1 /* AppDelegate.swift */,
 				E874E1B61F4E91BA003A29B1 /* ViewController.swift */,
+				E874E1EE1F551263003A29B1 /* JFBaseViewController.swift */,
+				E874E1FA1F551446003A29B1 /* JFBaseTabBarController.swift */,
+				E874E1FC1F55146C003A29B1 /* JFBaseNacigationController.swift */,
+				E874E1F01F5512B9003A29B1 /* JFHomeViewController.swift */,
+				E874E1F21F5512EB003A29B1 /* JFOrderViewController.swift */,
+				E874E1F41F5512FA003A29B1 /* JFMeViewController.swift */,
+				E874E1F61F55134D003A29B1 /* JFNearViewController.swift */,
+				E874E1F81F55139C003A29B1 /* JFwalkViewController.swift */,
 				E874E1B81F4E91BA003A29B1 /* Main.storyboard */,
 				E874E1BB1F4E91BA003A29B1 /* Assets.xcassets */,
 				E874E1BD1F4E91BA003A29B1 /* LaunchScreen.storyboard */,
 				E874E1C01F4E91BA003A29B1 /* Info.plist */,
 			);
 			path = JFMeiTuan_Swift;
+			sourceTree = "<group>";
+		};
+		E874E1C61F4E9791003A29B1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E874E1FD1F55146C003A29B1 /* JFBaseNacigationController.swift in Sources */,
+				E874E1F51F5512FA003A29B1 /* JFMeViewController.swift in Sources */,
+				E874E1F31F5512EB003A29B1 /* JFOrderViewController.swift in Sources */,
+				E874E1FB1F551446003A29B1 /* JFBaseTabBarController.swift in Sources */,
+				E874E1F71F55134D003A29B1 /* JFNearViewController.swift in Sources */,
+				E874E1F91F55139C003A29B1 /* JFwalkViewController.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
+				E874E1F11F5512B9003A29B1 /* JFHomeViewController.swift in Sources */,
+				E874E1EF1F551263003A29B1 /* JFBaseViewController.swift in Sources */,
 				E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +341,7 @@
 				E874E1C51F4E91BA003A29B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

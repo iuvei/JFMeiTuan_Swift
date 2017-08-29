@@ -16,6 +16,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let homeVC   = JFHomeViewController();
+        let OrderVC  = JFOrderViewController();
+        let MeVC     = JFMeViewController();
+        let NearVC   = JFNearViewController();
+        let walkVC   = JFwalkViewController();
+        
+        homeVC.tabBarItem.image = UIImage.init(named: "");
+        OrderVC.tabBarItem.image = UIImage.init(named: "");
+        MeVC.tabBarItem.image = UIImage.init(named: "");
+        NearVC.tabBarItem.image = UIImage.init(named: "");
+        walkVC.tabBarItem.image = UIImage.init(named: "");
+        
+        homeVC.tabBarItem.title = "首页";
+        OrderVC.tabBarItem.title = "订单";
+        MeVC.tabBarItem.title = "我的";
+        NearVC.tabBarItem.title = "附近";
+        walkVC.tabBarItem.title = "逛一逛";
+        
+        let JFBaseHomeNav = JFBaseNacigationController.init(rootViewController: homeVC)
+        let JFBaseNearNav = JFBaseNacigationController.init(rootViewController: NearVC)
+        let JFBaseWalkNav = JFBaseNacigationController.init(rootViewController: walkVC)
+        let JFBaseOrderNav = JFBaseNacigationController.init(rootViewController: OrderVC)
+        let JFBaseMeNav = JFBaseNacigationController.init(rootViewController: MeVC)
+        
+        
+
+        
+        
+        let tabbarVC  = JFBaseTabBarController()
+        tabbarVC.viewControllers = [JFBaseHomeNav,JFBaseNearNav,JFBaseWalkNav,JFBaseOrderNav,JFBaseMeNav]
+        self.window?.rootViewController = tabbarVC
+        self.window?.backgroundColor = UIColor.white
+        
+
+
+        
+        
         return true
     }
 

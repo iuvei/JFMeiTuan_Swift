@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="7.6" style="flex-direction:column">
+    <Container version="7.6"
+        data-source="http://aop.meituan.com/api/entry/topic3?latlng={latlng}&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;ci={ci}"
+        style="height:99.88pt;justify-content:center;flex-direction:column;flex-wrap:nowrap;">
+        <Var name="click0" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":0,"title":"{data.homepage[0].name}","id":{data.homepage[0].id},"ad_id":{data.homepage[0].fly.id}}
+            }
+        </Var>
+        <Var name="click1" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":1,"title":"{data.homepage[1].name}","id":{data.homepage[1].id},"ad_id":{data.homepage[1].fly.id}}
+            }
+        </Var>
+        <Var name="click2" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":2,"title":"{data.homepage[2].name}","id":{data.homepage[2].id},"ad_id":{data.homepage[2].fly.id}}
+            }
+        </Var>
+        <Var name="click3" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":3,"title":"{data.homepage[3].name}","id":{data.homepage[3].id},"ad_id":{data.homepage[3].fly.id}}
+            }
+        </Var>
+        <Var name="click4" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":4,"title":"{data.homepage[4].name}","id":{data.homepage[4].id},"ad_id":{data.homepage[4].fly.id}}
+            }
+        </Var>
+        <Var name="see0" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":0,"title":"{data.homepage[0].name}","id":{data.homepage[0].id},"ad_id":{data.homepage[0].fly.id}}
+            }
+        </Var>
+        <Var name="see1" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":1,"title":"{data.homepage[1].name}","id":{data.homepage[1].id},"ad_id":{data.homepage[1].fly.id}}
+            }
+        </Var>
+        <Var name="see2" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":2,"title":"{data.homepage[2].name}","id":{data.homepage[2].id},"ad_id":{data.homepage[2].fly.id}}
+            }
+        </Var>
+        <Var name="see3" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":3,"title":"{data.homepage[3].name}","id":{data.homepage[3].id},"ad_id":{data.homepage[3].fly.id}}
+            }
+        </Var>
+        <Var name="see4" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":4,"title":"{data.homepage[4].name}","id":{data.homepage[4].id},"ad_id":{data.homepage[4].fly.id}}
+            }
+        </Var>
+        <Cache name="adicon0" cache-key="{data.homepage[0].fly.cacheKey}" cache-rate="{data.homepage[0].fly.rate}" value="{data.homepage[0].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon1" cache-key="{data.homepage[1].fly.cacheKey}" cache-rate="{data.homepage[1].fly.rate}" value="{data.homepage[1].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon2" cache-key="{data.homepage[2].fly.cacheKey}" cache-rate="{data.homepage[2].fly.rate}" value="{data.homepage[2].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon3" cache-key="{data.homepage[3].fly.cacheKey}" cache-rate="{data.homepage[3].fly.rate}" value="{data.homepage[3].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon4" cache-key="{data.homepage[4].fly.cacheKey}" cache-rate="{data.homepage[4].fly.rate}" value="{data.homepage[4].fly.iconUrl}">
+        </Cache>
+        
+        <View style="width:360pt;height:0.5pt;" background="#EFEFEF"/>
+        <Container style="height:98.88pt;flex-direction:row;justify-content:flex-start;align-items:center;">
+            <View style="width:7.2pt;height:0pt;"/>
+            <Container style="flex-grow:1;width:69.12pt;height:80.4pt;flex-direction:column; align-items:center; justify-content:center;"
+                validity-check="{data.homepage[0].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[0].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[0].id}_poi; C:1;"
+                click-mge2-report="{click0}"
+                see-mge2-report="{see0}"
+                load-mge2-report="{load0}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category1_{data.homepage[0].id}__a1__c{data.homepage[0].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:1; lab:{data.homepage[0].name}_1_{data.homepage[0].id}_1__a{data.homepage[0].recommendStr}__b{data.homepage[0].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[0].name}_1_{data.homepage[0].id}_1__a{data.homepage[0].recommendStr}__b{data.homepage[0].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[0].name}_1_{data.homepage[0].id}_1__a{data.homepage[0].recommendStr}__b{data.homepage[0].fly.id}"
+                click-to-modify="{adicon0}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:69.12pt;height:72.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="margin-top:-2pt;width:50.88pt;height:50.88pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[0].iconUrl}" default-src="{data.homepage[0].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[0].playTimes}"/>
+                        </Container>
+                        <Container style="margin-top:2pt;width:69.12pt;flex-direction:row;justify-content:center;align-items:flex-start;">
+                            <Text font-size="12.48sp" text="{data.homepage[0].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[0].fly.id}" style="margin-top:2pt;width:40pt;height:15pt;">
+                            <Img style="flex-grow:1;" src="{adicon0}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            
+            <Container style="flex-grow:1;width:69.12pt;height:80.4pt;flex-direction:column; align-items:center; justify-content:center;"
+                validity-check="{data.homepage[1].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[1].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[1].id}_poi; C:2;"
+                click-mge2-report="{click1}"
+                see-mge2-report="{see1}"
+                load-mge2-report="{load1}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category2_{data.homepage[1].id}__a1__c{data.homepage[1].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:2; lab:{data.homepage[1].name}_2_{data.homepage[1].id}_1__a{data.homepage[1].recommendStr}__b{data.homepage[1].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[1].name}_2_{data.homepage[1].id}_1__a{data.homepage[1].recommendStr}__b{data.homepage[1].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[1].name}_2_{data.homepage[1].id}_1__a{data.homepage[1].recommendStr}__b{data.homepage[1].fly.id}"
+                click-to-modify="{adicon1}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:69.12pt;height:72.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="margin-top:-2pt;width:50.88pt;height:50.88pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[1].iconUrl}" default-src="{data.homepage[1].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[1].playTimes}"/>
+                        </Container>
+                        <Container style="margin-top:2pt;width:69.12pt;flex-direction:row;justify-content:center;align-items:flex-start;">
+                            <Text font-size="12.48sp" text="{data.homepage[1].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[1].fly.id}" style="margin-top:2pt;width:40pt;height:15pt;">
+                            <Img style="flex-grow:1;" src="{adicon1}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            
+            <Container style="flex-grow:1;width:69.12pt;height:80.4pt;flex-direction:column; align-items:center; justify-content:center;"
+                validity-check="{data.homepage[2].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[2].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[2].id}_poi; C:3;"
+                click-mge2-report="{click2}"
+                see-mge2-report="{see2}"
+                load-mge2-report="{load2}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category3_{data.homepage[2].id}__a1__c{data.homepage[2].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:3; lab:{data.homepage[2].name}_3_{data.homepage[2].id}_1__a{data.homepage[2].recommendStr}__b{data.homepage[2].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[2].name}_3_{data.homepage[2].id}_1__a{data.homepage[2].recommendStr}__b{data.homepage[2].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[2].name}_3_{data.homepage[2].id}_1__a{data.homepage[2].recommendStr}__b{data.homepage[2].fly.id}"
+                click-to-modify="{adicon2}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:69.12pt;height:72.4pt;">
+                    <Container style="flex-grow:1;flex-direction:row;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="margin-top:-2pt;width:50.88pt;height:50.88pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[2].iconUrl}" default-src="{data.homepage[2].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[2].playTimes}"/>
+                        </Container>
+                        <Container style="margin-top:2pt;width:69.12pt;flex-direction:row;justify-content:center;align-items:flex-start;">
+                            <Text font-size="12.48sp" text="{data.homepage[2].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[2].fly.id}" style="margin-top:2pt;width:40pt;height:15pt;">
+                            <Img style="flex-grow:1;" src="{adicon2}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            
+            <Container style="flex-grow:1;width:69.12pt;height:80.4pt;flex-direction:column; align-items:center; justify-content:center;"
+                validity-check="{data.homepage[3].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[3].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[3].id}_poi; C:4;"
+                click-mge2-report="{click3}"
+                see-mge2-report="{see3}"
+                load-mge2-report="{load3}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category4_{data.homepage[3].id}__a1__c{data.homepage[3].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:4; lab:{data.homepage[3].name}_4_{data.homepage[3].id}_1__a{data.homepage[3].recommendStr}__b{data.homepage[3].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[3].name}_4_{data.homepage[3].id}_1__a{data.homepage[3].recommendStr}__b{data.homepage[3].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[3].name}_4_{data.homepage[3].id}_1__a{data.homepage[3].recommendStr}__b{data.homepage[3].fly.id}"
+                click-to-modify="{adicon3}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:69.12pt;height:72.4pt;">
+                    <Container style="flex-grow:1;flex-direction:row;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="margin-top:-2pt;width:50.88pt;height:50.88pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[3].iconUrl}" default-src="{data.homepage[3].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[3].playTimes}"/>
+                        </Container>
+                        <Container style="margin-top:2pt;width:69.12pt;flex-direction:row;justify-content:center;align-items:flex-start;">
+                            <Text font-size="12.48sp" text="{data.homepage[3].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[3].fly.id}" style="margin-top:2pt;width:40pt;height:15pt;">
+                            <Img style="flex-grow:1;" src="{adicon3}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            
+            <Container style="flex-grow:1;width:69.12pt;height:80.4pt;flex-direction:column; align-items:center; justify-content:center;"
+                validity-check="{data.homepage[4].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[4].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[4].id}_poi; C:5;"
+                click-mge2-report="{click4}"
+                see-mge2-report="{see4}"
+                load-mge2-report="{load4}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category5_{data.homepage[4].id}__a1__c{data.homepage[4].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:5; lab:{data.homepage[4].name}_5_{data.homepage[4].id}_1__a{data.homepage[4].recommendStr}__b{data.homepage[4].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[4].name}_5_{data.homepage[4].id}_1__a{data.homepage[4].recommendStr}__b{data.homepage[4].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[4].name}_5_{data.homepage[4].id}_1__a{data.homepage[4].recommendStr}__b{data.homepage[4].fly.id}"
+                click-to-modify="{adicon4}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:69.12pt;height:72.4pt;">
+                    <Container style="flex-grow:1;flex-direction:row;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="margin-top:-2pt;width:50.88pt;height:50.88pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[4].iconUrl}" default-src="{data.homepage[4].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[4].playTimes}"/>
+                        </Container>
+                        <Container style="margin-top:2pt;width:69.12pt;flex-direction:row;justify-content:center;align-items:flex-start;">
+                            <Text font-size="12.48sp" text="{data.homepage[4].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[4].fly.id}" style="margin-top:2pt;width:40pt;height:15pt;">
+                            <Img style="flex-grow:1;" src="{adicon4}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <View style="width:7.2pt;height:0pt;"/>
+        </Container>
+        <View style="margin-left:14.4pt;margin-right:14.4pt;width:331.2pt;height:1pt;" background="#EFEFEF"/>
+    </Container>
+    <Container version="7.6"
+        data-source="http://aop.meituan.com/api/entry/topic3?latlng={latlng}&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;ci={ci}"
+        validity-check="{data.homepage[5].id}"
+        validity-check-visibility="displaynone"
+        style="height:134.4pt;justify-content:center;align-items:center;flex-direction:column;flex-wrap:nowrap;">
+        <Var name="click-0" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":5,"title":"{data.homepage[5].name}","id":{data.homepage[5].id},"ad_id":{data.homepage[5].fly.id}}
+            }
+        </Var>
+        <Var name="click-1" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":6,"title":"{data.homepage[6].name}","id":{data.homepage[6].id},"ad_id":{data.homepage[6].fly.id}}
+            }
+        </Var>
+        <Var name="click-2" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":7,"title":"{data.homepage[7].name}","id":{data.homepage[7].id},"ad_id":{data.homepage[7].fly.id}}
+            }
+        </Var>
+        <Var name="click-3" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":8,"title":"{data.homepage[8].name}","id":{data.homepage[8].id},"ad_id":{data.homepage[8].fly.id}}
+            }
+        </Var>
+        <Var name="click-4" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":9,"title":"{data.homepage[9].name}","id":{data.homepage[9].id},"ad_id":{data.homepage[9].fly.id}}
+            }
+        </Var>
+        <Var name="click-5" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":10,"title":"{data.homepage[10].name}","id":{data.homepage[10].id},"ad_id":{data.homepage[10].fly.id}}
+            }
+        </Var>
+        <Var name="click-6" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":11,"title":"{data.homepage[11].name}","id":{data.homepage[11].id},"ad_id":{data.homepage[11].fly.id}}
+            }
+        </Var>
+        <Var name="click-7" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":12,"title":"{data.homepage[12].name}","id":{data.homepage[12].id},"ad_id":{data.homepage[12].fly.id}}
+            }
+        </Var>
+        <Var name="click-8" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":13,"title":"{data.homepage[13].name}","id":{data.homepage[13].id},"ad_id":{data.homepage[13].fly.id}}
+            }
+        </Var>
+        <Var name="click-9" type="json">
+            {
+            "bid":"b_h9Vrd",
+            "lab":{"module_name":"index_category","index":14,"title":"{data.homepage[14].name}","id":{data.homepage[14].id},"ad_id":{data.homepage[14].fly.id}}
+            }
+        </Var>
+        <Var name="see-0" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":5,"title":"{data.homepage[5].name}","id":{data.homepage[5].id},"ad_id":{data.homepage[5].fly.id}}
+            }
+        </Var>
+        <Var name="see-1" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":6,"title":"{data.homepage[6].name}","id":{data.homepage[6].id},"ad_id":{data.homepage[6].fly.id}}
+            }
+        </Var>
+        <Var name="see-2" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":7,"title":"{data.homepage[7].name}","id":{data.homepage[7].id},"ad_id":{data.homepage[7].fly.id}}
+            }
+        </Var>
+        <Var name="see-3" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":8,"title":"{data.homepage[8].name}","id":{data.homepage[8].id},"ad_id":{data.homepage[8].fly.id}}
+            }
+        </Var>
+        <Var name="see-4" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":9,"title":"{data.homepage[9].name}","id":{data.homepage[9].id},"ad_id":{data.homepage[9].fly.id}}
+            }
+        </Var>
+        <Var name="see-5" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":10,"title":"{data.homepage[10].name}","id":{data.homepage[10].id},"ad_id":{data.homepage[10].fly.id}}
+            }
+        </Var>
+        <Var name="see-6" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":11,"title":"{data.homepage[11].name}","id":{data.homepage[11].id},"ad_id":{data.homepage[11].fly.id}}
+            }
+        </Var>
+        <Var name="see-7" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":12,"title":"{data.homepage[12].name}","id":{data.homepage[12].id},"ad_id":{data.homepage[12].fly.id}}
+            }
+        </Var>
+        <Var name="see-8" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":13,"title":"{data.homepage[13].name}","id":{data.homepage[13].id},"ad_id":{data.homepage[13].fly.id}}
+            }
+        </Var>
+        <Var name="see-9" type="json">
+            {
+            "bid":"b_N06dY",
+            "lab":{"module_name":"index_category","index":14,"title":"{data.homepage[14].name}","id":{data.homepage[14].id},"ad_id":{data.homepage[14].fly.id}}
+            }
+        </Var>
+        <Cache name="adicon0" cache-key="{data.homepage[5].fly.cacheKey}" cache-rate="{data.homepage[5].fly.rate}" value="{data.homepage[5].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon1" cache-key="{data.homepage[6].fly.cacheKey}" cache-rate="{data.homepage[6].fly.rate}" value="{data.homepage[6].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon2" cache-key="{data.homepage[7].fly.cacheKey}" cache-rate="{data.homepage[7].fly.rate}" value="{data.homepage[7].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon3" cache-key="{data.homepage[8].fly.cacheKey}" cache-rate="{data.homepage[8].fly.rate}" value="{data.homepage[8].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon4" cache-key="{data.homepage[9].fly.cacheKey}" cache-rate="{data.homepage[9].fly.rate}" value="{data.homepage[9].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon5" cache-key="{data.homepage[10].fly.cacheKey}" cache-rate="{data.homepage[10].fly.rate}" value="{data.homepage[10].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon6" cache-key="{data.homepage[11].fly.cacheKey}" cache-rate="{data.homepage[11].fly.rate}" value="{data.homepage[11].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon7" cache-key="{data.homepage[12].fly.cacheKey}" cache-rate="{data.homepage[12].fly.rate}" value="{data.homepage[12].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon8" cache-key="{data.homepage[13].fly.cacheKey}" cache-rate="{data.homepage[13].fly.rate}" value="{data.homepage[13].fly.iconUrl}">
+        </Cache>
+        <Cache name="adicon9" cache-key="{data.homepage[14].fly.cacheKey}" cache-rate="{data.homepage[14].fly.rate}" value="{data.homepage[14].fly.iconUrl}">
+        </Cache>
+        
+        <View style="width:0pt;height:9.6pt;"/>
+        <Container style="height:56.64pt;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+            <View style="width:10.56pt;height:0pt;"/>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[5].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[5].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[5].id}_poi; C:6;"
+                click-mge2-report="{click-0}"
+                see-mge2-report="{see-0}"
+                load-mge2-report="{load-0}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category6_{data.homepage[5].id}__a1__c{data.homepage[5].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:6; lab:{data.homepage[5].name}_6_{data.homepage[5].id}_1__a{data.homepage[5].recommendStr}__b{data.homepage[5].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[5].name}_6_{data.homepage[5].id}_1__a{data.homepage[5].recommendStr}__b{data.homepage[5].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[5].name}_6_{data.homepage[5].id}_1__a{data.homepage[5].recommendStr}__b{data.homepage[5].fly.id}"
+                click-to-modify="{adicon-0}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[5].iconUrl}" default-src="{data.homepage[5].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[5].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[5].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[5].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-0}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[6].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[6].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[6].id}_poi; C:7;"
+                click-mge2-report="{click-1}"
+                see-mge2-report="{see-1}"
+                load-mge2-report="{load-1}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category7_{data.homepage[6].id}__a1__c{data.homepage[6].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:7; lab:{data.homepage[6].name}_7_{data.homepage[6].id}_1__a{data.homepage[6].recommendStr}__b{data.homepage[6].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[6].name}_7_{data.homepage[6].id}_1__a{data.homepage[6].recommendStr}__b{data.homepage[6].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[6].name}_7_{data.homepage[6].id}_1__a{data.homepage[6].recommendStr}__b{data.homepage[6].fly.id}"
+                click-to-modify="{adicon-1}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[6].iconUrl}" default-src="{data.homepage[6].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[6].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[6].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[6].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-1}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[7].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[7].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[7].id}_poi; C:8;"
+                click-mge2-report="{click-2}"
+                see-mge2-report="{see-2}"
+                load-mge2-report="{load-2}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category8_{data.homepage[7].id}__a1__c{data.homepage[7].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:8; lab:{data.homepage[7].name}_8_{data.homepage[7].id}_1__a{data.homepage[7].recommendStr}__b{data.homepage[7].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[7].name}_8_{data.homepage[7].id}_1__a{data.homepage[7].recommendStr}__b{data.homepage[7].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[7].name}_8_{data.homepage[7].id}_1__a{data.homepage[7].recommendStr}__b{data.homepage[7].fly.id}"
+                click-to-modify="{adicon-2}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[7].iconUrl}" default-src="{data.homepage[7].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[7].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[7].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[7].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-2}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[8].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[8].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[8].id}_poi; C:9;"
+                click-mge2-report="{click-3}"
+                see-mge2-report="{see-3}"
+                load-mge2-report="{load-3}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category9_{data.homepage[8].id}__a1__c{data.homepage[8].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:9; lab:{data.homepage[8].name}_9_{data.homepage[8].id}_1__a{data.homepage[8].recommendStr}__b{data.homepage[8].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[8].name}_9_{data.homepage[8].id}_1__a{data.homepage[8].recommendStr}__b{data.homepage[8].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[8].name}_9_{data.homepage[8].id}_1__a{data.homepage[8].recommendStr}__b{data.homepage[8].fly.id}"
+                click-to-modify="{adicon-3}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[8].iconUrl}" default-src="{data.homepage[8].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[8].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[8].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[8].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-3}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[9].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[9].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[9].id}_poi; C:10;"
+                click-mge2-report="{click-4}"
+                see-mge2-report="{see-4}"
+                load-mge2-report="{load-4}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category10_{data.homepage[9].id}__a1__c{data.homepage[9].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:10; lab:{data.homepage[9].name}_10_{data.homepage[9].id}_1__a{data.homepage[9].recommendStr}__b{data.homepage[9].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[9].name}_10_{data.homepage[9].id}_1__a{data.homepage[9].recommendStr}__b{data.homepage[9].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[9].name}_10_{data.homepage[9].id}_1__a{data.homepage[9].recommendStr}__b{data.homepage[9].fly.id}"
+                click-to-modify="{adicon-4}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[9].iconUrl}" default-src="{data.homepage[9].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[9].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[9].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[9].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-4}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <View style="width:10.56pt;height:0pt;"/>
+        </Container>
+        <View style="width:0pt;height:5pt;"/>
+        <Container
+            validity-check="{data.homepage[10].id}"
+            validity-check-visibility="displaynone"
+            style="height:56.64pt;flex-direction:row;justify-content:flex-start;align-items:flex-start;">
+            <View style="width:10.56pt;height:0pt;"/>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[10].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[10].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[10].id}_poi; C:11;"
+                click-mge2-report="{click-5}"
+                see-mge2-report="{see-5}"
+                load-mge2-report="{load-5}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category11_{data.homepage[10].id}__a1__c{data.homepage[10].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:11; lab:{data.homepage[10].name}_11_{data.homepage[10].id}_1__a{data.homepage[10].recommendStr}__b{data.homepage[10].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[10].name}_11_{data.homepage[10].id}_1__a{data.homepage[10].recommendStr}__b{data.homepage[10].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[10].name}_11_{data.homepage[10].id}_1__a{data.homepage[10].recommendStr}__b{data.homepage[10].fly.id}"
+                click-to-modify="{adicon-5}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[10].iconUrl}" default-src="{data.homepage[10].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[10].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[10].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[10].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-5}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[11].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[11].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[11].id}_poi; C:12;"
+                click-mge2-report="{click-6}"
+                see-mge2-report="{see-6}"
+                load-mge2-report="{load-6}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category12_{data.homepage[11].id}__a1__c{data.homepage[11].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:12; lab:{data.homepage[11].name}_12_{data.homepage[11].id}_1__a{data.homepage[11].recommendStr}__b{data.homepage[11].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[11].name}_12_{data.homepage[11].id}_1__a{data.homepage[11].recommendStr}__b{data.homepage[11].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[11].name}_12_{data.homepage[11].id}_1__a{data.homepage[11].recommendStr}__b{data.homepage[11].fly.id}"
+                click-to-modify="{adicon-6}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[11].iconUrl}" default-src="{data.homepage[11].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[11].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[11].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[11].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-6}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[12].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[12].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[12].id}_poi; C:13;"
+                click-mge2-report="{click-7}"
+                see-mge2-report="{see-7}"
+                load-mge2-report="{load-7}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category13_{data.homepage[12].id}__a1__c{data.homepage[12].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:13; lab:{data.homepage[12].name}_13_{data.homepage[12].id}_1__a{data.homepage[12].recommendStr}__b{data.homepage[12].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[12].name}_13_{data.homepage[12].id}_1__a{data.homepage[12].recommendStr}__b{data.homepage[12].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[12].name}_13_{data.homepage[12].id}_1__a{data.homepage[12].recommendStr}__b{data.homepage[12].fly.id}"
+                click-to-modify="{adicon-7}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[12].iconUrl}" default-src="{data.homepage[12].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[12].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[12].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[12].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-7}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[13].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[13].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[13].id}_poi; C:14;"
+                click-mge2-report="{click-8}"
+                see-mge2-report="{see-8}"
+                load-mge2-report="{load-8}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category14_{data.homepage[13].id}__a1__c{data.homepage[13].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:14; lab:{data.homepage[13].name}_14_{data.homepage[13].id}_1__a{data.homepage[13].recommendStr}__b{data.homepage[13].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[13].name}_14_{data.homepage[13].id}_1__a{data.homepage[13].recommendStr}__b{data.homepage[13].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[13].name}_14_{data.homepage[13].id}_1__a{data.homepage[13].recommendStr}__b{data.homepage[13].fly.id}"
+                click-to-modify="{adicon-8}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[13].iconUrl}" default-src="{data.homepage[13].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[13].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[13].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[13].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-8}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <Container style="width:67.77pt;height:56.64pt;flex-direction:column; align-items:center; justify-content:center"
+                validity-check="{data.homepage[14].id}"
+                validity-check-visibility="hidden"
+                click-url="{data.homepage[14].refUrl}"
+                click-tag-report="property:homepage; A:category; B:{data.homepage[14].id}_poi; C:15;"
+                click-mge2-report="{click-9}"
+                see-mge2-report="{see-9}"
+                load-mge2-report="{load-9}"
+                background-pressed="#f4f4f4"
+                click-g-report="homepage_category15_{data.homepage[14].id}__a1__c{data.homepage[14].recommendStr}"
+                click-mge-report="cid:团购-首页; act:点击品类; val:15; lab:{data.homepage[14].name}_15_{data.homepage[14].id}_1__a{data.homepage[14].recommendStr}__b{data.homepage[14].fly.id}"
+                load-mge-report="cid:团购-首页; act:加载品类; lab:{data.homepage[14].name}_15_{data.homepage[14].id}_1__a{data.homepage[14].recommendStr}__b{data.homepage[14].fly.id}"
+                see-mge-report="cid:团购-首页; act:看见_频道区; lab:{data.homepage[14].name}_15_{data.homepage[14].id}_1__a{data.homepage[14].recommendStr}__b{data.homepage[14].fly.id}"
+                click-to-modify="{adicon-9}"
+                click-to-modify-value="">
+                <Layer style="flex-grow:1;width:67.77pt;height:62.4pt;">
+                    <Container style="flex-grow:1;flex-direction:column;justify-content:center;align-items:center;">
+                        <Container style="width:26.88pt;height:21.12pt;">
+                            <Img style="flex-grow:1;" src="{data.homepage[14].iconUrl}" default-src="{data.homepage[14].nativeLocalImg}" scale-type="center-crop" loop-count="{data.homepage[14].playTimes}"/>
+                        </Container>
+                        <View style="width:0pt;height:8.64pt;"/>
+                        <Container style="width:67.77pt;flex-direction:row;justify-content:center;align-items:center;">
+                            <Text font-size="11.52sp" text="{data.homepage[14].name}" color="#666666"  line-number="1"/>
+                        </Container>
+                    </Container>
+                    <Container style="flex-grow:1;flex-direction:row;justify-content:flex-end;align-items:flex-start;">
+                        <Container validity-check="{data.homepage[14].fly.id}" style="width:40pt;height:15pt;margin-top:3pt;">
+                            <Img style="flex-grow:1;" src="{adicon-9}" scale-type="fit-xy"/>
+                        </Container>
+                    </Container>
+                </Layer>
+            </Container>
+            <View style="width:10.56pt;height:0pt;"/>
+        </Container>
+        <View validity-check="{data.homepage[10].id}" validity-check-visibility="displaynone" style="width:0pt;height:10.56pt;"/>
+    </Container>
+</Container>

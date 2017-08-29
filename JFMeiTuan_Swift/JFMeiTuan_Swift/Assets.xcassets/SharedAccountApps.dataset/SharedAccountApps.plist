@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>scheme</key>
+		<string>meituan0000</string>
+		<key>name</key>
+		<string>美团</string>
+		<key>icon</key>
+		<string>icon_meituan_logo</string>
+	</dict>
+	<dict>
+		<key>scheme</key>
+		<string>meituan0004movie</string>
+		<key>name</key>
+		<string>猫眼</string>
+		<key>icon</key>
+		<string>icon_maoyan_logo</string>
+	</dict>
+	<dict>
+		<key>scheme</key>
+		<string>meituanwaimai</string>
+		<key>name</key>
+		<string>美团外卖</string>
+		<key>icon</key>
+		<string>icon_waimai_logo</string>
+	</dict>
+</array>
+</plist>
