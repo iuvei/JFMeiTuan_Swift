@@ -16,29 +16,40 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //初始化导航栏
+        initNav()
+        
+        //初始化视图
+        initView()
+        
+        
+    }
+    //初始化导航栏
+    func initNav(){
+        self.title = "首页"
+    }
+    
+    //初始化视图
+    func initView() {
         //获取屏幕的尺寸
         let fullScreenSize = UIScreen.main.bounds.size
         // Do any additional setup after loading the view.
-        self.title = "首页"
-        self.view.backgroundColor = UIColor.gray
         
         let homeTableView = UITableView(frame :.zero, style:.plain)
         self.view.addSubview(homeTableView)
         
-        
+        //用snapkit布局
         homeTableView.snp.makeConstraints { (make) in
             make.height.equalTo(fullScreenSize.height-64-50)
             make.width.equalTo(fullScreenSize.width)
             make.center.equalTo(self.view)
         }
-
         
         homeTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: ID)
-        
         homeTableView.dataSource = self
         homeTableView.delegate = self
-        
     }
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return datas.count
@@ -53,10 +64,7 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         
         //返回cell
         return cell
-        
     }
-
-
 
     // 懒加载
     lazy var datas: [Int] = {

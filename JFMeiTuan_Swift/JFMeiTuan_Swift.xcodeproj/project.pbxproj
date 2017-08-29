@@ -17,10 +17,10 @@
 		E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2051F552CAB003A29B1 /* JFBaseTabBarController.swift */; };
 		E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2061F552CAB003A29B1 /* JFBaseViewController.swift */; };
 		E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20A1F552D01003A29B1 /* JFNearViewController.swift */; };
-		E874E20D1F552D11003A29B1 /* JFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20C1F552D11003A29B1 /* JFHomeViewController.swift */; };
 		E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20E1F552D1D003A29B1 /* JFOrderViewController.swift */; };
 		E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2101F552D26003A29B1 /* JFMeViewController.swift */; };
 		E874E2131F552D34003A29B1 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2121F552D34003A29B1 /* JFwalkViewController.swift */; };
+		E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +38,10 @@
 		E874E2051F552CAB003A29B1 /* JFBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseTabBarController.swift; sourceTree = "<group>"; };
 		E874E2061F552CAB003A29B1 /* JFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseViewController.swift; sourceTree = "<group>"; };
 		E874E20A1F552D01003A29B1 /* JFNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNearViewController.swift; sourceTree = "<group>"; };
-		E874E20C1F552D11003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; };
 		E874E20E1F552D1D003A29B1 /* JFOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOrderViewController.swift; sourceTree = "<group>"; };
 		E874E2101F552D26003A29B1 /* JFMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeViewController.swift; sourceTree = "<group>"; };
 		E874E2121F552D34003A29B1 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
+		E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,9 @@
 		E874E1FF1F552C72003A29B1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E874E20C1F552D11003A29B1 /* JFHomeViewController.swift */,
+				E874E2151F557E95003A29B1 /* Model */,
+				E874E2161F557E95003A29B1 /* Controller */,
+				E874E2171F557E95003A29B1 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -174,6 +176,28 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		E874E2151F557E95003A29B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E874E2161F557E95003A29B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E874E2171F557E95003A29B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E874E2131F552D34003A29B1 /* JFwalkViewController.swift in Sources */,
-				E874E20D1F552D11003A29B1 /* JFHomeViewController.swift in Sources */,
 				E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
 				E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */,
@@ -314,6 +337,7 @@
 				E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */,
 				E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */,
 				E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */,
+				E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */,
 				E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
