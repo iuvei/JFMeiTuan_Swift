@@ -11,7 +11,14 @@ import UIKit
 class JFListCell: UITableViewCell {
     
     //声明全局变量 供外部使用
-    open var buttonArray : NSArray!
+//    open var buttonArray : NSArray!
+    
+    var buttonArray : NSArray?{
+        didSet{
+            setUpUI()
+        }
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,7 +50,7 @@ class JFListCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setUpUI()
+//        setUpUI()
     }
     
     func setUpUI(){

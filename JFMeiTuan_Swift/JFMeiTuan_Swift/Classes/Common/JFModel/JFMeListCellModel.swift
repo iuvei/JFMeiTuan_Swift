@@ -9,5 +9,7 @@
 import UIKit
 
 class JFMeListCellModel: NSObject {
+    var buttonImageName : String?
+    var buttonTitle : String?
 
 }
