@@ -9,6 +9,10 @@
 import UIKit
 import SnapKit
 let ID  = "cell"
+let headerCellID  = "headerCellID"
+let ListCellID  = "ListCellID"
+
+
 
 
 class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate {

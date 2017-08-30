@@ -32,7 +32,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         let fullScreenSize = UIScreen.main.bounds.size
         // Do any additional setup after loading the view.
         
-        let meTableView = UITableView(frame :.zero, style:.plain)
+        let meTableView = UITableView(frame :.zero, style:.grouped)
         self.view.addSubview(meTableView)
         
         //用snapkit布局
@@ -43,35 +43,89 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         }
         
         meTableView.register(JFMeCell.classForCoder(), forCellReuseIdentifier: ID)
+        meTableView.register(JFMeHeaderCell.classForCoder(), forCellReuseIdentifier: headerCellID)
+        meTableView.register(JFListCell.classForCoder(), forCellReuseIdentifier: ListCellID)
+
+
         meTableView.dataSource = self
         meTableView.delegate = self
         
         meTableView.reloadData()
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        if section == 0 {
+            return 1
+        }else if section == 1 {
+            return 1
+        }
         return datas.count
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        //获取cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: ID, for: indexPath) as! JFMeCell
+  
+        var cell  = UITableViewCell()
         
-        //配置cell
-//        cell.textLabel?.text = "假数据 -\(datas[indexPath.row]) ";
-        
-        cell.headImageView?.image = UIImage.init(named: "baby_icon_booking")
-        cell.typeLabel?.text = "什么跟什么"
-        cell.infoLabel?.text = "卧槽"
-        cell.arrowImageView?.image = UIImage.init(named: "icon_cell_rightArrow")
+        if indexPath.section == 0 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: headerCellID, for: indexPath) as! JFMeHeaderCell
+            
+            //配置cell
+            //        cell.textLabel?.text = "假数据 -\(datas[indexPath.row]) ";
+            
+            cell.headImageView?.image = UIImage.init(named: "baby_icon_booking")
+            cell.accountLabel?.text = "lin18936679226"
+            cell.infoLabel?.text = "个人信息"
+            cell.arrowImageView?.image = UIImage.init(named: "icon_cell_rightArrow")
+            
+            //返回cell
+            return cell
 
-        
-        //返回cell
-        return cell
+            
+           
+            
+        }else if indexPath.section == 1 {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: ListCellID, for: indexPath) as! JFListCell
+//            
+//            cell.
+//            cell.buttonArray = ["JF","JF","JF"];
+            
+            cell = JFListCell.JFListCellWithTable(tableView)
+            return cell
+
+          
+            
+        }else{
+            //获取cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: ID, for: indexPath) as! JFMeCell
+            
+            //配置cell
+            //        cell.textLabel?.text = "假数据 -\(datas[indexPath.row]) ";
+            
+            cell.headImageView?.image = UIImage.init(named: "baby_icon_booking")
+            cell.typeLabel?.text = "什么跟什么"
+            cell.infoLabel?.text = "卧槽"
+            cell.arrowImageView?.image = UIImage.init(named: "icon_cell_rightArrow")
+            
+            //返回cell
+            return cell
+            
+        }
+
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+        if indexPath.section == 0 {
+            return 100
+        }
+        else if indexPath.section == 1 {
+            return 60
+        }
         return 44
     }
     
@@ -86,7 +140,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         // 创建一个存放int的数组
         var nums = [Int]()
         // 添加数据
-        for i in 0...50 {
+        for i in 0...5 {
             nums.append(i)
         }
         // 返回
