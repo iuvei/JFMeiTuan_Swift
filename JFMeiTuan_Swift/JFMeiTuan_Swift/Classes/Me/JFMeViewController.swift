@@ -64,7 +64,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         cell.headImageView?.image = UIImage.init(named: "baby_icon_booking")
         cell.typeLabel?.text = "什么跟什么"
         cell.infoLabel?.text = "卧槽"
-        cell.arrowImageView?.image = UIImage.init(named: "def_icon_food_arrow")
+        cell.arrowImageView?.image = UIImage.init(named: "icon_cell_rightArrow")
 
         
         //返回cell
@@ -72,8 +72,13 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        return 100
+        return 44
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        print(indexPath.row)
+    }
+
 
     
     // 懒加载
