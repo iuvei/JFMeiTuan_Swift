@@ -108,6 +108,11 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             let jsonArray = [dict1,dict2,dict3]
             let modelArray = JSON(jsonArray)
 
+//            let json = JSON(data: jsonArray)
+//            for (index, object) in modelArray {
+//                let name = object["title"].stringValue
+//                print(name)
+//            }
             
 //            (cell as! JFListCell).buttonArray = modelArray
             return cell
