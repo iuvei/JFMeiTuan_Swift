@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableViewDelegate {
     
@@ -96,6 +97,19 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
 //            cell.buttonArray = ["JF","JF","JF"];
             
             cell = JFListCell.JFListCellWithTable(tableView)
+//            let jsonArray = JSON(["收藏","评价","评价"])
+//            
+//            print(jsonArray)
+            
+            let dict1 = ["title":"收藏","imageName":"baby_icon_booking"]
+            let dict2 = ["title":"评价","imageName":"baby_icon_booking"]
+            let dict3 = ["title":"评价","imageName":"baby_icon_booking"]
+
+            let jsonArray = [dict1,dict2,dict3]
+            let modelArray = JSON(jsonArray)
+
+            
+//            (cell as! JFListCell).buttonArray = modelArray
             return cell
 
           

@@ -10,12 +10,11 @@ import UIKit
 
 class JFListCell: UITableViewCell {
     
-    //声明全局变量 供外部使用
-//    open var buttonArray : NSArray!
-    
+
+    //重写set方法
     var buttonArray : NSArray?{
         didSet{
-            setUpUI()
+            setUpUI(array: buttonArray!)
         }
     }
     
@@ -55,15 +54,15 @@ class JFListCell: UITableViewCell {
         
     }
     
-    func setUpUI(){
+    func setUpUI(array:NSArray){
         let buttonW:CGFloat = self.bounds.width/3
         let buttonH:CGFloat = self.bounds.height
         
-        for index in 0...2 {
+        for index in 0...array.count-1 {
             let listButton = UIButton(type: UIButtonType.custom)
             let rect = CGRect(x: buttonW * CGFloat(index), y: 0, width: buttonW, height: buttonH) // CGFloat, Double, Int
             listButton.frame = rect
-            listButton.setTitle("JF", for: .normal)
+            listButton.setTitle(array[index] as? String, for: .normal)
             listButton.setTitleColor(UIColor.red, for: .normal)
             listButton.backgroundColor = UIColor.gray
             self.contentView.addSubview(listButton)
