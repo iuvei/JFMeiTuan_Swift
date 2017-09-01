@@ -65,6 +65,7 @@ class JFListCell: UITableViewCell {
             listButton.frame = rect
             listButton.setTitle("JF", for: .normal)
             listButton.setTitleColor(UIColor.red, for: .normal)
+            listButton.backgroundColor = UIColor.gray
             self.contentView.addSubview(listButton)
 
         }
