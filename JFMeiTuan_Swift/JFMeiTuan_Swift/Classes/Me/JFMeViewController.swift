@@ -96,7 +96,6 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
 //            cell.buttonArray = ["JF","JF","JF"];
             
             cell = JFListCell.JFListCellWithTable(tableView)
-            cell.bu
             return cell
 
           

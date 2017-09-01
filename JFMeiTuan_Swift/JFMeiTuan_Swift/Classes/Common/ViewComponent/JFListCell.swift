@@ -33,6 +33,7 @@ class JFListCell: UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? JFListCell
         if  cell == nil {
             cell = JFListCell.init(style: .subtitle, reuseIdentifier: identifier)
+            
         }
         return cell!
     }
@@ -51,6 +52,7 @@ class JFListCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 //        setUpUI()
+        
     }
     
     func setUpUI(){
