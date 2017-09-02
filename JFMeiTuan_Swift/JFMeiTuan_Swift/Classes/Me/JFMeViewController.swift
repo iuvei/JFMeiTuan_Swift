@@ -34,6 +34,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         // Do any additional setup after loading the view.
         
         let meTableView = UITableView(frame :.zero, style:.grouped)
+
         self.view.addSubview(meTableView)
         
         //用snapkit布局
@@ -92,11 +93,11 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             
         }else if indexPath.section == 1 {
 //            let cell = tableView.dequeueReusableCell(withIdentifier: ListCellID, for: indexPath) as! JFListCell
-//            
+//
 //            cell.
 //            cell.buttonArray = ["JF","JF","JF"];
             
-            cell = JFListCell.JFListCellWithTable(tableView)
+            cell = JFListCell.CellWithTableView(tableView)
 //            let jsonArray = JSON(["收藏","评价","评价"])
 //            
 //            print(jsonArray)
@@ -106,7 +107,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             let dict3 = ["title":"评价","imageName":"baby_icon_booking"]
 
             let jsonArray = [dict1,dict2,dict3]
-            let modelArray = JSON(jsonArray)
+//            let modelArray = JSON(jsonArray)
 
 //            let json = JSON(data: jsonArray)
 //            for (index, object) in modelArray {
@@ -114,7 +115,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
 //                print(name)
 //            }
             
-//            (cell as! JFListCell).buttonArray = modelArray
+            (cell as! JFListCell).buttonArray = jsonArray as NSArray?
             return cell
 
           

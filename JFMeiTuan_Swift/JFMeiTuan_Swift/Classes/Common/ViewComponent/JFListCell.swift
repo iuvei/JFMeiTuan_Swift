@@ -21,12 +21,14 @@ class JFListCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.contentView.layoutIfNeeded()
+
         // Initialization code
     }
     
     
     /*构造方法创建cell*/
-    class func JFListCellWithTable(_ tableView:UITableView) -> JFListCell {
+    class func CellWithTableView(_ tableView:UITableView) -> JFListCell {
         
         let identifier = "JFListCell"
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? JFListCell
@@ -40,6 +42,8 @@ class JFListCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        self.contentView.layoutIfNeeded()
+
         
         // Configure the view for the selected state
     }
@@ -51,6 +55,8 @@ class JFListCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 //        setUpUI()
+        self.contentView.layoutIfNeeded()
+
         
     }
     
@@ -59,15 +65,30 @@ class JFListCell: UITableViewCell {
         let buttonH:CGFloat = self.bounds.height
         
         for index in 0...array.count-1 {
-            let listButton = UIButton(type: UIButtonType.custom)
+            let listButton = JFButton(type: UIButtonType.custom)
             let rect = CGRect(x: buttonW * CGFloat(index), y: 0, width: buttonW, height: buttonH) // CGFloat, Double, Int
             listButton.frame = rect
-            listButton.setTitle(array[index] as? String, for: .normal)
+            let dict  = array[index] as? NSDictionary
+            
+            listButton.setTitle(dict?["title"] as? String, for: .normal)
+            listButton .setImage(UIImage.init(named: (dict?["imageName"] as? String)!), for: .normal)
             listButton.setTitleColor(UIColor.red, for: .normal)
             listButton.backgroundColor = UIColor.gray
             self.contentView.addSubview(listButton)
 
         }
     }
+    
+    override func layoutSubviews() {
+        
+        super.layoutSubviews()
+        
+        self.contentView.layoutIfNeeded()
+        
+        print("hhhhhh:\(self.bounds)")
+        
+        
+    }
+
     
 }

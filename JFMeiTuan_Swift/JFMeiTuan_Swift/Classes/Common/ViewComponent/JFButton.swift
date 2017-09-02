@@ -43,9 +43,9 @@ class JFButton: UIButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         // 设置imageView
-        imageView?.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.width)
+        imageView?.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height*0.6)
         // 设置title
-        titleLabel?.frame = CGRect(x: 0, y: self.frame.width, width: self.frame.width, height: self.frame.height - self.frame.width)
+        titleLabel?.frame = CGRect(x: 0, y: self.frame.height*0.6, width: self.frame.width, height: self.frame.height*0.4)
     }
     
 }
