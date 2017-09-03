@@ -24,7 +24,14 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
     }
     //初始化导航栏
     func initNav(){
-        self.title = "我的"
+//        self.title = "我的"
+        //去除系统的所有的导航栏下划线
+//        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        
+        //去除系统的所有的导航栏下划线
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     //初始化视图
@@ -32,8 +39,11 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         //获取屏幕的尺寸
         let fullScreenSize = UIScreen.main.bounds.size
         // Do any additional setup after loading the view.
+        //[[UIScreen mainScreen] applicationFrame].size
         
         let meTableView = UITableView(frame :.zero, style:.grouped)
+        meTableView.separatorStyle = .none
+
 
         self.view.addSubview(meTableView)
         
@@ -74,7 +84,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         var cell  = UITableViewCell()
         
         if indexPath.section == 0 {
-            
+
             let cell = tableView.dequeueReusableCell(withIdentifier: headerCellID, for: indexPath) as! JFMeHeaderCell
             
             //配置cell
@@ -152,6 +162,16 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         print(indexPath.row)
     }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
+        if section == 0   {
+            return CGFloat.leastNormalMagnitude
+
+        }else if section == 1{
+            return CGFloat.leastNonzeroMagnitude
+        }
+        return tableView.sectionHeaderHeight
+    }
+
 
 
     

@@ -42,7 +42,6 @@ class JFListCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        self.contentView.layoutIfNeeded()
 
         
         // Configure the view for the selected state
@@ -55,7 +54,6 @@ class JFListCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 //        setUpUI()
-        self.contentView.layoutIfNeeded()
 
         
     }
@@ -73,7 +71,7 @@ class JFListCell: UITableViewCell {
             listButton.setTitle(dict?["title"] as? String, for: .normal)
             listButton .setImage(UIImage.init(named: (dict?["imageName"] as? String)!), for: .normal)
             listButton.setTitleColor(UIColor.red, for: .normal)
-            listButton.backgroundColor = UIColor.gray
+//            listButton.backgroundColor = UIColor.gray
             self.contentView.addSubview(listButton)
 
         }
@@ -84,6 +82,16 @@ class JFListCell: UITableViewCell {
         super.layoutSubviews()
         
         self.contentView.layoutIfNeeded()
+        
+        let lineVew = UIView.init()
+        lineVew.backgroundColor = UIColor.lightGray
+        self.contentView.addSubview(lineVew)
+        lineVew.snp.makeConstraints { (make) in
+            make.width.equalTo(self.bounds.width-20)
+            make.height.equalTo(0.5)
+            make.bottom.equalToSuperview()
+            make.centerX.equalToSuperview()
+        }
         
         print("hhhhhh:\(self.bounds)")
         
