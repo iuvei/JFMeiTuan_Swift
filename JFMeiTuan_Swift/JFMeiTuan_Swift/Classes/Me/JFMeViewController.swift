@@ -38,16 +38,17 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         
 //        self.navigationController?.navigationBar.tintColor = JFStyle.navigarionBarColor()
         
+        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(setting))
+        let play = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(notice))
+        
+        navigationItem.rightBarButtonItems = [add, play]
+
+        
 
     }
     
     
-    let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(setting))
-    let play = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(notice))
-    
-//    navigationItem.rightBarButtonItems = [editButton, searchButton]
-//    
-//    self.navigationItem.rightBarButtonItems = [add, play]
+   
 
     
     func setting(sender: AnyObject){

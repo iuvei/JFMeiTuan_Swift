@@ -29,7 +29,13 @@ class JFBaseNacigationController: UINavigationController {
         // 5.设置导航栏阴影图片
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
         
+        //设置导航栏的背景色
         navigationBar.barTintColor = JFStyle.navigarionBarColor()
+        
+        //设置状态栏的颜色
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
+        
+
 
         
     }
