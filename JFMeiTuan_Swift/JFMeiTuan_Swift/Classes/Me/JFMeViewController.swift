@@ -30,8 +30,11 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
 //        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
         //去除系统的所有的导航栏下划线
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
+//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+
     }
     
     //初始化视图
@@ -117,13 +120,18 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             let dict3 = ["title":"评价","imageName":"baby_icon_booking"]
 
             let jsonArray = [dict1,dict2,dict3]
-//            let modelArray = JSON(jsonArray)
+            let modelArray = JSON(jsonArray)
 
 //            let json = JSON(data: jsonArray)
 //            for (index, object) in modelArray {
 //                let name = object["title"].stringValue
 //                print(name)
 //            }
+            if let name = modelArray["address"].string {
+                //Do something you want
+            } else {
+                print(modelArray["address"].error!) // "Dictionary["address"] does not exist"
+            }
             
             (cell as! JFListCell).buttonArray = jsonArray as NSArray?
             return cell
