@@ -185,14 +185,17 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
     
     func cellList () -> Array<Any> {
 
-        let dict1 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
-        let dict2 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
-        let dict3 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
-        let dict4 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
-        let dict5 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
-        let dict6 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
+        let dict1 = ["headImageName":"baby_icon_booking","type":"我的钱包","info":""]
+        let dict2 = ["headImageName":"baby_icon_booking","type":"余额","info":"0.00"]
+        let dict3 = ["headImageName":"baby_icon_booking","type":"抵用券","info":"3张待使用"]
+        let dict4 = ["headImageName":"baby_icon_booking","type":"卡包","info":"一张"]
+        let dict5 = ["headImageName":"baby_icon_booking","type":"好友去哪","info":"跟好友一起玩"]
+        let dict6 = ["headImageName":"baby_icon_booking","type":"会员中心","info":""]
+        let dict7 = ["headImageName":"baby_icon_booking","type":"手机充值","info":""]
+        let dict8 = ["headImageName":"baby_icon_booking","type":"发票助手","info":""]
 
-        let jsonArray = [dict1,dict2,dict3,dict4,dict5,dict6]
+
+        let jsonArray = [dict1,dict2,dict3,dict4,dict5,dict6,dict7,dict8]
         
         return jsonArray
     }
