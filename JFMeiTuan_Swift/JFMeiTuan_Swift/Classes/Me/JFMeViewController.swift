@@ -79,9 +79,9 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             make.center.equalTo(self.view)
         }
         
-        meTableView.register(JFMeCell.classForCoder(), forCellReuseIdentifier: ID)
-        meTableView.register(JFMeHeaderCell.classForCoder(), forCellReuseIdentifier: headerCellID)
-        meTableView.register(JFListCell.classForCoder(), forCellReuseIdentifier: ListCellID)
+//        meTableView.register(JFMeCell.classForCoder(), forCellReuseIdentifier: ID)
+//        meTableView.register(JFMeHeaderCell.classForCoder(), forCellReuseIdentifier: headerCellID)
+//        meTableView.register(JFListCell.classForCoder(), forCellReuseIdentifier: ListCellID)
 
 
         meTableView.dataSource = self
@@ -157,7 +157,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         else if indexPath.section == 1 {
             return 60
         }
-        return 44
+        return 50
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){

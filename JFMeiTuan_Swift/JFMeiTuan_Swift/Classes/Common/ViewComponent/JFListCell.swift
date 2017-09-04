@@ -76,26 +76,26 @@ class JFListCell: UITableViewCell {
         }
     }
     
-    override func layoutSubviews() {
-        
-        super.layoutSubviews()
-        
-        self.contentView.layoutIfNeeded()
-        
-        let lineVew = UIView.init()
-        lineVew.backgroundColor = UIColor.lightGray
-        self.contentView.addSubview(lineVew)
-        lineVew.snp.makeConstraints { (make) in
-            make.width.equalTo(self.bounds.width-20)
-            make.height.equalTo(0.5)
-            make.bottom.equalToSuperview()
-            make.centerX.equalToSuperview()
-        }
-        
-        print("hhhhhh:\(self.bounds)")
-        
-        
-    }
+//    override func layoutSubviews() {
+//        
+//        super.layoutSubviews()
+//        
+//        self.contentView.layoutIfNeeded()
+//        
+//        let lineVew = UIView.init()
+//        lineVew.backgroundColor = UIColor.lightGray
+//        self.contentView.addSubview(lineVew)
+//        lineVew.snp.makeConstraints { (make) in
+//            make.width.equalTo(self.bounds.width-20)
+//            make.height.equalTo(0.5)
+//            make.bottom.equalToSuperview()
+//            make.centerX.equalToSuperview()
+//        }
+//        
+//        print("hhhhhh:\(self.bounds)")
+//        
+//        
+//    }
 
     
 }
