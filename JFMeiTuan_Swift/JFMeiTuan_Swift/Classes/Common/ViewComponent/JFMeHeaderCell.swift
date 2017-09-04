@@ -16,10 +16,34 @@ class JFMeHeaderCell: UITableViewCell {
     var infoLabel : UILabel!
     var arrowImageView : UIImageView!
     
+    //定义去全局的变量供外部使用
+    var meInfoModel : JFMeInfoModel?{
+        didSet{
+            //重写set方法
+            headImageView.image = UIImage.init(named:  (meInfoModel?.headImageName)!)
+            accountLabel.text = meInfoModel?.acconnt
+            infoLabel.text = meInfoModel?.info
+            arrowImageView.image = UIImage.init(named: "icon_cell_rightArrow")
+
+        }
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    /*构造方法创建cell*/
+    class func CellWithTableView(_ tableView:UITableView) -> JFMeHeaderCell {
+        
+        let identifier = "JFMeHeaderCell"
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? JFMeHeaderCell
+        if  cell == nil {
+            cell = JFMeHeaderCell.init(style: .subtitle, reuseIdentifier: identifier)
+            
+        }
+        return cell!
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

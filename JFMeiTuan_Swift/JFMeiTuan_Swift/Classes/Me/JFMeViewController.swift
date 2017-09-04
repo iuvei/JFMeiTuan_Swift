@@ -109,23 +109,16 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         var cell  = UITableViewCell()
         
         if indexPath.section == 0 {
+            
+            cell = JFMeHeaderCell.CellWithTableView(tableView)
+            
+            let InfoDictionary = ["acconnt":"lin18936679226","info":"个人信息","headImageName":"baby_icon_booking"]
+            
+            //传递模型
+            (cell as? JFMeHeaderCell)? .meInfoModel =  JFMeInfoModel(JSON: InfoDictionary)//地点转模型
 
-            let cell = tableView.dequeueReusableCell(withIdentifier: headerCellID, for: indexPath) as! JFMeHeaderCell
-            
-            //配置cell
-            //        cell.textLabel?.text = "假数据 -\(datas[indexPath.row]) ";
-            
-            cell.headImageView?.image = UIImage.init(named: "baby_icon_booking")
-            cell.accountLabel?.text = "lin18936679226"
-            cell.infoLabel?.text = "个人信息"
-            cell.arrowImageView?.image = UIImage.init(named: "icon_cell_rightArrow")
-            
-            //返回cell
             return cell
 
-            
-           
-            
         }else if indexPath.section == 1 {
             //创建cell
             cell = JFListCell.CellWithTableView(tableView)

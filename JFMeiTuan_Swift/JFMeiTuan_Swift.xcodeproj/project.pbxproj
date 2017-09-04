@@ -27,6 +27,7 @@
 		E874E2211F56A124003A29B1 /* JFMeListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2201F56A124003A29B1 /* JFMeListCellModel.swift */; };
 		E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ECF81F590F40003A29B1 /* JFButton.swift */; };
 		E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */; };
+		E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		E874E2201F56A124003A29B1 /* JFMeListCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeListCellModel.swift; sourceTree = "<group>"; };
 		E874ECF81F590F40003A29B1 /* JFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFButton.swift; sourceTree = "<group>"; };
 		E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFStyle.swift; sourceTree = "<group>"; };
+		E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				E874E2201F56A124003A29B1 /* JFMeListCellModel.swift */,
+				E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */,
 			);
 			path = JFModel;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */,
 				E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */,
 				E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */,
+				E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */,
 				E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */,
 				E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */,
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
