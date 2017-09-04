@@ -28,6 +28,7 @@
 		E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ECF81F590F40003A29B1 /* JFButton.swift */; };
 		E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */; };
 		E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */; };
+		E874ED041F5D5F54003A29B1 /* JFMeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ED031F5D5F54003A29B1 /* JFMeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		E874ECF81F590F40003A29B1 /* JFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFButton.swift; sourceTree = "<group>"; };
 		E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFStyle.swift; sourceTree = "<group>"; };
 		E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeInfoModel.swift; sourceTree = "<group>"; };
+		E874ED031F5D5F54003A29B1 /* JFMeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 			children = (
 				E874E2201F56A124003A29B1 /* JFMeListCellModel.swift */,
 				E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */,
+				E874ED031F5D5F54003A29B1 /* JFMeModel.swift */,
 			);
 			path = JFModel;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
 				E874E2211F56A124003A29B1 /* JFMeListCellModel.swift in Sources */,
 				E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */,
+				E874ED041F5D5F54003A29B1 /* JFMeModel.swift in Sources */,
 				E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */,
 				E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */,
 				E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */,

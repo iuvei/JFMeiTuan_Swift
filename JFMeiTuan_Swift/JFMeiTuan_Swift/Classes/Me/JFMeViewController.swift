@@ -101,7 +101,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         }else if section == 1 {
             return 1
         }
-        return datas.count
+        return cellList().count
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -135,16 +135,13 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
           
             
         }else{
-            //获取cell
-            let cell = tableView.dequeueReusableCell(withIdentifier: ID, for: indexPath) as! JFMeCell
+            //创建cell
+            cell =  JFMeCell.CellWithTableView(tableView)
+            //字典数组转模型数组
+            let modelArray = Mapper<JFMeModel>().mapArray(JSONArray: cellList() as! [[String : Any]])
             
-            //配置cell
-            //        cell.textLabel?.text = "假数据 -\(datas[indexPath.row]) ";
-            
-            cell.headImageView?.image = UIImage.init(named: "baby_icon_booking")
-            cell.typeLabel?.text = "什么跟什么"
-            cell.infoLabel?.text = "卧槽"
-            cell.arrowImageView?.image = UIImage.init(named: "icon_cell_rightArrow")
+            //传递模型
+            (cell as? JFMeCell)? .meModel = modelArray[indexPath.row]
             
             //返回cell
             return cell
@@ -182,6 +179,20 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         let dict3 = ["buttonTitle":"评价","buttonImageName":"baby_icon_booking"]
         
         let jsonArray = [dict1,dict2,dict3]
+        
+        return jsonArray
+    }
+    
+    func cellList () -> Array<Any> {
+
+        let dict1 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
+        let dict2 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
+        let dict3 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
+        let dict4 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
+        let dict5 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
+        let dict6 = ["headImageName":"baby_icon_booking","type":"什么跟什么","info":"卧槽"]
+
+        let jsonArray = [dict1,dict2,dict3,dict4,dict5,dict6]
         
         return jsonArray
     }

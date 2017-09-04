@@ -10,16 +10,40 @@ import UIKit
 
 class JFMeCell: UITableViewCell {
     
+    
     //声明全局变量 供外部使用
     var headImageView : UIImageView!
     var typeLabel : UILabel!
     var infoLabel : UILabel!
     var arrowImageView : UIImageView!
+    
+    var meModel : JFMeModel?{
+        didSet{
+            //重写set方法
+            headImageView.image = UIImage.init(named:  (meModel?.headImageName)!)
+            typeLabel.text = meModel?.type
+            infoLabel.text = meModel?.info
+            arrowImageView.image = UIImage.init(named: "icon_cell_rightArrow")
+            
+        }
+    }
 
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    /*构造方法创建cell*/
+    class func CellWithTableView(_ tableView:UITableView) -> JFMeCell {
+        
+        let identifier = "JFMeCell"
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? JFMeCell
+        if  cell == nil {
+            cell = JFMeCell.init(style: .subtitle, reuseIdentifier: identifier)
+            
+        }
+        return cell!
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
