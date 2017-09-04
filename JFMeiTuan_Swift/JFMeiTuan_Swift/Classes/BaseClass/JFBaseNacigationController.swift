@@ -15,10 +15,10 @@ class JFBaseNacigationController: UINavigationController {
 
         // Do any additional setup after loading the view.
         // 1.设置导航栏标题属性：设置标题颜色
-//        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-//        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white];
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white];
         // 2.设置导航栏前景色：设置item指示色
-//        self.navigationController?.navigationBar.tintColor = UIColor.purple
+       navigationBar.tintColor = JFStyle.clearColor()
         
         // 3.设置导航栏半透明
         self.navigationBar.isTranslucent = false
@@ -28,6 +28,10 @@ class JFBaseNacigationController: UINavigationController {
         
         // 5.设置导航栏阴影图片
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        navigationBar.barTintColor = JFStyle.navigarionBarColor()
+
+        
     }
 
     override func didReceiveMemoryWarning() {

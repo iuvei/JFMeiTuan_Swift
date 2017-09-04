@@ -33,13 +33,33 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         //去除系统的所有的导航栏下划线
 //        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
 //        navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+//        self.navigationController?.navigationBar.tintColor = JFStyle.navigarionBarColor()
+        
 
     }
     
+    
+    let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(setting))
+    let play = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(notice))
+    
+//    navigationItem.rightBarButtonItems = [editButton, searchButton]
+//    
+//    self.navigationItem.rightBarButtonItems = [add, play]
+
+    
+    func setting(sender: AnyObject){
+        
+    }
+    func notice(sender: AnyObject){
+        
+    }
+   
     //初始化视图
     func initView() {
+        
         //获取屏幕的尺寸
         let fullScreenSize = UIScreen.main.bounds.size
         // Do any additional setup after loading the view.
@@ -106,31 +126,13 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
            
             
         }else if indexPath.section == 1 {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: ListCellID, for: indexPath) as! JFListCell
-//
-//            cell.
-//            cell.buttonArray = ["JF","JF","JF"];
-            
+            //创建cell
             cell = JFListCell.CellWithTableView(tableView)
-//            let jsonArray = JSON(["收藏","评价","评价"])
-//            
-//            print(jsonArray)
-            
-            let dict1 = ["buttonTitle":"收藏","buttonImageName":"baby_icon_booking"]
-            let dict2 = ["buttonTitle":"评价","buttonImageName":"baby_icon_booking"]
-            let dict3 = ["buttonTitle":"评价","buttonImageName":"baby_icon_booking"]
 
-            let jsonArray = [dict1,dict2,dict3]
-//            let modelArray = JSON(jsonArray)
-            
+            //获取是三个按钮的数组源
+            let jsonArray = listButtons()
             //字典数组转模型数组
-            let buttons:[JFMeListCellModel] = Mapper<JFMeListCellModel>().mapArray(JSONArray: jsonArray)
-
-//            let json = JSON(data: jsonArray)
-//            for (index, object) in modelArray {
-//                let name = object["title"].stringValue
-//                print(name)
-//            }
+            let buttons:[JFMeListCellModel] = Mapper<JFMeListCellModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
          
             //传递模型数组
             (cell as! JFListCell).buttonArray = buttons as NSArray?
@@ -180,9 +182,16 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         return tableView.sectionHeaderHeight
     }
 
+    func listButtons() -> Array<Any> {
+        let dict1 = ["buttonTitle":"收藏","buttonImageName":"baby_icon_booking"]
+        let dict2 = ["buttonTitle":"评价","buttonImageName":"baby_icon_booking"]
+        let dict3 = ["buttonTitle":"评价","buttonImageName":"baby_icon_booking"]
+        
+        let jsonArray = [dict1,dict2,dict3]
+        
+        return jsonArray
+    }
 
-
-    
     // 懒加载
     lazy var datas: [Int] = {
         // 创建一个存放int的数组

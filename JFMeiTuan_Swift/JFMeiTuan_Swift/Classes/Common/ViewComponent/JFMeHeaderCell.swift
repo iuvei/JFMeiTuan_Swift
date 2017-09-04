@@ -34,7 +34,7 @@ class JFMeHeaderCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        self.contentView.backgroundColor = JFStyle.navigarionBarColor()
         setUpUI()
     }
     
@@ -47,9 +47,11 @@ class JFMeHeaderCell: UITableViewCell {
         
         accountLabel = UILabel()
         accountLabel.font = UIFont.systemFont(ofSize: 14)
+        accountLabel.textColor = UIColor.white
+
         
         infoLabel = UILabel()
-        infoLabel.textColor = UIColor.gray
+        infoLabel.textColor = UIColor.white
         infoLabel.font = UIFont.systemFont(ofSize: 12)
         
         
