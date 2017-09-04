@@ -91,7 +91,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
 
     
@@ -100,8 +100,10 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             return 1
         }else if section == 1 {
             return 1
+        }else if section == 2{
+            return cellList1().count
         }
-        return cellList().count
+        return cellList2().count
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -120,25 +122,41 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             return cell
 
         }else if indexPath.section == 1 {
-            //创建cell
-            cell = JFListCell.CellWithTableView(tableView)
-
+            
             //获取是三个按钮的数组源
             let jsonArray = listButtons()
             //字典数组转模型数组
             let buttons:[JFMeListCellModel] = Mapper<JFMeListCellModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            
+            //创建cell 并传一个model  array
+            cell = JFListCell.CellWithTableView(tableView,array: buttons as NSArray)
+
+           
          
             //传递模型数组
-            (cell as! JFListCell).buttonArray = buttons as NSArray?
+//            (cell as! JFListCell).buttonArray = buttons as NSArray?
             return cell
 
           
             
-        }else{
+        }else if indexPath.section == 2 {
             //创建cell
             cell =  JFMeCell.CellWithTableView(tableView)
             //字典数组转模型数组
-            let modelArray = Mapper<JFMeModel>().mapArray(JSONArray: cellList() as! [[String : Any]])
+            let modelArray = Mapper<JFMeModel>().mapArray(JSONArray: cellList1() as! [[String : Any]])
+            
+            //传递模型
+            (cell as? JFMeCell)? .meModel = modelArray[indexPath.row]
+            
+            //返回cell
+            return cell
+        
+        }
+        else{
+            //创建cell
+            cell =  JFMeCell.CellWithTableView(tableView)
+            //字典数组转模型数组
+            let modelArray = Mapper<JFMeModel>().mapArray(JSONArray: cellList2() as! [[String : Any]])
             
             //传递模型
             (cell as? JFMeCell)? .meModel = modelArray[indexPath.row]
@@ -183,19 +201,29 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         return jsonArray
     }
     
-    func cellList () -> Array<Any> {
+    func cellList1 () -> Array<Any> {
 
         let dict1 = ["headImageName":"baby_icon_booking","type":"我的钱包","info":""]
         let dict2 = ["headImageName":"baby_icon_booking","type":"余额","info":"0.00"]
         let dict3 = ["headImageName":"baby_icon_booking","type":"抵用券","info":"3张待使用"]
         let dict4 = ["headImageName":"baby_icon_booking","type":"卡包","info":"一张"]
+
+
+
+        let jsonArray = [dict1,dict2,dict3,dict4]
+        
+        return jsonArray
+    }
+    
+    func cellList2 () -> Array<Any> {
+
         let dict5 = ["headImageName":"baby_icon_booking","type":"好友去哪","info":"跟好友一起玩"]
         let dict6 = ["headImageName":"baby_icon_booking","type":"会员中心","info":""]
         let dict7 = ["headImageName":"baby_icon_booking","type":"手机充值","info":""]
         let dict8 = ["headImageName":"baby_icon_booking","type":"发票助手","info":""]
-
-
-        let jsonArray = [dict1,dict2,dict3,dict4,dict5,dict6,dict7,dict8]
+        
+        
+        let jsonArray = [dict5,dict6,dict7,dict8]
         
         return jsonArray
     }

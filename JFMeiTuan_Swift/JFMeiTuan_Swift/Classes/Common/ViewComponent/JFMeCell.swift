@@ -103,7 +103,7 @@ class JFMeCell: UITableViewCell {
         }
         
         infoLabel.snp.makeConstraints { (make ) in
-            make.right.equalTo(arrowImageView.snp.left).offset(-10)
+            make.right.equalTo(arrowImageView.snp.left).offset(-5)
             make.width.equalTo(100)
             make.height.equalToSuperview()
             make.centerY.equalToSuperview()
@@ -117,6 +117,16 @@ class JFMeCell: UITableViewCell {
             make.centerY.equalToSuperview()
         }
         
+        let lineVew = UIView.init()
+        lineVew.backgroundColor = JFStyle.lineColor()
+        self.contentView.addSubview(lineVew)
+        lineVew.snp.makeConstraints { (make) in
+            make.width.equalTo(JFStyle.screenWidth()-40)
+            make.height.equalTo(0.3)
+            make.bottom.equalToSuperview()
+            make.centerX.equalToSuperview()
+        }
+        
         
         
     }
@@ -127,15 +137,7 @@ class JFMeCell: UITableViewCell {
         
         self.contentView.layoutIfNeeded()
         
-        let lineVew = UIView.init()
-        lineVew.backgroundColor = UIColor.lightGray
-        self.contentView.addSubview(lineVew)
-        lineVew.snp.makeConstraints { (make) in
-            make.width.equalTo(self.bounds.width-40)
-            make.height.equalTo(0.3)
-            make.bottom.equalToSuperview()
-            make.centerX.equalToSuperview()
-        }
+   
         
         print("hhhhhh:\(self.bounds)")
         

@@ -20,8 +20,25 @@ class JFStyle: NSObject {
         return self.JFInitColor(red: 86.0, green: 190.0, blue: 173.0)
     }
     
+    //下划线的背景色
+    class func lineColor() ->UIColor {
+        return UIColor.init(white: 0, alpha: 0.1)
+    }
+    
     //透明色
     class func clearColor() ->UIColor {
         return UIColor.clear
     }
+    
+    //屏幕的宽度
+    class func screenWidth() ->CGFloat {
+        return UIScreen.main.bounds.size.width
+    }
+    //屏幕的高度
+    class func screenHeight() ->CGFloat {
+        return UIScreen.main.bounds.size.height
+    }
+    
+    
+    
 }
