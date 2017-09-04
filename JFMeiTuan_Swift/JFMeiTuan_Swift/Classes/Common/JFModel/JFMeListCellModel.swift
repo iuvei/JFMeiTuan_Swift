@@ -7,9 +7,25 @@
 //
 
 import UIKit
-
-class JFMeListCellModel: NSObject {
+import ObjectMapper
+//继承 Mappable
+class JFMeListCellModel: Mappable {
     var buttonImageName : String?
     var buttonTitle : String?
+    
+    
+    init(){
+    }
+    
+    required init?(map: Map) {
+    }
+    
+    // Mappable 一一映射
+    func mapping(map: Map) {
+        buttonImageName    <- map["buttonImageName"]
+        buttonTitle      <- map["buttonTitle"]
+       
+    }
 
 }
+

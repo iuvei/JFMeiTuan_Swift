@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import ObjectMapper
 
 class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableViewDelegate {
     
@@ -115,25 +116,24 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
 //            
 //            print(jsonArray)
             
-            let dict1 = ["title":"收藏","imageName":"baby_icon_booking"]
-            let dict2 = ["title":"评价","imageName":"baby_icon_booking"]
-            let dict3 = ["title":"评价","imageName":"baby_icon_booking"]
+            let dict1 = ["buttonTitle":"收藏","buttonImageName":"baby_icon_booking"]
+            let dict2 = ["buttonTitle":"评价","buttonImageName":"baby_icon_booking"]
+            let dict3 = ["buttonTitle":"评价","buttonImageName":"baby_icon_booking"]
 
             let jsonArray = [dict1,dict2,dict3]
-            let modelArray = JSON(jsonArray)
+//            let modelArray = JSON(jsonArray)
+            
+            //字典数组转模型数组
+            let buttons:[JFMeListCellModel] = Mapper<JFMeListCellModel>().mapArray(JSONArray: jsonArray)
 
 //            let json = JSON(data: jsonArray)
 //            for (index, object) in modelArray {
 //                let name = object["title"].stringValue
 //                print(name)
 //            }
-            if let name = modelArray["address"].string {
-                //Do something you want
-            } else {
-                print(modelArray["address"].error!) // "Dictionary["address"] does not exist"
-            }
-            
-            (cell as! JFListCell).buttonArray = jsonArray as NSArray?
+         
+            //传递模型数组
+            (cell as! JFListCell).buttonArray = buttons as NSArray?
             return cell
 
           

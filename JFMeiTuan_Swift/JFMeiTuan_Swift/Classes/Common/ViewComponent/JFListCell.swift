@@ -10,10 +10,10 @@ import UIKit
 
 class JFListCell: UITableViewCell {
     
-
-    //重写set方法
+    //定义去全局的变量供外部使用
     var buttonArray : NSArray?{
         didSet{
+            //重写set方法
             setUpUI(array: buttonArray!)
         }
     }
@@ -21,7 +21,6 @@ class JFListCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.layoutIfNeeded()
 
         // Initialization code
     }
@@ -53,11 +52,11 @@ class JFListCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-//        setUpUI()
 
         
     }
     
+    //根据外部传进来的model进行 控件创建和使用
     func setUpUI(array:NSArray){
         let buttonW:CGFloat = self.bounds.width/3
         let buttonH:CGFloat = self.bounds.height
@@ -66,10 +65,10 @@ class JFListCell: UITableViewCell {
             let listButton = JFButton(type: UIButtonType.custom)
             let rect = CGRect(x: buttonW * CGFloat(index), y: 0, width: buttonW, height: buttonH) // CGFloat, Double, Int
             listButton.frame = rect
-            let dict  = array[index] as? NSDictionary
+            let buttonModel  = array[index] as? JFMeListCellModel
             
-            listButton.setTitle(dict?["title"] as? String, for: .normal)
-            listButton .setImage(UIImage.init(named: (dict?["imageName"] as? String)!), for: .normal)
+            listButton.setTitle(buttonModel?.buttonTitle, for: .normal)
+            listButton .setImage(UIImage.init(named: (buttonModel?.buttonImageName)!), for: .normal)
             listButton.setTitleColor(UIColor.red, for: .normal)
 //            listButton.backgroundColor = UIColor.gray
             self.contentView.addSubview(listButton)
