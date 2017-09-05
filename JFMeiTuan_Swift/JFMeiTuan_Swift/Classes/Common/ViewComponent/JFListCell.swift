@@ -11,6 +11,9 @@ import UIKit
 class JFListCell: UITableViewCell {
     //定义去全局的button用来接收外面传进来的模型数组
     var buttonArray : NSArray!
+    
+    //声明一个代理
+    weak var delegate:listButtonDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -92,25 +95,41 @@ class JFListCell: UITableViewCell {
             listButton.setTitle(buttonModel?.buttonTitle, for: .normal)
             listButton .setImage(UIImage.init(named: (buttonModel?.buttonImageName)!), for: .normal)
             listButton.setTitleColor(UIColor.red, for: .normal)
+            listButton.tag = index
+            //注意swift3和swift的区别
+            /*
+             Swift 3之前 事件的监听很简单,直接"btnClick"就可以 ,但是这样存在一定的问题,以字符串的形式进行监听,如果字符串拼写错误,编译器是编译不出来的!
+             */
+            listButton.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
             self.contentView.addSubview(listButton)
             
         }
 
         
-        let lineVew = UIView.init()
-        lineVew.backgroundColor = JFStyle.lineColor()
-        self.contentView.addSubview(lineVew)
-        lineVew.snp.makeConstraints { (make) in
-            make.width.equalTo(self.bounds.width-20)
-            make.height.equalTo(0.5)
-            make.bottom.equalToSuperview()
-            make.centerX.equalToSuperview()
-        }
+//        let lineVew = UIView.init()
+//        lineVew.backgroundColor = JFStyle.lineColor()
+//        self.contentView.addSubview(lineVew)
+//        lineVew.snp.makeConstraints { (make) in
+//            make.width.equalTo(self.bounds.width-20)
+//            make.height.equalTo(0.5)
+//            make.bottom.equalToSuperview()
+//            make.centerX.equalToSuperview()
+//        }
         
 //        print("hhhhhh:\(self.bounds)")
         
         
     }
-
     
+    func buttonTapped(sender:UIButton)  {
+//        print("\(sender.tag)")
+        //调用协议的方法
+        delegate?.listButtonClick(btn: sender)
+        
+    }
+    
+}
+//定义一个协议 声名一个协议的方法 listButtonClick
+protocol listButtonDelegate:NSObjectProtocol {
+    func listButtonClick(btn: UIButton)
 }

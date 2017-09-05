@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 import ObjectMapper
 
-class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableViewDelegate {
+class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableViewDelegate,listButtonDelegate {//遵循协议
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,6 +130,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             
             //创建cell 并传一个model  array
             cell = JFListCell.CellWithTableView(tableView,array: buttons as NSArray)
+            (cell as? JFListCell)?.delegate = self//委托给当前控制器
 
            
          
@@ -239,6 +240,12 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         // 返回
         return nums
     }()
+    
+    //实现代理方法
+    func listButtonClick(btn: UIButton){
+        print("\(btn.tag)")
+    }
+
     
     
     override func didReceiveMemoryWarning() {
