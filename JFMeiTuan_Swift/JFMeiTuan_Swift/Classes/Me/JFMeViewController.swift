@@ -38,6 +38,8 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         
 //        self.navigationController?.navigationBar.tintColor = JFStyle.navigarionBarColor()
         
+      
+        
         let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(setting))
         let play = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(notice))
         
