@@ -187,7 +187,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
             return CGFloat.leastNormalMagnitude
 
         }else if section == 1{
-            return CGFloat.leastNonzeroMagnitude
+            return CGFloat.leastNormalMagnitude
         }
         return tableView.sectionHeaderHeight
     }

@@ -16,10 +16,21 @@ let ListCellID  = "ListCellID"
 
 
 class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    /// 自定义导航栏
+    private lazy var customNavigationBar = UIView()
+    /// 自定义导航栏完全不透明时的偏移量边界(根据需求设定)
+    private let alphaChangeBoundary = JFStyle.screenWidth() * (212 / 375) - 64
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    
+        
+     
+        
         //初始化导航栏
         initNav()
         
@@ -31,6 +42,28 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     //初始化导航栏
     func initNav(){
         self.title = "首页"
+        
+        customNavigationBar.frame = CGRect(x: 0, y: 0, width: JFStyle.screenWidth(), height: 64)
+        customNavigationBar.backgroundColor = UIColor.red
+        
+//        self.navigationController?.view.insertSubview(customNavigationBar, at: 1)
+        
+        // 1.设置导航栏标题属性：设置标题颜色
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        // 2.设置导航栏前景色：设置item指示色
+        self.navigationController?.navigationBar.tintColor = UIColor.purple
+        
+        // 3.设置导航栏半透明
+        self.navigationController?.navigationBar.isTranslucent = true
+        
+        // 4.设置导航栏背景图片
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        
+        // 5.设置导航栏阴影图片
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+
+        
+        
     }
     
     //初始化视图
@@ -44,9 +77,9 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         
         //用snapkit布局
         homeTableView.snp.makeConstraints { (make) in
-            make.height.equalTo(fullScreenSize.height-64-50)
+            make.height.equalTo(fullScreenSize.height)
             make.width.equalTo(fullScreenSize.width)
-            make.center.equalTo(self.view)
+            make.top.equalToSuperview()
         }
         
         homeTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: ID)
