@@ -73,8 +73,9 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         
         //用snapkit布局
         homeTableView.snp.makeConstraints { (make) in
-            make.height.equalTo(fullScreenSize.height)
-            make.width.equalTo(fullScreenSize.width)
+//            make.height.equalTo(fullScreenSize.height)
+//            make.width.equalTo(fullScreenSize.width)
+            make.width.height.equalToSuperview()
             make.top.equalToSuperview()
         }
         
