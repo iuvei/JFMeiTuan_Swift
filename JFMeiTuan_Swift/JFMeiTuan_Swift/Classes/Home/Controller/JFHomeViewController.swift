@@ -84,9 +84,18 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         homeTableView.delegate = self
     }
     
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 5
+    }
+
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return datas.count
+        if section == 4 {
+            return datas.count
+
+        }
+        return 1
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
