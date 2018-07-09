@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import ObjectMapper
+import Alamofire
 
 class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableViewDelegate,listButtonDelegate {//遵循协议
     
@@ -20,8 +21,14 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         
         //初始化视图
         initView()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        
+        //网络请求
+        initData()
     }
     //初始化导航栏
     func initNav(){
@@ -246,6 +253,37 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
     //实现代理方法
     func listButtonClick(btn: UIButton){
         print("\(btn.tag)")
+    }
+    
+    
+    
+    func initData() {
+        let urlString = "https://www.sojson.com/open/api/weather/json.shtml?city=北京"
+        Alamofire.request(urlString)
+            .responseJSON { response in
+                print(response.timeline)
+                print(response.result)
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+//        let urlStr = "http://192.168.88.200:8080/MJServer/video?type=XML"
+        
+//        Alamofire.request(urlString,method:.get )
+//
+//            .response { (request:NSURLRequest?, response:HTTPURLResponse?, responseData:NSData?, error:NSError?) in
+//
+//                /*
+//                 网络请求结束，成功时 error == nil。请求返回的数据存在 responseData 中，为 NSData 格式。
+//                 */
+//        }
+
+
+        
     }
 
     
