@@ -189,6 +189,7 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        tableView.deselectRow(at: indexPath, animated: true)
         print(indexPath.row)
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
@@ -255,18 +256,16 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
         print("\(btn.tag)")
     }
     
-    
-    
     func initData() {
-        let urlString = "https://www.sojson.com/open/api/weather/json.shtml?city=北京"
+        let urlString = "http://www.weather.com.cn/data/cityinfo/101010100.html"
         Alamofire.request(urlString)
             .responseJSON { response in
-                print(response.timeline)
-                print(response.result)
             switch response.result {
             case .success:
-                print("Validation Successful")
+                print("请求成功")
+                print("\(response.result)")
             case .failure(let error):
+                print("请求失败")
                 print(error)
             }
         }
@@ -281,13 +280,8 @@ class JFMeViewController: JFBaseViewController ,UITableViewDataSource,UITableVie
 //                 网络请求结束，成功时 error == nil。请求返回的数据存在 responseData 中，为 NSData 格式。
 //                 */
 //        }
-
-
-        
     }
 
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
