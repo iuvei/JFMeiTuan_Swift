@@ -24,8 +24,9 @@ class JFBaseTabBarController: UITabBarController {
         let JFBaseNearNav = JFBaseNacigationController.init(rootViewController: JFNearViewController())
         let JFBaseWalkNav = JFBaseNacigationController.init(rootViewController: JFwalkViewController())
         let JFBaseOrderNav = JFBaseNacigationController.init(rootViewController: JFOrderViewController())
-        let JFBaseMeNav = JFBaseNacigationController.init(rootViewController: JFMeViewController())
-        
+//        let JFBaseMeNav = JFBaseNacigationController.init(rootViewController: JFMeViewController())
+        let JFBaseMeNav = JFBaseNacigationController.init(rootViewController: JFMineViewController())
+
         self.viewControllers = [JFBaseHomeNav,JFBaseNearNav,JFBaseWalkNav,JFBaseOrderNav,JFBaseMeNav]
 //        self.selectedViewController = JFBaseMeNav
         self.tabBar.isTranslucent = false//tabbar不透明

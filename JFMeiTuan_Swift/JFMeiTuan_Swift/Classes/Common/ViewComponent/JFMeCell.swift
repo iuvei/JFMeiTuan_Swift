@@ -137,11 +137,6 @@ class JFMeCell: UITableViewCell {
         
         self.contentView.layoutIfNeeded()
         
-   
-        
-        print("hhhhhh:\(self.bounds)")
-        
-        
     }
 
 }

@@ -8,6 +8,11 @@
 
 import UIKit
 
+//定义一个协议 声名一个协议的方法 listButtonClick
+protocol listButtonDelegate:NSObjectProtocol {
+    func listButtonClick(btn: UIButton)
+}
+
 class JFListCell: UITableViewCell {
     //定义去全局的button用来接收外面传进来的模型数组
     var buttonArray : NSArray!
@@ -129,7 +134,4 @@ class JFListCell: UITableViewCell {
     }
     
 }
-//定义一个协议 声名一个协议的方法 listButtonClick
-protocol listButtonDelegate:NSObjectProtocol {
-    func listButtonClick(btn: UIButton)
-}
+
