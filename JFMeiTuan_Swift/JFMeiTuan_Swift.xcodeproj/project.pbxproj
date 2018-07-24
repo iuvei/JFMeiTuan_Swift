@@ -42,6 +42,12 @@
 		EAD1BCFB2105C9C800309E86 /* JFMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1BCF92105C9C800309E86 /* JFMineCell.xib */; };
 		EAD1BCFE2105DB7800309E86 /* JFMineCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BCFC2105DB7800309E86 /* JFMineCollectionCell.swift */; };
 		EAD1BCFF2105DB7800309E86 /* JFMineCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1BCFD2105DB7800309E86 /* JFMineCollectionCell.xib */; };
+		EAD1BD0321071EE800309E86 /* JFBasicKnowledgeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0121071EE800309E86 /* JFBasicKnowledgeListViewController.swift */; };
+		EAD1BD0421071EE800309E86 /* JFBasicKnowledgeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1BD0221071EE800309E86 /* JFBasicKnowledgeListViewController.xib */; };
+		EAD1BD072107272F00309E86 /* JFSendValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD052107272F00309E86 /* JFSendValueViewController.swift */; };
+		EAD1BD082107272F00309E86 /* JFSendValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1BD062107272F00309E86 /* JFSendValueViewController.xib */; };
+		EAD1BD0B2107279D00309E86 /* JFReceiveValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD092107279D00309E86 /* JFReceiveValueViewController.swift */; };
+		EAD1BD0C2107279D00309E86 /* JFReceiveValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1BD0A2107279D00309E86 /* JFReceiveValueViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +90,12 @@
 		EAD1BCF92105C9C800309E86 /* JFMineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFMineCell.xib; sourceTree = "<group>"; };
 		EAD1BCFC2105DB7800309E86 /* JFMineCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMineCollectionCell.swift; sourceTree = "<group>"; };
 		EAD1BCFD2105DB7800309E86 /* JFMineCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFMineCollectionCell.xib; sourceTree = "<group>"; };
+		EAD1BD0121071EE800309E86 /* JFBasicKnowledgeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFBasicKnowledgeListViewController.swift; sourceTree = "<group>"; };
+		EAD1BD0221071EE800309E86 /* JFBasicKnowledgeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFBasicKnowledgeListViewController.xib; sourceTree = "<group>"; };
+		EAD1BD052107272F00309E86 /* JFSendValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSendValueViewController.swift; sourceTree = "<group>"; };
+		EAD1BD062107272F00309E86 /* JFSendValueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFSendValueViewController.xib; sourceTree = "<group>"; };
+		EAD1BD092107279D00309E86 /* JFReceiveValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFReceiveValueViewController.swift; sourceTree = "<group>"; };
+		EAD1BD0A2107279D00309E86 /* JFReceiveValueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFReceiveValueViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,7 @@
 		E874E1C61F4E9791003A29B1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EAD1BD0021071E6000309E86 /* BasicKnowledge(基础) */,
 				5A1E055E1F55A5CC00C9DBA1 /* Common(公共) */,
 				E874E1FE1F552C72003A29B1 /* BaseClass(基类) */,
 				E874E1FF1F552C72003A29B1 /* Home(首页) */,
@@ -303,6 +316,19 @@
 			path = JFConst;
 			sourceTree = "<group>";
 		};
+		EAD1BD0021071E6000309E86 /* BasicKnowledge(基础) */ = {
+			isa = PBXGroup;
+			children = (
+				EAD1BD0121071EE800309E86 /* JFBasicKnowledgeListViewController.swift */,
+				EAD1BD0221071EE800309E86 /* JFBasicKnowledgeListViewController.xib */,
+				EAD1BD052107272F00309E86 /* JFSendValueViewController.swift */,
+				EAD1BD062107272F00309E86 /* JFSendValueViewController.xib */,
+				EAD1BD092107279D00309E86 /* JFReceiveValueViewController.swift */,
+				EAD1BD0A2107279D00309E86 /* JFReceiveValueViewController.xib */,
+			);
+			path = "BasicKnowledge(基础)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,6 +358,7 @@
 		E874E1A91F4E91BA003A29B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JF;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = linjianfang;
@@ -370,7 +397,10 @@
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
 				EAD1BCFF2105DB7800309E86 /* JFMineCollectionCell.xib in Resources */,
 				EAD1BCF72105C7F200309E86 /* JFMineViewController.xib in Resources */,
+				EAD1BD082107272F00309E86 /* JFSendValueViewController.xib in Resources */,
+				EAD1BD0C2107279D00309E86 /* JFReceiveValueViewController.xib in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
+				EAD1BD0421071EE800309E86 /* JFBasicKnowledgeListViewController.xib in Resources */,
 				E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +476,7 @@
 				E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
+				EAD1BD0B2107279D00309E86 /* JFReceiveValueViewController.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
 				E874E2211F56A124003A29B1 /* JFMeListCellModel.swift in Sources */,
 				E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */,
@@ -460,11 +491,13 @@
 				EAD1BCFA2105C9C800309E86 /* JFMineCell.swift in Sources */,
 				E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */,
 				E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */,
+				EAD1BD072107272F00309E86 /* JFSendValueViewController.swift in Sources */,
 				E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */,
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
 				E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */,
 				E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */,
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
+				EAD1BD0321071EE800309E86 /* JFBasicKnowledgeListViewController.swift in Sources */,
 				E8CF74C31FB19C8C00FE8F17 /* JFSDKKeyConst.swift in Sources */,
 				E81B51051F692B69002EA405 /* JFHomeNormalCell.swift in Sources */,
 				EAD1BCF62105C7F200309E86 /* JFMineViewController.swift in Sources */,

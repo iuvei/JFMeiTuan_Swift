@@ -18,8 +18,11 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
         tableView.rowHeight = 160
         tableView.reloadData()
         tableView.tableFooterView = UIView.init()
-        // Do any additional setup after loading the view.
+        
+        setUpRightNavItem()
     }
+  
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return 3;
     }
@@ -40,6 +43,18 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
         return JFMineCell.cellWithTableView(tableView)
     }
     
+    
+    
+    func setUpRightNavItem() {
+//        self.setupCustomRightWithImage(image: UIImage.init(named: "beauty_coupon_green_right")!, target: self, action:#selector(JFMineViewController.rightBtnClick))
+        self.setupCustomRightWithTitle(title: "基础", target: self, action: #selector(JFMineViewController.rightBtnClick))
+    }
+    
+    func rightBtnClick() {
+        let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
+        VC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(VC, animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

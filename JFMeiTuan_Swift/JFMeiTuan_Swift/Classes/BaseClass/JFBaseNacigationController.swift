@@ -16,12 +16,11 @@ class JFBaseNacigationController: UINavigationController {
         // Do any additional setup after loading the view.
         // 1.设置导航栏标题属性：设置标题颜色
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white];
         // 2.设置导航栏前景色：设置item指示色
        navigationBar.tintColor = JFStyle.clearColor()
         
         // 3.设置导航栏半透明
-        self.navigationBar.isTranslucent = false
+        navigationBar.isTranslucent = false
         
         // 4.设置导航栏背景图片
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
