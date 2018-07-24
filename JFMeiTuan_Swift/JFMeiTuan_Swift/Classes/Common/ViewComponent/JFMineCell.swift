@@ -8,21 +8,25 @@
 
 import UIKit
 
-class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource {
+class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource{
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var cellTitleClass: UILabel!
     
+    //重写set方法
     var cellTitle:NSString?{
         didSet{
             cellTitleClass.text = cellTitle! as String
         }
     }
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(JFMineCollectionCell.self, forCellWithReuseIdentifier: "reuseIdentifierID")
+        collectionView.reloadData()
+
         // Initialization code
     }
 
@@ -39,9 +43,23 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
         var mineCell = tableView.dequeueReusableCell(withIdentifier: JFMineCellID as String )
         
         if mineCell == nil {
+            
             mineCell = Bundle.main.loadNibNamed("JFMineCell", owner: nil, options: nil)?.last as? UITableViewCell
         }
         return mineCell as! JFMineCell
     }
+    
+    
+    /// UICollectionViewDataSource
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return 10;
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
 
+        return JFMineCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
+        
+    }
 }
+
+

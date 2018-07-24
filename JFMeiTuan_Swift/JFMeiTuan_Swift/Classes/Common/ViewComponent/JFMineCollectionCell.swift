@@ -17,17 +17,17 @@ class JFMineCollectionCell: UICollectionViewCell {
         // Initialization code
     }
     
-    class func cellWithTableView(_ collectionView:UICollectionView ,_ indexPath:NSIndexPath) -> JFMineCollectionCell {
+    class func cellWithCollectionView(_ collectionView:UICollectionView ,_ indexPath:NSIndexPath) -> JFMineCollectionCell {
         
-        let JFMineCollectionCellID = "JFMineCollectionCellID"
+        let reuseIdentifierID:NSString = "reuseIdentifierID"
         
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: JFMineCollectionCellID as String, for: indexPath as IndexPath)
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierID as  String, for: indexPath as IndexPath) as? JFMineCollectionCell
         
         if cell == nil {
-            cell = Bundle.main.loadNibNamed("JFMineCollectionCell", owner: nil, options: nil)?.last as! JFMineCollectionCell
+            cell = Bundle.main.loadNibNamed("JFMineCollectionCell", owner: nil, options: nil)?.last as? JFMineCollectionCell
         }
-        return cell as! JFMineCollectionCell
-
+        return cell!
+        
     }
 
 }
