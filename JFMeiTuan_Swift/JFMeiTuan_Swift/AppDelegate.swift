@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = JFBaseTabBarController()
         self.window?.backgroundColor = UIColor.white
         
+        IQKeyboardManager.sharedManager().enable = true
 
         return true
     }

@@ -17,7 +17,7 @@ class JFReceiveValueViewController: JFBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textField.text = receiveValue as! String
+        textField.text = receiveValue as String?
 
         // Do any additional setup after loading the view.
     }
