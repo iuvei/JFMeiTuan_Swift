@@ -14,12 +14,11 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        tableView.rowHeight = 160
-        tableView.reloadData()
-        tableView.tableFooterView = UIView.init()
-        
         setUpRightNavItem()
+
+        tableView.rowHeight = 160
+        tableView.tableFooterView = UIView.init()
+        tableView.reloadData()
     }
   
     
@@ -43,10 +42,7 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
         return JFMineCell.cellWithTableView(tableView)
     }
     
-    
-    
     func setUpRightNavItem() {
-//        self.setupCustomRightWithImage(image: UIImage.init(named: "beauty_coupon_green_right")!, target: self, action:#selector(JFMineViewController.rightBtnClick))
         self.setupCustomRightWithTitle(title: "基础", target: self, action: #selector(JFMineViewController.rightBtnClick))
     }
     

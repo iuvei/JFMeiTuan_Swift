@@ -9,3 +9,5 @@
 import Foundation
 
 let noticeSenderValue:NSString = "noticeSenderValue"
+let reuseIdentifierID:NSString = "reuseIdentifierID"
+

@@ -18,19 +18,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="107" height="93"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="def_icon_food_merchant_deal_coupon" translatesAutoresizingMaskIntoConstraints="NO" id="0wB-h3-8v7">
-                        <rect key="frame" x="31" y="13" width="37" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="def_icon_food_merchant_deal_coupon" translatesAutoresizingMaskIntoConstraints="NO" id="0wB-h3-8v7">
+                        <rect key="frame" x="43.5" y="5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5bb-MJ-J5g"/>
+                            <constraint firstAttribute="width" constant="20" id="SZL-Cw-NlU"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="美团" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THn-8Q-2rS">
-                        <rect key="frame" x="32" y="61" width="42" height="16"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美团" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THn-8Q-2rS">
+                        <rect key="frame" x="10" y="35" width="87" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="9tc-Mt-WRI"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="0wB-h3-8v7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="7te-c4-vtV"/>
+                <constraint firstItem="0wB-h3-8v7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="TVJ-mC-PWp"/>
+                <constraint firstItem="THn-8Q-2rS" firstAttribute="top" secondItem="0wB-h3-8v7" secondAttribute="bottom" constant="10" id="eAQ-9B-a19"/>
+                <constraint firstAttribute="trailing" secondItem="THn-8Q-2rS" secondAttribute="trailing" constant="10" id="mYw-gd-cHw"/>
+                <constraint firstItem="THn-8Q-2rS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qGj-oc-cWC"/>
+            </constraints>
             <size key="customSize" width="107" height="93"/>
             <connections>
                 <outlet property="desLabel" destination="THn-8Q-2rS" id="x7w-1X-CMh"/>

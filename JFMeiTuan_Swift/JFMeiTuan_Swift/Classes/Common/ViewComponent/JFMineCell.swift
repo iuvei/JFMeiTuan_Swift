@@ -24,7 +24,9 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
         super.awakeFromNib()
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(JFMineCollectionCell.self, forCellWithReuseIdentifier: "reuseIdentifierID")
+        
+        collectionView.register(UINib(nibName: "JFMineCollectionCell", bundle: nil), forCellWithReuseIdentifier:reuseIdentifierID as String)
+
         collectionView.reloadData()
 
         // Initialization code
@@ -56,7 +58,7 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-
+        
         return JFMineCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
         
     }

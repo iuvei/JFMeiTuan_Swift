@@ -11,8 +11,6 @@ import UIKit
 class JFSendSingleton: NSObject {
     
     var value = ""
-    
     static let shareInstance = JFSendSingleton()
     private override init(){}
-
 }

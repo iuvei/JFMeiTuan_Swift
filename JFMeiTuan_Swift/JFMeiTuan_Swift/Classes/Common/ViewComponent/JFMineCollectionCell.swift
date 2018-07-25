@@ -19,13 +19,12 @@ class JFMineCollectionCell: UICollectionViewCell {
     
     class func cellWithCollectionView(_ collectionView:UICollectionView ,_ indexPath:NSIndexPath) -> JFMineCollectionCell {
         
-        let reuseIdentifierID:NSString = "reuseIdentifierID"
-        
         var cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierID as  String, for: indexPath as IndexPath) as? JFMineCollectionCell
         
         if cell == nil {
             cell = Bundle.main.loadNibNamed("JFMineCollectionCell", owner: nil, options: nil)?.last as? JFMineCollectionCell
         }
+        
         return cell!
         
     }
