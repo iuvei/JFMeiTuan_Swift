@@ -8,11 +8,12 @@
 
 import UIKit
 
-class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource{
+class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var cellTitleClass: UILabel!
     
+    @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
     //重写set方法
     var cellTitle:NSString?{
         didSet{
@@ -25,7 +26,18 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        //这个地方注意和OC很像，看看cell是通过什么创建的 纯代码还是xib如果是 纯代码则使用registerClass方法
+        /**
+         - (void)registerClass:(nullable Class)cellClass forCellWithReuseIdentifier:(NSString *)identifier;
+         - (void)registerNib:(nullable UINib *)nib forCellWithReuseIdentifier:(NSString *)identifier;
+         */
         collectionView.register(UINib(nibName: "JFMineCollectionCell", bundle: nil), forCellWithReuseIdentifier:reuseIdentifierID as String)
+        
+        //属性的方式设置间距
+        collectionViewLayout.minimumLineSpacing = 0.0
+        collectionViewLayout.minimumInteritemSpacing = 0.0
+        
+        collectionView.isScrollEnabled = false
 
         collectionView.reloadData()
 
@@ -53,15 +65,28 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     
     
     /// UICollectionViewDataSource
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 10;
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return 5;
     }
     
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
         return JFMineCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
-        
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+        return CGSize(width: (JF_SCREEN_WIDTH-30)/4, height: (self.frame.size.height - 30)/2)
+    }
+    
+    //代理的方式设置间距
+//    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 0.0
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 0.0
+//    }
+    
 }
 
 

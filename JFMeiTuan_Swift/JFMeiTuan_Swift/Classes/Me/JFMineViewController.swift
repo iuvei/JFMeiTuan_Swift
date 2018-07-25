@@ -18,6 +18,7 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
 
         tableView.rowHeight = 160
         tableView.tableFooterView = UIView.init()
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.reloadData()
     }
   

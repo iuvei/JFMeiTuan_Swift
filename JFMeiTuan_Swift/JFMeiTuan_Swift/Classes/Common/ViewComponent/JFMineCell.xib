@@ -18,6 +18,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="151.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dT1-gr-ZpX">
+                        <rect key="frame" x="20" y="151" width="280" height="0.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="A3H-O5-5Vv"/>
+                        </constraints>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美团钱包" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-O6-oFr">
                         <rect key="frame" x="15" y="5" width="305" height="30"/>
                         <constraints>
@@ -28,7 +35,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="joK-YW-cu2">
-                        <rect key="frame" x="15" y="35" width="305" height="116.5"/>
+                        <rect key="frame" x="15" y="35" width="305" height="115.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4IO-r1-xnX">
                             <size key="itemSize" width="50" height="50"/>
@@ -45,9 +52,12 @@
                 <constraints>
                     <constraint firstItem="joK-YW-cu2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Aba-kZ-5i4"/>
                     <constraint firstAttribute="trailing" secondItem="joK-YW-cu2" secondAttribute="trailing" id="HY0-eC-ZpQ"/>
-                    <constraint firstAttribute="bottom" secondItem="joK-YW-cu2" secondAttribute="bottom" id="Tfg-Ao-rSy"/>
+                    <constraint firstAttribute="trailing" secondItem="dT1-gr-ZpX" secondAttribute="trailing" constant="20" id="MbG-Oy-czU"/>
+                    <constraint firstAttribute="bottom" secondItem="joK-YW-cu2" secondAttribute="bottom" constant="1" id="Tfg-Ao-rSy"/>
+                    <constraint firstAttribute="bottom" secondItem="dT1-gr-ZpX" secondAttribute="bottom" id="Xxd-8n-Mkh"/>
                     <constraint firstItem="gqX-O6-oFr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="eHl-Jo-85S"/>
                     <constraint firstAttribute="trailing" secondItem="gqX-O6-oFr" secondAttribute="trailing" id="elo-KR-mlv"/>
+                    <constraint firstItem="dT1-gr-ZpX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="iTe-v6-jz8"/>
                     <constraint firstItem="gqX-O6-oFr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="tFS-JJ-uqz"/>
                     <constraint firstItem="joK-YW-cu2" firstAttribute="top" secondItem="gqX-O6-oFr" secondAttribute="bottom" id="yZm-pE-90x"/>
                 </constraints>
@@ -55,6 +65,7 @@
             <connections>
                 <outlet property="cellTitleClass" destination="gqX-O6-oFr" id="6df-oo-FVW"/>
                 <outlet property="collectionView" destination="joK-YW-cu2" id="D7m-8z-PcW"/>
+                <outlet property="collectionViewLayout" destination="4IO-r1-xnX" id="ecx-WY-Ty5"/>
             </connections>
             <point key="canvasLocation" x="34" y="108"/>
         </tableViewCell>
