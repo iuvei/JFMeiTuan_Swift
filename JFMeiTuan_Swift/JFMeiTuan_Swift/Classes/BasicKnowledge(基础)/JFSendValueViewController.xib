@@ -38,6 +38,15 @@
                         <action selector="closureClick:" destination="-1" eventType="touchUpInside" id="SUU-0T-qjJ"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwv-NR-MaH">
+                    <rect key="frame" x="54" y="308" width="243" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="通知"/>
+                    <connections>
+                        <action selector="noticeClick:" destination="-1" eventType="touchUpInside" id="CFa-jx-oAU"/>
+                    </connections>
+                </button>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入你要传给下一个页面的值" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIZ-uu-Lxq">
                     <rect key="frame" x="54" y="58" width="243" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,13 +64,13 @@
                         <action selector="propertyClick:" destination="-1" eventType="touchUpInside" id="J8f-h6-JHl"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwv-NR-MaH">
-                    <rect key="frame" x="54" y="308" width="243" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZe-wV-a8U">
+                    <rect key="frame" x="54" y="371" width="243" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="通知"/>
+                    <state key="normal" title="单例"/>
                     <connections>
-                        <action selector="noticeClick:" destination="-1" eventType="touchUpInside" id="CFa-jx-oAU"/>
+                        <action selector="SingleCase:" destination="-1" eventType="touchUpInside" id="Z3h-Ay-Tl1"/>
                     </connections>
                 </button>
             </subviews>

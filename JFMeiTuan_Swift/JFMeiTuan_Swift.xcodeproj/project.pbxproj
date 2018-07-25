@@ -49,6 +49,7 @@
 		EAD1BD0C2107279D00309E86 /* JFReceiveValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1BD0A2107279D00309E86 /* JFReceiveValueViewController.xib */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
+		EAD1BD122108541C00309E86 /* JFSendSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD112108541C00309E86 /* JFSendSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		EAD1BD0A2107279D00309E86 /* JFReceiveValueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFReceiveValueViewController.xib; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
+		EAD1BD112108541C00309E86 /* JFSendSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSendSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +330,7 @@
 				EAD1BD062107272F00309E86 /* JFSendValueViewController.xib */,
 				EAD1BD092107279D00309E86 /* JFReceiveValueViewController.swift */,
 				EAD1BD0A2107279D00309E86 /* JFReceiveValueViewController.xib */,
+				EAD1BD112108541C00309E86 /* JFSendSingleton.swift */,
 			);
 			path = "BasicKnowledge(基础)";
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			files = (
 				E874E2131F552D34003A29B1 /* JFwalkViewController.swift in Sources */,
 				E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */,
+				EAD1BD122108541C00309E86 /* JFSendSingleton.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
 				EAD1BD0B2107279D00309E86 /* JFReceiveValueViewController.swift in Sources */,

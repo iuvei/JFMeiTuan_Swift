@@ -8,6 +8,12 @@
 
 import UIKit
 
+//枚举的定义
+enum sendType{
+    case propertyType
+    case singleCaseType
+}
+
 //定义一个协议 声名一个协议的方法 buttonClick
 protocol receiveValueDelegate:NSObjectProtocol {
     func buttonClick(value: String)
@@ -29,12 +35,20 @@ class JFReceiveValueViewController: JFBaseViewController {
     //声明一个属性
     var receiveValue:NSString!
     
+//    //声明一个枚举
+    var sendValueType:sendType!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //接收属性传过来的值
-        textField.text = receiveValue as String?
-
+        //属性传值的时候
+        if sendValueType == sendType.propertyType {
+            //接收属性传过来的值
+            textField.text = receiveValue as String?
+        }else if (sendValueType == sendType.singleCaseType ){//单例传值
+            //单例传值
+            textField.text =  JFSendSingleton.shareInstance.value
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -57,6 +71,9 @@ class JFReceiveValueViewController: JFBaseViewController {
         JF_NotificationCenter.post(name: NSNotification.Name(rawValue: noticeSenderValue as String), object: textField.text )
         
         navigationController?.popViewController(animated: true)
+        
+        
+        
     }
     
 

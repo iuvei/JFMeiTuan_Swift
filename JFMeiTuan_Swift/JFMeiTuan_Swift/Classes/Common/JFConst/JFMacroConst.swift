@@ -9,21 +9,21 @@
 import Foundation
 import UIKit
 
-let JF_SCREEN_HEIGHT = UIScreen.main.bounds.height
-let JF_SCREEN_WIDTH  = UIScreen.main.bounds.width
-let JF_KeyWindow     = UIApplication.shared.keyWindow
-let JF_Application   = UIApplication.shared
-let JF_AppDelegate   = UIApplication.shared.delegate
-let JF_UserDefaults  = UserDefaults.standard
-let JF_NotificationCenter  = NotificationCenter.default
+let JF_SCREEN_HEIGHT         = UIScreen.main.bounds.height
+let JF_SCREEN_WIDTH          = UIScreen.main.bounds.width
+let JF_KeyWindow             = UIApplication.shared.keyWindow
+let JF_Application           = UIApplication.shared
+let JF_AppDelegate           = UIApplication.shared.delegate
+let JF_UserDefaults          = UserDefaults.standard
+let JF_NotificationCenter    = NotificationCenter.default
 
 
 /* 设备系统相关  */
-let kiOSVersion:String    = UIDevice.current.systemVersion     /* iOS系统版本 */
+let kiOSVersion:String       = UIDevice.current.systemVersion     /* iOS系统版本 */
 
 
 /* app版本  以及设备系统版本 */
-let infoDictionary            = Bundle.main.infoDictionary
+let infoDictionary             = Bundle.main.infoDictionary
 let JF_AppName: String?         = infoDictionary!["CFBundleDisplayName"] as? String        /* App名称 */
 let JF_AppVersion: String?      = infoDictionary!["CFBundleShortVersionString"] as? String /* App版本号 */
 let JF_AppBuildVersion: String? = infoDictionary!["CFBundleVersion"] as? String            /* Appbuild版本号 */

@@ -26,6 +26,7 @@ class JFSendValueViewController: JFBaseViewController,receiveValueDelegate {
     
     @IBAction func propertyClick(_ sender: Any) {
         let VC:JFReceiveValueViewController  = JFReceiveValueViewController.init(nibName: "JFReceiveValueViewController", bundle: nil)
+        VC.sendValueType = sendType.propertyType
         VC.receiveValue = textField.text! as NSString
         navigationController?.pushViewController(VC, animated: true)
     }
@@ -50,6 +51,14 @@ class JFSendValueViewController: JFBaseViewController,receiveValueDelegate {
         //观察通知
         JF_NotificationCenter.addObserver(self, selector: #selector(JFSendValueViewController.getValue), name: NSNotification.Name(rawValue: noticeSenderValue as String), object: nil)
         let VC  = JFReceiveValueViewController.init(nibName: "JFReceiveValueViewController", bundle: nil)
+        navigationController?.pushViewController(VC, animated: true)
+    }
+    
+    
+    @IBAction func SingleCase(_ sender: Any) {
+        let VC:JFReceiveValueViewController  = JFReceiveValueViewController.init(nibName: "JFReceiveValueViewController", bundle: nil)
+        JFSendSingleton.shareInstance.value = textField.text!
+        VC.sendValueType = sendType.singleCaseType
         navigationController?.pushViewController(VC, animated: true)
     }
     
