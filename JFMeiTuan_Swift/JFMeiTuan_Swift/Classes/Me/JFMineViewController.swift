@@ -14,11 +14,14 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "我的"
+        
         setUpRightNavItem()
 
         tableView.rowHeight = 160
         tableView.tableFooterView = UIView.init()
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.allowsSelection = false
         tableView.reloadData()
     }
   
@@ -30,17 +33,18 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
+        
         if (indexPath.row == 1) {
-            let cell:JFMineCell = JFMineCell.cellWithTableView(tableView)
             cell.cellTitle = "美团钱包"
             return cell;
         }else if (indexPath.row == 2 ){
-            let cell:JFMineCell = JFMineCell.cellWithTableView(tableView)
             cell.cellTitle = "美团服务"
+            cell.bottomLineView.isHidden = true
             return cell;
         }
-        
-        return JFMineCell.cellWithTableView(tableView)
+        return cell
     }
     
     func setUpRightNavItem() {

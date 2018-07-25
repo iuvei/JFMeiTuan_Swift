@@ -13,6 +13,7 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var cellTitleClass: UILabel!
     
+    @IBOutlet weak var bottomLineView: UIView!
     @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
     //重写set方法
     var cellTitle:NSString?{
@@ -70,6 +71,7 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        
         
         return JFMineCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
     }

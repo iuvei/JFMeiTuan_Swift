@@ -20,7 +20,7 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dT1-gr-ZpX">
                         <rect key="frame" x="20" y="151" width="280" height="0.5"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="A3H-O5-5Vv"/>
                         </constraints>
@@ -63,6 +63,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bottomLineView" destination="dT1-gr-ZpX" id="qfC-V4-dez"/>
                 <outlet property="cellTitleClass" destination="gqX-O6-oFr" id="6df-oo-FVW"/>
                 <outlet property="collectionView" destination="joK-YW-cu2" id="D7m-8z-PcW"/>
                 <outlet property="collectionViewLayout" destination="4IO-r1-xnX" id="ecx-WY-Ty5"/>
