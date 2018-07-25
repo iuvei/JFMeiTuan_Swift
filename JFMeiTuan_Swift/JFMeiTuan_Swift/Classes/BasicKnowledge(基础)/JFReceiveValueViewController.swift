@@ -8,15 +8,31 @@
 
 import UIKit
 
+//定义一个协议 声名一个协议的方法 buttonClick
+protocol receiveValueDelegate:NSObjectProtocol {
+    func buttonClick(value: String)
+}
+
+//定义一个block闭包
+typealias receiveValueClosure = (_ value:String) -> Void
+
 class JFReceiveValueViewController: JFBaseViewController {
 
     @IBOutlet weak var textField: UITextField!
     
+    //声明一个代理
+    weak var delegate:receiveValueDelegate?
+    
+    //声明一个闭包用来接收闭包
+    var receiveClosure:receiveValueClosure?
+    
+    //声明一个属性
     var receiveValue:NSString!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //接收属性传过来的值
         textField.text = receiveValue as String?
 
         // Do any additional setup after loading the view.
@@ -27,6 +43,19 @@ class JFReceiveValueViewController: JFBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func backClick(_ sender: Any) {
+        //代理
+        if self.delegate != nil {
+            self.delegate?.buttonClick(value: textField.text!)
+        }
+        
+        //闭包
+        if self.receiveClosure != nil {
+            self.receiveClosure!(textField.text!)
+        }
+        
+        //发布通知
+        JF_NotificationCenter.post(name: NSNotification.Name(rawValue: noticeSenderValue as String), object: textField.text )
+        
         navigationController?.popViewController(animated: true)
     }
     

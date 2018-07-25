@@ -8,7 +8,8 @@
 
 import UIKit
 
-class JFSendValueViewController: JFBaseViewController {
+
+class JFSendValueViewController: JFBaseViewController,receiveValueDelegate {
 
 
     @IBOutlet weak var textField: UITextField!
@@ -30,18 +31,41 @@ class JFSendValueViewController: JFBaseViewController {
     }
     @IBAction func delegateClick(_ sender: Any) {
         let VC  = JFReceiveValueViewController.init(nibName: "JFReceiveValueViewController", bundle: nil)
+        //代理委托的对象
+        VC.delegate = self
         navigationController?.pushViewController(VC, animated: true)
     }
     
     @IBAction func closureClick(_ sender: Any) {
         let VC  = JFReceiveValueViewController.init(nibName: "JFReceiveValueViewController", bundle: nil)
+        VC.receiveClosure = { (value:String) -> Void in
+            self.textField.text = value
+        }
+       
         navigationController?.pushViewController(VC, animated: true)
     }
     
     @IBAction func noticeClick(_ sender: Any) {
+        
+        //观察通知
+        JF_NotificationCenter.addObserver(self, selector: #selector(JFSendValueViewController.getValue), name: NSNotification.Name(rawValue: noticeSenderValue as String), object: nil)
         let VC  = JFReceiveValueViewController.init(nibName: "JFReceiveValueViewController", bundle: nil)
         navigationController?.pushViewController(VC, animated: true)
     }
+    
+    
+    /// 代理实现
+    func buttonClick(value: String){
+        textField.text = value as String
+    }
+    
+    ///通知实现
+    func getValue(notice:Notification) {
+        textField.text = notice.object as? String
+        //移除通知
+        JF_NotificationCenter.removeObserver(self, name: NSNotification.Name(rawValue: noticeSenderValue as String), object: nil)
+    }
+
     /*
     // MARK: - Navigation
 
