@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (4.7.0)
   - IQKeyboardManagerSwift (5.0.7)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
   - ObjectMapper (2.2.9)
   - SnapKit (3.2.0)
   - SwiftyJSON (4.0.0)
@@ -8,14 +11,16 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - IQKeyboardManagerSwift (~> 5.0.7)
+  - NVActivityIndicatorView (~> 4.1.1)
   - ObjectMapper (~> 2.2)
   - SnapKit (~> 3.2.0)
-  - SwiftyJSON
+  - SwiftyJSON (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
     - ObjectMapper
     - SnapKit
     - SwiftyJSON
@@ -23,10 +28,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
   ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 9c4d1813aa5533bde61cf2460b9d281d010658c5
+PODFILE CHECKSUM: f67306c0ba00da6645485261ea09f52de3f1c75f
 
 COCOAPODS: 1.5.3

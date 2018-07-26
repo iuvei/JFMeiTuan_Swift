@@ -36,7 +36,10 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
         
         let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
         
-        if (indexPath.row == 1) {
+        if indexPath.row == 0 {
+            cell.cellTitle = ""
+            return cell;
+        }else if (indexPath.row == 1) {
             cell.cellTitle = "美团钱包"
             return cell;
         }else if (indexPath.row == 2 ){
