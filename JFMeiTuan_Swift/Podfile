@@ -9,4 +9,5 @@ target 'JFMeiTuan_Swift' do
     pod 'Alamofire', '~> 4.4'
     pod 'IQKeyboardManagerSwift', '~> 5.0.7'
     pod 'NVActivityIndicatorView', '~> 4.1.1'
+    pod 'PagingMenuController', '~> 2.2.0'
 end
