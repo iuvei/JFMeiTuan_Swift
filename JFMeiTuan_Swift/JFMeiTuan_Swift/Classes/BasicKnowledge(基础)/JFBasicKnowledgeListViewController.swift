@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
-class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelegate,UITableViewDataSource {
+class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelegate,UITableViewDataSource,NVActivityIndicatorViewable {
 
     @IBOutlet weak var tableView: UITableView!
     
     var dataArray:NSArray {
-        let tmpArray = ["传值"]
+        let tmpArray = ["传值","loading...."]
         return tmpArray as NSArray
     }
     
@@ -42,6 +43,14 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
             let VC = JFSendValueViewController.init(nibName: "JFSendValueViewController", bundle: nil)
             navigationController?.pushViewController(VC, animated: true)
         }else if (indexPath.row == 1){
+            //开始loding
+            startAnimating()
+//            startAnimating(CGSize(width: 200, height: 100), message: "加载中", messageFont: UIFont.systemFont(ofSize: 13), type: NVActivityIndicatorType.ballBeat, color: UIColor.red, padding: 10, displayTimeThreshold: 10, minimumDisplayTime: 20, backgroundColor: UIColor.white, textColor: UIColor.green)
+            let time:TimeInterval = TimeInterval(3)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time) {
+                //3秒后结束loading
+                self.stopAnimating()
+            }
             
         }else if (indexPath.row == 2){
             
