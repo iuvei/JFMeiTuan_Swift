@@ -14,7 +14,7 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     var dataArray:NSArray {
-        let tmpArray = ["传值","loading...."]
+        let tmpArray = ["传值","loading....","分页"]
         return tmpArray as NSArray
     }
     
@@ -53,7 +53,8 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
             }
             
         }else if (indexPath.row == 2){
-            
+            let VC = JFPageMenuViewController.init(nibName: "JFPageMenuViewController", bundle: nil)
+            navigationController?.pushViewController(VC, animated: true)
         }
     }
     
