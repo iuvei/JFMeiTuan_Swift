@@ -31,6 +31,9 @@ class JFBaseNacigationController: UINavigationController {
         //设置导航栏的背景色
         navigationBar.barTintColor = JFStyle.navigarionBarColor()
         
+        //去除导航栏的下划线
+        navigationBar.shadowImage = UIImage.init()
+        
         //设置状态栏的颜色
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
         

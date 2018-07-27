@@ -58,23 +58,6 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     }
 }
 
-
-//struct MenuItem1: MenuItemViewCustomizable {}
-//struct MenuItem2: MenuItemViewCustomizable {}
-//
-//struct MenuOptions: MenuViewCustomizable {
-//    var itemsOptions: [MenuItemViewCustomizable] {
-//        return [MenuItem1(), MenuItem2()]
-//    }
-//}
-//
-//struct PagingMenuOptions: PagingMenuControllerCustomizable {
-//    var componentType: ComponentType {
-//        return .all(menuOptions: MenuOptions(), pagingControllers: [UIViewController(), UIViewController()])
-//    }
-//}
-
-
 class JFPageMenuViewController: JFBaseViewController {
 
     override func viewDidLoad() {
@@ -94,6 +77,33 @@ class JFPageMenuViewController: JFBaseViewController {
         addChildViewController(pagingMenuController)
         //分页菜单控制器视图添加到当前视图中
         view.addSubview(pagingMenuController.view)
+        
+        
+        //页面切换响应
+//        pagingMenuController.onMove = { state in
+//            switch state {
+//            case let .willMoveItem(menuItemView, previousMenuItemView):
+//                print("--- 标签将要切换 ---")
+//                print("老标签：\(previousMenuItemView.titleLabel.text!)")
+//                print("新标签：\(menuItemView.titleLabel.text!)")
+//            case let .didMoveItem(menuItemView, previousMenuItemView):
+//                print("--- 标签切换完毕 ---")
+//                print("老标签：\(previousMenuItemView.titleLabel.text!)")
+//                print("新标签：\(menuItemView.titleLabel.text!)")
+//            case let .willMoveController(menuController, previousMenuController):
+//                print("--- 页面将要切换 ---")
+//                print("老页面：\(previousMenuController)")
+//                print("新页面：\(menuController)")
+//            case let .didMoveController(menuController, previousMenuController):
+//                print("--- 页面切换完毕 ---")
+//                print("老页面：\(previousMenuController)")
+//                print("新页面：\(menuController)")
+//            case .didScrollStart:
+//                print("--- 分页开始左右滑动 ---")
+//            case .didScrollEnd:
+//                print("--- 分页停止左右滑动 ---")
+//            }
+//        }
         
         // Do any additional setup after loading the view.
     }

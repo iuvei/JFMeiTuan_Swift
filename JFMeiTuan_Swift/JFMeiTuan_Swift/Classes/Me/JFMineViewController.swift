@@ -14,6 +14,8 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.backgroundColor =  JFStyle.navigarionBarColor()
+        
         title = "我的"
         
         setUpRightNavItem()
