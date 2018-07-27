@@ -53,7 +53,7 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
             }
             
         }else if (indexPath.row == 2){
-            let VC = JFPageMenuViewController.init(nibName: "JFPageMenuViewController", bundle: nil)
+            let VC = JFPageMenuViewController.init()
             navigationController?.pushViewController(VC, animated: true)
         }
     }

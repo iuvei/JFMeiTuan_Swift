@@ -17,15 +17,17 @@ private struct PagingMenuOptions: PagingMenuControllerCustomizable {
     //第2个子视图控制器
     private let viewController2 = JFPageChildSecondViewController.init(nibName: "JFPageChildSecondViewController", bundle: nil)
 
+
     //组件类型
     fileprivate var componentType: ComponentType {
         return .all(menuOptions: MenuOptions(), pagingControllers: pagingControllers)
     }
-
+    
     //所有子视图控制器
     fileprivate var pagingControllers: [UIViewController] {
         return [viewController1, viewController2]
     }
+    
 
     //菜单配置项
     fileprivate struct MenuOptions: MenuViewCustomizable {
