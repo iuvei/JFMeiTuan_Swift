@@ -58,55 +58,37 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
 //        // 5.设置导航栏阴影图片
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
 
-        
-        
     }
     
     //初始化视图
     func initView() {
-        //获取屏幕的尺寸
-        let fullScreenSize = UIScreen.main.bounds.size
-        // Do any additional setup after loading the view.
         
         let homeTableView = UITableView(frame :.zero, style:.plain)
         self.view.addSubview(homeTableView)
         
         //用snapkit布局
         homeTableView.snp.makeConstraints { (make) in
-//            make.height.equalTo(fullScreenSize.height)
-//            make.width.equalTo(fullScreenSize.width)
             make.width.height.equalToSuperview()
             make.top.equalToSuperview()
-        }
-        
-        homeTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: ID)
+        }        
         homeTableView.dataSource = self
         homeTableView.delegate = self
+        homeTableView.rowHeight = 120
     }
-    
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
-    }
-
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        if section == 4 {
-            return datas.count
-
-        }
-        return 1
+        return datas.count
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        //获取cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: ID, for: indexPath)
         
-        //配置cell
-        cell.textLabel?.text = "假数据 -\(datas[indexPath.row]) ";
-        
-        //返回cell
+        let cell:JFHomeNormalCell  = JFHomeNormalCell.cellWithTableView(tableView)
         return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView .deselectRow(at: indexPath, animated: true)
     }
 
     // 懒加载

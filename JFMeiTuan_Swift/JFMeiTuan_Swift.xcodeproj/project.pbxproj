@@ -12,7 +12,6 @@
 		E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */; };
 		E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */; };
 		E81B51031F692B36002EA405 /* JFHomeTipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51021F692B36002EA405 /* JFHomeTipCell.swift */; };
-		E81B51051F692B69002EA405 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51041F692B69002EA405 /* JFHomeNormalCell.swift */; };
 		E81B51071F692E74002EA405 /* JFAdvertisingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51061F692E74002EA405 /* JFAdvertisingCell.swift */; };
 		E81B51091F692F06002EA405 /* JFHomeLuckyDrawCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51081F692F06002EA405 /* JFHomeLuckyDrawCell.swift */; };
 		E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E1B41F4E91BA003A29B1 /* AppDelegate.swift */; };
@@ -40,6 +39,9 @@
 		EA9D49EA2109ED9500ED4760 /* JFPageChildFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49E82109ED9500ED4760 /* JFPageChildFirstViewController.xib */; };
 		EA9D49ED2109F09900ED4760 /* JFPageChildSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49EB2109F09900ED4760 /* JFPageChildSecondViewController.swift */; };
 		EA9D49EE2109F09900ED4760 /* JFPageChildSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49EC2109F09900ED4760 /* JFPageChildSecondViewController.xib */; };
+		EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */; };
+		EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */; };
+		EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */; };
 		EAD1BCF62105C7F200309E86 /* JFMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BCF42105C7F100309E86 /* JFMineViewController.swift */; };
 		EAD1BCF72105C7F200309E86 /* JFMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD1BCF52105C7F200309E86 /* JFMineViewController.xib */; };
 		EAD1BCFA2105C9C800309E86 /* JFMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BCF82105C9C800309E86 /* JFMineCell.swift */; };
@@ -65,7 +67,6 @@
 		E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeTotalCassCell.swift; sourceTree = "<group>"; };
 		E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeActivityCell.swift; sourceTree = "<group>"; };
 		E81B51021F692B36002EA405 /* JFHomeTipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeTipCell.swift; sourceTree = "<group>"; };
-		E81B51041F692B69002EA405 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
 		E81B51061F692E74002EA405 /* JFAdvertisingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFAdvertisingCell.swift; sourceTree = "<group>"; };
 		E81B51081F692F06002EA405 /* JFHomeLuckyDrawCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeLuckyDrawCell.swift; sourceTree = "<group>"; };
 		E874E1B11F4E91BA003A29B1 /* JFMeiTuan_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFMeiTuan_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +96,9 @@
 		EA9D49E82109ED9500ED4760 /* JFPageChildFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFPageChildFirstViewController.xib; sourceTree = "<group>"; };
 		EA9D49EB2109F09900ED4760 /* JFPageChildSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFPageChildSecondViewController.swift; sourceTree = "<group>"; };
 		EA9D49EC2109F09900ED4760 /* JFPageChildSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFPageChildSecondViewController.xib; sourceTree = "<group>"; };
+		EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeConmonModel.swift; sourceTree = "<group>"; };
+		EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
+		EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeNormalCell.xib; sourceTree = "<group>"; };
 		EAD1BCF42105C7F100309E86 /* JFMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMineViewController.swift; sourceTree = "<group>"; };
 		EAD1BCF52105C7F200309E86 /* JFMineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFMineViewController.xib; sourceTree = "<group>"; };
 		EAD1BCF82105C9C800309E86 /* JFMineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMineCell.swift; sourceTree = "<group>"; };
@@ -230,7 +234,7 @@
 		E874E1FF1F552C72003A29B1 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
-				E874E2151F557E95003A29B1 /* Model */,
+				EA9D49EF210B122000ED4760 /* Model */,
 				E874E2161F557E95003A29B1 /* Controller */,
 				E874E2171F557E95003A29B1 /* View */,
 			);
@@ -276,13 +280,6 @@
 			path = Walk;
 			sourceTree = "<group>";
 		};
-		E874E2151F557E95003A29B1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E874E2161F557E95003A29B1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,9 +294,10 @@
 				E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */,
 				E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */,
 				E81B51021F692B36002EA405 /* JFHomeTipCell.swift */,
-				E81B51041F692B69002EA405 /* JFHomeNormalCell.swift */,
 				E81B51061F692E74002EA405 /* JFAdvertisingCell.swift */,
 				E81B51081F692F06002EA405 /* JFHomeLuckyDrawCell.swift */,
+				EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */,
+				EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +339,14 @@
 				EA9D49EC2109F09900ED4760 /* JFPageChildSecondViewController.xib */,
 			);
 			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		EA9D49EF210B122000ED4760 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EAD1BD0021071E6000309E86 /* BasicKnowledge(基础) */ = {
@@ -424,6 +430,7 @@
 				EA9D49EE2109F09900ED4760 /* JFPageChildSecondViewController.xib in Resources */,
 				EAD1BCFB2105C9C800309E86 /* JFMineCell.xib in Resources */,
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
+				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
 				EAD1BCFF2105DB7800309E86 /* JFMineCollectionCell.xib in Resources */,
 				EAD1BCF72105C7F200309E86 /* JFMineViewController.xib in Resources */,
 				EA9D49EA2109ED9500ED4760 /* JFPageChildFirstViewController.xib in Resources */,
@@ -494,8 +501,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E874E2131F552D34003A29B1 /* JFwalkViewController.swift in Sources */,
+				EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */,
 				EA9D49E92109ED9500ED4760 /* JFPageChildFirstViewController.swift in Sources */,
 				E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */,
+				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
 				EAD1BD122108541C00309E86 /* JFSendSingleton.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
@@ -525,7 +534,6 @@
 				E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */,
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
 				EAD1BD0321071EE800309E86 /* JFBasicKnowledgeListViewController.swift in Sources */,
-				E81B51051F692B69002EA405 /* JFHomeNormalCell.swift in Sources */,
 				EAD1BCF62105C7F200309E86 /* JFMineViewController.swift in Sources */,
 				E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */,
 				E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */,
