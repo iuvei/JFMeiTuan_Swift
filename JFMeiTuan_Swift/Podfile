@@ -10,4 +10,5 @@ target 'JFMeiTuan_Swift' do
     pod 'IQKeyboardManagerSwift', '~> 5.0.7'
     pod 'NVActivityIndicatorView', '~> 4.1.1'
     pod 'PagingMenuController', '~> 2.2.0'
+    pod 'Kingfisher', '~> 4.6.3'
 end
