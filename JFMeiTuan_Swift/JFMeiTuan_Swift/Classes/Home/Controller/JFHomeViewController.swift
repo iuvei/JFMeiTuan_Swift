@@ -33,6 +33,9 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         //初始化视图
         initView()
         
+        //初始化数据
+        initData()
+        
         
     }
     //初始化导航栏
@@ -104,6 +107,10 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     }()
     
     
+    //初始化数据
+    func initData(){
+    
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
