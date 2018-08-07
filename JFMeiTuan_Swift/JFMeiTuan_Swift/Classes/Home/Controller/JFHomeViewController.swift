@@ -109,6 +109,8 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     
     //初始化数据
     func initData(){
+        
+        JFBaseNetwork.shareInstance.initData()
     
     }
     override func didReceiveMemoryWarning() {
