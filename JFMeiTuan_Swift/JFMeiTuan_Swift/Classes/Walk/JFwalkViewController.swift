@@ -14,7 +14,7 @@ class JFwalkViewController: JFBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.title = "逛一逛"
+        navigationItem.title = "逛一逛"
         self.view.backgroundColor = UIColor.green
     }
 
