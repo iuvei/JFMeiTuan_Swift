@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="107" height="75"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="def_icon_food_merchant_deal_coupon" translatesAutoresizingMaskIntoConstraints="NO" id="0wB-h3-8v7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="大笑" translatesAutoresizingMaskIntoConstraints="NO" id="0wB-h3-8v7">
                         <rect key="frame" x="43.5" y="5" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="5bb-MJ-J5g"/>
@@ -52,6 +52,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="def_icon_food_merchant_deal_coupon" width="30" height="30"/>
+        <image name="大笑" width="408" height="408"/>
     </resources>
 </document>
