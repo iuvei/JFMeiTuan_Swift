@@ -25,7 +25,6 @@
 		E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20A1F552D01003A29B1 /* JFNearViewController.swift */; };
 		E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20E1F552D1D003A29B1 /* JFOrderViewController.swift */; };
 		E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2101F552D26003A29B1 /* JFMeViewController.swift */; };
-		E874E2131F552D34003A29B1 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2121F552D34003A29B1 /* JFwalkViewController.swift */; };
 		E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */; };
 		E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */; };
 		E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E21C1F567BD5003A29B1 /* JFListCell.swift */; };
@@ -34,6 +33,11 @@
 		E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */; };
 		E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */; };
 		E874ED041F5D5F54003A29B1 /* JFMeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ED031F5D5F54003A29B1 /* JFMeModel.swift */; };
+		EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */; };
+		EA1A75C9211AF1AF000BF3E2 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */; };
+		EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */; };
+		EA1A75CD211AF260000BF3E2 /* JFWeakNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75CB211AF260000BF3E2 /* JFWeakNormalCell.swift */; };
+		EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75CC211AF260000BF3E2 /* JFWeakNormalCell.xib */; };
 		EA9D49E52109E57400ED4760 /* JFPageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49E32109E57400ED4760 /* JFPageMenuViewController.swift */; };
 		EA9D49E92109ED9500ED4760 /* JFPageChildFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49E72109ED9500ED4760 /* JFPageChildFirstViewController.swift */; };
 		EA9D49EA2109ED9500ED4760 /* JFPageChildFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49E82109ED9500ED4760 /* JFPageChildFirstViewController.xib */; };
@@ -83,7 +87,6 @@
 		E874E20A1F552D01003A29B1 /* JFNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNearViewController.swift; sourceTree = "<group>"; };
 		E874E20E1F552D1D003A29B1 /* JFOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOrderViewController.swift; sourceTree = "<group>"; };
 		E874E2101F552D26003A29B1 /* JFMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeViewController.swift; sourceTree = "<group>"; };
-		E874E2121F552D34003A29B1 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
 		E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; };
 		E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeHeaderCell.swift; sourceTree = "<group>"; };
 		E874E21C1F567BD5003A29B1 /* JFListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFListCell.swift; sourceTree = "<group>"; };
@@ -92,6 +95,11 @@
 		E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFStyle.swift; sourceTree = "<group>"; };
 		E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeInfoModel.swift; sourceTree = "<group>"; };
 		E874ED031F5D5F54003A29B1 /* JFMeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeModel.swift; sourceTree = "<group>"; };
+		EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFWalkChildViewController.swift; sourceTree = "<group>"; };
+		EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
+		EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFWalkChildViewController.xib; sourceTree = "<group>"; };
+		EA1A75CB211AF260000BF3E2 /* JFWeakNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFWeakNormalCell.swift; sourceTree = "<group>"; };
+		EA1A75CC211AF260000BF3E2 /* JFWeakNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFWeakNormalCell.xib; sourceTree = "<group>"; };
 		EA9D49E32109E57400ED4760 /* JFPageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFPageMenuViewController.swift; sourceTree = "<group>"; };
 		EA9D49E72109ED9500ED4760 /* JFPageChildFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFPageChildFirstViewController.swift; sourceTree = "<group>"; };
 		EA9D49E82109ED9500ED4760 /* JFPageChildFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFPageChildFirstViewController.xib; sourceTree = "<group>"; };
@@ -277,7 +285,9 @@
 		E874E2031F552C72003A29B1 /* Walk(逛一逛) */ = {
 			isa = PBXGroup;
 			children = (
-				E874E2121F552D34003A29B1 /* JFwalkViewController.swift */,
+				EA1A75C3211AF1AE000BF3E2 /* Controller */,
+				EA1A75C7211AF1AF000BF3E2 /* Model */,
+				EA1A75C2211AF1AE000BF3E2 /* View */,
 			);
 			name = "Walk(逛一逛)";
 			path = Walk;
@@ -330,6 +340,32 @@
 				EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */,
 			);
 			path = JFConst;
+			sourceTree = "<group>";
+		};
+		EA1A75C2211AF1AE000BF3E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A75CB211AF260000BF3E2 /* JFWeakNormalCell.swift */,
+				EA1A75CC211AF260000BF3E2 /* JFWeakNormalCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA1A75C3211AF1AE000BF3E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */,
+				EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */,
+				EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA1A75C7211AF1AF000BF3E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EA9D49E22109E4EE00ED4760 /* PageMenu */ = {
@@ -443,12 +479,14 @@
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
 				EAD1BCFF2105DB7800309E86 /* JFMineCollectionCell.xib in Resources */,
+				EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */,
 				EAD1BCF72105C7F200309E86 /* JFMineViewController.xib in Resources */,
 				EA9D49EA2109ED9500ED4760 /* JFPageChildFirstViewController.xib in Resources */,
 				EAD1BD082107272F00309E86 /* JFSendValueViewController.xib in Resources */,
 				EAD1BD0C2107279D00309E86 /* JFReceiveValueViewController.xib in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
 				EAD1BD0421071EE800309E86 /* JFBasicKnowledgeListViewController.xib in Resources */,
+				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
 				E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,9 +551,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E874E2131F552D34003A29B1 /* JFwalkViewController.swift in Sources */,
 				EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */,
 				EA9D49E92109ED9500ED4760 /* JFPageChildFirstViewController.swift in Sources */,
+				EA1A75CD211AF260000BF3E2 /* JFWeakNormalCell.swift in Sources */,
 				E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */,
 				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
 				EAD1BD122108541C00309E86 /* JFSendSingleton.swift in Sources */,
@@ -538,9 +576,11 @@
 				EAD1BCFE2105DB7800309E86 /* JFMineCollectionCell.swift in Sources */,
 				EAD1BCFA2105C9C800309E86 /* JFMineCell.swift in Sources */,
 				E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */,
+				EA1A75C9211AF1AF000BF3E2 /* JFwalkViewController.swift in Sources */,
 				E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */,
 				EAD1BD072107272F00309E86 /* JFSendValueViewController.swift in Sources */,
 				E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */,
+				EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */,
 				EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */,
 				EA9D49E52109E57400ED4760 /* JFPageMenuViewController.swift in Sources */,
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
