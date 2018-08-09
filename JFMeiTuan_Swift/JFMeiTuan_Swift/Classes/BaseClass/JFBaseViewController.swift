@@ -54,6 +54,28 @@ class JFBaseViewController: UIViewController {
         let rightItem:UIBarButtonItem =  UIBarButtonItem.init(customView: button)
         navigationItem.rightBarButtonItem = rightItem
     }
+    
+    
+    func setupCustomLeftWithTitle(title:NSString,target:Any,action:Selector){
+        let button:UIButton = UIButton.init(type: UIButtonType.custom)
+        button.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+        button.setTitle(title as String, for: UIControlState.normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        let leftItem:UIBarButtonItem =  UIBarButtonItem.init(customView: button)
+        navigationItem.leftBarButtonItem = leftItem
+    }
+    
+    func setupCustomLeftWithImage(image:UIImage,target:Any,action:Selector){
+        let button:UIButton = UIButton.init(type: UIButtonType.custom)
+        button.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+        button.imageEdgeInsets = UIEdgeInsetsMake(10, 20, 10, 0)
+        button.setImage(image, for: UIControlState.normal)
+        button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
+        let leftItem:UIBarButtonItem =  UIBarButtonItem.init(customView: button)
+        navigationItem.leftBarButtonItem = leftItem
+    }
+    
 
     /*
     // MARK: - Navigation

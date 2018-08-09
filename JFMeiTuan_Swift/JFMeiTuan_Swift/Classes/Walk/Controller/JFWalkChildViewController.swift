@@ -33,6 +33,7 @@ class JFWalkChildViewController: JFBaseViewController,UITableViewDataSource,UITa
         
         let VC:JFWebViewController =  JFWebViewController.init()
         VC.hidesBottomBarWhenPushed = true
+        VC.urlString = myPageUrl
         navigationController?.pushViewController(VC, animated: true)
     }
     
