@@ -22,7 +22,6 @@
 		E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2041F552CAB003A29B1 /* JFBaseNacigationController.swift */; };
 		E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2051F552CAB003A29B1 /* JFBaseTabBarController.swift */; };
 		E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2061F552CAB003A29B1 /* JFBaseViewController.swift */; };
-		E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20A1F552D01003A29B1 /* JFNearViewController.swift */; };
 		E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2101F552D26003A29B1 /* JFMeViewController.swift */; };
 		E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */; };
 		E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */; };
@@ -66,6 +65,8 @@
 		EA1A7632211C4952000BF3E2 /* JFSendValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7626211C4952000BF3E2 /* JFSendValueViewController.swift */; };
 		EA1A7633211C4952000BF3E2 /* JFReceiveValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7627211C4952000BF3E2 /* JFReceiveValueViewController.xib */; };
 		EA1A7634211C4952000BF3E2 /* JFReceiveValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7628211C4952000BF3E2 /* JFReceiveValueViewController.swift */; };
+		EA1A7637211C4B71000BF3E2 /* JFNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7635211C4B71000BF3E2 /* JFNearViewController.swift */; };
+		EA1A7638211C4B71000BF3E2 /* JFNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7636211C4B71000BF3E2 /* JFNearViewController.xib */; };
 		EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */; };
 		EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */; };
 		EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */; };
@@ -99,7 +100,6 @@
 		E874E2041F552CAB003A29B1 /* JFBaseNacigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseNacigationController.swift; sourceTree = "<group>"; };
 		E874E2051F552CAB003A29B1 /* JFBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseTabBarController.swift; sourceTree = "<group>"; };
 		E874E2061F552CAB003A29B1 /* JFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseViewController.swift; sourceTree = "<group>"; };
-		E874E20A1F552D01003A29B1 /* JFNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNearViewController.swift; sourceTree = "<group>"; };
 		E874E2101F552D26003A29B1 /* JFMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeViewController.swift; sourceTree = "<group>"; };
 		E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; };
 		E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeHeaderCell.swift; sourceTree = "<group>"; };
@@ -143,6 +143,8 @@
 		EA1A7626211C4952000BF3E2 /* JFSendValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFSendValueViewController.swift; sourceTree = "<group>"; };
 		EA1A7627211C4952000BF3E2 /* JFReceiveValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFReceiveValueViewController.xib; sourceTree = "<group>"; };
 		EA1A7628211C4952000BF3E2 /* JFReceiveValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFReceiveValueViewController.swift; sourceTree = "<group>"; };
+		EA1A7635211C4B71000BF3E2 /* JFNearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNearViewController.swift; sourceTree = "<group>"; };
+		EA1A7636211C4B71000BF3E2 /* JFNearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFNearViewController.xib; sourceTree = "<group>"; };
 		EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeConmonModel.swift; sourceTree = "<group>"; };
 		EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
 		EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeNormalCell.xib; sourceTree = "<group>"; };
@@ -309,7 +311,8 @@
 		E874E2021F552C72003A29B1 /* Near(附近) */ = {
 			isa = PBXGroup;
 			children = (
-				E874E20A1F552D01003A29B1 /* JFNearViewController.swift */,
+				EA1A7635211C4B71000BF3E2 /* JFNearViewController.swift */,
+				EA1A7636211C4B71000BF3E2 /* JFNearViewController.xib */,
 			);
 			name = "Near(附近)";
 			path = Near;
@@ -570,6 +573,7 @@
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
 				EA1A762F211C4952000BF3E2 /* JFSendValueViewController.xib in Resources */,
 				EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */,
+				EA1A7638211C4B71000BF3E2 /* JFNearViewController.xib in Resources */,
 				EA1A762E211C4952000BF3E2 /* JFPageChildFirstViewController.xib in Resources */,
 				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
 				E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */,
@@ -660,7 +664,6 @@
 				EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */,
 				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,
 				E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */,
-				E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */,
 				EA1A75EE211BCA6E000BF3E2 /* JFUrlConst.swift in Sources */,
 				EAD1BCFE2105DB7800309E86 /* JFMineCollectionCell.swift in Sources */,
 				EAD1BCFA2105C9C800309E86 /* JFMineCell.swift in Sources */,
@@ -679,6 +682,7 @@
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
 				EA1A7632211C4952000BF3E2 /* JFSendValueViewController.swift in Sources */,
 				EA1A762D211C4952000BF3E2 /* JFPageChildSecondViewController.swift in Sources */,
+				EA1A7637211C4B71000BF3E2 /* JFNearViewController.swift in Sources */,
 				EAD1BCF62105C7F200309E86 /* JFMineViewController.swift in Sources */,
 				EA1A7608211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift in Sources */,
 				E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */,
