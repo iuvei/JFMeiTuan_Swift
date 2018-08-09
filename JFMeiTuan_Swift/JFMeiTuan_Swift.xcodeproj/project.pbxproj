@@ -23,7 +23,6 @@
 		E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2051F552CAB003A29B1 /* JFBaseTabBarController.swift */; };
 		E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2061F552CAB003A29B1 /* JFBaseViewController.swift */; };
 		E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20A1F552D01003A29B1 /* JFNearViewController.swift */; };
-		E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E20E1F552D1D003A29B1 /* JFOrderViewController.swift */; };
 		E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2101F552D26003A29B1 /* JFMeViewController.swift */; };
 		E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */; };
 		E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */; };
@@ -55,6 +54,14 @@
 		EA1A75EE211BCA6E000BF3E2 /* JFUrlConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75ED211BCA6E000BF3E2 /* JFUrlConst.swift */; };
 		EA1A75F1211BECCC000BF3E2 /* JFWalkVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75EF211BECCC000BF3E2 /* JFWalkVideoCell.swift */; };
 		EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75F0211BECCC000BF3E2 /* JFWalkVideoCell.xib */; };
+		EA1A75FC211C154D000BF3E2 /* JFOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75F9211C154D000BF3E2 /* JFOrderViewController.swift */; };
+		EA1A75FD211C154D000BF3E2 /* JFOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75FA211C154D000BF3E2 /* JFOrderViewController.xib */; };
+		EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75FE211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift */; };
+		EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75FF211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib */; };
+		EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7602211C19CC000BF3E2 /* JFRecentOrderCell.swift */; };
+		EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7603211C19CC000BF3E2 /* JFRecentOrderCell.xib */; };
+		EA1A7608211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7606211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift */; };
+		EA1A7609211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7607211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib */; };
 		EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */; };
 		EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */; };
 		EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */; };
@@ -89,7 +96,6 @@
 		E874E2051F552CAB003A29B1 /* JFBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseTabBarController.swift; sourceTree = "<group>"; };
 		E874E2061F552CAB003A29B1 /* JFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseViewController.swift; sourceTree = "<group>"; };
 		E874E20A1F552D01003A29B1 /* JFNearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFNearViewController.swift; sourceTree = "<group>"; };
-		E874E20E1F552D1D003A29B1 /* JFOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOrderViewController.swift; sourceTree = "<group>"; };
 		E874E2101F552D26003A29B1 /* JFMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeViewController.swift; sourceTree = "<group>"; };
 		E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; };
 		E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeHeaderCell.swift; sourceTree = "<group>"; };
@@ -121,6 +127,14 @@
 		EA1A75ED211BCA6E000BF3E2 /* JFUrlConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFUrlConst.swift; sourceTree = "<group>"; };
 		EA1A75EF211BECCC000BF3E2 /* JFWalkVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFWalkVideoCell.swift; sourceTree = "<group>"; };
 		EA1A75F0211BECCC000BF3E2 /* JFWalkVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFWalkVideoCell.xib; sourceTree = "<group>"; };
+		EA1A75F9211C154D000BF3E2 /* JFOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFOrderViewController.swift; sourceTree = "<group>"; };
+		EA1A75FA211C154D000BF3E2 /* JFOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFOrderViewController.xib; sourceTree = "<group>"; };
+		EA1A75FE211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFOrderTopCategoryCell.swift; sourceTree = "<group>"; };
+		EA1A75FF211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFOrderTopCategoryCell.xib; sourceTree = "<group>"; };
+		EA1A7602211C19CC000BF3E2 /* JFRecentOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFRecentOrderCell.swift; sourceTree = "<group>"; };
+		EA1A7603211C19CC000BF3E2 /* JFRecentOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFRecentOrderCell.xib; sourceTree = "<group>"; };
+		EA1A7606211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFRecentSubOrderCell.swift; sourceTree = "<group>"; };
+		EA1A7607211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFRecentSubOrderCell.xib; sourceTree = "<group>"; };
 		EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeConmonModel.swift; sourceTree = "<group>"; };
 		EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
 		EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeNormalCell.xib; sourceTree = "<group>"; };
@@ -265,7 +279,9 @@
 		E874E2001F552C72003A29B1 /* Order(订单) */ = {
 			isa = PBXGroup;
 			children = (
-				E874E20E1F552D1D003A29B1 /* JFOrderViewController.swift */,
+				EA1A75F8211C154D000BF3E2 /* Controller */,
+				EA1A75F7211C154D000BF3E2 /* Model */,
+				EA1A75FB211C154D000BF3E2 /* View */,
 			);
 			name = "Order(订单)";
 			path = Order;
@@ -401,6 +417,35 @@
 			path = "WebView(网页)";
 			sourceTree = "<group>";
 		};
+		EA1A75F7211C154D000BF3E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA1A75F8211C154D000BF3E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A75F9211C154D000BF3E2 /* JFOrderViewController.swift */,
+				EA1A75FA211C154D000BF3E2 /* JFOrderViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA1A75FB211C154D000BF3E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A75FE211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift */,
+				EA1A75FF211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib */,
+				EA1A7602211C19CC000BF3E2 /* JFRecentOrderCell.swift */,
+				EA1A7603211C19CC000BF3E2 /* JFRecentOrderCell.xib */,
+				EA1A7606211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift */,
+				EA1A7607211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EA9D49EF210B122000ED4760 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,10 +541,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD1BCFB2105C9C800309E86 /* JFMineCell.xib in Resources */,
+				EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */,
 				EA1A75E3211AF83B000BF3E2 /* JFSendValueViewController.xib in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
+				EA1A7609211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib in Resources */,
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
+				EA1A75FD211C154D000BF3E2 /* JFOrderViewController.xib in Resources */,
 				EAD1BCFF2105DB7800309E86 /* JFMineCollectionCell.xib in Resources */,
 				EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */,
 				EAD1BCF72105C7F200309E86 /* JFMineViewController.xib in Resources */,
@@ -508,6 +556,7 @@
 				EA1A75E0211AF83B000BF3E2 /* JFPageChildSecondViewController.xib in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
 				EA1A75E5211AF83B000BF3E2 /* JFReceiveValueViewController.xib in Resources */,
+				EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */,
 				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
 				E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */,
 			);
@@ -589,9 +638,12 @@
 				E874E2111F552D26003A29B1 /* JFMeViewController.swift in Sources */,
 				E81B51071F692E74002EA405 /* JFAdvertisingCell.swift in Sources */,
 				E81B51031F692B36002EA405 /* JFHomeTipCell.swift in Sources */,
+				EA1A75FC211C154D000BF3E2 /* JFOrderViewController.swift in Sources */,
 				E874ED041F5D5F54003A29B1 /* JFMeModel.swift in Sources */,
 				E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */,
 				E81B51091F692F06002EA405 /* JFHomeLuckyDrawCell.swift in Sources */,
+				EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */,
+				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,
 				E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */,
 				E874E20B1F552D01003A29B1 /* JFNearViewController.swift in Sources */,
 				EA1A75EE211BCA6E000BF3E2 /* JFUrlConst.swift in Sources */,
@@ -600,7 +652,6 @@
 				E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */,
 				EA1A75C9211AF1AF000BF3E2 /* JFwalkViewController.swift in Sources */,
 				E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */,
-				E874E20F1F552D1D003A29B1 /* JFOrderViewController.swift in Sources */,
 				EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */,
 				EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */,
 				EA1A75DE211AF83B000BF3E2 /* JFPageMenuViewController.swift in Sources */,
@@ -613,6 +664,7 @@
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
 				EAD1BCF62105C7F200309E86 /* JFMineViewController.swift in Sources */,
 				EA1A75E1211AF83B000BF3E2 /* JFPageChildSecondViewController.swift in Sources */,
+				EA1A7608211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift in Sources */,
 				EA1A75E8211AF83B000BF3E2 /* JFSendSingleton.swift in Sources */,
 				E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */,
 				E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */,
