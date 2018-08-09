@@ -45,7 +45,7 @@ class JFOrderViewController: JFBaseViewController,UITableViewDelegate,UITableVie
         case 0:
             return 80
         case 1:
-            return 400
+            return 370
         default:
             return 200
         }

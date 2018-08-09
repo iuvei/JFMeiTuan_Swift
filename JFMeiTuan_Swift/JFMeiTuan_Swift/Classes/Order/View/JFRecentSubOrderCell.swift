@@ -10,9 +10,20 @@ import UIKit
 
 class JFRecentSubOrderCell: UITableViewCell {
 
+    
+    @IBOutlet weak var bgContentView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+//        //给背景色添加阴影
+//        bgContentView.layer.shadowOpacity = 0.5
+//        bgContentView.layer.shadowPath = UIBezierPath(rect: bgContentView.layer.bounds).cgPath
+//
+        bgContentView.layer.shadowOffset = CGSize.init(width: JF_SCREEN_WIDTH, height: 100)// 设置阴影的偏移量、
+        bgContentView.layer.shadowColor = JFStyle.navigarionBarColor().cgColor
+
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

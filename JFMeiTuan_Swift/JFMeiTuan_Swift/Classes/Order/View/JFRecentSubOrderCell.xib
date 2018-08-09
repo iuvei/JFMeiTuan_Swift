@@ -150,6 +150,9 @@
                     <constraint firstAttribute="bottom" secondItem="YIz-n3-YXZ" secondAttribute="bottom" constant="5" id="ou4-Rm-XtZ"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bgContentView" destination="YIz-n3-YXZ" id="n7U-Qm-Zo6"/>
+            </connections>
             <point key="canvasLocation" x="34" y="104.5"/>
         </tableViewCell>
     </objects>
