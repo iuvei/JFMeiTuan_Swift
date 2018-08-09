@@ -18,6 +18,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="439" height="200.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3Q-Ya-kwl">
+                        <rect key="frame" x="0.0" y="199" width="439" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dyO-Om-fAD"/>
+                        </constraints>
+                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoImage" translatesAutoresizingMaskIntoConstraints="NO" id="MqL-Oq-Tlk">
                         <rect key="frame" x="15" y="30" width="409" height="140.5"/>
                     </imageView>
@@ -53,15 +60,18 @@
                 <constraints>
                     <constraint firstItem="3lT-zb-2N4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1Td-AF-W15"/>
                     <constraint firstItem="MqL-Oq-Tlk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="EZs-hh-HAl"/>
+                    <constraint firstAttribute="trailing" secondItem="t3Q-Ya-kwl" secondAttribute="trailing" id="HaV-pR-N61"/>
                     <constraint firstItem="6Ep-WW-bDA" firstAttribute="leading" secondItem="yjB-PF-L2N" secondAttribute="trailing" constant="20" id="MBQ-5x-y2G"/>
                     <constraint firstAttribute="bottom" secondItem="6Ep-WW-bDA" secondAttribute="bottom" constant="5" id="Sfh-hW-Tbx"/>
                     <constraint firstItem="yjB-PF-L2N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Sr1-6L-xig"/>
+                    <constraint firstItem="t3Q-Ya-kwl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="X7y-04-JAd"/>
                     <constraint firstAttribute="bottom" secondItem="yjB-PF-L2N" secondAttribute="bottom" constant="5" id="aBP-bO-R4P"/>
                     <constraint firstAttribute="trailing" secondItem="3lT-zb-2N4" secondAttribute="trailing" id="asL-BU-vxh"/>
                     <constraint firstItem="yjB-PF-L2N" firstAttribute="top" secondItem="MqL-Oq-Tlk" secondAttribute="bottom" constant="5" id="bau-1y-6wJ"/>
                     <constraint firstAttribute="trailing" secondItem="MqL-Oq-Tlk" secondAttribute="trailing" constant="15" id="gRM-ti-vQ3"/>
                     <constraint firstItem="MqL-Oq-Tlk" firstAttribute="top" secondItem="3lT-zb-2N4" secondAttribute="bottom" constant="5" id="geZ-Wf-DVr"/>
                     <constraint firstItem="3lT-zb-2N4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hto-v1-pza"/>
+                    <constraint firstAttribute="bottom" secondItem="t3Q-Ya-kwl" secondAttribute="bottom" id="jw8-fW-hIG"/>
                     <constraint firstAttribute="trailing" secondItem="6Ep-WW-bDA" secondAttribute="trailing" id="lyk-Op-qEI"/>
                 </constraints>
             </tableViewCellContentView>
