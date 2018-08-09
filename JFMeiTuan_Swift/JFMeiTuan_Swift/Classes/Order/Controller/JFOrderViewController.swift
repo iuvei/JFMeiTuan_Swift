@@ -21,7 +21,7 @@ class JFOrderViewController: JFBaseViewController,UITableViewDelegate,UITableVie
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 30
+        return 4
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -33,8 +33,13 @@ class JFOrderViewController: JFBaseViewController,UITableViewDelegate,UITableVie
         case 1:
             let cell:JFRecentOrderCell  = JFRecentOrderCell.cellWithTableView(tableView)
             return cell
+        case 2:
+            let cell:JFRecentViewOrderCell  = JFRecentViewOrderCell.cellWithTableView(tableView)
+            cell.titleClassLabel.text = "最近收藏"
+            return cell
         default:
-            let cell:JFWalkVideoCell  = JFWalkVideoCell.cellWithTableView(tableView)
+            let cell:JFRecentViewOrderCell  = JFRecentViewOrderCell.cellWithTableView(tableView)
+            cell.titleClassLabel.text = "最近浏览"
             return cell
             
         }
@@ -46,16 +51,15 @@ class JFOrderViewController: JFBaseViewController,UITableViewDelegate,UITableVie
             return 80
         case 1:
             return 370
+        case 2:
+            return 290
         default:
-            return 200
+            return 290
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
-        
-        
-        
         let VC:JFWebViewController =  JFWebViewController.init()
         VC.hidesBottomBarWhenPushed = true
         VC.urlString = myPageUrl
