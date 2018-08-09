@@ -13,6 +13,20 @@ class JFBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /// 自定义导航栏返回按钮
+        let backButton = UIButton(type: .custom)
+        backButton.setImage(UIImage.init(named: "beauty_icon_back"), for: .normal)
+//        backButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        backButton.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
+        
+//        let spacing:CGFloat = 10; // the amount of spacing to appear between image and title
+//        backButton.imageEdgeInsets = UIEdgeInsetsMake(0, spacing, 0, 0);
+//        backButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, spacing);
+        
+        backButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
+        let item = UIBarButtonItem.init(customView: backButton)
+        self.navigationItem.backBarButtonItem = item;
+        
         // Do any additional setup after loading the view.
     }
     

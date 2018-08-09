@@ -17,7 +17,7 @@ class JFBaseNacigationController: UINavigationController {
         // 1.设置导航栏标题属性：设置标题颜色
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         // 2.设置导航栏前景色：设置item指示色
-       navigationBar.tintColor = JFStyle.clearColor()
+       navigationBar.tintColor = UIColor.white
         
         // 3.设置导航栏半透明
         navigationBar.isTranslucent = false
@@ -36,6 +36,17 @@ class JFBaseNacigationController: UINavigationController {
         
         //设置状态栏的颜色
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
+        
+//        UIImage *backImage = [UIImage imageNamed:@"backNor"];
+//        [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[backImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, backImage.size.width, 0, 0)]
+//            forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-233, 0) forBarMetrics:UIBarMetricsDefault];
+        
+//        let backImage:UIImage = UIImage.init(named: "")!
+        
+        
+        
+        
         
 
 
