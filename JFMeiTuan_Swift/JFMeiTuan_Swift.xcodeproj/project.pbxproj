@@ -53,6 +53,8 @@
 		EA1A75E9211AF83B000BF3E2 /* JFBasicKnowledgeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75DD211AF83B000BF3E2 /* JFBasicKnowledgeListViewController.xib */; };
 		EA1A75EC211AF88B000BF3E2 /* JFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75EB211AF88B000BF3E2 /* JFWebViewController.swift */; };
 		EA1A75EE211BCA6E000BF3E2 /* JFUrlConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75ED211BCA6E000BF3E2 /* JFUrlConst.swift */; };
+		EA1A75F1211BECCC000BF3E2 /* JFWalkVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75EF211BECCC000BF3E2 /* JFWalkVideoCell.swift */; };
+		EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75F0211BECCC000BF3E2 /* JFWalkVideoCell.xib */; };
 		EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */; };
 		EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */; };
 		EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */; };
@@ -117,6 +119,8 @@
 		EA1A75DD211AF83B000BF3E2 /* JFBasicKnowledgeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JFBasicKnowledgeListViewController.xib; path = JFMeiTuan_Swift/Classes/BasicKnowledge/JFBasicKnowledgeListViewController.xib; sourceTree = SOURCE_ROOT; };
 		EA1A75EB211AF88B000BF3E2 /* JFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFWebViewController.swift; sourceTree = "<group>"; };
 		EA1A75ED211BCA6E000BF3E2 /* JFUrlConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFUrlConst.swift; sourceTree = "<group>"; };
+		EA1A75EF211BECCC000BF3E2 /* JFWalkVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFWalkVideoCell.swift; sourceTree = "<group>"; };
+		EA1A75F0211BECCC000BF3E2 /* JFWalkVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFWalkVideoCell.xib; sourceTree = "<group>"; };
 		EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeConmonModel.swift; sourceTree = "<group>"; };
 		EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
 		EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeNormalCell.xib; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 			children = (
 				EA1A75CB211AF260000BF3E2 /* JFWeakNormalCell.swift */,
 				EA1A75CC211AF260000BF3E2 /* JFWeakNormalCell.xib */,
+				EA1A75EF211BECCC000BF3E2 /* JFWalkVideoCell.swift */,
+				EA1A75F0211BECCC000BF3E2 /* JFWalkVideoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -491,6 +497,7 @@
 			files = (
 				EAD1BCFB2105C9C800309E86 /* JFMineCell.xib in Resources */,
 				EA1A75E3211AF83B000BF3E2 /* JFSendValueViewController.xib in Resources */,
+				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
 				EAD1BCFF2105DB7800309E86 /* JFMineCollectionCell.xib in Resources */,
@@ -599,6 +606,7 @@
 				EA1A75DE211AF83B000BF3E2 /* JFPageMenuViewController.swift in Sources */,
 				EA1A75E4211AF83B000BF3E2 /* JFSendValueViewController.swift in Sources */,
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
+				EA1A75F1211BECCC000BF3E2 /* JFWalkVideoCell.swift in Sources */,
 				EA1A75D0211AF804000BF3E2 /* JFBaseNetwork.swift in Sources */,
 				E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */,
 				E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */,
