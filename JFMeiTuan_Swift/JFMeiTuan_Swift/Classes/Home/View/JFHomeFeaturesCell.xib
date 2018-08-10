@@ -26,10 +26,10 @@
                                 <rect key="frame" x="5" y="5" width="150" height="75"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeFeatureHG" translatesAutoresizingMaskIntoConstraints="NO" id="1fz-BH-AvC">
-                                <rect key="frame" x="105" y="30" width="50" height="50"/>
+                                <rect key="frame" x="95" y="20" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Poq-Pu-tkV"/>
-                                    <constraint firstAttribute="height" constant="50" id="bz4-na-hqO"/>
+                                    <constraint firstAttribute="width" constant="60" id="Poq-Pu-tkV"/>
+                                    <constraint firstAttribute="height" constant="60" id="bz4-na-hqO"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -124,10 +124,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeFeatureKY" translatesAutoresizingMaskIntoConstraints="NO" id="BL5-Y8-Kdv">
-                                <rect key="frame" x="105" y="30" width="50" height="50"/>
+                                <rect key="frame" x="95" y="20" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="AgJ-Md-tNK"/>
-                                    <constraint firstAttribute="width" constant="50" id="Pdr-ef-i0X"/>
+                                    <constraint firstAttribute="height" constant="60" id="AgJ-Md-tNK"/>
+                                    <constraint firstAttribute="width" constant="60" id="Pdr-ef-i0X"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -160,10 +160,10 @@
                                 <rect key="frame" x="5" y="5" width="150" height="75"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeFeatureZDY" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-Qg-LwT">
-                                <rect key="frame" x="105" y="30" width="50" height="50"/>
+                                <rect key="frame" x="95" y="20" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="KbR-eD-fl1"/>
-                                    <constraint firstAttribute="height" constant="50" id="Wya-lu-jHL"/>
+                                    <constraint firstAttribute="width" constant="60" id="KbR-eD-fl1"/>
+                                    <constraint firstAttribute="height" constant="60" id="Wya-lu-jHL"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -258,10 +258,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeFeatureTZF" translatesAutoresizingMaskIntoConstraints="NO" id="Jc4-zf-7uF" customClass="homeFeatureTZF">
-                                <rect key="frame" x="105" y="30" width="50" height="50"/>
+                                <rect key="frame" x="95" y="20" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Q61-OJ-sS9"/>
-                                    <constraint firstAttribute="height" constant="50" id="WTr-CM-bFt"/>
+                                    <constraint firstAttribute="width" constant="60" id="Q61-OJ-sS9"/>
+                                    <constraint firstAttribute="height" constant="60" id="WTr-CM-bFt"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
