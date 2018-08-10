@@ -20,7 +20,6 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
         
         setUpRightNavItem()
 
-        tableView.rowHeight = 160
         tableView.tableFooterView = UIView.init()
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView.allowsSelection = false
@@ -29,34 +28,62 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
   
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 3;
+        return 4;
     }
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
-        
         if indexPath.row == 0 {
-            cell.cellTitle = ""
+            let cell:JFMineTopCategoryCell  = JFMineTopCategoryCell.cellWithTableView(tableView)
             return cell;
         }else if (indexPath.row == 1) {
+            let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
+
             cell.cellTitle = "美团钱包"
             return cell;
-        }else if (indexPath.row == 2 ){
+        }else if (indexPath.row == 2) {
+            let cell:JFMineActiveCell  = JFMineActiveCell.cellWithTableView(tableView)
+            return cell;
+        }
+        else {
+            let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
+
             cell.cellTitle = "美团服务"
             cell.bottomLineView.isHidden = true
             return cell;
         }
-        return cell
+      
     }
     
-    func setUpRightNavItem() {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 100
+        case 1:
+            return 160
+        case 2:
+            return 100
+      
+        default:
+            return 160
+        }
+    }
+    
+    func setUpRightNavItem() {//muf_navigation_barbutton_setting
         self.setupCustomRightWithTitle(title: "基础", target: self, action: #selector(JFMineViewController.rightBtnClick))
+        
+        self.setupCustomLeftWithImage(image: UIImage.init(named: "icon_navigationItem_set")!, target: self, action: #selector(JFMineViewController.leftBtnClick))
     }
     
     func rightBtnClick() {
+        let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
+        VC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(VC, animated: true)
+    }
+    
+    func leftBtnClick() {
         let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
         VC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(VC, animated: true)
