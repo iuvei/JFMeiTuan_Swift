@@ -59,6 +59,11 @@ class JFBaseNetwork: NSObject {
         
     }
     
+    static func postDataByString(urlSting: String, bodyDic: NSDictionary!, succeed: @escaping (_ responeObject: NSString) -> (), fail: @escaping (_ error: AnyObject) -> ()){
+        
+      
+    }
+    
     func JFHeaders() -> (Dictionary<String, String>) {
         //声明一个字典
         let someDict:[String:String] = ["1":"One", "2":"Two", "3":"Three"]
