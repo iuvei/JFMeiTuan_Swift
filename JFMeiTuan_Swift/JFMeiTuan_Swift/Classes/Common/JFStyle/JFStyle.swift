@@ -17,7 +17,7 @@ class JFStyle: NSObject {
     
     //导航栏的背景色
     class func navigarionBarColor() ->UIColor {
-        return self.JFInitColor(red: 86.0, green: 190.0, blue: 173.0)
+        return self.JFInitColor(red: 29.0, green: 171.0, blue: 177.0)
     }
     
     //下划线的背景色

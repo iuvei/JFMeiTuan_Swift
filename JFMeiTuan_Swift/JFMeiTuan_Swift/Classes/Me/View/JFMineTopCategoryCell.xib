@@ -28,7 +28,7 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXm-Jr-8bQ">
-                        <rect key="frame" x="15" y="5" width="96" height="92.5"/>
+                        <rect key="frame" x="15" y="15" width="96" height="82.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wmugc_icon_evalution_start_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="sso-V4-8mo">
                                 <rect key="frame" x="38" y="8" width="20" height="20"/>
@@ -57,7 +57,7 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXj-3h-oUq">
-                        <rect key="frame" x="112" y="5" width="96" height="92.5"/>
+                        <rect key="frame" x="112" y="10" width="96" height="82.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temp" translatesAutoresizingMaskIntoConstraints="NO" id="3UY-Yn-une">
                                 <rect key="frame" x="38" y="8" width="20" height="20"/>
@@ -86,7 +86,7 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZT8-75-O1H">
-                        <rect key="frame" x="209" y="5" width="96" height="92.5"/>
+                        <rect key="frame" x="209" y="10" width="96" height="82.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wmugc_icon_evalution_start_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="kgF-P6-kYM">
                                 <rect key="frame" x="38" y="8" width="20" height="20"/>
@@ -118,7 +118,7 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="ZT8-75-O1H" secondAttribute="trailing" constant="15" id="2Ez-os-orO"/>
                     <constraint firstItem="qXm-Jr-8bQ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="5eP-DG-mGb"/>
-                    <constraint firstItem="qXm-Jr-8bQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="8iH-4t-viL"/>
+                    <constraint firstItem="qXm-Jr-8bQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="8iH-4t-viL"/>
                     <constraint firstItem="JXJ-iB-bwR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="KxX-RJ-A4Z"/>
                     <constraint firstItem="qXm-Jr-8bQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Phq-eT-Hj5"/>
                     <constraint firstAttribute="bottom" secondItem="JXJ-iB-bwR" secondAttribute="bottom" id="WYY-LF-Gj4"/>
