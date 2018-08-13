@@ -86,6 +86,10 @@
 		EA9FC5D5211D70BE0053A56B /* JFHomeActiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5D3211D70BE0053A56B /* JFHomeActiveCell.xib */; };
 		EA9FC5D8211D7A670053A56B /* JFHomeFeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5D6211D7A670053A56B /* JFHomeFeaturesCell.swift */; };
 		EA9FC5D9211D7A670053A56B /* JFHomeFeaturesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5D7211D7A670053A56B /* JFHomeFeaturesCell.xib */; };
+		EA9FC5DC212117D50053A56B /* JFHomeTopCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5DA212117D50053A56B /* JFHomeTopCategoryCell.swift */; };
+		EA9FC5DD212117D50053A56B /* JFHomeTopCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5DB212117D50053A56B /* JFHomeTopCategoryCell.xib */; };
+		EA9FC5E0212118910053A56B /* JFHomeTopCategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5DE212118910053A56B /* JFHomeTopCategoryCollectionCell.swift */; };
+		EA9FC5E1212118910053A56B /* JFHomeTopCategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5DF212118910053A56B /* JFHomeTopCategoryCollectionCell.xib */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
 /* End PBXBuildFile section */
@@ -174,6 +178,10 @@
 		EA9FC5D3211D70BE0053A56B /* JFHomeActiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeActiveCell.xib; sourceTree = "<group>"; };
 		EA9FC5D6211D7A670053A56B /* JFHomeFeaturesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeFeaturesCell.swift; sourceTree = "<group>"; };
 		EA9FC5D7211D7A670053A56B /* JFHomeFeaturesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeFeaturesCell.xib; sourceTree = "<group>"; };
+		EA9FC5DA212117D50053A56B /* JFHomeTopCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeTopCategoryCell.swift; sourceTree = "<group>"; };
+		EA9FC5DB212117D50053A56B /* JFHomeTopCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeTopCategoryCell.xib; sourceTree = "<group>"; };
+		EA9FC5DE212118910053A56B /* JFHomeTopCategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeTopCategoryCollectionCell.swift; sourceTree = "<group>"; };
+		EA9FC5DF212118910053A56B /* JFHomeTopCategoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeTopCategoryCollectionCell.xib; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -367,6 +375,10 @@
 				EA9FC5D3211D70BE0053A56B /* JFHomeActiveCell.xib */,
 				EA9FC5D6211D7A670053A56B /* JFHomeFeaturesCell.swift */,
 				EA9FC5D7211D7A670053A56B /* JFHomeFeaturesCell.xib */,
+				EA9FC5DA212117D50053A56B /* JFHomeTopCategoryCell.swift */,
+				EA9FC5DB212117D50053A56B /* JFHomeTopCategoryCell.xib */,
+				EA9FC5DE212118910053A56B /* JFHomeTopCategoryCollectionCell.swift */,
+				EA9FC5DF212118910053A56B /* JFHomeTopCategoryCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -624,12 +636,14 @@
 				EA1A762C211C4952000BF3E2 /* JFPageChildSecondViewController.xib in Resources */,
 				EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */,
 				EA9FC5CE211D690C0053A56B /* JFMineCell.xib in Resources */,
+				EA9FC5DD212117D50053A56B /* JFHomeTopCategoryCell.xib in Resources */,
 				EA1A7645211D3961000BF3E2 /* JFMineTopCategoryCell.xib in Resources */,
 				EA9FC5D5211D70BE0053A56B /* JFHomeActiveCell.xib in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
 				EA1A7641211D2C61000BF3E2 /* JFMineViewController.xib in Resources */,
 				EA9FC5D0211D690C0053A56B /* JFMineCollectionCell.xib in Resources */,
 				EA1A762F211C4952000BF3E2 /* JFSendValueViewController.xib in Resources */,
+				EA9FC5E1212118910053A56B /* JFHomeTopCategoryCollectionCell.xib in Resources */,
 				EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */,
 				EA9FC5D9211D7A670053A56B /* JFHomeFeaturesCell.xib in Resources */,
 				EA1A7638211C4B71000BF3E2 /* JFNearViewController.xib in Resources */,
@@ -733,6 +747,7 @@
 				E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */,
 				EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */,
 				EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */,
+				EA9FC5E0212118910053A56B /* JFHomeTopCategoryCollectionCell.swift in Sources */,
 				EA9FC5CF211D690C0053A56B /* JFMineCollectionCell.swift in Sources */,
 				EA9FC5D4211D70BE0053A56B /* JFHomeActiveCell.swift in Sources */,
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
@@ -742,6 +757,7 @@
 				EA1A75F1211BECCC000BF3E2 /* JFWalkVideoCell.swift in Sources */,
 				EA1A7640211D2C61000BF3E2 /* JFMeViewController.swift in Sources */,
 				E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */,
+				EA9FC5DC212117D50053A56B /* JFHomeTopCategoryCell.swift in Sources */,
 				EA1A7614211C391E000BF3E2 /* JFNormalOrderCell.swift in Sources */,
 				E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */,
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,

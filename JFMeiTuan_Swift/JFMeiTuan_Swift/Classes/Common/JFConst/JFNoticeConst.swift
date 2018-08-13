@@ -11,3 +11,6 @@ import Foundation
 let noticeSenderValue:NSString = "noticeSenderValue"
 let reuseIdentifierID:NSString = "reuseIdentifierID"
 
+let homeTopCellCollectionReuseIdentifierID:NSString = "homeTopCellCollectionReuseIdentifierID"
+
+

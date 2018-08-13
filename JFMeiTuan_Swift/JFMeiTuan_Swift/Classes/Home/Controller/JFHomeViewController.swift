@@ -67,9 +67,12 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         
         switch indexPath.row {
         case 0:
-            let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
+            let cell:JFHomeTopCategoryCell  = JFHomeTopCategoryCell.cellWithTableView(tableView)
             return cell
         case 1:
+            let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
+            return cell
+        case 2:
             let cell:JFHomeFeaturesCell  = JFHomeFeaturesCell.cellWithTableView(tableView)
             return cell
 
@@ -82,8 +85,10 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
-            return 200
+            return 80
         case 1:
+            return 200
+        case 2:
             return 200
         default:
             return 110
