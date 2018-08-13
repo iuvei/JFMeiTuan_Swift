@@ -18,6 +18,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="77.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9b-pM-c09">
+                        <rect key="frame" x="15" y="76.5" width="290" height="1"/>
+                        <color key="backgroundColor" red="1" green="0.15842412920000001" blue="0.1355737729" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RaB-Mw-T7U"/>
+                        </constraints>
+                    </view>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-uZ-9Or">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="77.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,9 +38,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="AQ4-uZ-9Or" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1U5-UP-Q5O"/>
+                    <constraint firstAttribute="bottom" secondItem="b9b-pM-c09" secondAttribute="bottom" id="3gM-Ae-607"/>
                     <constraint firstAttribute="bottom" secondItem="AQ4-uZ-9Or" secondAttribute="bottom" id="7EL-ce-bDf"/>
                     <constraint firstItem="AQ4-uZ-9Or" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CpE-pM-WAa"/>
                     <constraint firstAttribute="trailing" secondItem="AQ4-uZ-9Or" secondAttribute="trailing" id="n8c-VO-Jrr"/>
+                    <constraint firstItem="b9b-pM-c09" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rd1-zx-QEl"/>
+                    <constraint firstAttribute="trailing" secondItem="b9b-pM-c09" secondAttribute="trailing" constant="15" id="wTi-cJ-tui"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

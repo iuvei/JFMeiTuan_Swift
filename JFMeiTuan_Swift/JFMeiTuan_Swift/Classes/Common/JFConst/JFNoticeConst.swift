@@ -15,4 +15,6 @@ let homeTopCellCollectionReuseIdentifierID:NSString = "homeTopCellCollectionReus
 
 let homeClassCellCollectionReuseIdentifierID:NSString = "homeClassCellCollectionReuseIdentifierID"
 
+let carouselCellCollectionReuseIdentifierID:NSString = "carouselCellCollectionReuseIdentifierID"
+
 
