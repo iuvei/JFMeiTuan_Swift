@@ -67,15 +67,19 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         
         switch indexPath.row {
         case 0:
-            let cell:JFHomeTopCategoryCell  = JFHomeTopCategoryCell.cellWithTableView(tableView)
+            let cell:JFCarouseCell  = JFCarouseCell.cellWithTableView(tableView)
+            cell.imageUrlArray = ["http://pic9.photophoto.cn/20081128/0033033999061521_b.jpg","http://p17.qhimg.com/bdm/1600_900_85/d/_open360/fengjing25/Banff-National-Park-desktopsky-41283.jpg","http://pic23.photophoto.cn/20120505/0034034818753393_b.jpg","http://pic31.nipic.com/20130713/8821914_171955153144_2.jpg"]
             return cell
         case 1:
-            let cell:JFHomeClassCell  = JFHomeClassCell.cellWithTableView(tableView)
+            let cell:JFHomeTopCategoryCell  = JFHomeTopCategoryCell.cellWithTableView(tableView)
             return cell
         case 2:
-            let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
+            let cell:JFHomeClassCell  = JFHomeClassCell.cellWithTableView(tableView)
             return cell
         case 3:
+            let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
+            return cell
+        case 4:
             let cell:JFHomeFeaturesCell  = JFHomeFeaturesCell.cellWithTableView(tableView)
             return cell
 
@@ -88,12 +92,14 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
-            return 80
+            return 120
         case 1:
-            return 140
+            return 80
         case 2:
-            return 200
+            return 140
         case 3:
+            return 200
+        case 4:
             return 200
         default:
             return 110

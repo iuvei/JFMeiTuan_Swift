@@ -39,8 +39,10 @@ class JFHomeClassCell: UITableViewCell,UICollectionViewDataSource,UICollectionVi
     }
     
     class func cellWithTableView(_ tableView:UITableView) -> JFHomeClassCell {
-                
-        var cell = tableView.dequeueReusableCell(withIdentifier: homeClassCellCollectionReuseIdentifierID as String )
+        
+        let  cellID:String = "cellID"
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellID as String )
         
         if cell == nil {
             

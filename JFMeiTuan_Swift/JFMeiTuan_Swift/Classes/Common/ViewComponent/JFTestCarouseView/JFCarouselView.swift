@@ -10,6 +10,9 @@ import UIKit
 
 class JFCarouselView: UIView,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
+    
+//    private var carouselView: UIView!
+
     @IBOutlet weak var collectionLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -17,7 +20,7 @@ class JFCarouselView: UIView,UICollectionViewDataSource,UICollectionViewDelegate
     
     var imageUrlArray:[String]?{
         didSet{
-            pageControl.numberOfPages = (imageUrlArray?.count)!
+//            pageControl.numberOfPages = (imageUrlArray?.count)!
             
             collectionView.reloadData()
         }
@@ -31,22 +34,11 @@ class JFCarouselView: UIView,UICollectionViewDataSource,UICollectionViewDelegate
     }
     */
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
-        setUpView()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setUpView()
-    }
-    
-    
-    /// 构建视图
-    func setUpView() {
+        collectionView.register(UINib(nibName: "JFCarouselCollectionCell" as String, bundle: nil), forCellWithReuseIdentifier:carouselCellCollectionReuseIdentifierID as String)
         
-        collectionView.register(JFCarouselCollectionCell.self, forCellWithReuseIdentifier: carouselCellCollectionReuseIdentifierID as String)
         collectionView.backgroundColor                = UIColor.clear
         collectionView.bounces                        = false
         collectionView.showsVerticalScrollIndicator   = false
@@ -56,10 +48,30 @@ class JFCarouselView: UIView,UICollectionViewDataSource,UICollectionViewDelegate
         collectionView.scrollsToTop                   = false
         collectionView.decelerationRate               = 0.0
         collectionView.isPagingEnabled                = true
+        
+
+    }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+
+  
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+    }
+    
+//    public func xibSetup() {
+//        carouselView = Bundle.main.loadNibNamed("JFCarouselView", owner: self, options: nil)?.first as! UIView
+//        carouselView.frame = bounds
+//        carouselView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        addSubview(carouselView)
+//    }
+
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 10;
+        return (imageUrlArray?.count)!;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
