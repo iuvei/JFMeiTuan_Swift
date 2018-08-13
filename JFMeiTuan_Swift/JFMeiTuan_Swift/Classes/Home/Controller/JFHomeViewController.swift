@@ -70,9 +70,12 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
             let cell:JFHomeTopCategoryCell  = JFHomeTopCategoryCell.cellWithTableView(tableView)
             return cell
         case 1:
-            let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
+            let cell:JFHomeClassCell  = JFHomeClassCell.cellWithTableView(tableView)
             return cell
         case 2:
+            let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
+            return cell
+        case 3:
             let cell:JFHomeFeaturesCell  = JFHomeFeaturesCell.cellWithTableView(tableView)
             return cell
 
@@ -87,8 +90,10 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         case 0:
             return 80
         case 1:
-            return 200
+            return 140
         case 2:
+            return 200
+        case 3:
             return 200
         default:
             return 110

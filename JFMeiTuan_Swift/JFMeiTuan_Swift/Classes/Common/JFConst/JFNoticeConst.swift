@@ -13,4 +13,6 @@ let reuseIdentifierID:NSString = "reuseIdentifierID"
 
 let homeTopCellCollectionReuseIdentifierID:NSString = "homeTopCellCollectionReuseIdentifierID"
 
+let homeClassCellCollectionReuseIdentifierID:NSString = "homeClassCellCollectionReuseIdentifierID"
+
 
