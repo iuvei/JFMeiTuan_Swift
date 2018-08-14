@@ -1,33 +1,32 @@
  [
       {
-          "RootVcName": "HomeController",
-          "SellectImgName": "tabbar_home_select",
+          "RootVcName": "JFHomeViewController",
+          "SellectImgName": "pfb_tabbar_homepage_selected",
           "TabbarTitle": "首页",
-          "NorImgName": "tabbar_home_normal"
+          "NorImgName": "pfb_tabbar_homepage"
       },
       {
-          "RootVcName": "SaasController",
-          "SellectImgName": "tabbar_need_select",
-          "TabbarTitle": "供应链",
-          "NorImgName": "tabbar_need_normal"
+          "RootVcName": "JFNearViewController",
+          "SellectImgName": "pfb_tabbar_merchant_selected",
+          "TabbarTitle": "附近",
+          "NorImgName": "pfb_tabbar_merchant"
       },
       {
-          "RootVcName": "VendorController",
-          "SellectImgName": "tabbar_vendor_select",
-          "TabbarTitle": "供应商",
-          "NorImgName": "tabbar_vendor_normal"
+          "RootVcName": "JFwalkViewController",
+          "SellectImgName": "pfb_tabbar_discover_selected",
+          "TabbarTitle": "发现",
+          "NorImgName": "pfb_tabbar_discover"
       },
       {
-          "RootVcName": "ExpertController",
-          "SellectImgName": "tabbar_expert_select",
-          "TabbarTitle": "专家",
-          "NorImgName": "tabbar_expert_normal"
+          "RootVcName": "JFOrderViewController",
+          "SellectImgName": "pfb_tabbar_order_selected",
+          "TabbarTitle": "订单",
+          "NorImgName": "pfb_tabbar_order"
       },
       {
-          "RootVcName": "EcommerceController",
-          "SellectImgName": "tabbar_ecommerce_select",
-          "TabbarTitle": "电商平台",
-          "NorImgName": "tabbar_ecommerce_normal"
+          "RootVcName": "JFMineViewController",
+          "SellectImgName": "pfb_tabbar_order_selected",
+          "TabbarTitle": "我的",
+          "NorImgName": "pfb_tabbar_mine"
       },
-  
   ]
