@@ -18,6 +18,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="332" height="84.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXn-2M-8sT">
+                        <rect key="frame" x="15" y="83.5" width="302" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JNK-o2-30X"/>
+                        </constraints>
+                    </view>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fyx-fR-xSz">
                         <rect key="frame" x="0.0" y="0.0" width="332" height="84"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,8 +39,11 @@
                 <constraints>
                     <constraint firstItem="fyx-fR-xSz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1AX-2G-86a"/>
                     <constraint firstItem="fyx-fR-xSz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JiY-Jx-O3g"/>
-                    <constraint firstAttribute="bottom" secondItem="fyx-fR-xSz" secondAttribute="bottom" id="Unv-vd-GsF"/>
+                    <constraint firstAttribute="trailing" secondItem="ZXn-2M-8sT" secondAttribute="trailing" constant="15" id="SkN-4b-xwa"/>
+                    <constraint firstAttribute="bottom" secondItem="fyx-fR-xSz" secondAttribute="bottom" constant="1" id="Unv-vd-GsF"/>
                     <constraint firstAttribute="trailing" secondItem="fyx-fR-xSz" secondAttribute="trailing" id="VRp-Y4-glL"/>
+                    <constraint firstAttribute="bottom" secondItem="ZXn-2M-8sT" secondAttribute="bottom" id="iqi-1w-DhB"/>
+                    <constraint firstItem="ZXn-2M-8sT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="mUt-Vf-b35"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
