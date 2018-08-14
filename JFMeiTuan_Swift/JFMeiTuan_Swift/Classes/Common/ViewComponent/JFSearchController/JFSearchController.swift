@@ -20,7 +20,7 @@ extension JFHomeViewController{
         controller.searchBar.sizeToFit()
         navigationItem.titleView = controller.searchBar
         
-        self.setupCustomLeftWithTitle(title: "左边", target: self, action:#selector(leftClick))
+        self.setupCustomLeftWithTitle(title: "上海", target: self, action:#selector(leftClick))
         
         self.setupCustomRightWithImage(image: UIImage.init(named: "baby_pintuan_close")!, target: self, action: #selector(rightClick))
     }

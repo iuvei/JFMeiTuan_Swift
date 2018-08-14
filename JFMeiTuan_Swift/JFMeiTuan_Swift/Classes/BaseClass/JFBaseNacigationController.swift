@@ -15,9 +15,9 @@ class JFBaseNacigationController: UINavigationController {
 
         // Do any additional setup after loading the view.
         // 1.设置导航栏标题属性：设置标题颜色
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.black]
         // 2.设置导航栏前景色：设置item指示色
-       navigationBar.tintColor = UIColor.white
+       navigationBar.tintColor = UIColor.black
         
         // 3.设置导航栏半透明
         navigationBar.isTranslucent = false
@@ -29,13 +29,13 @@ class JFBaseNacigationController: UINavigationController {
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
         
         //设置导航栏的背景色
-        navigationBar.barTintColor = JFStyle.navigarionBarColor()
+        navigationBar.barTintColor = UIColor.white
         
         //去除导航栏的下划线
         navigationBar.shadowImage = UIImage.init()
         
         //设置状态栏的颜色
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent;
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default;
         
 //        UIImage *backImage = [UIImage imageNamed:@"backNor"];
 //        [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[backImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, backImage.size.width, 0, 0)]

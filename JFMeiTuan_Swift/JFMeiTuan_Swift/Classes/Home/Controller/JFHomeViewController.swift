@@ -38,6 +38,8 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     //初始化视图
     func initView() {
         let homeTableView = UITableView(frame :.zero, style:.plain)
+        //设置tableView在拖拽tabelView的时候隐藏键盘
+        homeTableView.keyboardDismissMode = .onDrag
         view.addSubview(homeTableView)
         
         //用snapkit布局
@@ -139,6 +141,10 @@ extension JFHomeViewController{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        view.endEditing(false)
     }
 
 }

@@ -60,6 +60,7 @@ class JFBaseViewController: UIViewController {
         button.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
         button.setTitle(title as String, for: UIControlState.normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
         let rightItem:UIBarButtonItem =  UIBarButtonItem.init(customView: button)
         navigationItem.rightBarButtonItem = rightItem
@@ -70,6 +71,7 @@ class JFBaseViewController: UIViewController {
         let button:UIButton = UIButton.init(type: UIButtonType.custom)
         button.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
         button.setTitle(title as String, for: UIControlState.normal)
+        button.setTitleColor(UIColor.black, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
         let leftItem:UIBarButtonItem =  UIBarButtonItem.init(customView: button)
