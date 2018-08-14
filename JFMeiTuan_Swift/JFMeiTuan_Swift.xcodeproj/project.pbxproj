@@ -95,14 +95,14 @@
 		EA9FC5E8212122CA0053A56B /* JFClassCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5E6212122CA0053A56B /* JFClassCollectionCell.swift */; };
 		EA9FC5E9212122CA0053A56B /* JFClassCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5E7212122CA0053A56B /* JFClassCollectionCell.xib */; };
 		EA9FC5EB21214B950053A56B /* JFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5EA21214B950053A56B /* JFLog.swift */; };
-		EA9FC5FA21215D6F0053A56B /* JFCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5F621215D6F0053A56B /* JFCarouselView.swift */; };
-		EA9FC5FB21215D6F0053A56B /* JFCarouselCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5F721215D6F0053A56B /* JFCarouselCollectionCell.xib */; };
-		EA9FC5FC21215D6F0053A56B /* JFCarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5F821215D6F0053A56B /* JFCarouselView.xib */; };
-		EA9FC5FD21215D6F0053A56B /* JFCarouselCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5F921215D6F0053A56B /* JFCarouselCollectionCell.swift */; };
 		EA9FC60021215DD10053A56B /* JFTestCarouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5FE21215DD10053A56B /* JFTestCarouseViewController.swift */; };
 		EA9FC60121215DD10053A56B /* JFTestCarouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5FF21215DD10053A56B /* JFTestCarouseViewController.xib */; };
-		EA9FC60421216D950053A56B /* JFCarouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC60221216D950053A56B /* JFCarouseCell.swift */; };
-		EA9FC60521216D950053A56B /* JFCarouseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC60321216D950053A56B /* JFCarouseCell.xib */; };
+		EA9FC60D21229C830053A56B /* JFCarouselCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC60721229C830053A56B /* JFCarouselCollectionCell.swift */; };
+		EA9FC60E21229C830053A56B /* JFCarouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC60821229C830053A56B /* JFCarouseCell.swift */; };
+		EA9FC60F21229C830053A56B /* JFCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC60921229C830053A56B /* JFCarouselView.swift */; };
+		EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC60A21229C830053A56B /* JFCarouselView.xib */; };
+		EA9FC61121229C830053A56B /* JFCarouseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC60B21229C830053A56B /* JFCarouseCell.xib */; };
+		EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC60C21229C830053A56B /* JFCarouselCollectionCell.xib */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
 /* End PBXBuildFile section */
@@ -200,14 +200,14 @@
 		EA9FC5E6212122CA0053A56B /* JFClassCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFClassCollectionCell.swift; sourceTree = "<group>"; };
 		EA9FC5E7212122CA0053A56B /* JFClassCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFClassCollectionCell.xib; sourceTree = "<group>"; };
 		EA9FC5EA21214B950053A56B /* JFLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFLog.swift; sourceTree = "<group>"; };
-		EA9FC5F621215D6F0053A56B /* JFCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JFCarouselView.swift; path = JFMeiTuan_Swift/Classes/Common/ViewComponent/JFTestCarouseView/JFCarouselView.swift; sourceTree = SOURCE_ROOT; };
-		EA9FC5F721215D6F0053A56B /* JFCarouselCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JFCarouselCollectionCell.xib; path = JFMeiTuan_Swift/Classes/Common/ViewComponent/JFTestCarouseView/JFCarouselCollectionCell.xib; sourceTree = SOURCE_ROOT; };
-		EA9FC5F821215D6F0053A56B /* JFCarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JFCarouselView.xib; path = JFMeiTuan_Swift/Classes/Common/ViewComponent/JFTestCarouseView/JFCarouselView.xib; sourceTree = SOURCE_ROOT; };
-		EA9FC5F921215D6F0053A56B /* JFCarouselCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JFCarouselCollectionCell.swift; path = JFMeiTuan_Swift/Classes/Common/ViewComponent/JFTestCarouseView/JFCarouselCollectionCell.swift; sourceTree = SOURCE_ROOT; };
 		EA9FC5FE21215DD10053A56B /* JFTestCarouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTestCarouseViewController.swift; sourceTree = "<group>"; };
 		EA9FC5FF21215DD10053A56B /* JFTestCarouseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFTestCarouseViewController.xib; sourceTree = "<group>"; };
-		EA9FC60221216D950053A56B /* JFCarouseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JFCarouseCell.swift; path = ../../../../../../../../../../Users/a2345/Desktop/BasicKnowledge/JFCarouseCell.swift; sourceTree = "<group>"; };
-		EA9FC60321216D950053A56B /* JFCarouseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = JFCarouseCell.xib; path = ../../../../../../../../../../Users/a2345/Desktop/BasicKnowledge/JFCarouseCell.xib; sourceTree = "<group>"; };
+		EA9FC60721229C830053A56B /* JFCarouselCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFCarouselCollectionCell.swift; sourceTree = "<group>"; };
+		EA9FC60821229C830053A56B /* JFCarouseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFCarouseCell.swift; sourceTree = "<group>"; };
+		EA9FC60921229C830053A56B /* JFCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFCarouselView.swift; sourceTree = "<group>"; };
+		EA9FC60A21229C830053A56B /* JFCarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFCarouselView.xib; sourceTree = "<group>"; };
+		EA9FC60B21229C830053A56B /* JFCarouseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFCarouseCell.xib; sourceTree = "<group>"; };
+		EA9FC60C21229C830053A56B /* JFCarouselCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFCarouselCollectionCell.xib; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,7 +239,7 @@
 		5A1E05601F55A7BD00C9DBA1 /* JFViewComponent */ = {
 			isa = PBXGroup;
 			children = (
-				EA9FC5EC21214F380053A56B /* JFCarouselView */,
+				EA9FC60621229C830053A56B /* JFCarouselView */,
 				5A1E05611F55A7F700C9DBA1 /* JFMeCell.swift */,
 				E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */,
 				E874E21C1F567BD5003A29B1 /* JFListCell.swift */,
@@ -592,15 +592,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EA9FC5EC21214F380053A56B /* JFCarouselView */ = {
+		EA9FC60621229C830053A56B /* JFCarouselView */ = {
 			isa = PBXGroup;
 			children = (
-				EA9FC5F921215D6F0053A56B /* JFCarouselCollectionCell.swift */,
-				EA9FC5F721215D6F0053A56B /* JFCarouselCollectionCell.xib */,
-				EA9FC5F621215D6F0053A56B /* JFCarouselView.swift */,
-				EA9FC5F821215D6F0053A56B /* JFCarouselView.xib */,
-				EA9FC60221216D950053A56B /* JFCarouseCell.swift */,
-				EA9FC60321216D950053A56B /* JFCarouseCell.xib */,
+				EA9FC60721229C830053A56B /* JFCarouselCollectionCell.swift */,
+				EA9FC60821229C830053A56B /* JFCarouseCell.swift */,
+				EA9FC60921229C830053A56B /* JFCarouselView.swift */,
+				EA9FC60A21229C830053A56B /* JFCarouselView.xib */,
+				EA9FC60B21229C830053A56B /* JFCarouseCell.xib */,
+				EA9FC60C21229C830053A56B /* JFCarouselCollectionCell.xib */,
 			);
 			path = JFCarouselView;
 			sourceTree = "<group>";
@@ -671,13 +671,13 @@
 				EA1A7631211C4952000BF3E2 /* JFBasicKnowledgeListViewController.xib in Resources */,
 				EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
+				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
 				EA1A7615211C391E000BF3E2 /* JFNormalOrderCell.xib in Resources */,
 				EA1A7609211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib in Resources */,
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
 				EA1A760D211C3861000BF3E2 /* JFRecentViewOrderCell.xib in Resources */,
-				EA9FC5FB21215D6F0053A56B /* JFCarouselCollectionCell.xib in Resources */,
-				EA9FC5FC21215D6F0053A56B /* JFCarouselView.xib in Resources */,
 				EA1A7633211C4952000BF3E2 /* JFReceiveValueViewController.xib in Resources */,
+				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
 				EA1A764D211D58DB000BF3E2 /* JFMineAcconutCell.xib in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
 				EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */,
@@ -687,7 +687,7 @@
 				EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */,
 				EA9FC5CE211D690C0053A56B /* JFMineCell.xib in Resources */,
 				EA9FC5DD212117D50053A56B /* JFHomeTopCategoryCell.xib in Resources */,
-				EA9FC60521216D950053A56B /* JFCarouseCell.xib in Resources */,
+				EA9FC61121229C830053A56B /* JFCarouseCell.xib in Resources */,
 				EA1A7645211D3961000BF3E2 /* JFMineTopCategoryCell.xib in Resources */,
 				EA9FC5D5211D70BE0053A56B /* JFHomeActiveCell.xib in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
@@ -778,6 +778,7 @@
 				E874E2211F56A124003A29B1 /* JFMeListCellModel.swift in Sources */,
 				EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */,
 				EA1A75EC211AF88B000BF3E2 /* JFWebViewController.swift in Sources */,
+				EA9FC60F21229C830053A56B /* JFCarouselView.swift in Sources */,
 				EA1A7629211C4952000BF3E2 /* JFBasicKnowledgeListViewController.swift in Sources */,
 				EA1A760C211C3861000BF3E2 /* JFRecentViewOrderCell.swift in Sources */,
 				EA1A7648211D40AE000BF3E2 /* JFMineActiveCell.swift in Sources */,
@@ -793,8 +794,8 @@
 				EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */,
 				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,
 				EA1A763F211D2C61000BF3E2 /* JFMineViewController.swift in Sources */,
+				EA9FC60D21229C830053A56B /* JFCarouselCollectionCell.swift in Sources */,
 				EA9FC5EB21214B950053A56B /* JFLog.swift in Sources */,
-				EA9FC5FD21215D6F0053A56B /* JFCarouselCollectionCell.swift in Sources */,
 				EA1A764C211D58DB000BF3E2 /* JFMineAcconutCell.swift in Sources */,
 				E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */,
 				EA1A75EE211BCA6E000BF3E2 /* JFUrlConst.swift in Sources */,
@@ -815,8 +816,6 @@
 				EA1A7640211D2C61000BF3E2 /* JFMeViewController.swift in Sources */,
 				E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */,
 				EA9FC5DC212117D50053A56B /* JFHomeTopCategoryCell.swift in Sources */,
-				EA9FC5FA21215D6F0053A56B /* JFCarouselView.swift in Sources */,
-				EA9FC60421216D950053A56B /* JFCarouseCell.swift in Sources */,
 				EA1A7614211C391E000BF3E2 /* JFNormalOrderCell.swift in Sources */,
 				E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */,
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
@@ -824,6 +823,7 @@
 				EA1A762D211C4952000BF3E2 /* JFPageChildSecondViewController.swift in Sources */,
 				EA1A7637211C4B71000BF3E2 /* JFNearViewController.swift in Sources */,
 				EA1A7608211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift in Sources */,
+				EA9FC60E21229C830053A56B /* JFCarouseCell.swift in Sources */,
 				E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */,
 				E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */,
 				EA9FC5E8212122CA0053A56B /* JFClassCollectionCell.swift in Sources */,
