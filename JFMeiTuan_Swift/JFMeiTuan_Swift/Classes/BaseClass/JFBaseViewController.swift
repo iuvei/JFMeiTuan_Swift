@@ -31,9 +31,6 @@ class JFBaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        if (navigationController?.viewControllers.count)! >= 2 {
-//            self.hidesBottomBarWhenPushed = true
-//        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -22,7 +22,7 @@ class JFCarouselView: UIView,UICollectionViewDataSource,UICollectionViewDelegate
         didSet{
 //            pageControl.numberOfPages = (imageUrlArray?.count)!
             
-            collectionView.reloadData()
+//            collectionView.reloadData()
         }
     }
     

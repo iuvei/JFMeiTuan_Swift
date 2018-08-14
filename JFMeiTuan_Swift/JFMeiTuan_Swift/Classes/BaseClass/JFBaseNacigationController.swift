@@ -43,30 +43,22 @@ class JFBaseNacigationController: UINavigationController {
 //        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-233, 0) forBarMetrics:UIBarMetricsDefault];
         
 //        let backImage:UIImage = UIImage.init(named: "")!
-        
-        
-        
-        
-        
 
-
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension JFBaseNacigationController{
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if viewControllers.count > 0  {
+            viewController.hidesBottomBarWhenPushed = true
+            viewController.view.backgroundColor = UIColor.white
+        }
+        super.pushViewController(viewController, animated: true)
     }
-    */
-
 }

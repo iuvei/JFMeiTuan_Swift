@@ -61,7 +61,6 @@ class JFOrderViewController: JFBaseViewController,UITableViewDelegate,UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
         let VC:JFWebViewController =  JFWebViewController.init()
-        VC.hidesBottomBarWhenPushed = true
         VC.urlString = myPageUrl
         navigationController?.pushViewController(VC, animated: true)
     }
