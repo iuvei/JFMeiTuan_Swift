@@ -11,20 +11,13 @@ import SnapKit
 let ID  = "cell"
 let headerCellID  = "headerCellID"
 let ListCellID  = "ListCellID"
+class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate,UISearchResultsUpdating,UISearchBarDelegate {
 
-
-
-
-class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate {
-    
-    /// 自定义导航栏
-    private lazy var customNavigationBar = UIView()
-    /// 自定义导航栏完全不透明时的偏移量边界(根据需求设定)
-    private let alphaChangeBoundary = JFStyle.screenWidth() * (212 / 375) - 64
+    var tableView  = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //初始化导航栏
         initNav()
         
@@ -37,19 +30,19 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     
     //初始化视图
     func initView() {
-        let homeTableView = UITableView(frame :.zero, style:.plain)
+        tableView = UITableView(frame :.zero, style:.plain)
         //设置tableView在拖拽tabelView的时候隐藏键盘
-        homeTableView.keyboardDismissMode = .onDrag
-        view.addSubview(homeTableView)
+        tableView.keyboardDismissMode = .onDrag
+        view.addSubview(tableView)
         
         //用snapkit布局
-        homeTableView.snp.makeConstraints { (make) in
+        tableView.snp.makeConstraints { (make) in
             make.width.height.equalToSuperview()
             make.top.equalToSuperview()
         }        
-        homeTableView.dataSource = self
-        homeTableView.delegate = self
-        homeTableView.separatorStyle = .none
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorStyle = .none
     }
 
    
@@ -142,11 +135,45 @@ extension JFHomeViewController{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
     }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        view.endEditing(false)
-    }
 
 }
+
+extension JFHomeViewController{
+    
+    func initNav() {
+       
+        //导航栏左边的按钮
+        self.setupCustomLeftWithTitle(title: "上海", target: self, action:#selector(leftClick))
+        
+        //导航栏右边的按钮
+        self.setupCustomRightWithImage(image: UIImage.init(named: "beauty_btn_play")!, target: self, action: #selector(rightClick))
+        
+        let searchResultVC  = JFSearchResultViewController.init(nibName: "JFSearchViewController", bundle: nil)
+        
+        let VC = UISearchController(searchResultsController: searchResultVC)
+        VC.searchResultsUpdater = self
+        VC.searchBar.delegate = self
+        VC.hidesNavigationBarDuringPresentation = true
+        VC.dimsBackgroundDuringPresentation = true
+        VC.searchBar.searchBarStyle = .default
+        VC.searchBar.sizeToFit()
+        navigationItem.titleView = VC.searchBar
+        
+    }
+    
+    func leftClick() {
+        
+    }
+    
+    func rightClick() {
+        
+    }
+    
+    public func updateSearchResults(for searchController: UISearchController){
+        
+    }
+    
+}
+
 
 

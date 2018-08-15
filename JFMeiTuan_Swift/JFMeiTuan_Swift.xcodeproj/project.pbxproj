@@ -109,7 +109,8 @@
 		EA9FC6232122A6780053A56B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC61B2122A6780053A56B /* main.json */; };
 		EA9FC6242122A6780053A56B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC61D2122A6780053A56B /* main.json */; };
 		EA9FC6252122A6780053A56B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC61F2122A6780053A56B /* main.json */; };
-		EA9FC6282122CCA30053A56B /* JFSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC6272122CCA30053A56B /* JFSearchController.swift */; };
+		EA9FC6412124132E0053A56B /* JFSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC63F2124132E0053A56B /* JFSearchResultViewController.swift */; };
+		EA9FC6422124132E0053A56B /* JFSearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC6402124132E0053A56B /* JFSearchResultViewController.xib */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
 /* End PBXBuildFile section */
@@ -134,7 +135,7 @@
 		E874E2041F552CAB003A29B1 /* JFBaseNacigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseNacigationController.swift; sourceTree = "<group>"; };
 		E874E2051F552CAB003A29B1 /* JFBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseTabBarController.swift; sourceTree = "<group>"; };
 		E874E2061F552CAB003A29B1 /* JFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseViewController.swift; sourceTree = "<group>"; };
-		E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; };
+		E874E2181F557EC9003A29B1 /* JFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		E874E21A1F5676D7003A29B1 /* JFMeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeHeaderCell.swift; sourceTree = "<group>"; };
 		E874E21C1F567BD5003A29B1 /* JFListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFListCell.swift; sourceTree = "<group>"; };
 		E874E2201F56A124003A29B1 /* JFMeListCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeListCellModel.swift; sourceTree = "<group>"; };
@@ -221,7 +222,8 @@
 		EA9FC61B2122A6780053A56B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		EA9FC61D2122A6780053A56B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		EA9FC61F2122A6780053A56B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
-		EA9FC6272122CCA30053A56B /* JFSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSearchController.swift; sourceTree = "<group>"; };
+		EA9FC63F2124132E0053A56B /* JFSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSearchResultViewController.swift; sourceTree = "<group>"; };
+		EA9FC6402124132E0053A56B /* JFSearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFSearchResultViewController.xib; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -685,7 +687,8 @@
 		EA9FC6262122CC1C0053A56B /* JFSearchController */ = {
 			isa = PBXGroup;
 			children = (
-				EA9FC6272122CCA30053A56B /* JFSearchController.swift */,
+				EA9FC63F2124132E0053A56B /* JFSearchResultViewController.swift */,
+				EA9FC6402124132E0053A56B /* JFSearchResultViewController.xib */,
 			);
 			path = JFSearchController;
 			sourceTree = "<group>";
@@ -755,6 +758,7 @@
 			files = (
 				EA1A7631211C4952000BF3E2 /* JFBasicKnowledgeListViewController.xib in Resources */,
 				EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */,
+				EA9FC6422124132E0053A56B /* JFSearchResultViewController.xib in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
 				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
 				EA1A7615211C391E000BF3E2 /* JFNormalOrderCell.xib in Resources */,
@@ -833,6 +837,7 @@
 				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -844,6 +849,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -863,7 +869,6 @@
 				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				EA9FC60021215DD10053A56B /* JFTestCarouseViewController.swift in Sources */,
-				EA9FC6282122CCA30053A56B /* JFSearchController.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
 				EA9FC5E4212122A90053A56B /* JFHomeClassCell.swift in Sources */,
@@ -886,6 +891,7 @@
 				EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */,
 				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,
 				EA1A763F211D2C61000BF3E2 /* JFMineViewController.swift in Sources */,
+				EA9FC6412124132E0053A56B /* JFSearchResultViewController.swift in Sources */,
 				EA9FC60D21229C830053A56B /* JFCarouselCollectionCell.swift in Sources */,
 				EA9FC5EB21214B950053A56B /* JFLog.swift in Sources */,
 				EA1A764C211D58DB000BF3E2 /* JFMineAcconutCell.swift in Sources */,

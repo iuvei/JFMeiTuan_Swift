@@ -9,6 +9,7 @@ PODS:
   - PagingMenuController (2.2.0)
   - SnapKit (3.2.0)
   - SwiftyJSON (4.0.0)
+  - Toast-Swift (3.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - PagingMenuController (~> 2.2.0)
   - SnapKit (~> 3.2.0)
   - SwiftyJSON (~> 4.0.0)
+  - Toast-Swift (~> 3.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -30,6 +32,7 @@ SPEC REPOS:
     - PagingMenuController
     - SnapKit
     - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
@@ -40,7 +43,8 @@ SPEC CHECKSUMS:
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: 345ce269c669826c45ff7c29283220c68accfd17
+PODFILE CHECKSUM: f5a06af66f0fbbc337d367b4e5320cba24e78c76
 
 COCOAPODS: 1.5.3
