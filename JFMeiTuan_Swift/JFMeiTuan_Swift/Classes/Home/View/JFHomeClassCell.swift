@@ -62,7 +62,7 @@ class JFHomeClassCell: UITableViewCell,UICollectionViewDataSource,UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        return CGSize(width: JF_SCREEN_WIDTH/5, height: self.frame.size.height/2 )
+        return CGSize(width: JFSCREEN_WIDTH/5, height: self.frame.size.height/2 )
     }
     
     

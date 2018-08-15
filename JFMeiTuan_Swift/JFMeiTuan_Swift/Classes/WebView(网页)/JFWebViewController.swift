@@ -103,7 +103,7 @@ class JFWebViewController: JFBaseViewController,WKUIDelegate,WKNavigationDelegat
     func setUpView() {
         let webConfiguration = WKWebViewConfiguration()
         //创建wkwebview
-        webView = WKWebView.init(frame: CGRect(x: 0, y: 0, width: JF_SCREEN_WIDTH, height: JF_SCREEN_HEIGHT), configuration: webConfiguration)
+        webView = WKWebView.init(frame: CGRect(x: 0, y: 0, width: JFSCREEN_WIDTH, height: JFSCREEN_HEIGHT), configuration: webConfiguration)
         
         webView.navigationDelegate = self
         
@@ -112,7 +112,7 @@ class JFWebViewController: JFBaseViewController,WKUIDelegate,WKNavigationDelegat
         self.view.addSubview(webView)
         
         
-        progBar = UIProgressView.init(frame: CGRect(x: 0, y: 0, width: JF_SCREEN_WIDTH, height: 30 ))
+        progBar = UIProgressView.init(frame: CGRect(x: 0, y: 0, width: JFSCREEN_WIDTH, height: 30 ))
         progBar.progress = 0.0
         progBar.tintColor = UIColor.black
         webView.addSubview(progBar)

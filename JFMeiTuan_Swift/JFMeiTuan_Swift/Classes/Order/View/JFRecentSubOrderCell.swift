@@ -20,7 +20,7 @@ class JFRecentSubOrderCell: UITableViewCell {
 //        bgContentView.layer.shadowOpacity = 0.5
 //        bgContentView.layer.shadowPath = UIBezierPath(rect: bgContentView.layer.bounds).cgPath
 //
-        bgContentView.layer.shadowOffset = CGSize.init(width: JF_SCREEN_WIDTH, height: 100)// 设置阴影的偏移量、
+        bgContentView.layer.shadowOffset = CGSize.init(width: JFSCREEN_WIDTH, height: 100)// 设置阴影的偏移量、
         bgContentView.layer.shadowColor = JFStyle.navigarionBarColor().cgColor
 
 

@@ -77,7 +77,7 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        return CGSize(width: (JF_SCREEN_WIDTH-30)/4, height: (self.frame.size.height - 30)/2)
+        return CGSize(width: (JFSCREEN_WIDTH-30)/4, height: (self.frame.size.height - 30)/2)
     }
     
     //代理的方式设置间距
