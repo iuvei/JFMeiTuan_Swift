@@ -75,6 +75,8 @@
 		EA1A764C211D58DB000BF3E2 /* JFMineAcconutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A764A211D58DA000BF3E2 /* JFMineAcconutCell.swift */; };
 		EA1A764D211D58DB000BF3E2 /* JFMineAcconutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A764B211D58DA000BF3E2 /* JFMineAcconutCell.xib */; };
 		EA7D6BF621256F22009947F2 /* mineService.json in Resources */ = {isa = PBXBuildFile; fileRef = EA7D6BF521256F22009947F2 /* mineService.json */; };
+		EA7D6BF82125733B009947F2 /* tabbar.json in Resources */ = {isa = PBXBuildFile; fileRef = EA7D6BF72125733B009947F2 /* tabbar.json */; };
+		EA7D6BFA212574BB009947F2 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA7D6BF9212574BB009947F2 /* main.json */; };
 		EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */; };
 		EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */; };
 		EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */; };
@@ -104,7 +106,6 @@
 		EA9FC61121229C830053A56B /* JFCarouseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC60B21229C830053A56B /* JFCarouseCell.xib */; };
 		EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC60C21229C830053A56B /* JFCarouselCollectionCell.xib */; };
 		EA9FC6202122A6780053A56B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC6152122A6780053A56B /* main.json */; };
-		EA9FC6212122A6780053A56B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC6172122A6780053A56B /* main.json */; };
 		EA9FC6222122A6780053A56B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC6192122A6780053A56B /* main.json */; };
 		EA9FC6232122A6780053A56B /* mine.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC61B2122A6780053A56B /* mine.json */; };
 		EA9FC6242122A6780053A56B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC61D2122A6780053A56B /* main.json */; };
@@ -191,6 +192,8 @@
 		EA1A764A211D58DA000BF3E2 /* JFMineAcconutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMineAcconutCell.swift; sourceTree = "<group>"; };
 		EA1A764B211D58DA000BF3E2 /* JFMineAcconutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFMineAcconutCell.xib; sourceTree = "<group>"; };
 		EA7D6BF521256F22009947F2 /* mineService.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mineService.json; sourceTree = "<group>"; };
+		EA7D6BF72125733B009947F2 /* tabbar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tabbar.json; sourceTree = "<group>"; };
+		EA7D6BF9212574BB009947F2 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeConmonModel.swift; sourceTree = "<group>"; };
 		EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
 		EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeNormalCell.xib; sourceTree = "<group>"; };
@@ -220,7 +223,6 @@
 		EA9FC60B21229C830053A56B /* JFCarouseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFCarouseCell.xib; sourceTree = "<group>"; };
 		EA9FC60C21229C830053A56B /* JFCarouselCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFCarouselCollectionCell.xib; sourceTree = "<group>"; };
 		EA9FC6152122A6780053A56B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
-		EA9FC6172122A6780053A56B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		EA9FC6192122A6780053A56B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		EA9FC61B2122A6780053A56B /* mine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mine.json; sourceTree = "<group>"; };
 		EA9FC61D2122A6780053A56B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
@@ -647,7 +649,8 @@
 		EA9FC6162122A6780053A56B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				EA9FC6172122A6780053A56B /* main.json */,
+				EA7D6BF9212574BB009947F2 /* main.json */,
+				EA7D6BF72125733B009947F2 /* tabbar.json */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -771,13 +774,13 @@
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
 				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
 				EA1A7615211C391E000BF3E2 /* JFNormalOrderCell.xib in Resources */,
+				EA7D6BFA212574BB009947F2 /* main.json in Resources */,
 				EA1A7609211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib in Resources */,
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
 				EA1A760D211C3861000BF3E2 /* JFRecentViewOrderCell.xib in Resources */,
 				EA1A7633211C4952000BF3E2 /* JFReceiveValueViewController.xib in Resources */,
 				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
 				EA1A764D211D58DB000BF3E2 /* JFMineAcconutCell.xib in Resources */,
-				EA9FC6212122A6780053A56B /* main.json in Resources */,
 				EA9FC6252122A6780053A56B /* main.json in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
 				EA7D6BF621256F22009947F2 /* mineService.json in Resources */,
@@ -804,6 +807,7 @@
 				EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */,
 				EA9FC5D9211D7A670053A56B /* JFHomeFeaturesCell.xib in Resources */,
 				EA1A7638211C4B71000BF3E2 /* JFNearViewController.xib in Resources */,
+				EA7D6BF82125733B009947F2 /* tabbar.json in Resources */,
 				EA1A762E211C4952000BF3E2 /* JFPageChildFirstViewController.xib in Resources */,
 				EA9FC6232122A6780053A56B /* mine.json in Resources */,
 				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
