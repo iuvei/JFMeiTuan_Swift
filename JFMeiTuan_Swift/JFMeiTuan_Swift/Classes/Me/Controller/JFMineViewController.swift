@@ -9,7 +9,7 @@
 import UIKit
 import ObjectMapper
 
-class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableViewDataSource{
+class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableViewDataSource,JFMineCellClickDelegate{
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -53,6 +53,11 @@ extension JFMineViewController{
         case 2:
             let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
             
+            //创建cell的类型
+            cell.cellType = MineCellType.mineMoneyeCellType
+            
+            cell.delegate = self
+            
             let jsonData = JFStyle.getJsonWithName(name: "mine")
             
             let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: jsonData as! [[String : Any]])
@@ -72,6 +77,11 @@ extension JFMineViewController{
             
         default:
             let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
+            
+            cell.delegate = self
+            
+            //创建cell的类型
+            cell.cellType = MineCellType.mineServiceCellType
             
             let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: JFStyle.getJsonWithName(name: "mineService") as! [[String : Any]])
             
@@ -98,6 +108,27 @@ extension JFMineViewController{
             return 160
         }
     }
+    
+    // JFMineCellClickDelegate
+    func mineCellClick(mineCellType:MineCellType, index:Int){
+        
+        if mineCellType == MineCellType.mineServiceCellType {
+            JFLog("\(index)")
+            
+            let VC:JFWebViewController =  JFWebViewController.init()
+            VC.urlString = meiTuanUrl
+            navigationController?.pushViewController(VC, animated: true)
+            
+        }else{
+            JFLog("\(index)")
+            
+            let VC:JFWebViewController =  JFWebViewController.init()
+            VC.urlString = meiTuanUrl
+            navigationController?.pushViewController(VC, animated: true)
+            
+        }
+    }
+
     
 }
 

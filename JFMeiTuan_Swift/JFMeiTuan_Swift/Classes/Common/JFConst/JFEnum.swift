@@ -13,3 +13,9 @@ enum navigationBar {
     case blackStyle
 
 }
+
+enum MineCellType {
+    case mineServiceCellType
+    case mineMoneyeCellType
+    
+}

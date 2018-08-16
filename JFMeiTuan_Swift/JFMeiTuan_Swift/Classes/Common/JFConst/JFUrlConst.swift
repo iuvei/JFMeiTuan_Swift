@@ -10,3 +10,8 @@ import Foundation
 
 let myPageUrl = "https://www.jianshu.com/u/be0e45643dcf"
 
+//美团的主页URL
+let meiTuanUrl = "http://sh.meituan.com/"
+
+
+

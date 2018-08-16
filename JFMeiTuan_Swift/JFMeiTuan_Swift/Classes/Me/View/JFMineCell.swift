@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+//定义一个协议 声名一个协议的方法 buttonClick
+protocol JFMineCellClickDelegate:NSObjectProtocol {
+    //cell的类型的枚举 用来表示cell的类型
+    func mineCellClick(mineCellType:MineCellType, index:Int)
+}
+
 class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -15,6 +22,11 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     
     @IBOutlet weak var bottomLineView: UIView!
     @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
+    
+    
+    weak var delegate:JFMineCellClickDelegate?
+    
+    var cellType:MineCellType?
     
     var modelArray:NSArray = []{
         didSet{
@@ -90,6 +102,12 @@ extension JFMineCell{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         return CGSize(width: (JFSCREEN_WIDTH-30)/4, height: (self.frame.size.height - 30)/2)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (delegate != nil) {
+            delegate?.mineCellClick(mineCellType: cellType!, index: indexPath.row)
+        }
     }
     
     //代理的方式设置间距
