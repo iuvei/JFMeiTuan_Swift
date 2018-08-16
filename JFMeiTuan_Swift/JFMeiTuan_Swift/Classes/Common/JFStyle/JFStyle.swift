@@ -53,6 +53,7 @@ class JFStyle: NSObject {
             data = NSData(contentsOfFile: filePath!)
         }
         
+        
         guard let array  = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as?  [[String : AnyObject]]
             else {
                 return NSArray()

@@ -45,10 +45,11 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
             return cell;
         case 2:
             let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
-
-            let mineMoneyArray = JFStyle.getJsonWithName(name: "mine")
             
-            let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: mineMoneyArray as! [[String : Any]])
+            let jsonData = JFStyle.getJsonWithName(name: "mine")
+            
+
+            let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: jsonData as! [[String : Any]])
             
             cell.modelArray = modelArray as NSArray
 
@@ -56,19 +57,17 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
             return cell;
             
         case 3:
-//            let cell:JFMineActiveCell  = JFMineActiveCell.cellWithTableView(tableView)
-//            return cell;
+            let cell:JFMineActiveCell  = JFMineActiveCell.cellWithTableView(tableView)
+            return cell;
             
-            let cell:JFCarouseCell  = JFCarouseCell.cellWithTableView(tableView)
-            cell.imageUrlArray = ["http://pic9.photophoto.cn/20081128/0033033999061521_b.jpg","http://p17.qhimg.com/bdm/1600_900_85/d/_open360/fengjing25/Banff-National-Park-desktopsky-41283.jpg","http://pic23.photophoto.cn/20120505/0034034818753393_b.jpg","http://pic31.nipic.com/20130713/8821914_171955153144_2.jpg"]
-            return cell
+//            let cell:JFCarouseCell  = JFCarouseCell.cellWithTableView(tableView)
+//            cell.imageUrlArray = ["http://pic9.photophoto.cn/20081128/0033033999061521_b.jpg","http://p17.qhimg.com/bdm/1600_900_85/d/_open360/fengjing25/Banff-National-Park-desktopsky-41283.jpg","http://pic23.photophoto.cn/20120505/0034034818753393_b.jpg","http://pic31.nipic.com/20130713/8821914_171955153144_2.jpg"]
+//            return cell
             
         default:
             let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
             
-            let mineMoneyArray = JFStyle.getJsonWithName(name: "mine")
-            
-            let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: mineMoneyArray as! [[String : Any]])
+            let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: JFStyle.getJsonWithName(name: "mineService") as! [[String : Any]])
             
             cell.modelArray = modelArray as NSArray
             
@@ -136,8 +135,6 @@ extension JFMineViewController{
         JFApplication.statusBarStyle = UIStatusBarStyle.lightContent;
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         self.navigationController?.navigationBar.tintColor = UIColor.white
-
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {

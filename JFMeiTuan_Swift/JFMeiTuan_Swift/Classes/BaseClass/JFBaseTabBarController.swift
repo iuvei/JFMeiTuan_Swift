@@ -91,10 +91,10 @@ extension JFBaseTabBarController{
     
     fileprivate func setChildrenControllers() {
         
-        let  tabBarArr  = JFStyle.getJsonWithName(name: "main")
+        let  tabBarArr   = JFStyle.getJsonWithName(name: "main")
         
         var arrVC  = [UIViewController]()
-        for dict in tabBarArr {
+        for dict in tabBarArr as Array {
             arrVC.append(childrenController(dict: dict as! [String : AnyObject]))
         }
         viewControllers = arrVC

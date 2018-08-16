@@ -74,6 +74,7 @@
 		EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7647211D40AE000BF3E2 /* JFMineActiveCell.xib */; };
 		EA1A764C211D58DB000BF3E2 /* JFMineAcconutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A764A211D58DA000BF3E2 /* JFMineAcconutCell.swift */; };
 		EA1A764D211D58DB000BF3E2 /* JFMineAcconutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A764B211D58DA000BF3E2 /* JFMineAcconutCell.xib */; };
+		EA7D6BF621256F22009947F2 /* mineService.json in Resources */ = {isa = PBXBuildFile; fileRef = EA7D6BF521256F22009947F2 /* mineService.json */; };
 		EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */; };
 		EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */; };
 		EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */; };
@@ -189,6 +190,7 @@
 		EA1A7647211D40AE000BF3E2 /* JFMineActiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFMineActiveCell.xib; sourceTree = "<group>"; };
 		EA1A764A211D58DA000BF3E2 /* JFMineAcconutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMineAcconutCell.swift; sourceTree = "<group>"; };
 		EA1A764B211D58DA000BF3E2 /* JFMineAcconutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFMineAcconutCell.xib; sourceTree = "<group>"; };
+		EA7D6BF521256F22009947F2 /* mineService.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mineService.json; sourceTree = "<group>"; };
 		EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeConmonModel.swift; sourceTree = "<group>"; };
 		EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
 		EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeNormalCell.xib; sourceTree = "<group>"; };
@@ -661,6 +663,7 @@
 		EA9FC61A2122A6780053A56B /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				EA7D6BF521256F22009947F2 /* mineService.json */,
 				EA9FC61B2122A6780053A56B /* mine.json */,
 			);
 			path = Mine;
@@ -777,6 +780,7 @@
 				EA9FC6212122A6780053A56B /* main.json in Resources */,
 				EA9FC6252122A6780053A56B /* main.json in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
+				EA7D6BF621256F22009947F2 /* mineService.json in Resources */,
 				EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */,
 				EA9FC5E5212122A90053A56B /* JFHomeClassCell.xib in Resources */,
 				EA1A75FD211C154D000BF3E2 /* JFOrderViewController.xib in Resources */,
