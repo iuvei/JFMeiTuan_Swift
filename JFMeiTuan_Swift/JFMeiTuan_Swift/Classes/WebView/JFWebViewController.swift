@@ -123,7 +123,8 @@ class JFWebViewController: JFBaseViewController,WKUIDelegate,WKNavigationDelegat
     func setUpNavBar()  {
 //        self.setupCustomRightWithImage(image: UIImage.init(named: "baby_case_special")!, target: self, action: #selector(self.rightBtnClick))
         
-        self.setupCustomRightWithTitle(title: "前进", target: self, action: #selector(self.rightBtnClick))
+        
+        self.setupCustomRightWithTitle(navtStyle: navigationBar.blackStyle,title: "前进", target: self, action: #selector(self.rightBtnClick))
         
         self.setupCustomLeftWithTitle(title: "后退", target: self, action: #selector(self.leftBtnClick))
     }

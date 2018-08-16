@@ -111,6 +111,7 @@
 		EA9FC6412124132E0053A56B /* JFSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC63F2124132E0053A56B /* JFSearchResultViewController.swift */; };
 		EA9FC6422124132E0053A56B /* JFSearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC6402124132E0053A56B /* JFSearchResultViewController.xib */; };
 		EA9FC64521242F280053A56B /* JFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC64421242F280053A56B /* JFWebViewController.swift */; };
+		EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC64621250F7F0053A56B /* JFEnum.swift */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
 /* End PBXBuildFile section */
@@ -224,6 +225,7 @@
 		EA9FC63F2124132E0053A56B /* JFSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSearchResultViewController.swift; sourceTree = "<group>"; };
 		EA9FC6402124132E0053A56B /* JFSearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFSearchResultViewController.xib; sourceTree = "<group>"; };
 		EA9FC64421242F280053A56B /* JFWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFWebViewController.swift; sourceTree = "<group>"; };
+		EA9FC64621250F7F0053A56B /* JFEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFEnum.swift; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -457,6 +459,7 @@
 				EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */,
 				EA1A75ED211BCA6E000BF3E2 /* JFUrlConst.swift */,
 				EA9FC5EA21214B950053A56B /* JFLog.swift */,
+				EA9FC64621250F7F0053A56B /* JFEnum.swift */,
 			);
 			path = JFConst;
 			sourceTree = "<group>";
@@ -875,6 +878,7 @@
 				E874E2211F56A124003A29B1 /* JFMeListCellModel.swift in Sources */,
 				EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */,
 				EA9FC60F21229C830053A56B /* JFCarouselView.swift in Sources */,
+				EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */,
 				EA1A7629211C4952000BF3E2 /* JFBasicKnowledgeListViewController.swift in Sources */,
 				EA1A760C211C3861000BF3E2 /* JFRecentViewOrderCell.swift in Sources */,
 				EA1A7648211D40AE000BF3E2 /* JFMineActiveCell.swift in Sources */,

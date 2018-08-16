@@ -55,12 +55,17 @@ class JFBaseViewController: UIViewController {
         navigationItem.rightBarButtonItem = rightItem
     }
     
-    func setupCustomRightWithTitle(title:NSString,target:Any,action:Selector){
+    func setupCustomRightWithTitle(navtStyle:navigationBar, title:NSString,target:Any,action:Selector){
         let button:UIButton = UIButton.init(type: UIButtonType.custom)
         button.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
         button.setTitle(title as String, for: UIControlState.normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        button.setTitleColor(UIColor.black, for: .normal)
+        if navtStyle == navigationBar.whiteStyle {
+            button.setTitleColor(UIColor.white, for: .normal)
+
+        }else{
+            button.setTitleColor(UIColor.black, for: .normal)
+        }
         button.addTarget(target, action: action, for: UIControlEvents.touchUpInside)
         let rightItem:UIBarButtonItem =  UIBarButtonItem.init(customView: button)
         navigationItem.rightBarButtonItem = rightItem

@@ -17,7 +17,7 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
 
         tableView.backgroundColor =  JFStyle.navigarionBarColor()
         
-        setUpRightNavItem()
+        intNav()
 
         tableView.tableFooterView = UIView.init()
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
@@ -75,23 +75,6 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
             return 160
         }
     }
-    
-    func setUpRightNavItem() {
-        self.setupCustomRightWithTitle(title: "基础", target: self, action: #selector(JFMineViewController.rightBtnClick))
-        
-        self.setupCustomLeftWithImage(image: UIImage.init(named: "icon_main_setting-1")!, target: self, action: #selector(JFMineViewController.leftBtnClick))
-    }
-    
-    func rightBtnClick() {
-        let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
-        navigationController?.pushViewController(VC, animated: true)
-    }
-    
-    func leftBtnClick() {
-        let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
-        navigationController?.pushViewController(VC, animated: true)
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -108,4 +91,44 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
     }
     */
 
+}
+
+extension JFMineViewController{
+    func intNav() {
+        
+        self.setupCustomRightWithTitle(navtStyle: navigationBar.whiteStyle,title: "基础", target: self, action: #selector(self.rightBtnClick))
+        
+        self.setupCustomLeftWithImage(image: UIImage.init(named: "icon_main_setting-1")!, target: self, action: #selector(self.leftBtnClick))
+    }
+    
+    func rightBtnClick() {
+        let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
+        navigationController?.pushViewController(VC, animated: true)
+    }
+    
+    func leftBtnClick() {
+        let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
+        navigationController?.pushViewController(VC, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.navigationBar.barTintColor = JFStyle.navigarionBarColor()
+        //设置状态栏的颜色
+        JFApplication.statusBarStyle = UIStatusBarStyle.lightContent;
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        JFApplication.statusBarStyle = UIStatusBarStyle.default;
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.black]
+        self.navigationController?.navigationBar.tintColor = UIColor.black
+
+
+    }
 }
