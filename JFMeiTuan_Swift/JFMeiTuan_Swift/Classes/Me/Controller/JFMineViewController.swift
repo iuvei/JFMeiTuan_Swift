@@ -27,12 +27,21 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
     }
   
     
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+}
+
+extension JFMineViewController{
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return 5;
     }
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         
@@ -48,11 +57,11 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
             
             let jsonData = JFStyle.getJsonWithName(name: "mine")
             
-
+            
             let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: jsonData as! [[String : Any]])
             
             cell.modelArray = modelArray as NSArray
-
+            
             cell.cellTitle = "美团钱包"
             return cell;
             
@@ -60,9 +69,9 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
             let cell:JFMineActiveCell  = JFMineActiveCell.cellWithTableView(tableView)
             return cell;
             
-//            let cell:JFCarouseCell  = JFCarouseCell.cellWithTableView(tableView)
-//            cell.imageUrlArray = ["http://pic9.photophoto.cn/20081128/0033033999061521_b.jpg","http://p17.qhimg.com/bdm/1600_900_85/d/_open360/fengjing25/Banff-National-Park-desktopsky-41283.jpg","http://pic23.photophoto.cn/20120505/0034034818753393_b.jpg","http://pic31.nipic.com/20130713/8821914_171955153144_2.jpg"]
-//            return cell
+            //            let cell:JFCarouseCell  = JFCarouseCell.cellWithTableView(tableView)
+            //            cell.imageUrlArray = ["http://pic9.photophoto.cn/20081128/0033033999061521_b.jpg","http://p17.qhimg.com/bdm/1600_900_85/d/_open360/fengjing25/Banff-National-Park-desktopsky-41283.jpg","http://pic23.photophoto.cn/20120505/0034034818753393_b.jpg","http://pic31.nipic.com/20130713/8821914_171955153144_2.jpg"]
+            //            return cell
             
         default:
             let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
@@ -87,27 +96,12 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
             return 160
         case 3:
             return 100
-      
+            
         default:
             return 160
         }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension JFMineViewController{
