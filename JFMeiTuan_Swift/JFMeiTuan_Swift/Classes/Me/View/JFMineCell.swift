@@ -15,12 +15,21 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     
     @IBOutlet weak var bottomLineView: UIView!
     @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
+    
+    var modelArray:NSArray = []{
+        didSet{
+            collectionView.reloadData()
+
+        }
+    }
+    
     //重写set方法
     var cellTitle:NSString?{
         didSet{
             cellTitleClass.text = cellTitle! as String
         }
     }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,7 +49,6 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
         
         collectionView.isScrollEnabled = false
 
-        collectionView.reloadData()
 
         // Initialization code
     }
@@ -63,17 +71,21 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
         }
         return mineCell as! JFMineCell
     }
-    
-    
+}
+
+extension JFMineCell{
     /// UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 5;
+        return modelArray.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
+        let cell:JFMineCollectionCell = JFMineCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
         
-        return JFMineCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
+        cell.commonModel = modelArray[indexPath.row] as? JFCommonModel
+        
+        return cell;
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
@@ -81,14 +93,30 @@ class JFMineCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataS
     }
     
     //代理的方式设置间距
-//    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0.0
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0.0
+    //    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    //        return 0.0
+    //    }
+    //
+    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    //        return 0.0
+    //    }
+}
+
+//分类里面不支持重写set 方法
+//extension JFMineCell{
+    //重写set方法
+//    var cellTitle:NSString?{
+//        didSet{
+//            cellTitleClass.text = cellTitle! as String
+//        }
 //    }
     
-}
+//    var commonModel:JFCommonModel?{
+//        didSet{
+//
+//        }
+//    }
+    
+//}
 
 

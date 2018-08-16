@@ -12,6 +12,16 @@ class JFMineCollectionCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var desLabel: UILabel!
+    
+    var commonModel : JFCommonModel?{
+        didSet{
+            //重写set方法
+            imageView.image = UIImage.init(named:  (commonModel?.imageName)!)
+            desLabel.text = commonModel?.desTitle
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

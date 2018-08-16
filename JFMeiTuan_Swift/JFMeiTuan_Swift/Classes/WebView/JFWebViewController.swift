@@ -117,13 +117,10 @@ class JFWebViewController: JFBaseViewController,WKUIDelegate,WKNavigationDelegat
         progBar.tintColor = UIColor.black
         webView.addSubview(progBar)
         webView.addObserver(self, forKeyPath: MyClassConst.estimatedProgress, options: NSKeyValueObservingOptions.new, context: nil)
-
+ 
     }
     
     func setUpNavBar()  {
-//        self.setupCustomRightWithImage(image: UIImage.init(named: "baby_case_special")!, target: self, action: #selector(self.rightBtnClick))
-        
-        
         self.setupCustomRightWithTitle(navtStyle: navigationBar.blackStyle,title: "前进", target: self, action: #selector(self.rightBtnClick))
         
         self.setupCustomLeftWithTitle(title: "后退", target: self, action: #selector(self.leftBtnClick))
