@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate {
+class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate,JFNearClassHearderViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -54,6 +54,7 @@ extension JFNearViewController{
             return UIView.init()
         }else{
             let headView:JFNearClassHearderView  = JFNearClassHearderView.headViewWithTableView(tableView)
+            headView.delegate = self
             return headView
             
         }
@@ -70,4 +71,9 @@ extension JFNearViewController{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
     }
+    
+    func nearHearderViewClickAtIndex(index:Int){
+        JFLog("\(index)")
+    }
+
 }
