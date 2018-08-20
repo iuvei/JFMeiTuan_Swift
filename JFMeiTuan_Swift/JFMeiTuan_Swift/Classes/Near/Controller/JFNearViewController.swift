@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate,JFNearClassHearderViewDelegate {
+class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate,JFNearClassHearderViewDelegate,JFCarouseCellDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -42,6 +42,7 @@ extension JFNearViewController{
         if indexPath.section == 0 {
             let cell:JFCarouseCell  = JFCarouseCell.cellWithTableView(tableView)
             cell.imageUrlArray = ["http://05.imgmini.eastday.com/mobile/20171121/20171121164242_1698caeb8ac9a69306146a88958e1107_1.jpeg","http://01.imgmini.eastday.com/mobile/20170914/c85689ce514e2e8a8d59c698d950711b.jpeg","http://pic.5club.cctv.cn/photoAlbum/page/performance/img/2017/10/16/1508137907928_884.jpg","http://img.mp.itc.cn/upload/20161226/8355c04244844b4ca228f03cfa839139_th.jpg"]
+            cell.deleagte = self
             return cell
         }
         let cell:JFNormalOrderCell  = JFNormalOrderCell.cellWithTableView(tableView)
@@ -75,5 +76,15 @@ extension JFNearViewController{
     func nearHearderViewClickAtIndex(index:Int){
         JFLog("\(index)")
     }
+    
+    
+    /// 轮播图的代理
+    /// delegate
+    /// - Parameter index: 点击的小标
+    func carouseCellClickAtIndex(index:Int){
+        JFLog("\(index)")
+
+    }
+
 
 }

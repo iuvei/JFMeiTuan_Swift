@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+//定义一个协议 声名一个协议的方法 buttonClick
+protocol JFCarouseCellDelegate:NSObjectProtocol {
+    //cell的类型的枚举 用来表示cell的类型
+    func carouseCellClickAtIndex(index:Int)
+}
+
 class JFCarouseCell: UITableViewCell,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionLayout: UICollectionViewFlowLayout!
@@ -20,6 +27,8 @@ class JFCarouseCell: UITableViewCell,UICollectionViewDataSource,UICollectionView
     
     
     let JFCount = 100
+    
+    weak var deleagte:JFCarouseCellDelegate?
 
 
     var imageUrlArray:[String]?{
@@ -92,6 +101,14 @@ extension JFCarouseCell{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         return CGSize(width: self.frame.size.width, height: self.frame.size.height )
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+                
+        let index = indexPath.item % (imageUrlArray?.count)!
+        if deleagte != nil {
+            deleagte?.carouseCellClickAtIndex(index: index)
+        }
     }
 }
 
