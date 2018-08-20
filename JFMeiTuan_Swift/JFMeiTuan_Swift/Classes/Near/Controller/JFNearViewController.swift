@@ -88,7 +88,16 @@ extension JFNearViewController{
         
         dataArray = nearDataSource(index: index - 1)
         
-        tableView.reloadData()
+//        NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:2];
+//
+//        [tableview reloadSections:indexSetwithRowAnimation:UITableViewRowAnimationAutomatic];
+        
+        let  indexSet:NSIndexSet = NSIndexSet.init(index: 1)
+        
+        tableView.reloadSections(indexSet as IndexSet, with: .none)
+
+        
+//        tableView.reloadData()
     }
     
     
