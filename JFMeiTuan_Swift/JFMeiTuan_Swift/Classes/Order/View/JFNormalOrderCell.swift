@@ -10,6 +10,12 @@ import UIKit
 
 class JFNormalOrderCell: UITableViewCell {
 
+    @IBOutlet weak var desAddressLabel: UILabel!
+    @IBOutlet weak var moneyLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var normalImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

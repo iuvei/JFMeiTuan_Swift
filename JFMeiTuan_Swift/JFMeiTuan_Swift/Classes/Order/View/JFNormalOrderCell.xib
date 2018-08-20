@@ -150,6 +150,14 @@
                     <constraint firstItem="hzV-EG-EGf" firstAttribute="centerY" secondItem="LJe-ME-skS" secondAttribute="centerY" id="ze8-Az-c16"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="MDz-3j-FiJ" id="1B0-gG-VJf"/>
+                <outlet property="desAddressLabel" destination="JLP-0e-dUw" id="Rd6-Yh-ilp"/>
+                <outlet property="distanceLabel" destination="hzV-EG-EGf" id="Ae6-5W-bVT"/>
+                <outlet property="moneyLabel" destination="k8v-ai-DTt" id="pOn-qI-P2W"/>
+                <outlet property="normalImageView" destination="ZbP-Wa-kcM" id="HyC-Ix-zcr"/>
+                <outlet property="titleLabel" destination="LJe-ME-skS" id="PKI-ML-wM9"/>
+            </connections>
             <point key="canvasLocation" x="-183" y="-87"/>
         </tableViewCell>
     </objects>
