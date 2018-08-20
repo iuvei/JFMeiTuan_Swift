@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate,JFNearClassHearderViewDelegate,JFCarouseCellDelegate {
 
@@ -33,7 +34,7 @@ extension JFNearViewController{
         if section == 0 {
             return 1
         }
-        return 30
+        return 6
         
     }
     
@@ -46,6 +47,11 @@ extension JFNearViewController{
             return cell
         }
         let cell:JFNormalOrderCell  = JFNormalOrderCell.cellWithTableView(tableView)
+        let jsonArray:NSArray = JFStyle.getJsonWithName(name: "near")
+        
+        let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+ 
+        cell.nearModel = modelArray[indexPath.row]
         return cell
         
     }

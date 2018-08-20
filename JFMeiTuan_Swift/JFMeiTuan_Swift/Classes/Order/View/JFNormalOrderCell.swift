@@ -19,6 +19,20 @@ class JFNormalOrderCell: UITableViewCell {
     
     
     
+    var nearModel : JFNearModel?{
+        didSet{
+            //重写set方法
+            normalImageView.image = UIImage.init(named:  (nearModel?.imageName)!)
+            moneyLabel.text = nearModel?.money
+            addressLabel.text = nearModel?.adress
+            distanceLabel.text = nearModel?.distance
+            titleLabel.text = nearModel?.desTitle
+            desAddressLabel.text = nearModel?.adressDetail
+
+
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
