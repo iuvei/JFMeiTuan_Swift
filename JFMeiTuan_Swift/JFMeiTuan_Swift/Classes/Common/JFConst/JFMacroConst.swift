@@ -132,3 +132,6 @@ func JF_RGBColorFromHex(rgbValue: Int) -> (UIColor) {
                    blue: ((CGFloat)(rgbValue & 0xFF)) / 255.0, alpha: 1.0)
 }
 
+let JFEmptyHeaderViewHeight = 0.0001
+
+

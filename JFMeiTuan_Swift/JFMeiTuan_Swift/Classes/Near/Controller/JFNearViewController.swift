@@ -41,7 +41,7 @@ extension JFNearViewController{
         
         if indexPath.section == 0 {
             let cell:JFCarouseCell  = JFCarouseCell.cellWithTableView(tableView)
-            cell.imageUrlArray = ["http://pic9.photophoto.cn/20081128/0033033999061521_b.jpg","http://p17.qhimg.com/bdm/1600_900_85/d/_open360/fengjing25/Banff-National-Park-desktopsky-41283.jpg","http://pic23.photophoto.cn/20120505/0034034818753393_b.jpg","http://pic31.nipic.com/20130713/8821914_171955153144_2.jpg"]
+            cell.imageUrlArray = ["http://05.imgmini.eastday.com/mobile/20171121/20171121164242_1698caeb8ac9a69306146a88958e1107_1.jpeg","http://01.imgmini.eastday.com/mobile/20170914/c85689ce514e2e8a8d59c698d950711b.jpeg","http://pic.5club.cctv.cn/photoAlbum/page/performance/img/2017/10/16/1508137907928_884.jpg","http://img.mp.itc.cn/upload/20161226/8355c04244844b4ca228f03cfa839139_th.jpg"]
             return cell
         }
         let cell:JFNormalOrderCell  = JFNormalOrderCell.cellWithTableView(tableView)
@@ -61,7 +61,7 @@ extension JFNearViewController{
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 0.0001
+            return CGFloat(JFEmptyHeaderViewHeight)
         }else{
             return 60
         }
