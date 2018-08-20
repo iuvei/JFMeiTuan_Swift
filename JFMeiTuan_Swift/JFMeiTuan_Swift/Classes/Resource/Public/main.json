@@ -25,7 +25,7 @@
       },
       {
           "RootVcName": "JFMineViewController",
-          "SellectImgName": "pfb_tabbar_order_selected",
+          "SellectImgName": "pfb_tabbar_mine_selected",
           "TabbarTitle": "我的",
           "NorImgName": "pfb_tabbar_mine"
       },

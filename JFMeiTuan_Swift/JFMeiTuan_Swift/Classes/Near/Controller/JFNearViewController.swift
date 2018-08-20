@@ -15,6 +15,9 @@ class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableVi
     
     var dataArray:NSArray  = []
     
+    var currentIndex:Int = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "附近"
@@ -66,6 +69,8 @@ extension JFNearViewController{
         }else{
             let headView:JFNearClassHearderView  = JFNearClassHearderView.headViewWithTableView(tableView)
             headView.delegate = self
+            
+            headView.currentBtnStatus(index: currentIndex)
             return headView
             
         }
@@ -83,23 +88,15 @@ extension JFNearViewController{
         tableView .deselectRow(at: indexPath, animated: true)
     }
     
-    func nearHearderViewClickAtIndex(index:Int){
-        JFLog("\(index)")
-        
-        dataArray = nearDataSource(index: index - 1)
-        
-//        NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:2];
-//
-//        [tableview reloadSections:indexSetwithRowAnimation:UITableViewRowAnimationAutomatic];
-        
-        let  indexSet:NSIndexSet = NSIndexSet.init(index: 1)
-        
-        tableView.reloadSections(indexSet as IndexSet, with: .none)
-
-        
-//        tableView.reloadData()
-    }
     
+    func nearHearderViewClickAtIndex(index:Int, nearClassHearderView:JFNearClassHearderView){
+        
+        currentIndex = index - 1
+
+        dataArray = nearDataSource(index: index - 1)
+       tableView.reloadData()
+        
+    }
     
     /// 轮播图的代理
     /// delegate

@@ -12,7 +12,7 @@ import UIKit
 //定义一个协议 声名一个协议的方法 buttonClick
 protocol JFNearClassHearderViewDelegate:NSObjectProtocol {
     //cell的类型的枚举 用来表示cell的类型
-    func nearHearderViewClickAtIndex(index:Int)
+    func nearHearderViewClickAtIndex(index:Int, nearClassHearderView:JFNearClassHearderView)
 }
 
 class JFNearClassHearderView: UITableViewHeaderFooterView {
@@ -103,12 +103,18 @@ class JFNearClassHearderView: UITableViewHeaderFooterView {
         for button  in buttonArray {
             (button as! UIButton).isSelected = false
         }
-        //选中当前的button
-        currentBtn.isSelected = true
+    
         
         if delegate != nil {
-            delegate?.nearHearderViewClickAtIndex(index: currentBtn.tag)
+            delegate?.nearHearderViewClickAtIndex(index: currentBtn.tag, nearClassHearderView: self)
         }
+        
+    }
+    
+    func currentBtnStatus(index:Int) {
+        //选中当前的button
+        let current = buttonArray[index] as! UIButton
+        current.isSelected = true
         
     }
     
