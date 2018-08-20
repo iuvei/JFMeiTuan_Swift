@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E05611F55A7F700C9DBA1 /* JFMeCell.swift */; };
+		5A4D484B212B0478000E5D22 /* nearAll.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4846212B0478000E5D22 /* nearAll.json */; };
+		5A4D484C212B0478000E5D22 /* nearLive.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4847212B0478000E5D22 /* nearLive.json */; };
+		5A4D484D212B0478000E5D22 /* nearPlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4848212B0478000E5D22 /* nearPlay.json */; };
+		5A4D484E212B0478000E5D22 /* nearFood.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4849212B0478000E5D22 /* nearFood.json */; };
+		5A4D484F212B0478000E5D22 /* nearHotel.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D484A212B0478000E5D22 /* nearHotel.json */; };
 		A3A52610497E2CB4270346AB /* Pods_JFMeiTuan_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F80F970124B124F7B8BB43 /* Pods_JFMeiTuan_Swift.framework */; };
 		E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */; };
 		E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */; };
@@ -126,6 +131,11 @@
 		411576AF5F919FB3E220C49B /* Pods-JFMeiTuan_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan_Swift/Pods-JFMeiTuan_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		43F80F970124B124F7B8BB43 /* Pods_JFMeiTuan_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFMeiTuan_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1E05611F55A7F700C9DBA1 /* JFMeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeCell.swift; sourceTree = "<group>"; };
+		5A4D4846212B0478000E5D22 /* nearAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearAll.json; sourceTree = "<group>"; };
+		5A4D4847212B0478000E5D22 /* nearLive.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearLive.json; sourceTree = "<group>"; };
+		5A4D4848212B0478000E5D22 /* nearPlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearPlay.json; sourceTree = "<group>"; };
+		5A4D4849212B0478000E5D22 /* nearFood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearFood.json; sourceTree = "<group>"; };
+		5A4D484A212B0478000E5D22 /* nearHotel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearHotel.json; sourceTree = "<group>"; };
 		6E9186FE1D2CDDA80244D864 /* Pods-JFMeiTuan_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan_Swift/Pods-JFMeiTuan_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeTotalCassCell.swift; sourceTree = "<group>"; };
 		E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeActivityCell.swift; sourceTree = "<group>"; };
@@ -707,6 +717,11 @@
 		EA9FC61C2122A6780053A56B /* Near */ = {
 			isa = PBXGroup;
 			children = (
+				5A4D4846212B0478000E5D22 /* nearAll.json */,
+				5A4D4849212B0478000E5D22 /* nearFood.json */,
+				5A4D484A212B0478000E5D22 /* nearHotel.json */,
+				5A4D4847212B0478000E5D22 /* nearLive.json */,
+				5A4D4848212B0478000E5D22 /* nearPlay.json */,
 				EA9FAA68212AC3A900A3C3BA /* near.json */,
 			);
 			path = Near;
@@ -801,8 +816,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9FAA57212A5B2A00A3C3BA /* JFTestCarouseViewController.xib in Resources */,
+				5A4D484D212B0478000E5D22 /* nearPlay.json in Resources */,
 				EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */,
 				EA9FC6422124132E0053A56B /* JFSearchResultViewController.xib in Resources */,
+				5A4D484F212B0478000E5D22 /* nearHotel.json in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
 				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
 				EA1A7615211C391E000BF3E2 /* JFNormalOrderCell.xib in Resources */,
@@ -815,6 +832,7 @@
 				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
 				EA9FAA55212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib in Resources */,
 				EA9FAA56212A5B2A00A3C3BA /* JFSendValueViewController.xib in Resources */,
+				5A4D484E212B0478000E5D22 /* nearFood.json in Resources */,
 				EA1A764D211D58DB000BF3E2 /* JFMineAcconutCell.xib in Resources */,
 				EA9FC6252122A6780053A56B /* main.json in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
@@ -833,6 +851,7 @@
 				EA1A7645211D3961000BF3E2 /* JFMineTopCategoryCell.xib in Resources */,
 				EA9FAA67212AA33F00A3C3BA /* JFNearClassHearderView.xib in Resources */,
 				EA9FC5D5211D70BE0053A56B /* JFHomeActiveCell.xib in Resources */,
+				5A4D484B212B0478000E5D22 /* nearAll.json in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
 				EA1A7641211D2C61000BF3E2 /* JFMineViewController.xib in Resources */,
 				EA9FC5E9212122CA0053A56B /* JFClassCollectionCell.xib in Resources */,
@@ -842,6 +861,7 @@
 				EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */,
 				EA9FC5D9211D7A670053A56B /* JFHomeFeaturesCell.xib in Resources */,
 				EA7D6BF82125733B009947F2 /* tabbar.json in Resources */,
+				5A4D484C212B0478000E5D22 /* nearLive.json in Resources */,
 				EA9FC6232122A6780053A56B /* mine.json in Resources */,
 				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
 				E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */,

@@ -12,10 +12,14 @@ import ObjectMapper
 class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableViewDelegate,JFNearClassHearderViewDelegate,JFCarouseCellDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    var dataArray:NSArray  = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "附近"
-        // Do any additional setup after loading the view.
+        //初始化数据 0
+        dataArray = nearDataSource(index: 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +38,7 @@ extension JFNearViewController{
         if section == 0 {
             return 1
         }
-        return 6
+        return dataArray.count
         
     }
     
@@ -47,11 +51,11 @@ extension JFNearViewController{
             return cell
         }
         let cell:JFNormalOrderCell  = JFNormalOrderCell.cellWithTableView(tableView)
-        let jsonArray:NSArray = JFStyle.getJsonWithName(name: "near")
+//        let jsonArray:NSArray = JFStyle.getJsonWithName(name: "near")
+//
+//        let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
         
-        let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
- 
-        cell.nearModel = modelArray[indexPath.row]
+        cell.nearModel = (dataArray[indexPath.row] as! JFNearModel)
         return cell
         
     }
@@ -81,6 +85,10 @@ extension JFNearViewController{
     
     func nearHearderViewClickAtIndex(index:Int){
         JFLog("\(index)")
+        
+        dataArray = nearDataSource(index: index - 1)
+        
+        tableView.reloadData()
     }
     
     
@@ -89,8 +97,42 @@ extension JFNearViewController{
     /// - Parameter index: 点击的小标
     func carouseCellClickAtIndex(index:Int){
         JFLog("\(index)")
+        
+
 
     }
+}
 
-
+extension JFNearViewController{
+    func nearDataSource(index:Int) -> NSArray {
+        
+        switch index {
+        case 0:
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "nearFood")
+            
+            let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            return modelArray as NSArray
+        case 1:
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "nearLive")
+            
+            let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            return modelArray as NSArray
+        case 2:
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "nearPlay")
+            
+            let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            return modelArray as NSArray
+        case 3:
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "nearHotel")
+            
+            let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            return modelArray as NSArray
+        default:
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "nearAll")
+            
+            let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            return modelArray as NSArray
+        }
+       
+    }
 }
