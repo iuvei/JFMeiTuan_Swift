@@ -9,7 +9,7 @@
 import UIKit
 import ObjectMapper
 
-class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableViewDataSource,JFMineCellClickDelegate{
+class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableViewDataSource,JFMineCellClickDelegate,JFMineTopCategoryCellDelegate{
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -26,8 +26,6 @@ class JFMineViewController: JFBaseViewController ,UITableViewDelegate,UITableVie
         tableView.reloadData()
     }
   
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -49,6 +47,7 @@ extension JFMineViewController{
             return cell;
         case 1:
             let cell:JFMineTopCategoryCell  = JFMineTopCategoryCell.cellWithTableView(tableView)
+            cell.delegate = self
             return cell;
         case 2:
             let cell:JFMineCell  = JFMineCell.cellWithTableView(tableView)
@@ -128,6 +127,13 @@ extension JFMineViewController{
             
         }
     }
+    // JFMineTopCategoryCellDelegate
+    func mineTopCategoryCellClick(index:Int){
+        let VC:JFWebViewController =  JFWebViewController.init()
+        VC.urlString = meiTuanUrl
+        navigationController?.pushViewController(VC, animated: true)
+    }
+
 
     
 }

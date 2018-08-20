@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class JFStyle: NSObject {
     
     class func JFInitColor (red:CGFloat,green:CGFloat,blue:CGFloat) -> UIColor  {
@@ -52,7 +52,6 @@ class JFStyle: NSObject {
             let filePath = Bundle.main.path(forResource: name, ofType: "json")
             data = NSData(contentsOfFile: filePath!)
         }
-        
         
         guard let array  = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as?  [[String : AnyObject]]
             else {

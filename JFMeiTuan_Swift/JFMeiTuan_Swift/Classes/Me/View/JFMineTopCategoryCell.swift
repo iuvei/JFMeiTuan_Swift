@@ -8,11 +8,36 @@
 
 import UIKit
 
+
+//定义一个协议 声名一个协议的方法 buttonClick
+protocol JFMineTopCategoryCellDelegate:NSObjectProtocol {
+    //cell的类型的枚举 用来表示cell的类型
+    func mineTopCategoryCellClick(index:Int)
+}
+
 class JFMineTopCategoryCell: UITableViewCell {
 
+    @IBOutlet weak var historyView: UIView!
+    @IBOutlet weak var commitView: UIView!
+    @IBOutlet weak var collectionView: UIView!
+    
+    weak var delegate:JFMineTopCategoryCellDelegate?
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector(self.viewClick(index:)))
+        historyView.addGestureRecognizer(tap)
+        
+        
+        let commitViewTap = UITapGestureRecognizer.init(target: self, action: #selector(self.viewClick(index:)))
+        commitView.addGestureRecognizer(commitViewTap)
+        
+        
+        let collectionViewTap = UITapGestureRecognizer.init(target: self, action: #selector(self.viewClick(index:)))
+        collectionView.addGestureRecognizer(collectionViewTap)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,6 +57,12 @@ class JFMineTopCategoryCell: UITableViewCell {
             cell = Bundle.main.loadNibNamed("JFMineTopCategoryCell", owner: nil, options: nil)?.last as? UITableViewCell
         }
         return cell as! JFMineTopCategoryCell
+    }
+    
+    func viewClick(index:Int)  {
+        if (delegate != nil)  {
+            delegate?.mineTopCategoryCellClick(index: index)
+        }
     }
     
 }
