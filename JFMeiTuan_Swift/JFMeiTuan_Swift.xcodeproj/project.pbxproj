@@ -51,18 +51,6 @@
 		EA1A7614211C391E000BF3E2 /* JFNormalOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7612211C391E000BF3E2 /* JFNormalOrderCell.swift */; };
 		EA1A7615211C391E000BF3E2 /* JFNormalOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7613211C391E000BF3E2 /* JFNormalOrderCell.xib */; };
 		EA1A761A211C4924000BF3E2 /* JFBaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7619211C4924000BF3E2 /* JFBaseNetwork.swift */; };
-		EA1A7629211C4952000BF3E2 /* JFBasicKnowledgeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A761C211C4952000BF3E2 /* JFBasicKnowledgeListViewController.swift */; };
-		EA1A762A211C4952000BF3E2 /* JFPageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A761E211C4952000BF3E2 /* JFPageMenuViewController.swift */; };
-		EA1A762B211C4952000BF3E2 /* JFPageChildFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A761F211C4952000BF3E2 /* JFPageChildFirstViewController.swift */; };
-		EA1A762C211C4952000BF3E2 /* JFPageChildSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7620211C4952000BF3E2 /* JFPageChildSecondViewController.xib */; };
-		EA1A762D211C4952000BF3E2 /* JFPageChildSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7621211C4952000BF3E2 /* JFPageChildSecondViewController.swift */; };
-		EA1A762E211C4952000BF3E2 /* JFPageChildFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7622211C4952000BF3E2 /* JFPageChildFirstViewController.xib */; };
-		EA1A762F211C4952000BF3E2 /* JFSendValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7623211C4952000BF3E2 /* JFSendValueViewController.xib */; };
-		EA1A7630211C4952000BF3E2 /* JFSendSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7624211C4952000BF3E2 /* JFSendSingleton.swift */; };
-		EA1A7631211C4952000BF3E2 /* JFBasicKnowledgeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7625211C4952000BF3E2 /* JFBasicKnowledgeListViewController.xib */; };
-		EA1A7632211C4952000BF3E2 /* JFSendValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7626211C4952000BF3E2 /* JFSendValueViewController.swift */; };
-		EA1A7633211C4952000BF3E2 /* JFReceiveValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7627211C4952000BF3E2 /* JFReceiveValueViewController.xib */; };
-		EA1A7634211C4952000BF3E2 /* JFReceiveValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7628211C4952000BF3E2 /* JFReceiveValueViewController.swift */; };
 		EA1A7637211C4B71000BF3E2 /* JFNearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A7635211C4B71000BF3E2 /* JFNearViewController.swift */; };
 		EA1A7638211C4B71000BF3E2 /* JFNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A7636211C4B71000BF3E2 /* JFNearViewController.xib */; };
 		EA1A763F211D2C61000BF3E2 /* JFMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A763C211D2C61000BF3E2 /* JFMineViewController.swift */; };
@@ -80,6 +68,20 @@
 		EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */; };
 		EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */; };
 		EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */; };
+		EA9FAA4F212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA40212A5B2900A3C3BA /* JFBasicKnowledgeListViewController.swift */; };
+		EA9FAA50212A5B2A00A3C3BA /* JFTestCarouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA41212A5B2A00A3C3BA /* JFTestCarouseViewController.swift */; };
+		EA9FAA51212A5B2A00A3C3BA /* JFPageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA43212A5B2A00A3C3BA /* JFPageMenuViewController.swift */; };
+		EA9FAA52212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA44212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift */; };
+		EA9FAA53212A5B2A00A3C3BA /* JFPageChildSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA45212A5B2A00A3C3BA /* JFPageChildSecondViewController.xib */; };
+		EA9FAA54212A5B2A00A3C3BA /* JFPageChildSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA46212A5B2A00A3C3BA /* JFPageChildSecondViewController.swift */; };
+		EA9FAA55212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA47212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib */; };
+		EA9FAA56212A5B2A00A3C3BA /* JFSendValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA48212A5B2A00A3C3BA /* JFSendValueViewController.xib */; };
+		EA9FAA57212A5B2A00A3C3BA /* JFTestCarouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA49212A5B2A00A3C3BA /* JFTestCarouseViewController.xib */; };
+		EA9FAA58212A5B2A00A3C3BA /* JFSendSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA4A212A5B2A00A3C3BA /* JFSendSingleton.swift */; };
+		EA9FAA59212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA4B212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.xib */; };
+		EA9FAA5A212A5B2A00A3C3BA /* JFSendValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA4C212A5B2A00A3C3BA /* JFSendValueViewController.swift */; };
+		EA9FAA5B212A5B2A00A3C3BA /* JFReceiveValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA4D212A5B2A00A3C3BA /* JFReceiveValueViewController.xib */; };
+		EA9FAA5C212A5B2A00A3C3BA /* JFReceiveValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA4E212A5B2A00A3C3BA /* JFReceiveValueViewController.swift */; };
 		EA9FC5CE211D690C0053A56B /* JFMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5CA211D690C0053A56B /* JFMineCell.xib */; };
 		EA9FC5CF211D690C0053A56B /* JFMineCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5CB211D690C0053A56B /* JFMineCollectionCell.swift */; };
 		EA9FC5D0211D690C0053A56B /* JFMineCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5CC211D690C0053A56B /* JFMineCollectionCell.xib */; };
@@ -97,8 +99,6 @@
 		EA9FC5E8212122CA0053A56B /* JFClassCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5E6212122CA0053A56B /* JFClassCollectionCell.swift */; };
 		EA9FC5E9212122CA0053A56B /* JFClassCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5E7212122CA0053A56B /* JFClassCollectionCell.xib */; };
 		EA9FC5EB21214B950053A56B /* JFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5EA21214B950053A56B /* JFLog.swift */; };
-		EA9FC60021215DD10053A56B /* JFTestCarouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5FE21215DD10053A56B /* JFTestCarouseViewController.swift */; };
-		EA9FC60121215DD10053A56B /* JFTestCarouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5FF21215DD10053A56B /* JFTestCarouseViewController.xib */; };
 		EA9FC60D21229C830053A56B /* JFCarouselCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC60721229C830053A56B /* JFCarouselCollectionCell.swift */; };
 		EA9FC60E21229C830053A56B /* JFCarouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC60821229C830053A56B /* JFCarouseCell.swift */; };
 		EA9FC60F21229C830053A56B /* JFCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC60921229C830053A56B /* JFCarouselView.swift */; };
@@ -168,18 +168,6 @@
 		EA1A7612211C391E000BF3E2 /* JFNormalOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNormalOrderCell.swift; sourceTree = "<group>"; };
 		EA1A7613211C391E000BF3E2 /* JFNormalOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFNormalOrderCell.xib; sourceTree = "<group>"; };
 		EA1A7619211C4924000BF3E2 /* JFBaseNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBaseNetwork.swift; sourceTree = "<group>"; };
-		EA1A761C211C4952000BF3E2 /* JFBasicKnowledgeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBasicKnowledgeListViewController.swift; sourceTree = "<group>"; };
-		EA1A761E211C4952000BF3E2 /* JFPageMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPageMenuViewController.swift; sourceTree = "<group>"; };
-		EA1A761F211C4952000BF3E2 /* JFPageChildFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPageChildFirstViewController.swift; sourceTree = "<group>"; };
-		EA1A7620211C4952000BF3E2 /* JFPageChildSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFPageChildSecondViewController.xib; sourceTree = "<group>"; };
-		EA1A7621211C4952000BF3E2 /* JFPageChildSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPageChildSecondViewController.swift; sourceTree = "<group>"; };
-		EA1A7622211C4952000BF3E2 /* JFPageChildFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFPageChildFirstViewController.xib; sourceTree = "<group>"; };
-		EA1A7623211C4952000BF3E2 /* JFSendValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFSendValueViewController.xib; sourceTree = "<group>"; };
-		EA1A7624211C4952000BF3E2 /* JFSendSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFSendSingleton.swift; sourceTree = "<group>"; };
-		EA1A7625211C4952000BF3E2 /* JFBasicKnowledgeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFBasicKnowledgeListViewController.xib; sourceTree = "<group>"; };
-		EA1A7626211C4952000BF3E2 /* JFSendValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFSendValueViewController.swift; sourceTree = "<group>"; };
-		EA1A7627211C4952000BF3E2 /* JFReceiveValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFReceiveValueViewController.xib; sourceTree = "<group>"; };
-		EA1A7628211C4952000BF3E2 /* JFReceiveValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFReceiveValueViewController.swift; sourceTree = "<group>"; };
 		EA1A7635211C4B71000BF3E2 /* JFNearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNearViewController.swift; sourceTree = "<group>"; };
 		EA1A7636211C4B71000BF3E2 /* JFNearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFNearViewController.xib; sourceTree = "<group>"; };
 		EA1A763C211D2C61000BF3E2 /* JFMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMineViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +185,20 @@
 		EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeConmonModel.swift; sourceTree = "<group>"; };
 		EA9D49F2210B136E00ED4760 /* JFHomeNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFHomeNormalCell.swift; sourceTree = "<group>"; };
 		EA9D49F3210B136E00ED4760 /* JFHomeNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFHomeNormalCell.xib; sourceTree = "<group>"; };
+		EA9FAA40212A5B2900A3C3BA /* JFBasicKnowledgeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFBasicKnowledgeListViewController.swift; sourceTree = "<group>"; };
+		EA9FAA41212A5B2A00A3C3BA /* JFTestCarouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFTestCarouseViewController.swift; sourceTree = "<group>"; };
+		EA9FAA43212A5B2A00A3C3BA /* JFPageMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPageMenuViewController.swift; sourceTree = "<group>"; };
+		EA9FAA44212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPageChildFirstViewController.swift; sourceTree = "<group>"; };
+		EA9FAA45212A5B2A00A3C3BA /* JFPageChildSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFPageChildSecondViewController.xib; sourceTree = "<group>"; };
+		EA9FAA46212A5B2A00A3C3BA /* JFPageChildSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPageChildSecondViewController.swift; sourceTree = "<group>"; };
+		EA9FAA47212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFPageChildFirstViewController.xib; sourceTree = "<group>"; };
+		EA9FAA48212A5B2A00A3C3BA /* JFSendValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFSendValueViewController.xib; sourceTree = "<group>"; };
+		EA9FAA49212A5B2A00A3C3BA /* JFTestCarouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFTestCarouseViewController.xib; sourceTree = "<group>"; };
+		EA9FAA4A212A5B2A00A3C3BA /* JFSendSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFSendSingleton.swift; sourceTree = "<group>"; };
+		EA9FAA4B212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFBasicKnowledgeListViewController.xib; sourceTree = "<group>"; };
+		EA9FAA4C212A5B2A00A3C3BA /* JFSendValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFSendValueViewController.swift; sourceTree = "<group>"; };
+		EA9FAA4D212A5B2A00A3C3BA /* JFReceiveValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFReceiveValueViewController.xib; sourceTree = "<group>"; };
+		EA9FAA4E212A5B2A00A3C3BA /* JFReceiveValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFReceiveValueViewController.swift; sourceTree = "<group>"; };
 		EA9FC5CA211D690C0053A56B /* JFMineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFMineCell.xib; sourceTree = "<group>"; };
 		EA9FC5CB211D690C0053A56B /* JFMineCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMineCollectionCell.swift; sourceTree = "<group>"; };
 		EA9FC5CC211D690C0053A56B /* JFMineCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFMineCollectionCell.xib; sourceTree = "<group>"; };
@@ -214,8 +216,6 @@
 		EA9FC5E6212122CA0053A56B /* JFClassCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFClassCollectionCell.swift; sourceTree = "<group>"; };
 		EA9FC5E7212122CA0053A56B /* JFClassCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFClassCollectionCell.xib; sourceTree = "<group>"; };
 		EA9FC5EA21214B950053A56B /* JFLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFLog.swift; sourceTree = "<group>"; };
-		EA9FC5FE21215DD10053A56B /* JFTestCarouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTestCarouseViewController.swift; sourceTree = "<group>"; };
-		EA9FC5FF21215DD10053A56B /* JFTestCarouseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFTestCarouseViewController.xib; sourceTree = "<group>"; };
 		EA9FC60721229C830053A56B /* JFCarouselCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFCarouselCollectionCell.swift; sourceTree = "<group>"; };
 		EA9FC60821229C830053A56B /* JFCarouseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFCarouseCell.swift; sourceTree = "<group>"; };
 		EA9FC60921229C830053A56B /* JFCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFCarouselView.swift; sourceTree = "<group>"; };
@@ -326,9 +326,9 @@
 		E874E1C61F4E9791003A29B1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA9FAA3F212A5B2900A3C3BA /* BasicKnowledge */,
 				EA9FC64321242F280053A56B /* WebView */,
 				EA9FC6132122A6780053A56B /* Resource */,
-				EA1A761B211C4952000BF3E2 /* BasicKnowledge */,
 				EA1A7616211C48E6000BF3E2 /* NetWork */,
 				5A1E055E1F55A5CC00C9DBA1 /* Common(公共) */,
 				E874E1FE1F552C72003A29B1 /* BaseClass(基类) */,
@@ -540,36 +540,6 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
-		EA1A761B211C4952000BF3E2 /* BasicKnowledge */ = {
-			isa = PBXGroup;
-			children = (
-				EA1A761C211C4952000BF3E2 /* JFBasicKnowledgeListViewController.swift */,
-				EA1A761D211C4952000BF3E2 /* PageMenu */,
-				EA1A7623211C4952000BF3E2 /* JFSendValueViewController.xib */,
-				EA1A7624211C4952000BF3E2 /* JFSendSingleton.swift */,
-				EA1A7625211C4952000BF3E2 /* JFBasicKnowledgeListViewController.xib */,
-				EA1A7626211C4952000BF3E2 /* JFSendValueViewController.swift */,
-				EA1A7627211C4952000BF3E2 /* JFReceiveValueViewController.xib */,
-				EA1A7628211C4952000BF3E2 /* JFReceiveValueViewController.swift */,
-				EA9FC5FE21215DD10053A56B /* JFTestCarouseViewController.swift */,
-				EA9FC5FF21215DD10053A56B /* JFTestCarouseViewController.xib */,
-			);
-			name = BasicKnowledge;
-			path = ../../../../../../../Users/a2345/Desktop/BasicKnowledge;
-			sourceTree = "<group>";
-		};
-		EA1A761D211C4952000BF3E2 /* PageMenu */ = {
-			isa = PBXGroup;
-			children = (
-				EA1A761E211C4952000BF3E2 /* JFPageMenuViewController.swift */,
-				EA1A761F211C4952000BF3E2 /* JFPageChildFirstViewController.swift */,
-				EA1A7620211C4952000BF3E2 /* JFPageChildSecondViewController.xib */,
-				EA1A7621211C4952000BF3E2 /* JFPageChildSecondViewController.swift */,
-				EA1A7622211C4952000BF3E2 /* JFPageChildFirstViewController.xib */,
-			);
-			path = PageMenu;
-			sourceTree = "<group>";
-		};
 		EA1A7639211D2C61000BF3E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +580,35 @@
 				EA9D49F0210B127600ED4760 /* JFHomeConmonModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EA9FAA3F212A5B2900A3C3BA /* BasicKnowledge */ = {
+			isa = PBXGroup;
+			children = (
+				EA9FAA40212A5B2900A3C3BA /* JFBasicKnowledgeListViewController.swift */,
+				EA9FAA41212A5B2A00A3C3BA /* JFTestCarouseViewController.swift */,
+				EA9FAA42212A5B2A00A3C3BA /* PageMenu */,
+				EA9FAA48212A5B2A00A3C3BA /* JFSendValueViewController.xib */,
+				EA9FAA49212A5B2A00A3C3BA /* JFTestCarouseViewController.xib */,
+				EA9FAA4A212A5B2A00A3C3BA /* JFSendSingleton.swift */,
+				EA9FAA4B212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.xib */,
+				EA9FAA4C212A5B2A00A3C3BA /* JFSendValueViewController.swift */,
+				EA9FAA4D212A5B2A00A3C3BA /* JFReceiveValueViewController.xib */,
+				EA9FAA4E212A5B2A00A3C3BA /* JFReceiveValueViewController.swift */,
+			);
+			path = BasicKnowledge;
+			sourceTree = "<group>";
+		};
+		EA9FAA42212A5B2A00A3C3BA /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EA9FAA43212A5B2A00A3C3BA /* JFPageMenuViewController.swift */,
+				EA9FAA44212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift */,
+				EA9FAA45212A5B2A00A3C3BA /* JFPageChildSecondViewController.xib */,
+				EA9FAA46212A5B2A00A3C3BA /* JFPageChildSecondViewController.swift */,
+				EA9FAA47212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib */,
+			);
+			path = PageMenu;
 			sourceTree = "<group>";
 		};
 		EA9FC60621229C830053A56B /* JFCarouselView */ = {
@@ -768,7 +767,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1A7631211C4952000BF3E2 /* JFBasicKnowledgeListViewController.xib in Resources */,
+				EA9FAA57212A5B2A00A3C3BA /* JFTestCarouseViewController.xib in Resources */,
 				EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */,
 				EA9FC6422124132E0053A56B /* JFSearchResultViewController.xib in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
@@ -777,38 +776,38 @@
 				EA7D6BFA212574BB009947F2 /* main.json in Resources */,
 				EA1A7609211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib in Resources */,
 				E874E1BF1F4E91BA003A29B1 /* LaunchScreen.storyboard in Resources */,
+				EA9FAA53212A5B2A00A3C3BA /* JFPageChildSecondViewController.xib in Resources */,
 				EA1A760D211C3861000BF3E2 /* JFRecentViewOrderCell.xib in Resources */,
-				EA1A7633211C4952000BF3E2 /* JFReceiveValueViewController.xib in Resources */,
 				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
+				EA9FAA55212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib in Resources */,
+				EA9FAA56212A5B2A00A3C3BA /* JFSendValueViewController.xib in Resources */,
 				EA1A764D211D58DB000BF3E2 /* JFMineAcconutCell.xib in Resources */,
 				EA9FC6252122A6780053A56B /* main.json in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
+				EA9FAA59212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.xib in Resources */,
 				EA7D6BF621256F22009947F2 /* mineService.json in Resources */,
 				EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */,
 				EA9FC5E5212122A90053A56B /* JFHomeClassCell.xib in Resources */,
 				EA1A75FD211C154D000BF3E2 /* JFOrderViewController.xib in Resources */,
-				EA1A762C211C4952000BF3E2 /* JFPageChildSecondViewController.xib in Resources */,
 				EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */,
 				EA9FC5CE211D690C0053A56B /* JFMineCell.xib in Resources */,
 				EA9FC6202122A6780053A56B /* main.json in Resources */,
 				EA9FC6222122A6780053A56B /* main.json in Resources */,
 				EA9FC5DD212117D50053A56B /* JFHomeTopCategoryCell.xib in Resources */,
+				EA9FAA5B212A5B2A00A3C3BA /* JFReceiveValueViewController.xib in Resources */,
 				EA9FC61121229C830053A56B /* JFCarouseCell.xib in Resources */,
 				EA1A7645211D3961000BF3E2 /* JFMineTopCategoryCell.xib in Resources */,
 				EA9FC5D5211D70BE0053A56B /* JFHomeActiveCell.xib in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
 				EA1A7641211D2C61000BF3E2 /* JFMineViewController.xib in Resources */,
-				EA9FC60121215DD10053A56B /* JFTestCarouseViewController.xib in Resources */,
 				EA9FC5E9212122CA0053A56B /* JFClassCollectionCell.xib in Resources */,
 				EA9FC5D0211D690C0053A56B /* JFMineCollectionCell.xib in Resources */,
 				EA9FC6242122A6780053A56B /* main.json in Resources */,
-				EA1A762F211C4952000BF3E2 /* JFSendValueViewController.xib in Resources */,
 				EA9FC5E1212118910053A56B /* JFHomeTopCategoryCollectionCell.xib in Resources */,
 				EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */,
 				EA9FC5D9211D7A670053A56B /* JFHomeFeaturesCell.xib in Resources */,
 				EA1A7638211C4B71000BF3E2 /* JFNearViewController.xib in Resources */,
 				EA7D6BF82125733B009947F2 /* tabbar.json in Resources */,
-				EA1A762E211C4952000BF3E2 /* JFPageChildFirstViewController.xib in Resources */,
 				EA9FC6232122A6780053A56B /* mine.json in Resources */,
 				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
 				E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */,
@@ -877,23 +876,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9FAA5A212A5B2A00A3C3BA /* JFSendValueViewController.swift in Sources */,
 				EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */,
 				EA1A75CD211AF260000BF3E2 /* JFWeakNormalCell.swift in Sources */,
 				E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */,
 				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
+				EA9FAA50212A5B2A00A3C3BA /* JFTestCarouseViewController.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
-				EA9FC60021215DD10053A56B /* JFTestCarouseViewController.swift in Sources */,
+				EA9FAA5C212A5B2A00A3C3BA /* JFReceiveValueViewController.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
 				EA9FC5E4212122A90053A56B /* JFHomeClassCell.swift in Sources */,
 				E874E2211F56A124003A29B1 /* JFMeListCellModel.swift in Sources */,
 				EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */,
 				EA9FC60F21229C830053A56B /* JFCarouselView.swift in Sources */,
+				EA9FAA52212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift in Sources */,
 				EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */,
-				EA1A7629211C4952000BF3E2 /* JFBasicKnowledgeListViewController.swift in Sources */,
 				EA1A760C211C3861000BF3E2 /* JFRecentViewOrderCell.swift in Sources */,
 				EA1A7648211D40AE000BF3E2 /* JFMineActiveCell.swift in Sources */,
-				EA1A7634211C4952000BF3E2 /* JFReceiveValueViewController.swift in Sources */,
 				E81B51071F692E74002EA405 /* JFAdvertisingCell.swift in Sources */,
 				EA9FC6492125162B0053A56B /* JFCommonModel.swift in Sources */,
 				E81B51031F692B36002EA405 /* JFHomeTipCell.swift in Sources */,
@@ -922,26 +922,25 @@
 				EA9FC5CF211D690C0053A56B /* JFMineCollectionCell.swift in Sources */,
 				EA9FC5D4211D70BE0053A56B /* JFHomeActiveCell.swift in Sources */,
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
-				EA1A7630211C4952000BF3E2 /* JFSendSingleton.swift in Sources */,
+				EA9FAA58212A5B2A00A3C3BA /* JFSendSingleton.swift in Sources */,
 				EA1A7644211D3961000BF3E2 /* JFMineTopCategoryCell.swift in Sources */,
-				EA1A762A211C4952000BF3E2 /* JFPageMenuViewController.swift in Sources */,
 				EA1A75F1211BECCC000BF3E2 /* JFWalkVideoCell.swift in Sources */,
 				EA9FC64521242F280053A56B /* JFWebViewController.swift in Sources */,
 				EA1A7640211D2C61000BF3E2 /* JFMeViewController.swift in Sources */,
 				E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */,
+				EA9FAA4F212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.swift in Sources */,
 				EA9FC5DC212117D50053A56B /* JFHomeTopCategoryCell.swift in Sources */,
 				EA1A7614211C391E000BF3E2 /* JFNormalOrderCell.swift in Sources */,
 				E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */,
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
-				EA1A7632211C4952000BF3E2 /* JFSendValueViewController.swift in Sources */,
-				EA1A762D211C4952000BF3E2 /* JFPageChildSecondViewController.swift in Sources */,
+				EA9FAA51212A5B2A00A3C3BA /* JFPageMenuViewController.swift in Sources */,
 				EA1A7637211C4B71000BF3E2 /* JFNearViewController.swift in Sources */,
 				EA1A7608211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift in Sources */,
+				EA9FAA54212A5B2A00A3C3BA /* JFPageChildSecondViewController.swift in Sources */,
 				EA9FC60E21229C830053A56B /* JFCarouseCell.swift in Sources */,
 				E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */,
 				E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */,
 				EA9FC5E8212122CA0053A56B /* JFClassCollectionCell.swift in Sources */,
-				EA1A762B211C4952000BF3E2 /* JFPageChildFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
