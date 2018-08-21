@@ -28,7 +28,7 @@ class JFGuidePageView: UIView {
         playerController?.view.frame = frame
         playerController?.view.alpha = 1.0
         playerController?.controlStyle = .none
-        playerController?.repeatMode = .none
+        playerController?.repeatMode = .one
         playerController?.shouldAutoplay = true
         playerController?.prepareToPlay()
         addSubview((playerController?.view)!)
