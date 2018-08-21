@@ -91,6 +91,8 @@
 		EA9FAA67212AA33F00A3C3BA /* JFNearClassHearderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA66212AA33F00A3C3BA /* JFNearClassHearderView.xib */; };
 		EA9FAA69212AC3A900A3C3BA /* near.json in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA68212AC3A900A3C3BA /* near.json */; };
 		EA9FAA6D212AC6F100A3C3BA /* JFNearModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA6C212AC6F100A3C3BA /* JFNearModel.swift */; };
+		EA9FAA70212BB69F00A3C3BA /* JFGuidePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FAA6F212BB69F00A3C3BA /* JFGuidePageView.swift */; };
+		EA9FAA73212BB9AE00A3C3BA /* qidong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EA9FAA72212BB9AE00A3C3BA /* qidong.mp4 */; };
 		EA9FC5CE211D690C0053A56B /* JFMineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5CA211D690C0053A56B /* JFMineCell.xib */; };
 		EA9FC5CF211D690C0053A56B /* JFMineCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC5CB211D690C0053A56B /* JFMineCollectionCell.swift */; };
 		EA9FC5D0211D690C0053A56B /* JFMineCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9FC5CC211D690C0053A56B /* JFMineCollectionCell.xib */; };
@@ -216,6 +218,8 @@
 		EA9FAA66212AA33F00A3C3BA /* JFNearClassHearderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFNearClassHearderView.xib; sourceTree = "<group>"; };
 		EA9FAA68212AC3A900A3C3BA /* near.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = near.json; sourceTree = "<group>"; };
 		EA9FAA6C212AC6F100A3C3BA /* JFNearModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNearModel.swift; sourceTree = "<group>"; };
+		EA9FAA6F212BB69F00A3C3BA /* JFGuidePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFGuidePageView.swift; sourceTree = "<group>"; };
+		EA9FAA72212BB9AE00A3C3BA /* qidong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qidong.mp4; sourceTree = "<group>"; };
 		EA9FC5CA211D690C0053A56B /* JFMineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFMineCell.xib; sourceTree = "<group>"; };
 		EA9FC5CB211D690C0053A56B /* JFMineCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMineCollectionCell.swift; sourceTree = "<group>"; };
 		EA9FC5CC211D690C0053A56B /* JFMineCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFMineCollectionCell.xib; sourceTree = "<group>"; };
@@ -342,6 +346,7 @@
 		E874E1C61F4E9791003A29B1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA9FAA6E212BB60500A3C3BA /* JFGuidePage */,
 				EA9FAA3F212A5B2900A3C3BA /* BasicKnowledge */,
 				EA9FC64321242F280053A56B /* WebView */,
 				EA9FC6132122A6780053A56B /* Resource */,
@@ -654,6 +659,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EA9FAA6E212BB60500A3C3BA /* JFGuidePage */ = {
+			isa = PBXGroup;
+			children = (
+				EA9FAA71212BB9AE00A3C3BA /* Resouce */,
+				EA9FAA6F212BB69F00A3C3BA /* JFGuidePageView.swift */,
+			);
+			path = JFGuidePage;
+			sourceTree = "<group>";
+		};
+		EA9FAA71212BB9AE00A3C3BA /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				EA9FAA72212BB9AE00A3C3BA /* qidong.mp4 */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
 		EA9FC60621229C830053A56B /* JFCarouselView */ = {
 			isa = PBXGroup;
 			children = (
@@ -822,6 +844,7 @@
 				5A4D484F212B0478000E5D22 /* nearHotel.json in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
 				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
+				EA9FAA73212BB9AE00A3C3BA /* qidong.mp4 in Resources */,
 				EA1A7615211C391E000BF3E2 /* JFNormalOrderCell.xib in Resources */,
 				EA7D6BFA212574BB009947F2 /* main.json in Resources */,
 				EA1A7609211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib in Resources */,
@@ -960,6 +983,7 @@
 				E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */,
 				E81B51091F692F06002EA405 /* JFHomeLuckyDrawCell.swift in Sources */,
 				EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */,
+				EA9FAA70212BB69F00A3C3BA /* JFGuidePageView.swift in Sources */,
 				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,
 				EA1A763F211D2C61000BF3E2 /* JFMineViewController.swift in Sources */,
 				EA9FAA63212AA2A800A3C3BA /* JFNearViewController.swift in Sources */,
