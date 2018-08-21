@@ -10,13 +10,34 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-class JFGuidePageView: UIView {
+class JFGuidePageView: UIView,UIScrollViewDelegate {
     
+    //外部的图片数组
+    var imageArray:[String]?
+    
+    //图片的容器
+    var guideScrollView:UIScrollView?
+    
+    //图片指示器
+    var imagePageController:UIControl?
+    
+    //播放器的VC
     var playerController:MPMoviePlayerController?
     
 
-    override init(frame: CGRect) {
+    
+    init(imageNameArray:[String],isHideSkipBtn:Bool) {
+        let frame  = CGRect.init(x: 0, y: 0, width: JFSCREEN_WIDTH, height:JFSCREEN_HEIGHT)
         super.init(frame: frame)
+        imageArray = imageNameArray
+        if imageArray == nil || imageArray?.count == 0 {
+            return
+        }
+        
+        addScrollView(frame: frame)
+        addImages()
+        addSkipButton(isHiddenSkipButton: isHideSkipBtn)
+        addPageControl()
     }
     
     init(videoUrl:URL,isHideSkipBtn:Bool) {
@@ -64,4 +85,82 @@ class JFGuidePageView: UIView {
     }
    
 
+}
+
+extension JFGuidePageView{
+    
+    func addScrollView(frame : CGRect) {
+        guideScrollView = UIScrollView.init(frame: frame)
+        guideScrollView?.backgroundColor = UIColor.white
+        guideScrollView?.contentSize = CGSize.init(width: JFSCREEN_WIDTH * (CGFloat)((imageArray?.count)!), height: JFSCREEN_HEIGHT)
+        guideScrollView?.bounces = false
+        guideScrollView?.isPagingEnabled = true
+        guideScrollView?.showsVerticalScrollIndicator = false
+        guideScrollView?.showsHorizontalScrollIndicator = false
+        guideScrollView?.delegate = self
+        addSubview(guideScrollView!)
+        
+        
+    }
+    
+    func addImages() {
+        
+        guard let  imageArray = self.imageArray else {
+            return
+        }
+        
+        for i in 0..<imageArray.count {
+            let imageView = UIImageView.init(frame: CGRect.init(x: JFSCREEN_WIDTH * CGFloat(i), y: 0, width: JFSCREEN_WIDTH, height: JFSCREEN_HEIGHT))
+            //在scrollerView上面加三张图片
+            guideScrollView?.addSubview(imageView)
+            
+            //截取字符串最后三个字符
+            let idSring  = (imageArray[i] as NSString).substring(from: imageArray[i].count - 3)
+            if idSring == "gif"{
+                imageView.image = UIImage.init(named: "")
+            }else{
+                imageView.image = UIImage.init(named: imageArray[i])
+            }
+            
+            // 在最后一张图片上显示开始体验按钮
+            if i == imageArray.count - 1 {
+                imageView.isUserInteractionEnabled = true
+                let startButton = UIButton.init(frame: CGRect.init(x: JFSCREEN_WIDTH*0.1, y: JFSCREEN_HEIGHT*0.8, width: JFSCREEN_WIDTH*0.8, height: JFSCREEN_HEIGHT*0.08))
+                startButton.setTitle("开始体验", for: .normal)
+                startButton.setTitleColor(UIColor.white, for: .normal)
+                startButton.setBackgroundImage(UIImage.init(named: "guide_btn_bg"), for: .normal)
+                startButton.addTarget(self, action: #selector(skipBtnClick), for: .touchUpInside)
+                imageView.addSubview(startButton)
+            }
+        }
+        
+    }
+    
+    // 设置引导页上的页面控制器
+    func addPageControl() {
+        self.imagePageController = UIPageControl.init(frame: CGRect.init(x: 0, y: JFSCREEN_HEIGHT*0.9, width: JFSCREEN_WIDTH, height: JFSCREEN_HEIGHT*0.1))
+//        self.imagePageController.currentPage = 0
+//        self.imagePageController.numberOfPages = imageArray?.count ?? 0
+//        self.imagePageController.pageIndicatorTintColor = UIColor.gray
+//        self.imagePageController.currentPageIndicatorTintColor = UIColor.white
+        addSubview(self.imagePageController!)
+        
+        
+    }
+    
+    func addSkipButton(isHiddenSkipButton: Bool) {
+        if isHiddenSkipButton {
+            return
+        }
+        let skipButton = UIButton.init(frame: CGRect.init(x: JFSCREEN_WIDTH * 0.8, y: JFSCREEN_WIDTH * 0.1, width: 70, height: 35))
+        skipButton.setTitle("跳过", for: .normal)
+        skipButton.backgroundColor = UIColor.gray
+        skipButton.setTitleColor(UIColor.white, for: .normal)
+        skipButton.layer.cornerRadius = skipButton.frame.size.height * 0.5
+        skipButton.addTarget(self, action: #selector(skipBtnClick), for: .touchUpInside)
+        addSubview(skipButton)
+        
+    }
+    
+    
 }
