@@ -26,6 +26,11 @@ class JFGuidePageView: UIView,UIScrollViewDelegate {
     
 
     
+    /// 开屏是图片或者静态图
+    ///
+    /// - Parameters:
+    ///   - imageNameArray: 图片数组
+    ///   - isHideSkipBtn: 是否有跳过按钮
     init(imageNameArray:[String],isHideSkipBtn:Bool) {
         let frame  = CGRect.init(x: 0, y: 0, width: JFSCREEN_WIDTH, height:JFSCREEN_HEIGHT)
         super.init(frame: frame)
@@ -40,6 +45,12 @@ class JFGuidePageView: UIView,UIScrollViewDelegate {
         addPageControl()
     }
     
+    
+    /// 开屏视屏
+    ///
+    /// - Parameters:
+    ///   - videoUrl: 视频的URL
+    ///   - isHideSkipBtn: 是否有跳过按钮
     init(videoUrl:URL,isHideSkipBtn:Bool) {
         let frame  = CGRect.init(x: 0, y: 0, width: JFSCREEN_WIDTH, height:JFSCREEN_HEIGHT)
         super.init(frame: frame)
@@ -89,6 +100,9 @@ class JFGuidePageView: UIView,UIScrollViewDelegate {
 
 extension JFGuidePageView{
     
+    /// 添加scrollView
+    ///
+    /// - Parameter frame: 作为图片的容器
     func addScrollView(frame : CGRect) {
         guideScrollView = UIScrollView.init(frame: frame)
         guideScrollView?.backgroundColor = UIColor.white
@@ -100,9 +114,10 @@ extension JFGuidePageView{
         guideScrollView?.delegate = self
         addSubview(guideScrollView!)
         
-        
     }
     
+    
+    /// 设置图片
     func addImages() {
         
         guard let  imageArray = self.imageArray else {
@@ -144,8 +159,6 @@ extension JFGuidePageView{
 //        self.imagePageController.pageIndicatorTintColor = UIColor.gray
 //        self.imagePageController.currentPageIndicatorTintColor = UIColor.white
         addSubview(self.imagePageController!)
-        
-        
     }
     
     func addSkipButton(isHiddenSkipButton: Bool) {

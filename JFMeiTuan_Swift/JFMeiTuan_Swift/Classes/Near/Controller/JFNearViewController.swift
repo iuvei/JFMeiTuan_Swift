@@ -54,9 +54,6 @@ extension JFNearViewController{
             return cell
         }
         let cell:JFNormalOrderCell  = JFNormalOrderCell.cellWithTableView(tableView)
-//        let jsonArray:NSArray = JFStyle.getJsonWithName(name: "near")
-//
-//        let modelArray = Mapper<JFNearModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
         
         cell.nearModel = (dataArray[indexPath.row] as! JFNearModel)
         return cell
@@ -93,7 +90,7 @@ extension JFNearViewController{
         
         currentIndex = index - 1
 
-        dataArray = nearDataSource(index: index - 1)
+        dataArray = nearDataSource(index: currentIndex)
        tableView.reloadData()
         
     }

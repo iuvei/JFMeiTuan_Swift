@@ -41,12 +41,13 @@ class JFNearClassHearderView: UITableViewHeaderFooterView {
         //默认一第一个选中
         footBtn.isSelected = true
         
+        //初始化数组把所有的button全部放在一个数据里面
         buttonArray = NSMutableArray.init()
-        buttonArray.add(allBtn)
         buttonArray.add(footBtn)
         buttonArray.add(liveBtn)
-        buttonArray.add(hotelBtn)
         buttonArray.add(playBtn)
+        buttonArray.add(hotelBtn)
+        buttonArray.add(allBtn)
 
     }
     
@@ -69,49 +70,55 @@ class JFNearClassHearderView: UITableViewHeaderFooterView {
     
     
     @IBAction func footBtnClick(_ sender: Any) {
-        buttonStatus(currentBtn: sender as! UIButton)
+        buttonClick(currentBtn: sender as! UIButton)
     }
     
     @IBAction func liveBtnClick(_ sender: Any) {
         
-        buttonStatus(currentBtn: sender as! UIButton)
+        buttonClick(currentBtn: sender as! UIButton)
 
     }
     
     
     @IBAction func playBtnClick(_ sender: Any) {
         
-        buttonStatus(currentBtn: sender as! UIButton)
+        buttonClick(currentBtn: sender as! UIButton)
 
     }
     
     
     @IBAction func hotelBtnClick(_ sender: Any) {
         
-        buttonStatus(currentBtn: sender as! UIButton)
+        buttonClick(currentBtn: sender as! UIButton)
 
         
     }
     
     @IBAction func allBtnClick(_ sender: Any) {
         
-        buttonStatus(currentBtn: sender as! UIButton)
+        buttonClick(currentBtn: sender as! UIButton)
     }
     
-    func buttonStatus(currentBtn:UIButton)  {
-        //先把所有逇button全部取消选中
-        for button  in buttonArray {
-            (button as! UIButton).isSelected = false
-        }
     
-        
+    func buttonClick(currentBtn:UIButton)  {
+
         if delegate != nil {
             delegate?.nearHearderViewClickAtIndex(index: currentBtn.tag, nearClassHearderView: self)
         }
         
     }
     
+    
+    /// 代理方法的实现
+    ///
+    /// - Parameter index: button 的tag
     func currentBtnStatus(index:Int) {
+        
+        //先把所有逇button全部取消选中
+        for button  in buttonArray {
+            (button as! UIButton).isSelected = false
+        }
+        
         //选中当前的button
         let current = buttonArray[index] as! UIButton
         current.isSelected = true
