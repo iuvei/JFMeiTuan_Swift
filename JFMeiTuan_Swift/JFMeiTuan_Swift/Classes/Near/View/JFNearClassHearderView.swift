@@ -38,9 +38,6 @@ class JFNearClassHearderView: UITableViewHeaderFooterView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        //默认一第一个选中
-        footBtn.isSelected = true
-        
         //初始化数组把所有的button全部放在一个数据里面
         buttonArray = NSMutableArray.init()
         buttonArray.add(footBtn)
@@ -111,7 +108,7 @@ class JFNearClassHearderView: UITableViewHeaderFooterView {
     
     /// 代理方法的实现
     ///
-    /// - Parameter index: button 的tag
+    /// - Parameter index: button de
     func currentBtnStatus(index:Int) {
         
         //先把所有逇button全部取消选中

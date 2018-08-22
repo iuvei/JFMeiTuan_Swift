@@ -87,12 +87,10 @@ extension JFNearViewController{
     
     
     func nearHearderViewClickAtIndex(index:Int, nearClassHearderView:JFNearClassHearderView){
-        
-        currentIndex = index - 1
-
-        dataArray = nearDataSource(index: currentIndex)
+        //因为当前的 button的tag 是1，2，3，4，5 最小值是1
+       currentIndex = index - 1
+       dataArray = nearDataSource(index: currentIndex)
        tableView.reloadData()
-        
     }
     
     /// 轮播图的代理
@@ -101,8 +99,6 @@ extension JFNearViewController{
     func carouseCellClickAtIndex(index:Int){
         JFLog("\(index)")
         
-
-
     }
 }
 
