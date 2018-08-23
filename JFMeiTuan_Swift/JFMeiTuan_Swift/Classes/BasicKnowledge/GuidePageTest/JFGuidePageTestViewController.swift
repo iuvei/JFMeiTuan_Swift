@@ -14,7 +14,7 @@ class JFGuidePageTestViewController: JFBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.guideImage6
     }
     
     
@@ -27,6 +27,11 @@ class JFGuidePageTestViewController: JFBaseViewController {
         
     }
     @IBAction func gifBtnClick(_ sender: Any) {
+        
+        let imageNameArray: [String] = ["guideImage6.gif", "guideImage7.gif", "guideImage8.gif"]
+        let guideView = JFGuidePageView.init(imageNameArray: imageNameArray, isHideSkipBtn: false)
+        JFKeyWindow?.rootViewController?.view.addSubview(guideView)
+        
         
         
     }

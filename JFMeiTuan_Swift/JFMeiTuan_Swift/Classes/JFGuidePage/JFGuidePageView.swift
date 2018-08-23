@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
+import SwiftyGif
 
 class JFGuidePageView: UIView,UIScrollViewDelegate {
     
@@ -132,7 +133,8 @@ extension JFGuidePageView{
             //截取字符串最后三个字符
             let idSring  = (imageArray[i] as NSString).substring(from: imageArray[i].count - 3)
             if idSring == "gif"{
-                imageView.image = UIImage.init(named: "")
+                let gif = UIImage(gifName: imageArray[i])
+                imageView.setGifImage(gif)
             }else{
                 imageView.image = UIImage.init(named: imageArray[i])
             }
