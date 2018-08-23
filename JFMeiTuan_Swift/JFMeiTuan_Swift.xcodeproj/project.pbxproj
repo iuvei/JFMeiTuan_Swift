@@ -541,6 +541,13 @@
 			path = CarouseTest;
 			sourceTree = "<group>";
 		};
+		EA1A0166212E4F4100255489 /* ModularTableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModularTableView;
+			sourceTree = "<group>";
+		};
 		EA1A75C2211AF1AE000BF3E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -655,6 +662,7 @@
 		EA9FAA3F212A5B2900A3C3BA /* BasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				EA1A0166212E4F4100255489 /* ModularTableView */,
 				EA1A0161212E4DA100255489 /* CarouseTest */,
 				EA1A0156212E4D3A00255489 /* PassValue */,
 				EA1A0151212E41C500255489 /* GuidePageTest */,

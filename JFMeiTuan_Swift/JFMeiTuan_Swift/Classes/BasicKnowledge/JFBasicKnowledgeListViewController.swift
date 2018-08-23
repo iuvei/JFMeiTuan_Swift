@@ -15,7 +15,7 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     var dataArray:NSArray {
-        let tmpArray = ["传值","loading....","分页","轮播图","toast","引导页"]
+        let tmpArray = ["传值","loading....","分页","轮播图","toast","引导页","模块化tableView"]
         return tmpArray as NSArray
     }
     
@@ -94,6 +94,9 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
 //            self.view.hideAllToasts()
             
         }else if (indexPath.row == 5){
+            let VC = JFGuidePageTestViewController.init(nibName: "JFGuidePageTestViewController", bundle: nil)
+            navigationController?.pushViewController(VC, animated: true)
+        }else if (indexPath.row == 6){
             let VC = JFGuidePageTestViewController.init(nibName: "JFGuidePageTestViewController", bundle: nil)
             navigationController?.pushViewController(VC, animated: true)
         }

@@ -96,7 +96,7 @@ class JFMeCell: UITableViewCell {
         typeLabel.snp.makeConstraints { (make ) in
             //左边紧贴着headImageView 并右移10像素
             make.left.equalTo(headImageView.snp.right).offset(10)
-            make.width.equalTo(100)
+            make.width.equalTo(200)
             make.height.equalToSuperview()
             make.centerY.equalToSuperview()
 
