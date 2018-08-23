@@ -12,4 +12,5 @@ target 'JFMeiTuan_Swift' do
     pod 'PagingMenuController', '~> 2.2.0'
     pod 'Kingfisher', '~> 4.6.3'
     pod 'Toast-Swift', '~> 3.0.1'
+    pod 'SwiftyGif', '~> 4.1.0'
 end
