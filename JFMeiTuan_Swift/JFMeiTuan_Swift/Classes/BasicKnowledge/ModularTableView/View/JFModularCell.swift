@@ -17,21 +17,11 @@ class JFModularCell: UITableViewCell,ModularModellProtocol {
     var model: ModularModel?{
         didSet{
             guard let model = model else { return }
-            
             titleLb.text = model.title 
             desLb.text = model.desc
             iconView.image = model.icon
-
         }
     }
-    
-
-    
-
-    
-  
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

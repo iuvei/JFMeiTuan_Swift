@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JFModularTableViewController: JFBaseViewController,UITableViewDelegate,UITableViewDataSource {
+class JFModularTableViewController: JFBaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,7 +19,6 @@ class JFModularTableViewController: JFBaseViewController,UITableViewDelegate,UIT
         super.viewDidLoad()
 
         setUpModelList()
-        // Do any additional setup after loading the view.
     }
     
     func setUpModelList() {
@@ -29,8 +28,6 @@ class JFModularTableViewController: JFBaseViewController,UITableViewDelegate,UIT
             JFLog("ceshi")
         }))
         modelList.append(subList)
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +37,7 @@ class JFModularTableViewController: JFBaseViewController,UITableViewDelegate,UIT
 
 }
 
-extension JFModularTableViewController{
+extension JFModularTableViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return modelList[section].count
     }
@@ -51,9 +48,14 @@ extension JFModularTableViewController{
         if cell == nil {
             cell = Bundle.main.loadNibNamed("JFModularCell", owner: nil, options: nil)?[model.type] as? (UITableViewCell & ModularModellProtocol)
         }
-//        cell?.model = model
+        cell?.model = model
         
         return cell!;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        modelList[indexPath.section][indexPath.row].selectCell!()
     }
     
     

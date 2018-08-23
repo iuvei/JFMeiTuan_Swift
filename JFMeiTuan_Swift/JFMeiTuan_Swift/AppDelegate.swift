@@ -31,10 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController?.view.addSubview(guideView)
         
 
-        
-        
-        
-       
         return true
     }
 
