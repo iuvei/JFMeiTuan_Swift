@@ -97,7 +97,7 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
             let VC = JFGuidePageTestViewController.init(nibName: "JFGuidePageTestViewController", bundle: nil)
             navigationController?.pushViewController(VC, animated: true)
         }else if (indexPath.row == 6){
-            let VC = JFGuidePageTestViewController.init(nibName: "JFGuidePageTestViewController", bundle: nil)
+            let VC = JFModularTableViewController.init(nibName: "JFModularTableViewController", bundle: nil)
             navigationController?.pushViewController(VC, animated: true)
         }
         
