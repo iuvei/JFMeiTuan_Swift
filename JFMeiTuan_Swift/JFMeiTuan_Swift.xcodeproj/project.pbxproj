@@ -35,6 +35,8 @@
 		E874ED001F5D2AA5003A29B1 /* JFStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */; };
 		E874ED021F5D5704003A29B1 /* JFMeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */; };
 		E874ED041F5D5F54003A29B1 /* JFMeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E874ED031F5D5F54003A29B1 /* JFMeModel.swift */; };
+		EA1A0154212E422900255489 /* JFGuidePageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A0152212E422900255489 /* JFGuidePageTestViewController.swift */; };
+		EA1A0155212E422900255489 /* JFGuidePageTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A0153212E422900255489 /* JFGuidePageTestViewController.xib */; };
 		EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */; };
 		EA1A75C9211AF1AF000BF3E2 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */; };
 		EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */; };
@@ -169,6 +171,8 @@
 		E874ECFF1F5D2AA5003A29B1 /* JFStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFStyle.swift; sourceTree = "<group>"; };
 		E874ED011F5D5703003A29B1 /* JFMeInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeInfoModel.swift; sourceTree = "<group>"; };
 		E874ED031F5D5F54003A29B1 /* JFMeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeModel.swift; sourceTree = "<group>"; };
+		EA1A0152212E422900255489 /* JFGuidePageTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFGuidePageTestViewController.swift; sourceTree = "<group>"; };
+		EA1A0153212E422900255489 /* JFGuidePageTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFGuidePageTestViewController.xib; sourceTree = "<group>"; };
 		EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFWalkChildViewController.swift; sourceTree = "<group>"; };
 		EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
 		EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFWalkChildViewController.xib; sourceTree = "<group>"; };
@@ -507,6 +511,15 @@
 			path = JFConst;
 			sourceTree = "<group>";
 		};
+		EA1A0151212E41C500255489 /* GuidePageTest */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A0152212E422900255489 /* JFGuidePageTestViewController.swift */,
+				EA1A0153212E422900255489 /* JFGuidePageTestViewController.xib */,
+			);
+			path = GuidePageTest;
+			sourceTree = "<group>";
+		};
 		EA1A75C2211AF1AE000BF3E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,6 +634,7 @@
 		EA9FAA3F212A5B2900A3C3BA /* BasicKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				EA1A0151212E41C500255489 /* GuidePageTest */,
 				EA9FAA40212A5B2900A3C3BA /* JFBasicKnowledgeListViewController.swift */,
 				EA9FAA41212A5B2A00A3C3BA /* JFTestCarouseViewController.swift */,
 				EA9FAA42212A5B2A00A3C3BA /* PageMenu */,
@@ -867,6 +881,7 @@
 				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
 				EA9FAA73212BB9AE00A3C3BA /* qidong.mp4 in Resources */,
 				EA1A7615211C391E000BF3E2 /* JFNormalOrderCell.xib in Resources */,
+				EA1A0155212E422900255489 /* JFGuidePageTestViewController.xib in Resources */,
 				EA7D6BFA212574BB009947F2 /* home.json in Resources */,
 				EA1A7609211C1C8C000BF3E2 /* JFRecentSubOrderCell.xib in Resources */,
 				EA9FAA62212AA2A800A3C3BA /* JFNearViewController.xib in Resources */,
@@ -1010,6 +1025,7 @@
 				EA1A761A211C4924000BF3E2 /* JFBaseNetwork.swift in Sources */,
 				E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */,
 				E81B51091F692F06002EA405 /* JFHomeLuckyDrawCell.swift in Sources */,
+				EA1A0154212E422900255489 /* JFGuidePageTestViewController.swift in Sources */,
 				EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */,
 				EA9FAA70212BB69F00A3C3BA /* JFGuidePageView.swift in Sources */,
 				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,

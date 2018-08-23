@@ -23,6 +23,7 @@ class JFNearViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         navigationItem.title = "附近"
         //初始化数据 0
         dataArray = nearDataSource(index: 0)
+        
     }
 
     override func didReceiveMemoryWarning() {
