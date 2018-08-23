@@ -20,12 +20,20 @@ struct ModularModel {
     
     //闭包作为参数
     init(normalWithIcon icon:UIImage?, title:String,description:String, selectCell:@escaping ()->()) {
+        //type用来 识别返回的个cell
         self.type = 0
         self.icon = icon
         self.title = title
         self.desc = description
         self.selectCell = selectCell
     }
+    
+    init(bigWithIcon icon:UIImage?, selectCell:@escaping ()->()) {
+        self.type = 1
+        self.icon = icon
+        self.selectCell = selectCell
+    }
+    
     
 }
 

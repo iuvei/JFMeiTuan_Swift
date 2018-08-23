@@ -23,9 +23,15 @@ class JFModularTableViewController: JFBaseViewController {
     
     func setUpModelList() {
         
+        
+        /// 添加数据源
         var subList:[ModularModel] = []
-        subList.append(ModularModel(normalWithIcon: #imageLiteral(resourceName: "homeActive"), title: "测试", description: "测试", selectCell: {
-            JFLog("ceshi")
+        subList.append(ModularModel(normalWithIcon: #imageLiteral(resourceName: "喜欢"), title: "测试", description: "测试", selectCell: {
+            JFLog("1")
+        }))
+        subList.append(ModularModel(bigWithIcon: #imageLiteral(resourceName: "大哭"), selectCell: {
+            JFLog("2")
+
         }))
         modelList.append(subList)
     }
@@ -49,8 +55,7 @@ extension JFModularTableViewController:UITableViewDelegate,UITableViewDataSource
             cell = Bundle.main.loadNibNamed("JFModularCell", owner: nil, options: nil)?[model.type] as? (UITableViewCell & ModularModellProtocol)
         }
         cell?.model = model
-        
-        return cell!;
+        return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
