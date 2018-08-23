@@ -25,14 +25,23 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiE-U7-6X2">
                             <rect key="frame" x="0.0" y="0.0" width="345" height="66.5"/>
                             <state key="normal" title="视频引导页"/>
+                            <connections>
+                                <action selector="videoBtnClick:" destination="-1" eventType="touchUpInside" id="GXu-1r-sgo"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZB-x7-8Ps">
                             <rect key="frame" x="0.0" y="66.5" width="345" height="67"/>
                             <state key="normal" title="GIf引导页"/>
+                            <connections>
+                                <action selector="gifBtnClick:" destination="-1" eventType="touchUpInside" id="OZU-hW-Qbb"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63F-7A-QMs">
                             <rect key="frame" x="0.0" y="133.5" width="345" height="66.5"/>
                             <state key="normal" title="图片引导页"/>
+                            <connections>
+                                <action selector="imageBtnClick:" destination="-1" eventType="touchUpInside" id="zna-tl-Vdn"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

@@ -10,11 +10,37 @@ import UIKit
 
 class JFGuidePageTestViewController: JFBaseViewController {
 
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    @IBAction func imageBtnClick(_ sender: Any) {
+        
+        let imageNameArray: [String] = ["lead01", "lead02", "lead03"]
+        let guideView = JFGuidePageView.init(imageNameArray: imageNameArray, isHideSkipBtn: false)
+        JFKeyWindow?.rootViewController?.view.addSubview(guideView)
+        
+        
+    }
+    @IBAction func gifBtnClick(_ sender: Any) {
+        
+        
+    }
+    @IBAction func videoBtnClick(_ sender: Any) {
+        
+        //添加视频引导页
+        let urlStr = Bundle.main.path(forResource: "qidong.mp4", ofType: nil)
+        let videoUrl = NSURL.fileURL(withPath: urlStr!)
+        let guideView = JFGuidePageView.init(videoUrl: videoUrl, isHideSkipBtn: false)
+        JFKeyWindow?.rootViewController?.view.addSubview(guideView)
+        
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -30,9 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let guideView = JFGuidePageView.init(videoUrl: videoUrl, isHideSkipBtn: false)
         self.window?.rootViewController?.view.addSubview(guideView)
         
-//        let imageNameArray: [String] = ["lead01", "lead02", "lead03"]
-//        let guideView = JFGuidePageView.init(imageNameArray: imageNameArray, isHideSkipBtn: false)
-//        self.window?.rootViewController?.view.addSubview(guideView)
+
         
         
         
