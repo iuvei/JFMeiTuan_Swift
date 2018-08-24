@@ -26,7 +26,7 @@ class JFTestVC: JFBaseViewController {
     func stepupNodeList() -> () {
         var subList:[TableNode] = []
         
-        
+//
         subList.append(TableNode(regularWithIcon: #imageLiteral(resourceName: "大笑"), title: "2018新闻", description: "点击查看更多"){ [weak self] in
             let pushedCtr = PushedCtr()
             pushedCtr.title = "2018新闻"
@@ -37,11 +37,11 @@ class JFTestVC: JFBaseViewController {
             pushedCtr.title = "今日温度"
             self?.navigationController?.pushViewController(pushedCtr, animated: true)
         })
-        
+
         nodeList.append(subList)
-        
+
         subList = []
-        
+
         subList.append(TableNode(description: "广告位招租"){[weak self] in
             let pushedCtr = PushedCtr()
             pushedCtr.title = "广告位招租"
