@@ -91,13 +91,16 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
 //            self.view.showToast(myView)
             
             // immediately hides all toast views in self.view
-//            self.view.hideAllToasts()
+//            self.view.hideAllToasts()JFTestVC
             
         }else if (indexPath.row == 5){
             let VC = JFGuidePageTestViewController.init(nibName: "JFGuidePageTestViewController", bundle: nil)
             navigationController?.pushViewController(VC, animated: true)
         }else if (indexPath.row == 6){
-            let VC = JFModularTableViewController.init(nibName: "JFModularTableViewController", bundle: nil)
+//            let VC = JFModularTableViewController.init(nibName: "JFModularTableViewController", bundle: nil)
+//            navigationController?.pushViewController(VC, animated: true)
+            
+            let VC = JFTestVC.init()
             navigationController?.pushViewController(VC, animated: true)
         }else if (indexPath.row == 7){
            

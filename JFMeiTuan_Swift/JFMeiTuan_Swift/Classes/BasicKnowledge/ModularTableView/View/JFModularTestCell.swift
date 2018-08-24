@@ -1,27 +1,29 @@
 //
-//  JFModularCell.swift
+//  JFModularTestCell.swift
 //  JFMeiTuan_Swift
 //
-//  Created by linjf on 2018/8/23.
+//  Created by linjf on 2018/8/24.
 //  Copyright © 2018年 linjianfang. All rights reserved.
 //
 
 import UIKit
 
-class JFModularCell: UITableViewCell,ModularModellProtocol {
-    
+class JFModularTestCell: UITableViewCell,ModularModellProtocol {
+
     @IBOutlet weak var desLb: UILabel!
     @IBOutlet weak var titleLb: UILabel!
     @IBOutlet weak var iconView: UIImageView!
+
     
     var model: ModularModel?{
         didSet{
             guard let model = model else { return }
-            titleLb.text = model.title 
+            titleLb.text = model.title
             desLb.text = model.desc
             iconView.image = model.icon
         }
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,5 +34,5 @@ class JFModularCell: UITableViewCell,ModularModellProtocol {
 
         // Configure the view for the selected state
     }
-    
+
 }

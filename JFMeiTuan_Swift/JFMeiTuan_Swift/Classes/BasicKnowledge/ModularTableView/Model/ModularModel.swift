@@ -45,9 +45,6 @@ struct ModularModel {
         self.current = current
         self.selectCell = selectCell
     }
-    
-    
-    
 }
 
 /// 声明一个协议
