@@ -34,6 +34,19 @@ struct ModularModel {
         self.selectCell = selectCell
     }
     
+    var min:Double = 0
+    var max:Double = 0
+    var current:Double = 0
+    init(rangeWithTitle title:String , min:Double , max:Double,current:Double,selectCell:@escaping ()->()) {
+        self.type = 2
+        self.title = title
+        self.min = min
+        self.max = max
+        self.current = current
+        self.selectCell = selectCell
+    }
+    
+    
     
 }
 

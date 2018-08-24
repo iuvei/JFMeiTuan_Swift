@@ -50,6 +50,8 @@
 		EA1A0173212E7E5C00255489 /* JFModularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A0171212E7E5C00255489 /* JFModularCell.xib */; };
 		EA1A0175212E7F5F00255489 /* ModularModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A0174212E7F5F00255489 /* ModularModel.swift */; };
 		EA1A0177212EB34900255489 /* JFImageTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A0176212EB34900255489 /* JFImageTestCell.swift */; };
+		EA1A0179212F909B00255489 /* JFSildeTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A0178212F909B00255489 /* JFSildeTestCell.swift */; };
+		EA1A017B212F90ED00255489 /* JFSelectTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A017A212F90ED00255489 /* JFSelectTestCell.swift */; };
 		EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */; };
 		EA1A75C9211AF1AF000BF3E2 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */; };
 		EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */; };
@@ -192,6 +194,8 @@
 		EA1A0171212E7E5C00255489 /* JFModularCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFModularCell.xib; sourceTree = "<group>"; };
 		EA1A0174212E7F5F00255489 /* ModularModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularModel.swift; sourceTree = "<group>"; };
 		EA1A0176212EB34900255489 /* JFImageTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFImageTestCell.swift; sourceTree = "<group>"; };
+		EA1A0178212F909B00255489 /* JFSildeTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSildeTestCell.swift; sourceTree = "<group>"; };
+		EA1A017A212F90ED00255489 /* JFSelectTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSelectTestCell.swift; sourceTree = "<group>"; };
 		EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFWalkChildViewController.swift; sourceTree = "<group>"; };
 		EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
 		EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFWalkChildViewController.xib; sourceTree = "<group>"; };
@@ -586,6 +590,8 @@
 				EA1A0170212E7E5C00255489 /* JFModularCell.swift */,
 				EA1A0171212E7E5C00255489 /* JFModularCell.xib */,
 				EA1A0176212EB34900255489 /* JFImageTestCell.swift */,
+				EA1A0178212F909B00255489 /* JFSildeTestCell.swift */,
+				EA1A017A212F90ED00255489 /* JFSelectTestCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1085,6 +1091,7 @@
 				EA9FAA6D212AC6F100A3C3BA /* JFNearModel.swift in Sources */,
 				E81B51071F692E74002EA405 /* JFAdvertisingCell.swift in Sources */,
 				EA1A015E212E4D3B00255489 /* JFSendValueViewController.swift in Sources */,
+				EA1A0179212F909B00255489 /* JFSildeTestCell.swift in Sources */,
 				EA9FC6492125162B0053A56B /* JFCommonModel.swift in Sources */,
 				EA1A016C212E7C4800255489 /* JFModularTableViewController.swift in Sources */,
 				E81B51031F692B36002EA405 /* JFHomeTipCell.swift in Sources */,
@@ -1139,6 +1146,7 @@
 				E874E2191F557EC9003A29B1 /* JFHomeViewController.swift in Sources */,
 				E874E1B51F4E91BA003A29B1 /* AppDelegate.swift in Sources */,
 				EA9FC5E8212122CA0053A56B /* JFClassCollectionCell.swift in Sources */,
+				EA1A017B212F90ED00255489 /* JFSelectTestCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

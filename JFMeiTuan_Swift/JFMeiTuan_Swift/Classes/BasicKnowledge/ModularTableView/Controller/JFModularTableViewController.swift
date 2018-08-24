@@ -26,6 +26,8 @@ class JFModularTableViewController: JFBaseViewController {
         
         /// 添加数据源
         var subList:[ModularModel] = []
+        //结构体初始化返回model 加到数组里面 用每个model 来描述cell的信息
+        //这个种方式就可以 做很多拓展 比如说 cell的一些 属性 都可以通过初始化结构体来 完成
         subList.append(ModularModel(normalWithIcon: #imageLiteral(resourceName: "喜欢"), title: "测试", description: "测试", selectCell: {
             JFLog("1")
         }))
@@ -33,6 +35,15 @@ class JFModularTableViewController: JFBaseViewController {
             JFLog("2")
 
         }))
+        
+        subList = []
+
+        subList.append(ModularModel(rangeWithTitle: "测试", min: 20, max: 200 , current:180){[weak self] in
+            JFLog("3")
+            self?.navigationController?.popViewController(animated: true)
+
+        })
+        
         modelList.append(subList)
     }
 
@@ -48,6 +59,11 @@ extension JFModularTableViewController:UITableViewDelegate,UITableViewDataSource
         return modelList[section].count
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int{
+        return modelList.count
+    } // Default is 1 if not implemented
+
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let model  = modelList[indexPath.section][indexPath.row]
         var cell = tableView.dequeueReusableCell(withIdentifier: "\(model.type)") as? (UITableViewCell & ModularModellProtocol)
@@ -64,8 +80,6 @@ extension JFModularTableViewController:UITableViewDelegate,UITableViewDataSource
     }
     
     
-    func numberOfSections(in tableView: UITableView) -> Int{
-        return modelList.count
-    } // Default is 1 if not implemented
+  
 }
 
