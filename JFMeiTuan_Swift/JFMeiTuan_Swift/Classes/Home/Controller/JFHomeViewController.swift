@@ -8,6 +8,8 @@
 
 import UIKit
 import SnapKit
+import ObjectMapper
+
 let ID  = "cell"
 let headerCellID  = "headerCellID"
 let ListCellID  = "ListCellID"
@@ -97,7 +99,14 @@ extension JFHomeViewController{
             cell.imageUrlArray = ["http://pic9.photophoto.cn/20081128/0033033999061521_b.jpg","http://p17.qhimg.com/bdm/1600_900_85/d/_open360/fengjing25/Banff-National-Park-desktopsky-41283.jpg","http://pic23.photophoto.cn/20120505/0034034818753393_b.jpg","http://pic31.nipic.com/20130713/8821914_171955153144_2.jpg"]
             return cell
         case 1:
+
             let cell:JFHomeTopCategoryCell  = JFHomeTopCategoryCell.cellWithTableView(tableView)
+            
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "homeTopCategoryCell")
+            
+            let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            cell.modelArray = modelArray
+            
             return cell
         case 2:
             let cell:JFHomeClassCell  = JFHomeClassCell.cellWithTableView(tableView)

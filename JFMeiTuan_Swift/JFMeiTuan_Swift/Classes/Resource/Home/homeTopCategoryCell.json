@@ -1,0 +1,23 @@
+ [
+      {
+          "imageName": "weakSecond",
+          "desTitle": "美食",
+      },
+      {
+          "imageName": "HomeController",
+          "desTitle": "电影/演出",
+      },
+      {
+          "imageName": "HomeController",
+          "desTitle": "酒店住宿",
+      },
+      {
+          "imageName": "HomeController",
+          "desTitle": "休闲娱乐",
+      },
+      {
+          "imageName": "HomeController",
+          "desTitle": "外卖",
+      },
+  
+  ]

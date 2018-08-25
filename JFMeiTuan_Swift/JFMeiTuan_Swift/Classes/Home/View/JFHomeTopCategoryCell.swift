@@ -12,6 +12,10 @@ class JFHomeTopCategoryCell: UITableViewCell,UICollectionViewDelegate,UICollecti
 
     @IBOutlet weak var collectionLayout: UICollectionViewFlowLayout!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var modelArray:[JFCommonModel] = []
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -54,13 +58,16 @@ class JFHomeTopCategoryCell: UITableViewCell,UICollectionViewDelegate,UICollecti
     
     /// UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 5;
+        return (modelArray.count);
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
+        let cell  = JFHomeTopCategoryCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
         
-        return JFHomeTopCategoryCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
+        cell.model = modelArray[indexPath.row]
+        
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
