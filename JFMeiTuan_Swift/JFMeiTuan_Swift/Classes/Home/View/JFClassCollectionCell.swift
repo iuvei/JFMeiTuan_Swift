@@ -10,6 +10,17 @@ import UIKit
 
 class JFClassCollectionCell: UICollectionViewCell {
 
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var desLb: UILabel!
+    
+    var model:JFCommonModel?{
+        didSet{
+            //重写set方法
+            imgView.image = UIImage.init(named:  (model?.imageName)!)
+            desLb.text = model?.desTitle
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

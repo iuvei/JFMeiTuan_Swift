@@ -12,6 +12,10 @@ class JFHomeClassCell: UITableViewCell,UICollectionViewDataSource,UICollectionVi
     @IBOutlet weak var collectionLayout: UICollectionViewFlowLayout!
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    //声明一个里面装着JFCommonModel的数组
+    var modelArray:[JFCommonModel] = []
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -54,11 +58,13 @@ class JFHomeClassCell: UITableViewCell,UICollectionViewDataSource,UICollectionVi
     
     /// UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 10;
+        return modelArray.count;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        return JFClassCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
+        let  cell:JFClassCollectionCell  = JFClassCollectionCell.cellWithCollectionView(collectionView, indexPath as NSIndexPath)
+        cell.model = modelArray[indexPath.row]
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{

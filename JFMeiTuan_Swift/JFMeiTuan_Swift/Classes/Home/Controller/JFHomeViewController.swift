@@ -110,6 +110,12 @@ extension JFHomeViewController{
             return cell
         case 2:
             let cell:JFHomeClassCell  = JFHomeClassCell.cellWithTableView(tableView)
+            
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "homeClass")
+            
+            let modelArray = Mapper<JFCommonModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            cell.modelArray = modelArray
+            
             return cell
         case 3:
             let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
@@ -129,7 +135,7 @@ extension JFHomeViewController{
         case 0:
             return 120
         case 1:
-            return 80
+            return 100
         case 2:
             return 140
         case 3:
