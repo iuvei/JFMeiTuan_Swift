@@ -23,6 +23,14 @@ class JFNormalOrderCell: UITableViewCell {
         didSet{
             //重写set方法
             normalImageView.image = UIImage.init(named:  (nearModel?.imageName)!)
+            
+            if (nearModel?.imageName?.hasPrefix("http"))! {
+                let url  = URL(string: (nearModel?.imageName)!)
+                normalImageView.kf.setImage(with: url)
+            }else{
+                normalImageView.image = UIImage.init(named:  (nearModel?.imageName)!)
+            }
+            
             moneyLabel.text = nearModel?.money
             addressLabel.text = nearModel?.adress
             distanceLabel.text = nearModel?.distance
