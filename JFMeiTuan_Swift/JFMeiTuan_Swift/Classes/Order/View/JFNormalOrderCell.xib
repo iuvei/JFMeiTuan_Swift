@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,10 +55,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.0km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzV-EG-EGf">
-                        <rect key="frame" x="249" y="19.5" width="40" height="20"/>
+                        <rect key="frame" x="189" y="19.5" width="100" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="bF1-4V-cb7"/>
-                            <constraint firstAttribute="width" constant="40" id="g7T-Cn-d2V"/>
+                            <constraint firstAttribute="width" constant="100" id="g7T-Cn-d2V"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,9 +75,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人均￥100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8v-ai-DTt">
-                        <rect key="frame" x="229" y="50" width="60" height="20"/>
+                        <rect key="frame" x="209" y="50" width="80" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="8k2-TT-dmj"/>
+                            <constraint firstAttribute="width" constant="80" id="8k2-TT-dmj"/>
                             <constraint firstAttribute="height" constant="20" id="uK6-Bm-XfX"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -104,10 +104,10 @@
                         <rect key="frame" x="155" y="52.5" width="15" height="15"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长泰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLP-0e-dUw">
-                        <rect key="frame" x="160" y="79" width="30" height="20"/>
+                        <rect key="frame" x="160" y="79" width="80" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="JMp-ut-cEL"/>
-                            <constraint firstAttribute="width" constant="30" id="k0V-Mh-A2E"/>
+                            <constraint firstAttribute="width" constant="80" id="k0V-Mh-A2E"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
