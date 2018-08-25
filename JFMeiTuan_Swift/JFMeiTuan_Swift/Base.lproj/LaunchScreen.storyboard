@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,17 +22,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby_shopinfo_icon_service_tuan_mt" translatesAutoresizingMaskIntoConstraints="NO" id="axW-ks-GdJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beauty_tag_tuan" translatesAutoresizingMaskIntoConstraints="NO" id="axW-ks-GdJ">
                                 <rect key="frame" x="162.5" y="120" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="XxB-W7-oUJ"/>
                                     <constraint firstAttribute="height" constant="50" id="iwo-qa-cGi"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吃喝玩乐全都有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzx-fV-PdI">
+                                <rect key="frame" x="16" y="190" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ifi-oX-UYn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美团云计算服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IC-xB-5Og">
+                                <rect key="frame" x="16" y="605" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mYj-ix-N8l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@meituan.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyX-is-wHT">
+                                <rect key="frame" x="0.0" y="626" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="q3z-mO-OCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="axW-ks-GdJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="1Zy-SB-DlQ"/>
+                            <constraint firstItem="kzx-fV-PdI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="6Wb-IH-eAn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kzx-fV-PdI" secondAttribute="trailing" id="6br-GC-1rY"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ZyX-is-wHT" secondAttribute="bottom" constant="20" id="83i-Ut-pfJ"/>
+                            <constraint firstItem="ZyX-is-wHT" firstAttribute="top" secondItem="2IC-xB-5Og" secondAttribute="bottom" id="De1-Ah-Ux4"/>
+                            <constraint firstAttribute="trailing" secondItem="ZyX-is-wHT" secondAttribute="trailing" id="OW1-tm-wo2"/>
+                            <constraint firstItem="ZyX-is-wHT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Tr5-4M-uFd"/>
+                            <constraint firstItem="kzx-fV-PdI" firstAttribute="top" secondItem="axW-ks-GdJ" secondAttribute="bottom" constant="20" id="hCX-OS-fQh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2IC-xB-5Og" secondAttribute="trailing" id="m8u-Pg-Lmg"/>
+                            <constraint firstItem="2IC-xB-5Og" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="uN5-xn-cDO"/>
                             <constraint firstItem="axW-ks-GdJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xms-B6-Mnm"/>
                         </constraints>
                     </view>
@@ -42,6 +79,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="baby_shopinfo_icon_service_tuan_mt" width="15" height="15"/>
+        <image name="beauty_tag_tuan" width="15" height="15"/>
     </resources>
 </document>
