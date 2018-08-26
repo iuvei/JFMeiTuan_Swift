@@ -9,7 +9,41 @@
 import UIKit
 
 class JFHomeNormalCell: UITableViewCell {
+    
+    /*
+     "imageName": "大笑",
+     "title": "大笑",
+     "type": "喜剧",
+     "desTitle": "打车",
+     "distance": "5.0km",
+     "saleNumber": "50份",
+     "price": "￥30",
+     */
 
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var titleLb: UILabel!
+    @IBOutlet weak var typeLb: UILabel!
+    @IBOutlet weak var desTitle: UILabel!
+  
+    @IBOutlet weak var priceLb: UILabel!
+    
+    @IBOutlet weak var saleNumberLb: UILabel!
+    @IBOutlet weak var distanceLb: UILabel!
+    
+    
+    var model:JFHomeConmonModel?{
+        didSet{
+            imgView.JF_Image(imageName: (model?.imageName)!)
+            titleLb.text = model?.title
+            typeLb.text = model?.type
+            desTitle.text = model?.desTitle
+            priceLb.text = model?.price
+            saleNumberLb.text = model?.saleNumber
+            distanceLb.text = model?.distance
+        }
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

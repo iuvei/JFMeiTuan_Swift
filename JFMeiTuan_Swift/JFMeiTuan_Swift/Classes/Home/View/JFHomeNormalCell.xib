@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -140,6 +140,15 @@
                     <constraint firstItem="6mO-jX-Vx9" firstAttribute="top" secondItem="F6T-tl-h0h" secondAttribute="bottom" id="nnO-Wl-EQc"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="desTitle" destination="6mO-jX-Vx9" id="Ij3-xg-1FI"/>
+                <outlet property="distanceLb" destination="i5S-F4-CGS" id="Gd5-Qx-iyV"/>
+                <outlet property="imgView" destination="x5R-Nw-4z7" id="r94-zi-kH4"/>
+                <outlet property="priceLb" destination="5OB-jK-YNT" id="XXL-F4-wIn"/>
+                <outlet property="saleNumberLb" destination="rP2-eI-yQ7" id="qeT-ql-rM2"/>
+                <outlet property="titleLb" destination="4Pq-Lk-yTF" id="FJu-I6-iJJ"/>
+                <outlet property="typeLb" destination="F6T-tl-h0h" id="o9q-jA-5L6"/>
+            </connections>
             <point key="canvasLocation" x="34" y="82"/>
         </tableViewCell>
     </objects>

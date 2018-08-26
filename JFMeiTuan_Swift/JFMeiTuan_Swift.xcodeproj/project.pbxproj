@@ -21,6 +21,7 @@
 		5AB98BAE21315D490070C5D6 /* homeTopCategoryCell.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BAD21315D480070C5D6 /* homeTopCategoryCell.json */; };
 		5AB98BB021316A0B0070C5D6 /* homeClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BAF21316A0B0070C5D6 /* homeClass.json */; };
 		5AB98BB321322ED50070C5D6 /* UIImage+JFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */; };
+		5AB98BB52132BA790070C5D6 /* homeNormal.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BB42132BA790070C5D6 /* homeNormal.json */; };
 		A3A52610497E2CB4270346AB /* Pods_JFMeiTuan_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F80F970124B124F7B8BB43 /* Pods_JFMeiTuan_Swift.framework */; };
 		E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */; };
 		E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */; };
@@ -174,6 +175,7 @@
 		5AB98BAD21315D480070C5D6 /* homeTopCategoryCell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeTopCategoryCell.json; sourceTree = "<group>"; };
 		5AB98BAF21316A0B0070C5D6 /* homeClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeClass.json; sourceTree = "<group>"; };
 		5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JFExtension.swift"; sourceTree = "<group>"; };
+		5AB98BB42132BA790070C5D6 /* homeNormal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeNormal.json; sourceTree = "<group>"; };
 		6E9186FE1D2CDDA80244D864 /* Pods-JFMeiTuan_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan_Swift/Pods-JFMeiTuan_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeTotalCassCell.swift; sourceTree = "<group>"; };
 		E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeActivityCell.swift; sourceTree = "<group>"; };
@@ -911,6 +913,7 @@
 				EA7D6BF9212574BB009947F2 /* home.json */,
 				EA7D6BF72125733B009947F2 /* tabbar.json */,
 				5AB98BAF21316A0B0070C5D6 /* homeClass.json */,
+				5AB98BB42132BA790070C5D6 /* homeNormal.json */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1052,6 +1055,7 @@
 				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
 				EA9FAA55212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib in Resources */,
 				EA9FAA7C212BDFAF00A3C3BA /* lead02.png in Resources */,
+				5AB98BB52132BA790070C5D6 /* homeNormal.json in Resources */,
 				EA1A015C212E4D3B00255489 /* JFSendValueViewController.xib in Resources */,
 				5A4D484E212B0478000E5D22 /* nearFood.json in Resources */,
 				5AB98BB021316A0B0070C5D6 /* homeClass.json in Resources */,

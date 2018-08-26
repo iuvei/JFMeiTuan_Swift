@@ -17,9 +17,11 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
 
     var tableView  = UITableView()
     
+//    var normalDataArray:NSArray = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         //初始化导航栏
         initNav()
         
@@ -30,40 +32,18 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         initData()
     }
     
-    //初始化视图
-    func initView() {
-        tableView = UITableView(frame :.zero, style:.plain)
-        //设置tableView在拖拽tabelView的时候隐藏键盘
-        tableView.keyboardDismissMode = .onDrag
-        view.addSubview(tableView)
-        
-        //用snapkit布局
-        tableView.snp.makeConstraints { (make) in
-            make.width.height.equalToSuperview()
-            make.top.equalToSuperview()
-        }        
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.separatorStyle = .none
-    }
-
-   
     // 懒加载
-    lazy var datas: [Int] = {
-        // 创建一个存放int的数组
-        var nums = [Int]()
-        // 添加数据
-        for i in 0...50 {
-            nums.append(i)
-        }
+    lazy var normalDataArray: [JFHomeConmonModel] = {
+      
+        let jsonArray:NSArray = JFStyle.getJsonWithName(name: "homeNormal")
+        
+        let modelArray = Mapper<JFHomeConmonModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
         // 返回
-        return nums
+        return modelArray
     }()
-    
     
     //初始化数据
     func initData(){
-        
         JFBaseNetwork.shareInstance.initData()
     
     }
@@ -88,7 +68,7 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
 extension JFHomeViewController{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return datas.count
+        return (normalDataArray.count + 5)
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -119,7 +99,7 @@ extension JFHomeViewController{
             return cell
         case 3:
             let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
-            cell.imageName = "homeActive"
+            cell.imageName = "http://img.mp.sohu.com/upload/20170520/e7700e6afddf4438b4908233ca981a6e_th.png"
             return cell
         case 4:
             let cell:JFHomeFeaturesCell  = JFHomeFeaturesCell.cellWithTableView(tableView)
@@ -127,6 +107,12 @@ extension JFHomeViewController{
             
         default:
             let cell:JFHomeNormalCell  = JFHomeNormalCell.cellWithTableView(tableView)
+            let jsonArray:NSArray = JFStyle.getJsonWithName(name: "homeNormal")
+            
+            let modelArray = Mapper<JFHomeConmonModel>().mapArray(JSONArray: jsonArray as! [[String : Any]])
+            
+            cell.model = modelArray[indexPath.row - 5]
+            
             return cell
         }
     }
@@ -188,6 +174,25 @@ extension JFHomeViewController{
     public func updateSearchResults(for searchController: UISearchController){
         
     }
+    
+    
+    //初始化视图
+    func initView() {
+        tableView = UITableView(frame :.zero, style:.plain)
+        //设置tableView在拖拽tabelView的时候隐藏键盘
+        tableView.keyboardDismissMode = .onDrag
+        view.addSubview(tableView)
+        
+        //用snapkit布局
+        tableView.snp.makeConstraints { (make) in
+            make.width.height.equalToSuperview()
+            make.top.equalToSuperview()
+        }
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorStyle = .none
+    }
+    
     
 }
 
