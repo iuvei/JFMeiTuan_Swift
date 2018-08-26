@@ -22,6 +22,8 @@
 		5AB98BB021316A0B0070C5D6 /* homeClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BAF21316A0B0070C5D6 /* homeClass.json */; };
 		5AB98BB321322ED50070C5D6 /* UIImage+JFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */; };
 		5AB98BB52132BA790070C5D6 /* homeNormal.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BB42132BA790070C5D6 /* homeNormal.json */; };
+		5AB98BB92132EFF80070C5D6 /* JFSelectCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BB72132EFF80070C5D6 /* JFSelectCityViewController.swift */; };
+		5AB98BBA2132EFF80070C5D6 /* JFSelectCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BB82132EFF80070C5D6 /* JFSelectCityViewController.xib */; };
 		A3A52610497E2CB4270346AB /* Pods_JFMeiTuan_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F80F970124B124F7B8BB43 /* Pods_JFMeiTuan_Swift.framework */; };
 		E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */; };
 		E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */; };
@@ -176,6 +178,8 @@
 		5AB98BAF21316A0B0070C5D6 /* homeClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeClass.json; sourceTree = "<group>"; };
 		5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JFExtension.swift"; sourceTree = "<group>"; };
 		5AB98BB42132BA790070C5D6 /* homeNormal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeNormal.json; sourceTree = "<group>"; };
+		5AB98BB72132EFF80070C5D6 /* JFSelectCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSelectCityViewController.swift; sourceTree = "<group>"; };
+		5AB98BB82132EFF80070C5D6 /* JFSelectCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFSelectCityViewController.xib; sourceTree = "<group>"; };
 		6E9186FE1D2CDDA80244D864 /* Pods-JFMeiTuan_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan_Swift/Pods-JFMeiTuan_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeTotalCassCell.swift; sourceTree = "<group>"; };
 		E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeActivityCell.swift; sourceTree = "<group>"; };
@@ -342,6 +346,7 @@
 		5A1E05601F55A7BD00C9DBA1 /* JFViewComponent */ = {
 			isa = PBXGroup;
 			children = (
+				5AB98BB62132EFC10070C5D6 /* JFSelectCityViewController */,
 				EA9FC6262122CC1C0053A56B /* JFSearchController */,
 				EA9FC60621229C830053A56B /* JFCarouselView */,
 				5A1E05611F55A7F700C9DBA1 /* JFMeCell.swift */,
@@ -371,6 +376,15 @@
 				5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */,
 			);
 			path = JFExtension;
+			sourceTree = "<group>";
+		};
+		5AB98BB62132EFC10070C5D6 /* JFSelectCityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5AB98BB72132EFF80070C5D6 /* JFSelectCityViewController.swift */,
+				5AB98BB82132EFF80070C5D6 /* JFSelectCityViewController.xib */,
+			);
+			path = JFSelectCityViewController;
 			sourceTree = "<group>";
 		};
 		5C724BE349BC825B89F8A477 /* Frameworks */ = {
@@ -1053,6 +1067,7 @@
 				EA9FAA53212A5B2A00A3C3BA /* JFPageChildSecondViewController.xib in Resources */,
 				EA1A760D211C3861000BF3E2 /* JFRecentViewOrderCell.xib in Resources */,
 				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
+				5AB98BBA2132EFF80070C5D6 /* JFSelectCityViewController.xib in Resources */,
 				EA9FAA55212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib in Resources */,
 				EA9FAA7C212BDFAF00A3C3BA /* lead02.png in Resources */,
 				5AB98BB52132BA790070C5D6 /* homeNormal.json in Resources */,
@@ -1174,6 +1189,7 @@
 				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
 				5AB98BA9213146280070C5D6 /* DescriptionCell.swift in Sources */,
 				EA9FAA65212AA32E00A3C3BA /* JFNearClassHearderView.swift in Sources */,
+				5AB98BB92132EFF80070C5D6 /* JFSelectCityViewController.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,

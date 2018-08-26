@@ -17,9 +17,6 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
 
     var tableView  = UITableView()
     
-//    var normalDataArray:NSArray = []
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //初始化导航栏
@@ -31,7 +28,6 @@ class JFHomeViewController: JFBaseViewController,UITableViewDataSource,UITableVi
         //初始化数据
         initData()
     }
-    
     // 懒加载
     lazy var normalDataArray: [JFHomeConmonModel] = {
       
@@ -153,6 +149,10 @@ extension JFHomeViewController{
     }
     
     func leftClick() {
+        let VC =  JFSelectCityViewController.init(nibName: "JFSelectCityViewController", bundle: nil)
+
+        let nav =  JFBaseNacigationController.init(rootViewController: VC)
+        navigationController?.present(nav, animated: true, completion: nil)
         
     }
     
