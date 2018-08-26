@@ -20,6 +20,7 @@
 		5AB98BAC213146280070C5D6 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BA7213146280070C5D6 /* TableCell.xib */; };
 		5AB98BAE21315D490070C5D6 /* homeTopCategoryCell.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BAD21315D480070C5D6 /* homeTopCategoryCell.json */; };
 		5AB98BB021316A0B0070C5D6 /* homeClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BAF21316A0B0070C5D6 /* homeClass.json */; };
+		5AB98BB321322ED50070C5D6 /* UIImage+JFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */; };
 		A3A52610497E2CB4270346AB /* Pods_JFMeiTuan_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F80F970124B124F7B8BB43 /* Pods_JFMeiTuan_Swift.framework */; };
 		E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */; };
 		E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */; };
@@ -172,6 +173,7 @@
 		5AB98BA7213146280070C5D6 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		5AB98BAD21315D480070C5D6 /* homeTopCategoryCell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeTopCategoryCell.json; sourceTree = "<group>"; };
 		5AB98BAF21316A0B0070C5D6 /* homeClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeClass.json; sourceTree = "<group>"; };
+		5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JFExtension.swift"; sourceTree = "<group>"; };
 		6E9186FE1D2CDDA80244D864 /* Pods-JFMeiTuan_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan_Swift/Pods-JFMeiTuan_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeTotalCassCell.swift; sourceTree = "<group>"; };
 		E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeActivityCell.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 		5A1E055E1F55A5CC00C9DBA1 /* Common(公共) */ = {
 			isa = PBXGroup;
 			children = (
+				5AB98BB121322EA20070C5D6 /* JFExtension */,
 				E8CF74C11FB19C6F00FE8F17 /* JFConst */,
 				E874E21F1F56A0DA003A29B1 /* JFModel */,
 				E874E21E1F567D42003A29B1 /* JFStyle */,
@@ -358,6 +361,14 @@
 				5AB98BA7213146280070C5D6 /* TableCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		5AB98BB121322EA20070C5D6 /* JFExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */,
+			);
+			path = JFExtension;
 			sourceTree = "<group>";
 		};
 		5C724BE349BC825B89F8A477 /* Frameworks */ = {
@@ -1190,6 +1201,7 @@
 				EA1A763F211D2C61000BF3E2 /* JFMineViewController.swift in Sources */,
 				EA9FAA63212AA2A800A3C3BA /* JFNearViewController.swift in Sources */,
 				5AB98BAB213146280070C5D6 /* RegularCell.swift in Sources */,
+				5AB98BB321322ED50070C5D6 /* UIImage+JFExtension.swift in Sources */,
 				EA1A0175212E7F5F00255489 /* ModularModel.swift in Sources */,
 				EA1A0160212E4D3B00255489 /* JFReceiveValueViewController.swift in Sources */,
 				EA9FC6412124132E0053A56B /* JFSearchResultViewController.swift in Sources */,

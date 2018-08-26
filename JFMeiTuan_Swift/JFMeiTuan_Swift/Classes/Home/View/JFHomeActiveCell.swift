@@ -10,6 +10,15 @@ import UIKit
 
 class JFHomeActiveCell: UITableViewCell {
 
+    @IBOutlet weak var imgView: UIImageView!
+    
+    var imageName:String?{
+        didSet{
+            imgView.JF_Image(imageName: imageName!)
+
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

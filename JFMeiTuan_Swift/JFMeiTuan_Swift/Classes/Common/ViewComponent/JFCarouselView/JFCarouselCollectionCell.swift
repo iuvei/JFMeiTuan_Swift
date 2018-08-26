@@ -14,13 +14,8 @@ class JFCarouselCollectionCell: UICollectionViewCell {
 
     
     var imageUrlStr: String?{
-        didSet{//判断是否是网络图片
-            if (imageUrlStr?.hasPrefix("http"))! {
-                let url  = URL(string: imageUrlStr!)
-                imageView.kf.setImage(with: url)
-            }else{
-                imageView.image = UIImage.init(named: imageUrlStr!)
-            }
+        didSet{
+            imageView.JF_Image(imageName: imageUrlStr!)
         }
     }
   
