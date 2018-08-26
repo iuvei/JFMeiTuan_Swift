@@ -15,7 +15,8 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     var dataArray:NSArray {
-        let tmpArray = ["传值","loading....","分页","轮播图","toast","引导页","模块化tableView","MVVM","视频播放器"]
+        let tmpArray = ["传值","loading....","分页","轮播图","toast",
+                        "引导页","模块化tableView","MVVM","视频播放器","城市选择"]
         return tmpArray as NSArray
     }
     
@@ -105,6 +106,10 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
         }else if (indexPath.row == 7){
            
         }else if (indexPath.row == 8){
+            //视频播放器
+            
+        }else if (indexPath.row == 9){
+            //城市选择
             
         }
         
