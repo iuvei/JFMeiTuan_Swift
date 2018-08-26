@@ -119,6 +119,7 @@ extension JFHomeViewController{
             return cell
         case 3:
             let cell:JFHomeActiveCell  = JFHomeActiveCell.cellWithTableView(tableView)
+            cell.imageName = "homeActive"
             return cell
         case 4:
             let cell:JFHomeFeaturesCell  = JFHomeFeaturesCell.cellWithTableView(tableView)
