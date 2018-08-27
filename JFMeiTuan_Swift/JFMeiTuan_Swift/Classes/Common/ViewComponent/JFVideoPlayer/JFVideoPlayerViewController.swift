@@ -8,6 +8,8 @@
 
 import UIKit
 import Player
+import NVActivityIndicatorView
+
 
 class JFVideoPlayerViewController: JFBaseViewController,PlayerDelegate,PlayerPlaybackDelegate {
 
@@ -59,14 +61,15 @@ class JFVideoPlayerViewController: JFBaseViewController,PlayerDelegate,PlayerPla
 
 }
 
-extension JFVideoPlayerViewController {
+extension JFVideoPlayerViewController:NVActivityIndicatorViewable {
     
     func playerCurrentTimeDidChange(_ player: Player) {
         
     }
     
     func playerPlaybackWillStartFromBeginning(_ player: Player) {
-        
+        //开始loding
+        startAnimating()
     }
     
     func playerPlaybackDidEnd(_ player: Player) {
@@ -78,7 +81,7 @@ extension JFVideoPlayerViewController {
     }
     
     func playerReady(_ player: Player) {
-        
+         self.stopAnimating()
     }
     
     func playerPlaybackStateDidChange(_ player: Player) {
