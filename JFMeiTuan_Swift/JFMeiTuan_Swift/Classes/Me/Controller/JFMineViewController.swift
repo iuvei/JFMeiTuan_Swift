@@ -129,9 +129,9 @@ extension JFMineViewController{
     }
     // JFMineTopCategoryCellDelegate
     func mineTopCategoryCellClick(index:Int){
-        let VC:JFWebViewController =  JFWebViewController.init()
-        VC.urlString = meiTuanUrl
-        navigationController?.pushViewController(VC, animated: true)
+//        let VC:JFWebViewController =  JFWebViewController.init()
+//        VC.urlString = meiTuanUrl
+//        navigationController?.pushViewController(VC, animated: true)
     }
 
 
@@ -152,7 +152,7 @@ extension JFMineViewController{
     }
     
     func leftBtnClick() {
-        let VC:JFBasicKnowledgeListViewController = JFBasicKnowledgeListViewController.init(nibName: "JFBasicKnowledgeListViewController", bundle: nil)
+        let VC:JFSettingViewController = JFSettingViewController.init(nibName: "JFSettingViewController", bundle: nil)
         navigationController?.pushViewController(VC, animated: true)
     }
     

@@ -24,11 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.sharedManager().enable = true
         
-        //添加视频引导页
-        let urlStr = Bundle.main.path(forResource: "qidong.mp4", ofType: nil)
-        let videoUrl = NSURL.fileURL(withPath: urlStr!)
-        let guideView = JFGuidePageView.init(videoUrl: videoUrl, isHideSkipBtn: false)
-        self.window?.rootViewController?.view.addSubview(guideView)
+//        //添加视频引导页
+//        let urlStr = Bundle.main.path(forResource: "qidong.mp4", ofType: nil)
+//        let videoUrl = NSURL.fileURL(withPath: urlStr!)
+//        let guideView = JFGuidePageView.init(videoUrl: videoUrl, isHideSkipBtn: false)
+//        self.window?.rootViewController?.view.addSubview(guideView)
         
 
         return true
