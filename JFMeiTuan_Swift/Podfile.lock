@@ -7,6 +7,7 @@ PODS:
   - NVActivityIndicatorView/Presenter (4.1.1)
   - ObjectMapper (2.2.9)
   - PagingMenuController (2.2.0)
+  - Player (0.9.1)
   - SnapKit (3.2.0)
   - SwiftyGif (4.1.0)
   - SwiftyJSON (4.0.0)
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - NVActivityIndicatorView (~> 4.1.1)
   - ObjectMapper (~> 2.2)
   - PagingMenuController (~> 2.2.0)
+  - Player (~> 0.9.1)
   - SnapKit (~> 3.2.0)
   - SwiftyGif (~> 4.1.0)
   - SwiftyJSON (~> 4.0.0)
@@ -32,6 +34,7 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - ObjectMapper
     - PagingMenuController
+    - Player
     - SnapKit
     - SwiftyGif
     - SwiftyJSON
@@ -44,11 +47,12 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
   ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
   PagingMenuController: 6176618987bb170096664f2da097313e45ed9c31
+  Player: 939f9432361bfa944d9eaf3df1c783a1e3d6df81
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: be07f961836289aa68adfef70501401a53adbd10
+PODFILE CHECKSUM: c2a7fe2a9f301c14f04aa160cf43e5ee8f230553
 
 COCOAPODS: 1.5.3

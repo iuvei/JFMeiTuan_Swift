@@ -13,4 +13,5 @@ target 'JFMeiTuan_Swift' do
     pod 'Kingfisher', '~> 4.6.3'
     pod 'Toast-Swift', '~> 3.0.1'
     pod 'SwiftyGif', '~> 4.1.0'
+    pod 'Player', '~> 0.9.1'
 end
