@@ -14,7 +14,7 @@ class JFDomesticViewController: JFBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,20 +22,18 @@ class JFDomesticViewController: JFBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    /// 初始化数据
+    func initData()  {
+        
     }
-    */
 
 }
 
 
+
+
+// MARK: -
 extension JFDomesticViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -49,8 +47,6 @@ extension JFDomesticViewController:UITableViewDelegate,UITableViewDataSource{
         return cell
         
     }
-    
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3

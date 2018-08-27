@@ -180,6 +180,20 @@ extension JFHomeViewController{
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
+        
+        
+        let imageView =  UIImageView.init(frame: CGRect.init(x: 100, y: 100, width: 36, height: 36))
+        
+        let tmpArray:NSMutableArray = []
+        for index in 0...14 {
+            let image = UIImage.init(named: "icon_voucher_redPackage_animation1\(index+1)")
+            tmpArray.add(image as Any)
+        }
+        
+        imageView.animationImages = tmpArray as? [UIImage]
+        imageView.startAnimating()
+        
+        view.addSubview(imageView)
     }
     
     
