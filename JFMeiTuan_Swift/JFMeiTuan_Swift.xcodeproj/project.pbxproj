@@ -161,6 +161,13 @@
 		EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC64621250F7F0053A56B /* JFEnum.swift */; };
 		EA9FC6492125162B0053A56B /* JFCommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC6482125162B0053A56B /* JFCommonModel.swift */; };
 		EAA4190F2133D2510023438B /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA4190E2133D2510023438B /* citydict.plist */; };
+		EAA4191A2133D5010023438B /* JFDomesticNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA419182133D5010023438B /* JFDomesticNormalCell.swift */; };
+		EAA4191B2133D5010023438B /* JFDomesticNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA419192133D5010023438B /* JFDomesticNormalCell.xib */; };
+		EAA4191E2133D52D0023438B /* JFDomesticHotCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4191C2133D52D0023438B /* JFDomesticHotCityCell.swift */; };
+		EAA4191F2133D52D0023438B /* JFDomesticHotCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA4191D2133D52D0023438B /* JFDomesticHotCityCell.xib */; };
+		EAA419222133D54A0023438B /* JFDomesticLoctionCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA419202133D54A0023438B /* JFDomesticLoctionCityCell.swift */; };
+		EAA419232133D54A0023438B /* JFDomesticLoctionCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA419212133D54A0023438B /* JFDomesticLoctionCityCell.xib */; };
+		EAA419252133D7700023438B /* JFDomesticNormalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA419242133D7700023438B /* JFDomesticNormalModel.swift */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
 /* End PBXBuildFile section */
@@ -324,6 +331,13 @@
 		EA9FC64621250F7F0053A56B /* JFEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFEnum.swift; sourceTree = "<group>"; };
 		EA9FC6482125162B0053A56B /* JFCommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCommonModel.swift; sourceTree = "<group>"; };
 		EAA4190E2133D2510023438B /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		EAA419182133D5010023438B /* JFDomesticNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticNormalCell.swift; sourceTree = "<group>"; };
+		EAA419192133D5010023438B /* JFDomesticNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticNormalCell.xib; sourceTree = "<group>"; };
+		EAA4191C2133D52D0023438B /* JFDomesticHotCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticHotCityCell.swift; sourceTree = "<group>"; };
+		EAA4191D2133D52D0023438B /* JFDomesticHotCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticHotCityCell.xib; sourceTree = "<group>"; };
+		EAA419202133D54A0023438B /* JFDomesticLoctionCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticLoctionCityCell.swift; sourceTree = "<group>"; };
+		EAA419212133D54A0023438B /* JFDomesticLoctionCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticLoctionCityCell.xib; sourceTree = "<group>"; };
+		EAA419242133D7700023438B /* JFDomesticNormalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticNormalModel.swift; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -733,6 +747,7 @@
 		EA1A01CB2133CCA600255489 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EAA419242133D7700023438B /* JFDomesticNormalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -740,6 +755,12 @@
 		EA1A01CC2133CCA700255489 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EAA419182133D5010023438B /* JFDomesticNormalCell.swift */,
+				EAA419192133D5010023438B /* JFDomesticNormalCell.xib */,
+				EAA4191C2133D52D0023438B /* JFDomesticHotCityCell.swift */,
+				EAA4191D2133D52D0023438B /* JFDomesticHotCityCell.xib */,
+				EAA419202133D54A0023438B /* JFDomesticLoctionCityCell.swift */,
+				EAA419212133D54A0023438B /* JFDomesticLoctionCityCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1101,6 +1122,7 @@
 				5A4D484D212B0478000E5D22 /* nearPlay.json in Resources */,
 				EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */,
 				EA9FC6422124132E0053A56B /* JFSearchResultViewController.xib in Resources */,
+				EAA4191F2133D52D0023438B /* JFDomesticHotCityCell.xib in Resources */,
 				5A4D484F212B0478000E5D22 /* nearHotel.json in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
 				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
@@ -1131,7 +1153,9 @@
 				EA7D6BF621256F22009947F2 /* mineService.json in Resources */,
 				EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */,
 				EA9FAA7F212BDFAF00A3C3BA /* lead01.png in Resources */,
+				EAA4191B2133D5010023438B /* JFDomesticNormalCell.xib in Resources */,
 				EA9FC5E5212122A90053A56B /* JFHomeClassCell.xib in Resources */,
+				EAA419232133D54A0023438B /* JFDomesticLoctionCityCell.xib in Resources */,
 				EA1A75FD211C154D000BF3E2 /* JFOrderViewController.xib in Resources */,
 				EA1A01C22130072F00255489 /* test.xib in Resources */,
 				EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */,
@@ -1240,6 +1264,7 @@
 				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
 				5AB98BA9213146280070C5D6 /* DescriptionCell.swift in Sources */,
 				EA9FAA65212AA32E00A3C3BA /* JFNearClassHearderView.swift in Sources */,
+				EAA4191A2133D5010023438B /* JFDomesticNormalCell.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
@@ -1250,6 +1275,7 @@
 				EA9FAA52212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift in Sources */,
 				EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */,
 				EA1A760C211C3861000BF3E2 /* JFRecentViewOrderCell.swift in Sources */,
+				EAA419222133D54A0023438B /* JFDomesticLoctionCityCell.swift in Sources */,
 				EA1A01D12133CD8400255489 /* JFDomesticViewController.swift in Sources */,
 				EA1A7648211D40AE000BF3E2 /* JFMineActiveCell.swift in Sources */,
 				EA9FAA6D212AC6F100A3C3BA /* JFNearModel.swift in Sources */,
@@ -1272,6 +1298,7 @@
 				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,
 				EA1A763F211D2C61000BF3E2 /* JFMineViewController.swift in Sources */,
 				EA9FAA63212AA2A800A3C3BA /* JFNearViewController.swift in Sources */,
+				EAA4191E2133D52D0023438B /* JFDomesticHotCityCell.swift in Sources */,
 				5AB98BAB213146280070C5D6 /* RegularCell.swift in Sources */,
 				5AB98BB321322ED50070C5D6 /* UIImage+JFExtension.swift in Sources */,
 				EA1A0175212E7F5F00255489 /* ModularModel.swift in Sources */,
@@ -1297,6 +1324,7 @@
 				EA9FC5D4211D70BE0053A56B /* JFHomeActiveCell.swift in Sources */,
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
 				EA1A7644211D3961000BF3E2 /* JFMineTopCategoryCell.swift in Sources */,
+				EAA419252133D7700023438B /* JFDomesticNormalModel.swift in Sources */,
 				EA1A75F1211BECCC000BF3E2 /* JFWalkVideoCell.swift in Sources */,
 				EA1A01D52133CD9C00255489 /* JFInternationalViewController.swift in Sources */,
 				5AB98BA8213146280070C5D6 /* BlurCell.swift in Sources */,

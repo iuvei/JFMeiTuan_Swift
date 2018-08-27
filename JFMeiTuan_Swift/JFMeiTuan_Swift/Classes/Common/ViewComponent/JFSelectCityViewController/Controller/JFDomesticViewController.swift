@@ -10,6 +10,7 @@ import UIKit
 
 class JFDomesticViewController: JFBaseViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +33,27 @@ class JFDomesticViewController: JFBaseViewController {
     }
     */
 
+}
+
+
+extension JFDomesticViewController:UITableViewDelegate,UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        
+        return 5
+    }
+    
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell:JFDomesticNormalCell  = JFDomesticNormalCell.cellWithTableView(tableView)
+        return cell
+        
+    }
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
 }
