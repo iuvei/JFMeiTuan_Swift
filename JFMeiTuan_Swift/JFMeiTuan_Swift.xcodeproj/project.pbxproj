@@ -160,6 +160,7 @@
 		EA9FC64521242F280053A56B /* JFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC64421242F280053A56B /* JFWebViewController.swift */; };
 		EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC64621250F7F0053A56B /* JFEnum.swift */; };
 		EA9FC6492125162B0053A56B /* JFCommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC6482125162B0053A56B /* JFCommonModel.swift */; };
+		EAA4190F2133D2510023438B /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA4190E2133D2510023438B /* citydict.plist */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
 /* End PBXBuildFile section */
@@ -322,6 +323,7 @@
 		EA9FC64421242F280053A56B /* JFWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFWebViewController.swift; sourceTree = "<group>"; };
 		EA9FC64621250F7F0053A56B /* JFEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFEnum.swift; sourceTree = "<group>"; };
 		EA9FC6482125162B0053A56B /* JFCommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCommonModel.swift; sourceTree = "<group>"; };
+		EAA4190E2133D2510023438B /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -967,6 +969,7 @@
 		EA9FC6162122A6780053A56B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EAA4190E2133D2510023438B /* citydict.plist */,
 				5AB98BAD21315D480070C5D6 /* homeTopCategoryCell.json */,
 				EA7D6BF9212574BB009947F2 /* home.json */,
 				EA7D6BF72125733B009947F2 /* tabbar.json */,
@@ -1123,6 +1126,7 @@
 				5AB98BAC213146280070C5D6 /* TableCell.xib in Resources */,
 				EA9D49F5210B136E00ED4760 /* JFHomeNormalCell.xib in Resources */,
 				EA9FAA7D212BDFAF00A3C3BA /* guideImage6.gif in Resources */,
+				EAA4190F2133D2510023438B /* citydict.plist in Resources */,
 				EA9FAA59212A5B2A00A3C3BA /* JFBasicKnowledgeListViewController.xib in Resources */,
 				EA7D6BF621256F22009947F2 /* mineService.json in Resources */,
 				EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */,
