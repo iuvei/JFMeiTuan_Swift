@@ -66,6 +66,7 @@
 		EA1A01BE2130019900255489 /* PushedCtr.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01BD2130019900255489 /* PushedCtr.swift */; };
 		EA1A01C0213001BD00255489 /* JFTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01BF213001BD00255489 /* JFTestVC.swift */; };
 		EA1A01C22130072F00255489 /* test.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A01C12130072F00255489 /* test.xib */; };
+		EA1A01C721338C1500255489 /* JFVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01C621338C1500255489 /* JFVideoPlayerViewController.swift */; };
 		EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */; };
 		EA1A75C9211AF1AF000BF3E2 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */; };
 		EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */; };
@@ -224,6 +225,7 @@
 		EA1A01BD2130019900255489 /* PushedCtr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedCtr.swift; sourceTree = "<group>"; };
 		EA1A01BF213001BD00255489 /* JFTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTestVC.swift; sourceTree = "<group>"; };
 		EA1A01C12130072F00255489 /* test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = test.xib; sourceTree = "<group>"; };
+		EA1A01C621338C1500255489 /* JFVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFWalkChildViewController.swift; sourceTree = "<group>"; };
 		EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
 		EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFWalkChildViewController.xib; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 		5A1E05601F55A7BD00C9DBA1 /* JFViewComponent */ = {
 			isa = PBXGroup;
 			children = (
+				EA1A01C321338AB800255489 /* JFVideoPlayer */,
 				5AB98BB62132EFC10070C5D6 /* JFSelectCityViewController */,
 				EA9FC6262122CC1C0053A56B /* JFSearchController */,
 				EA9FC60621229C830053A56B /* JFCarouselView */,
@@ -696,6 +699,14 @@
 				EA1A01BF213001BD00255489 /* JFTestVC.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		EA1A01C321338AB800255489 /* JFVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A01C621338C1500255489 /* JFVideoPlayerViewController.swift */,
+			);
+			path = JFVideoPlayer;
 			sourceTree = "<group>";
 		};
 		EA1A75C2211AF1AE000BF3E2 /* View */ = {
@@ -1261,6 +1272,7 @@
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
 				EA9FAA51212A5B2A00A3C3BA /* JFPageMenuViewController.swift in Sources */,
 				5AB98BAA213146280070C5D6 /* RangeCell.swift in Sources */,
+				EA1A01C721338C1500255489 /* JFVideoPlayerViewController.swift in Sources */,
 				EA1A01BC2130014200255489 /* TableNode.swift in Sources */,
 				EA1A7608211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift in Sources */,
 				EA9FAA54212A5B2A00A3C3BA /* JFPageChildSecondViewController.swift in Sources */,

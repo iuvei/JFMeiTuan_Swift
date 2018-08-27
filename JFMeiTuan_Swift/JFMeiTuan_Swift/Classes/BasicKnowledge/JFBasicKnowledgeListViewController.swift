@@ -107,6 +107,9 @@ class JFBasicKnowledgeListViewController: JFBaseViewController,UITableViewDelega
            
         }else if (indexPath.row == 8){
             //视频播放器
+            let VC = JFVideoPlayerViewController.init()
+            VC.videoUrl = "http://v6-tt.ixigua.com/video/m/2204a583465e5884903806bad27e0573878115a7a810000b1459c06e8a4/?Expires=1535340872&AWSAccessKeyId=qh0h9TdcEMoS2oPj7aKX&Signature=7ebprjLdTKSvBIyDHl0Qtk75Kyo%3D"
+            navigationController?.pushViewController(VC, animated: true)
             
         }else if (indexPath.row == 9){
             //城市选择
