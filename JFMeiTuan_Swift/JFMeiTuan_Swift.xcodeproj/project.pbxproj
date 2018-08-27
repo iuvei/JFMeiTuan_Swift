@@ -22,8 +22,6 @@
 		5AB98BB021316A0B0070C5D6 /* homeClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BAF21316A0B0070C5D6 /* homeClass.json */; };
 		5AB98BB321322ED50070C5D6 /* UIImage+JFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */; };
 		5AB98BB52132BA790070C5D6 /* homeNormal.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BB42132BA790070C5D6 /* homeNormal.json */; };
-		5AB98BB92132EFF80070C5D6 /* JFSelectCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BB72132EFF80070C5D6 /* JFSelectCityViewController.swift */; };
-		5AB98BBA2132EFF80070C5D6 /* JFSelectCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AB98BB82132EFF80070C5D6 /* JFSelectCityViewController.xib */; };
 		A3A52610497E2CB4270346AB /* Pods_JFMeiTuan_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F80F970124B124F7B8BB43 /* Pods_JFMeiTuan_Swift.framework */; };
 		E81B50FF1F692A8F002EA405 /* JFHomeTotalCassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */; };
 		E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */; };
@@ -67,6 +65,11 @@
 		EA1A01C0213001BD00255489 /* JFTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01BF213001BD00255489 /* JFTestVC.swift */; };
 		EA1A01C22130072F00255489 /* test.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A01C12130072F00255489 /* test.xib */; };
 		EA1A01C721338C1500255489 /* JFVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01C621338C1500255489 /* JFVideoPlayerViewController.swift */; };
+		EA1A01CE2133CCA700255489 /* JFSelectCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01CA2133CCA600255489 /* JFSelectCityViewController.swift */; };
+		EA1A01D12133CD8400255489 /* JFDomesticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01CF2133CD8400255489 /* JFDomesticViewController.swift */; };
+		EA1A01D22133CD8400255489 /* JFDomesticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A01D02133CD8400255489 /* JFDomesticViewController.xib */; };
+		EA1A01D52133CD9C00255489 /* JFInternationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A01D32133CD9C00255489 /* JFInternationalViewController.swift */; };
+		EA1A01D62133CD9C00255489 /* JFInternationalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A01D42133CD9C00255489 /* JFInternationalViewController.xib */; };
 		EA1A75C8211AF1AF000BF3E2 /* JFWalkChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */; };
 		EA1A75C9211AF1AF000BF3E2 /* JFwalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */; };
 		EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */; };
@@ -179,8 +182,6 @@
 		5AB98BAF21316A0B0070C5D6 /* homeClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeClass.json; sourceTree = "<group>"; };
 		5AB98BB221322ED50070C5D6 /* UIImage+JFExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+JFExtension.swift"; sourceTree = "<group>"; };
 		5AB98BB42132BA790070C5D6 /* homeNormal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeNormal.json; sourceTree = "<group>"; };
-		5AB98BB72132EFF80070C5D6 /* JFSelectCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSelectCityViewController.swift; sourceTree = "<group>"; };
-		5AB98BB82132EFF80070C5D6 /* JFSelectCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFSelectCityViewController.xib; sourceTree = "<group>"; };
 		6E9186FE1D2CDDA80244D864 /* Pods-JFMeiTuan_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan_Swift/Pods-JFMeiTuan_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		E81B50FE1F692A8F002EA405 /* JFHomeTotalCassCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeTotalCassCell.swift; sourceTree = "<group>"; };
 		E81B51001F692AF1002EA405 /* JFHomeActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFHomeActivityCell.swift; sourceTree = "<group>"; };
@@ -226,6 +227,11 @@
 		EA1A01BF213001BD00255489 /* JFTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTestVC.swift; sourceTree = "<group>"; };
 		EA1A01C12130072F00255489 /* test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = test.xib; sourceTree = "<group>"; };
 		EA1A01C621338C1500255489 /* JFVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		EA1A01CA2133CCA600255489 /* JFSelectCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFSelectCityViewController.swift; sourceTree = "<group>"; };
+		EA1A01CF2133CD8400255489 /* JFDomesticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticViewController.swift; sourceTree = "<group>"; };
+		EA1A01D02133CD8400255489 /* JFDomesticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticViewController.xib; sourceTree = "<group>"; };
+		EA1A01D32133CD9C00255489 /* JFInternationalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFInternationalViewController.swift; sourceTree = "<group>"; };
+		EA1A01D42133CD9C00255489 /* JFInternationalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFInternationalViewController.xib; sourceTree = "<group>"; };
 		EA1A75C4211AF1AE000BF3E2 /* JFWalkChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFWalkChildViewController.swift; sourceTree = "<group>"; };
 		EA1A75C5211AF1AE000BF3E2 /* JFwalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFwalkViewController.swift; sourceTree = "<group>"; };
 		EA1A75C6211AF1AE000BF3E2 /* JFWalkChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFWalkChildViewController.xib; sourceTree = "<group>"; };
@@ -384,8 +390,9 @@
 		5AB98BB62132EFC10070C5D6 /* JFSelectCityViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5AB98BB72132EFF80070C5D6 /* JFSelectCityViewController.swift */,
-				5AB98BB82132EFF80070C5D6 /* JFSelectCityViewController.xib */,
+				EA1A01C82133CCA600255489 /* Controller */,
+				EA1A01CB2133CCA600255489 /* Model */,
+				EA1A01CC2133CCA700255489 /* View */,
 			);
 			path = JFSelectCityViewController;
 			sourceTree = "<group>";
@@ -707,6 +714,32 @@
 				EA1A01C621338C1500255489 /* JFVideoPlayerViewController.swift */,
 			);
 			path = JFVideoPlayer;
+			sourceTree = "<group>";
+		};
+		EA1A01C82133CCA600255489 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A01CA2133CCA600255489 /* JFSelectCityViewController.swift */,
+				EA1A01CF2133CD8400255489 /* JFDomesticViewController.swift */,
+				EA1A01D02133CD8400255489 /* JFDomesticViewController.xib */,
+				EA1A01D32133CD9C00255489 /* JFInternationalViewController.swift */,
+				EA1A01D42133CD9C00255489 /* JFInternationalViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA1A01CB2133CCA600255489 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA1A01CC2133CCA700255489 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EA1A75C2211AF1AE000BF3E2 /* View */ = {
@@ -1078,7 +1111,6 @@
 				EA9FAA53212A5B2A00A3C3BA /* JFPageChildSecondViewController.xib in Resources */,
 				EA1A760D211C3861000BF3E2 /* JFRecentViewOrderCell.xib in Resources */,
 				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
-				5AB98BBA2132EFF80070C5D6 /* JFSelectCityViewController.xib in Resources */,
 				EA9FAA55212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib in Resources */,
 				EA9FAA7C212BDFAF00A3C3BA /* lead02.png in Resources */,
 				5AB98BB52132BA790070C5D6 /* homeNormal.json in Resources */,
@@ -1108,9 +1140,11 @@
 				EA9FC61121229C830053A56B /* JFCarouseCell.xib in Resources */,
 				EA1A7645211D3961000BF3E2 /* JFMineTopCategoryCell.xib in Resources */,
 				EA9FAA67212AA33F00A3C3BA /* JFNearClassHearderView.xib in Resources */,
+				EA1A01D22133CD8400255489 /* JFDomesticViewController.xib in Resources */,
 				EA9FC5D5211D70BE0053A56B /* JFHomeActiveCell.xib in Resources */,
 				5A4D484B212B0478000E5D22 /* nearAll.json in Resources */,
 				EA9FAA81212BDFAF00A3C3BA /* lead03.png in Resources */,
+				EA1A01D62133CD9C00255489 /* JFInternationalViewController.xib in Resources */,
 				E874E1BC1F4E91BA003A29B1 /* Assets.xcassets in Resources */,
 				EA1A7641211D2C61000BF3E2 /* JFMineViewController.xib in Resources */,
 				EA9FC5E9212122CA0053A56B /* JFClassCollectionCell.xib in Resources */,
@@ -1202,7 +1236,6 @@
 				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
 				5AB98BA9213146280070C5D6 /* DescriptionCell.swift in Sources */,
 				EA9FAA65212AA32E00A3C3BA /* JFNearClassHearderView.swift in Sources */,
-				5AB98BB92132EFF80070C5D6 /* JFSelectCityViewController.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
@@ -1213,6 +1246,7 @@
 				EA9FAA52212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift in Sources */,
 				EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */,
 				EA1A760C211C3861000BF3E2 /* JFRecentViewOrderCell.swift in Sources */,
+				EA1A01D12133CD8400255489 /* JFDomesticViewController.swift in Sources */,
 				EA1A7648211D40AE000BF3E2 /* JFMineActiveCell.swift in Sources */,
 				EA9FAA6D212AC6F100A3C3BA /* JFNearModel.swift in Sources */,
 				E81B51071F692E74002EA405 /* JFAdvertisingCell.swift in Sources */,
@@ -1226,6 +1260,7 @@
 				E874ED041F5D5F54003A29B1 /* JFMeModel.swift in Sources */,
 				EA1A761A211C4924000BF3E2 /* JFBaseNetwork.swift in Sources */,
 				E874E2091F552CAB003A29B1 /* JFBaseViewController.swift in Sources */,
+				EA1A01CE2133CCA700255489 /* JFSelectCityViewController.swift in Sources */,
 				E81B51091F692F06002EA405 /* JFHomeLuckyDrawCell.swift in Sources */,
 				EA1A0154212E422900255489 /* JFGuidePageTestViewController.swift in Sources */,
 				EA1A7604211C19CC000BF3E2 /* JFRecentOrderCell.swift in Sources */,
@@ -1259,6 +1294,7 @@
 				E874ECF91F590F40003A29B1 /* JFButton.swift in Sources */,
 				EA1A7644211D3961000BF3E2 /* JFMineTopCategoryCell.swift in Sources */,
 				EA1A75F1211BECCC000BF3E2 /* JFWalkVideoCell.swift in Sources */,
+				EA1A01D52133CD9C00255489 /* JFInternationalViewController.swift in Sources */,
 				5AB98BA8213146280070C5D6 /* BlurCell.swift in Sources */,
 				EA9FC64521242F280053A56B /* JFWebViewController.swift in Sources */,
 				EA1A015D212E4D3B00255489 /* JFSendSingleton.swift in Sources */,

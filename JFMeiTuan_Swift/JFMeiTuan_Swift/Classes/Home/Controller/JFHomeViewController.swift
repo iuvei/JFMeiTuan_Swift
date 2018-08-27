@@ -149,7 +149,7 @@ extension JFHomeViewController{
     }
     
     func leftClick() {
-        let VC =  JFSelectCityViewController.init(nibName: "JFSelectCityViewController", bundle: nil)
+        let VC =  JFSelectCityViewController.init()
 
         let nav =  JFBaseNacigationController.init(rootViewController: VC)
         navigationController?.present(nav, animated: true, completion: nil)
