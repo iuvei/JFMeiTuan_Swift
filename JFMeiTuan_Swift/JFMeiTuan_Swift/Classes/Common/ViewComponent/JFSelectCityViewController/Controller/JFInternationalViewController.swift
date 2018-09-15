@@ -8,13 +8,22 @@
 
 import UIKit
 
-class JFInternationalViewController: JFBaseViewController {
-
+class JFInternationalViewController: JFBaseViewController{
+    
+    
+    @IBOutlet weak var leftTableView: UITableView!
+    @IBOutlet weak var rightTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        leftTableView.dataSource = self
+        leftTableView.tableFooterView = UIView.init()
 
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,4 +41,18 @@ class JFInternationalViewController: JFBaseViewController {
     }
     */
 
+}
+
+extension JFInternationalViewController:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:JFForeignLeftTableViewCell  = JFForeignLeftTableViewCell.cellWithTableView(tableView)
+        return cell
+    }
+    
+    
+    
 }

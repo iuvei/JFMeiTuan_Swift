@@ -21,6 +21,10 @@
 		5A4D484D212B0478000E5D22 /* nearPlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4848212B0478000E5D22 /* nearPlay.json */; };
 		5A4D484E212B0478000E5D22 /* nearFood.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4849212B0478000E5D22 /* nearFood.json */; };
 		5A4D484F212B0478000E5D22 /* nearHotel.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D484A212B0478000E5D22 /* nearHotel.json */; };
+		5A733B73214D6BE1009CE5AF /* JFForeignLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A733B71214D6BE1009CE5AF /* JFForeignLeftTableViewCell.swift */; };
+		5A733B74214D6BE1009CE5AF /* JFForeignLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A733B72214D6BE1009CE5AF /* JFForeignLeftTableViewCell.xib */; };
+		5A733B77214D6BF7009CE5AF /* JFForeignRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A733B75214D6BF7009CE5AF /* JFForeignRightTableViewCell.swift */; };
+		5A733B78214D6BF7009CE5AF /* JFForeignRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A733B76214D6BF7009CE5AF /* JFForeignRightTableViewCell.xib */; };
 		5A78F643214D65AC00B3AD65 /* JFDomesticLoctionCitySubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A78F641214D65AC00B3AD65 /* JFDomesticLoctionCitySubCell.swift */; };
 		5A78F644214D65AC00B3AD65 /* JFDomesticLoctionCitySubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A78F642214D65AC00B3AD65 /* JFDomesticLoctionCitySubCell.xib */; };
 		5AB98BA8213146280070C5D6 /* BlurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BA3213146280070C5D6 /* BlurCell.swift */; };
@@ -201,6 +205,10 @@
 		5A4D4848212B0478000E5D22 /* nearPlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearPlay.json; sourceTree = "<group>"; };
 		5A4D4849212B0478000E5D22 /* nearFood.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearFood.json; sourceTree = "<group>"; };
 		5A4D484A212B0478000E5D22 /* nearHotel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearHotel.json; sourceTree = "<group>"; };
+		5A733B71214D6BE1009CE5AF /* JFForeignLeftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFForeignLeftTableViewCell.swift; sourceTree = "<group>"; };
+		5A733B72214D6BE1009CE5AF /* JFForeignLeftTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFForeignLeftTableViewCell.xib; sourceTree = "<group>"; };
+		5A733B75214D6BF7009CE5AF /* JFForeignRightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFForeignRightTableViewCell.swift; sourceTree = "<group>"; };
+		5A733B76214D6BF7009CE5AF /* JFForeignRightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFForeignRightTableViewCell.xib; sourceTree = "<group>"; };
 		5A78F641214D65AC00B3AD65 /* JFDomesticLoctionCitySubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticLoctionCitySubCell.swift; sourceTree = "<group>"; };
 		5A78F642214D65AC00B3AD65 /* JFDomesticLoctionCitySubCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticLoctionCitySubCell.xib; sourceTree = "<group>"; };
 		5AB98BA3213146280070C5D6 /* BlurCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurCell.swift; sourceTree = "<group>"; };
@@ -427,6 +435,10 @@
 		5A2FA421214D5DC400167354 /* foreign */ = {
 			isa = PBXGroup;
 			children = (
+				5A733B71214D6BE1009CE5AF /* JFForeignLeftTableViewCell.swift */,
+				5A733B72214D6BE1009CE5AF /* JFForeignLeftTableViewCell.xib */,
+				5A733B75214D6BF7009CE5AF /* JFForeignRightTableViewCell.swift */,
+				5A733B76214D6BF7009CE5AF /* JFForeignRightTableViewCell.xib */,
 			);
 			path = foreign;
 			sourceTree = "<group>";
@@ -1207,6 +1219,7 @@
 				EA7D6BF621256F22009947F2 /* mineService.json in Resources */,
 				EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */,
 				EA9FAA7F212BDFAF00A3C3BA /* lead01.png in Resources */,
+				5A733B78214D6BF7009CE5AF /* JFForeignRightTableViewCell.xib in Resources */,
 				EA9FC5E5212122A90053A56B /* JFHomeClassCell.xib in Resources */,
 				EA1A75FD211C154D000BF3E2 /* JFOrderViewController.xib in Resources */,
 				EA1A01C22130072F00255489 /* test.xib in Resources */,
@@ -1241,6 +1254,7 @@
 				EA7D6BF82125733B009947F2 /* tabbar.json in Resources */,
 				5A4D484C212B0478000E5D22 /* nearLive.json in Resources */,
 				5AB98BC221343B8C0070C5D6 /* JFMyCollectionViewController.xib in Resources */,
+				5A733B74214D6BE1009CE5AF /* JFForeignLeftTableViewCell.xib in Resources */,
 				EA9FC6232122A6780053A56B /* mine.json in Resources */,
 				5A2FA429214D5DC400167354 /* JFDomesticNormalCell.xib in Resources */,
 				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
@@ -1392,6 +1406,7 @@
 				EA1A01D52133CD9C00255489 /* JFInternationalViewController.swift in Sources */,
 				5AB98BA8213146280070C5D6 /* BlurCell.swift in Sources */,
 				EA9FC64521242F280053A56B /* JFWebViewController.swift in Sources */,
+				5A733B73214D6BE1009CE5AF /* JFForeignLeftTableViewCell.swift in Sources */,
 				EA1A015D212E4D3B00255489 /* JFSendSingleton.swift in Sources */,
 				EA1A7640211D2C61000BF3E2 /* JFMeViewController.swift in Sources */,
 				E874E2071F552CAB003A29B1 /* JFBaseNacigationController.swift in Sources */,
@@ -1400,6 +1415,7 @@
 				EA1A0164212E4DA100255489 /* JFTestCarouseViewController.swift in Sources */,
 				EA1A7614211C391E000BF3E2 /* JFNormalOrderCell.swift in Sources */,
 				E874E21D1F567BD5003A29B1 /* JFListCell.swift in Sources */,
+				5A733B77214D6BF7009CE5AF /* JFForeignRightTableViewCell.swift in Sources */,
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
 				EA9FAA51212A5B2A00A3C3BA /* JFPageMenuViewController.swift in Sources */,
 				5AB98BAA213146280070C5D6 /* RangeCell.swift in Sources */,
