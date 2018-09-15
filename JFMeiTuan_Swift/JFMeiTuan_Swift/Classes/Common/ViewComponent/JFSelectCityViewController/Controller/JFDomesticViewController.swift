@@ -38,11 +38,18 @@ extension JFDomesticViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
-        return 5
+        if section == 1 || section == 0 {
+            return 1
+        }
+        return 10
     }
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        if indexPath.section == 1 {
+            let cell:JFDomesticHotCityCell  = JFDomesticHotCityCell.cellWithTableView(tableView)
+            return cell
+        }
         let cell:JFDomesticNormalCell  = JFDomesticNormalCell.cellWithTableView(tableView)
         return cell
         
@@ -50,6 +57,13 @@ extension JFDomesticViewController:UITableViewDelegate,UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 1 {
+            return 200
+        }
+        return 40
     }
     
 }

@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1E05611F55A7F700C9DBA1 /* JFMeCell.swift */; };
+		5A2FA422214D5DC400167354 /* JFDomesticHotCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FA419214D5DC400167354 /* JFDomesticHotCityCell.swift */; };
+		5A2FA423214D5DC400167354 /* JFDomesticHotCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FA41A214D5DC400167354 /* JFDomesticHotCityCell.xib */; };
+		5A2FA424214D5DC400167354 /* JFDomesticHotCitySubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FA41B214D5DC400167354 /* JFDomesticHotCitySubCell.swift */; };
+		5A2FA425214D5DC400167354 /* JFDomesticHotCitySubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FA41C214D5DC400167354 /* JFDomesticHotCitySubCell.xib */; };
+		5A2FA426214D5DC400167354 /* JFDomesticLoctionCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FA41D214D5DC400167354 /* JFDomesticLoctionCityCell.swift */; };
+		5A2FA427214D5DC400167354 /* JFDomesticLoctionCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FA41E214D5DC400167354 /* JFDomesticLoctionCityCell.xib */; };
+		5A2FA428214D5DC400167354 /* JFDomesticNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FA41F214D5DC400167354 /* JFDomesticNormalCell.swift */; };
+		5A2FA429214D5DC400167354 /* JFDomesticNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A2FA420214D5DC400167354 /* JFDomesticNormalCell.xib */; };
 		5A4D484B212B0478000E5D22 /* nearAll.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4846212B0478000E5D22 /* nearAll.json */; };
 		5A4D484C212B0478000E5D22 /* nearLive.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4847212B0478000E5D22 /* nearLive.json */; };
 		5A4D484D212B0478000E5D22 /* nearPlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D4848212B0478000E5D22 /* nearPlay.json */; };
@@ -169,12 +177,6 @@
 		EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC64621250F7F0053A56B /* JFEnum.swift */; };
 		EA9FC6492125162B0053A56B /* JFCommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9FC6482125162B0053A56B /* JFCommonModel.swift */; };
 		EAA4190F2133D2510023438B /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAA4190E2133D2510023438B /* citydict.plist */; };
-		EAA4191A2133D5010023438B /* JFDomesticNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA419182133D5010023438B /* JFDomesticNormalCell.swift */; };
-		EAA4191B2133D5010023438B /* JFDomesticNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA419192133D5010023438B /* JFDomesticNormalCell.xib */; };
-		EAA4191E2133D52D0023438B /* JFDomesticHotCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4191C2133D52D0023438B /* JFDomesticHotCityCell.swift */; };
-		EAA4191F2133D52D0023438B /* JFDomesticHotCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA4191D2133D52D0023438B /* JFDomesticHotCityCell.xib */; };
-		EAA419222133D54A0023438B /* JFDomesticLoctionCityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA419202133D54A0023438B /* JFDomesticLoctionCityCell.swift */; };
-		EAA419232133D54A0023438B /* JFDomesticLoctionCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA419212133D54A0023438B /* JFDomesticLoctionCityCell.xib */; };
 		EAA419252133D7700023438B /* JFDomesticNormalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA419242133D7700023438B /* JFDomesticNormalModel.swift */; };
 		EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */; };
 		EAD1BD1021084F9F00309E86 /* JFMacroConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */; };
@@ -184,6 +186,14 @@
 		411576AF5F919FB3E220C49B /* Pods-JFMeiTuan_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFMeiTuan_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JFMeiTuan_Swift/Pods-JFMeiTuan_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		43F80F970124B124F7B8BB43 /* Pods_JFMeiTuan_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JFMeiTuan_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1E05611F55A7F700C9DBA1 /* JFMeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFMeCell.swift; sourceTree = "<group>"; };
+		5A2FA419214D5DC400167354 /* JFDomesticHotCityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFDomesticHotCityCell.swift; sourceTree = "<group>"; };
+		5A2FA41A214D5DC400167354 /* JFDomesticHotCityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFDomesticHotCityCell.xib; sourceTree = "<group>"; };
+		5A2FA41B214D5DC400167354 /* JFDomesticHotCitySubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFDomesticHotCitySubCell.swift; sourceTree = "<group>"; };
+		5A2FA41C214D5DC400167354 /* JFDomesticHotCitySubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFDomesticHotCitySubCell.xib; sourceTree = "<group>"; };
+		5A2FA41D214D5DC400167354 /* JFDomesticLoctionCityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFDomesticLoctionCityCell.swift; sourceTree = "<group>"; };
+		5A2FA41E214D5DC400167354 /* JFDomesticLoctionCityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFDomesticLoctionCityCell.xib; sourceTree = "<group>"; };
+		5A2FA41F214D5DC400167354 /* JFDomesticNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFDomesticNormalCell.swift; sourceTree = "<group>"; };
+		5A2FA420214D5DC400167354 /* JFDomesticNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JFDomesticNormalCell.xib; sourceTree = "<group>"; };
 		5A4D4846212B0478000E5D22 /* nearAll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearAll.json; sourceTree = "<group>"; };
 		5A4D4847212B0478000E5D22 /* nearLive.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearLive.json; sourceTree = "<group>"; };
 		5A4D4848212B0478000E5D22 /* nearPlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nearPlay.json; sourceTree = "<group>"; };
@@ -347,12 +357,6 @@
 		EA9FC64621250F7F0053A56B /* JFEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFEnum.swift; sourceTree = "<group>"; };
 		EA9FC6482125162B0053A56B /* JFCommonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFCommonModel.swift; sourceTree = "<group>"; };
 		EAA4190E2133D2510023438B /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
-		EAA419182133D5010023438B /* JFDomesticNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticNormalCell.swift; sourceTree = "<group>"; };
-		EAA419192133D5010023438B /* JFDomesticNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticNormalCell.xib; sourceTree = "<group>"; };
-		EAA4191C2133D52D0023438B /* JFDomesticHotCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticHotCityCell.swift; sourceTree = "<group>"; };
-		EAA4191D2133D52D0023438B /* JFDomesticHotCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticHotCityCell.xib; sourceTree = "<group>"; };
-		EAA419202133D54A0023438B /* JFDomesticLoctionCityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticLoctionCityCell.swift; sourceTree = "<group>"; };
-		EAA419212133D54A0023438B /* JFDomesticLoctionCityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFDomesticLoctionCityCell.xib; sourceTree = "<group>"; };
 		EAA419242133D7700023438B /* JFDomesticNormalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFDomesticNormalModel.swift; sourceTree = "<group>"; };
 		EAD1BD0D21084DF400309E86 /* JFNoticeConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFNoticeConst.swift; sourceTree = "<group>"; };
 		EAD1BD0F21084F9F00309E86 /* JFMacroConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFMacroConst.swift; sourceTree = "<group>"; };
@@ -397,6 +401,28 @@
 			);
 			name = JFViewComponent;
 			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		5A2FA418214D5DC400167354 /* domestic */ = {
+			isa = PBXGroup;
+			children = (
+				5A2FA419214D5DC400167354 /* JFDomesticHotCityCell.swift */,
+				5A2FA41A214D5DC400167354 /* JFDomesticHotCityCell.xib */,
+				5A2FA41B214D5DC400167354 /* JFDomesticHotCitySubCell.swift */,
+				5A2FA41C214D5DC400167354 /* JFDomesticHotCitySubCell.xib */,
+				5A2FA41D214D5DC400167354 /* JFDomesticLoctionCityCell.swift */,
+				5A2FA41E214D5DC400167354 /* JFDomesticLoctionCityCell.xib */,
+				5A2FA41F214D5DC400167354 /* JFDomesticNormalCell.swift */,
+				5A2FA420214D5DC400167354 /* JFDomesticNormalCell.xib */,
+			);
+			path = domestic;
+			sourceTree = "<group>";
+		};
+		5A2FA421214D5DC400167354 /* foreign */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = foreign;
 			sourceTree = "<group>";
 		};
 		5AB98BA2213146280070C5D6 /* Cell */ = {
@@ -771,12 +797,8 @@
 		EA1A01CC2133CCA700255489 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EAA419182133D5010023438B /* JFDomesticNormalCell.swift */,
-				EAA419192133D5010023438B /* JFDomesticNormalCell.xib */,
-				EAA4191C2133D52D0023438B /* JFDomesticHotCityCell.swift */,
-				EAA4191D2133D52D0023438B /* JFDomesticHotCityCell.xib */,
-				EAA419202133D54A0023438B /* JFDomesticLoctionCityCell.swift */,
-				EAA419212133D54A0023438B /* JFDomesticLoctionCityCell.xib */,
+				5A2FA418214D5DC400167354 /* domestic */,
+				5A2FA421214D5DC400167354 /* foreign */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1146,7 +1168,6 @@
 				5A4D484D212B0478000E5D22 /* nearPlay.json in Resources */,
 				EA1A7601211C15A8000BF3E2 /* JFOrderTopCategoryCell.xib in Resources */,
 				EA9FC6422124132E0053A56B /* JFSearchResultViewController.xib in Resources */,
-				EAA4191F2133D52D0023438B /* JFDomesticHotCityCell.xib in Resources */,
 				5A4D484F212B0478000E5D22 /* nearHotel.json in Resources */,
 				EA1A75F2211BECCC000BF3E2 /* JFWalkVideoCell.xib in Resources */,
 				EA9FC61221229C830053A56B /* JFCarouselCollectionCell.xib in Resources */,
@@ -1163,6 +1184,7 @@
 				EA9FC61021229C830053A56B /* JFCarouselView.xib in Resources */,
 				EA9FAA55212A5B2A00A3C3BA /* JFPageChildFirstViewController.xib in Resources */,
 				EA9FAA7C212BDFAF00A3C3BA /* lead02.png in Resources */,
+				5A2FA425214D5DC400167354 /* JFDomesticHotCitySubCell.xib in Resources */,
 				5AB98BB52132BA790070C5D6 /* homeNormal.json in Resources */,
 				EA1A015C212E4D3B00255489 /* JFSendValueViewController.xib in Resources */,
 				5A4D484E212B0478000E5D22 /* nearFood.json in Resources */,
@@ -1179,9 +1201,7 @@
 				EA7D6BF621256F22009947F2 /* mineService.json in Resources */,
 				EA1A7649211D40AE000BF3E2 /* JFMineActiveCell.xib in Resources */,
 				EA9FAA7F212BDFAF00A3C3BA /* lead01.png in Resources */,
-				EAA4191B2133D5010023438B /* JFDomesticNormalCell.xib in Resources */,
 				EA9FC5E5212122A90053A56B /* JFHomeClassCell.xib in Resources */,
-				EAA419232133D54A0023438B /* JFDomesticLoctionCityCell.xib in Resources */,
 				EA1A75FD211C154D000BF3E2 /* JFOrderViewController.xib in Resources */,
 				EA1A01C22130072F00255489 /* test.xib in Resources */,
 				EA1A75CA211AF1AF000BF3E2 /* JFWalkChildViewController.xib in Resources */,
@@ -1209,14 +1229,17 @@
 				EA9FAA7E212BDFAF00A3C3BA /* guideImage7.gif in Resources */,
 				EA1A7605211C19CC000BF3E2 /* JFRecentOrderCell.xib in Resources */,
 				EA9FC5D9211D7A670053A56B /* JFHomeFeaturesCell.xib in Resources */,
+				5A2FA423214D5DC400167354 /* JFDomesticHotCityCell.xib in Resources */,
 				EA1A015F212E4D3B00255489 /* JFReceiveValueViewController.xib in Resources */,
 				EA7D6BF82125733B009947F2 /* tabbar.json in Resources */,
 				5A4D484C212B0478000E5D22 /* nearLive.json in Resources */,
 				5AB98BC221343B8C0070C5D6 /* JFMyCollectionViewController.xib in Resources */,
 				EA9FC6232122A6780053A56B /* mine.json in Resources */,
+				5A2FA429214D5DC400167354 /* JFDomesticNormalCell.xib in Resources */,
 				EA1A75CE211AF260000BF3E2 /* JFWeakNormalCell.xib in Resources */,
 				EA9FAA80212BDFAF00A3C3BA /* guide_btn_bg@2x.png in Resources */,
 				E874E1BA1F4E91BA003A29B1 /* Main.storyboard in Resources */,
+				5A2FA427214D5DC400167354 /* JFDomesticLoctionCityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1286,24 +1309,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2FA422214D5DC400167354 /* JFDomesticHotCityCell.swift in Sources */,
 				EA9D49F4210B136E00ED4760 /* JFHomeNormalCell.swift in Sources */,
 				EA1A75CD211AF260000BF3E2 /* JFWeakNormalCell.swift in Sources */,
 				E874E2081F552CAB003A29B1 /* JFBaseTabBarController.swift in Sources */,
 				EA9D49F1210B127600ED4760 /* JFHomeConmonModel.swift in Sources */,
 				5AB98BA9213146280070C5D6 /* DescriptionCell.swift in Sources */,
 				EA9FAA65212AA32E00A3C3BA /* JFNearClassHearderView.swift in Sources */,
-				EAA4191A2133D5010023438B /* JFDomesticNormalCell.swift in Sources */,
 				E874E21B1F5676D7003A29B1 /* JFMeHeaderCell.swift in Sources */,
 				5A1E05621F55A7F700C9DBA1 /* JFMeCell.swift in Sources */,
 				E874E1B71F4E91BA003A29B1 /* ViewController.swift in Sources */,
 				EA9FC5E4212122A90053A56B /* JFHomeClassCell.swift in Sources */,
 				E874E2211F56A124003A29B1 /* JFMeListCellModel.swift in Sources */,
 				EAD1BD0E21084DF400309E86 /* JFNoticeConst.swift in Sources */,
+				5A2FA428214D5DC400167354 /* JFDomesticNormalCell.swift in Sources */,
 				EA9FC60F21229C830053A56B /* JFCarouselView.swift in Sources */,
 				EA9FAA52212A5B2A00A3C3BA /* JFPageChildFirstViewController.swift in Sources */,
 				EA9FC64721250F7F0053A56B /* JFEnum.swift in Sources */,
 				EA1A760C211C3861000BF3E2 /* JFRecentViewOrderCell.swift in Sources */,
-				EAA419222133D54A0023438B /* JFDomesticLoctionCityCell.swift in Sources */,
 				EA1A01D12133CD8400255489 /* JFDomesticViewController.swift in Sources */,
 				EA1A7648211D40AE000BF3E2 /* JFMineActiveCell.swift in Sources */,
 				EA9FAA6D212AC6F100A3C3BA /* JFNearModel.swift in Sources */,
@@ -1326,7 +1349,7 @@
 				EA1A7600211C15A8000BF3E2 /* JFOrderTopCategoryCell.swift in Sources */,
 				EA1A763F211D2C61000BF3E2 /* JFMineViewController.swift in Sources */,
 				EA9FAA63212AA2A800A3C3BA /* JFNearViewController.swift in Sources */,
-				EAA4191E2133D52D0023438B /* JFDomesticHotCityCell.swift in Sources */,
+				5A2FA424214D5DC400167354 /* JFDomesticHotCitySubCell.swift in Sources */,
 				5AB98BAB213146280070C5D6 /* RegularCell.swift in Sources */,
 				5AB98BC521343BD80070C5D6 /* JFRecentlyBrowseViewController.swift in Sources */,
 				5AB98BB321322ED50070C5D6 /* UIImage+JFExtension.swift in Sources */,
@@ -1372,6 +1395,7 @@
 				E81B51011F692AF1002EA405 /* JFHomeActivityCell.swift in Sources */,
 				EA9FAA51212A5B2A00A3C3BA /* JFPageMenuViewController.swift in Sources */,
 				5AB98BAA213146280070C5D6 /* RangeCell.swift in Sources */,
+				5A2FA426214D5DC400167354 /* JFDomesticLoctionCityCell.swift in Sources */,
 				EA1A01C721338C1500255489 /* JFVideoPlayerViewController.swift in Sources */,
 				EA1A01BC2130014200255489 /* TableNode.swift in Sources */,
 				EA1A7608211C1C8C000BF3E2 /* JFRecentSubOrderCell.swift in Sources */,
