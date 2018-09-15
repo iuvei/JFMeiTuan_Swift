@@ -46,7 +46,10 @@ extension JFDomesticViewController:UITableViewDelegate,UITableViewDataSource{
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        if indexPath.section == 1 {
+        if indexPath.section == 0 {
+            let cell:JFDomesticLoctionCityCell  = JFDomesticLoctionCityCell.cellWithTableView(tableView)
+            return cell
+        }else if indexPath.section == 1 {
             let cell:JFDomesticHotCityCell  = JFDomesticHotCityCell.cellWithTableView(tableView)
             return cell
         }
@@ -60,7 +63,9 @@ extension JFDomesticViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 1 {
+        if indexPath.section == 0 {
+            return 60
+        }else if indexPath.section == 1 {
             return 200
         }
         return 40

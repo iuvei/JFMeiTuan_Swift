@@ -19,4 +19,6 @@ let carouselCellCollectionReuseIdentifierID:NSString = "carouselCellCollectionRe
 
 let selectHotCityReuseIdentifierID:NSString = "selectHotCityReuseIdentifierID"
 
+let selectLoctionCityReuseIdentifierID:NSString = "selectLoctionCityReuseIdentifierID"
+
 
